@@ -96,3 +96,8 @@ allow kernel servicemanager:process setsched;
 allow kernel surfaceflinger:process setsched;
 allow kernel system_server:process setsched;
 allow kernel untrusted_app_all:process setsched;
+
+# Vendor Firmwares
+allow kernel vendor_fw_file:file r_file_perms;
+allow kernel vendor_fw_file:dir r_dir_perms;
+allow kernel vendor_fw_file:system firmware_load;

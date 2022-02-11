@@ -1225,9 +1225,6 @@
 
 /vendor/lib(64)?/libGLES_mali\.so u:object_r:same_process_hal_file:s0
 
-/vendor/firmware/valhall-1691526.wa u:object_r:same_process_hal_file:s0
-/vendor/firmware/mali_csffw.bin u:object_r:same_process_hal_file:s0
-
 /vendor/lib(64)?/libgralloc_extra\.so              u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgpu_aux\.so                    u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgpud\.so                       u:object_r:same_process_hal_file:s0
@@ -1454,3 +1451,6 @@
 # Virtual Machines
 /dev/pkvm_vendor_mtk_tz                                                                    u:object_r:pkvm_mtk_tz_device:s0
 /vendor/bin/hw/android.hardware.virtualization.capabilities.capabilities_service-mtk_tz    u:object_r:hal_vm_capabilities_default_exec:s0
+
+# Vendor Firmwares
+/(vendor|system/vendor)/firmware(/.*)?                        u:object_r:vendor_fw_file:s0
