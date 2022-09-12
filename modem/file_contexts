@@ -20,6 +20,7 @@
 /dev/socket/volte_ua(/.*)? u:object_r:volte_ua_socket:s0
 /dev/socket/volte_stack(/.*)? u:object_r:volte_stack_socket:s0
 /dev/socket/wfca(/.*)? u:object_r:wfca_socket:s0
+/dev/socket/wfca_rds(/.*)? u:object_r:wfca_socket:s0
 /dev/socket/bip(/.*)? u:object_r:bip_socket:s0
 /dev/socket/vendor\.bip(/.*)? u:object_r:vendor_bip_socket:s0
 

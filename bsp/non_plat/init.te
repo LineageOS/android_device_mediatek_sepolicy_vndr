@@ -36,4 +36,7 @@ allow init proc_pressure_cpu:file setattr;
 
 # Date : W20.20
 # Purpose: Allow to create socket for rild
-allow init volte_imsvt1_socket:sock_file create_file_perms;
+allow init {
+    volte_imsvt1_socket
+    wfca_socket
+}:sock_file create_file_perms;
