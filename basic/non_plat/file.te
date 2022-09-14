@@ -642,6 +642,8 @@ type thermal_hal_socket, file_type;
 # thermal core socket file
 type thermal_socket, file_type;
 
+type xcap_socket, file_type;
+
 # Data : 2021/08/24
 # Operaton: S development
 # Purpose: Add permission for node /proc/dma_heap

@@ -402,6 +402,8 @@
 /dev/socket/thermal_socket(/.*)? u:object_r:thermal_socket:s0
 /dev/socket/thermal_hal_socket(/.*)? u:object_r:thermal_hal_socket:s0
 
+/dev/socket/vendor.xcap(/.*)?         u:object_r:xcap_socket:s0
+
 /dev/stpant(/.*)?   u:object_r:stpant_device:s0
 /dev/stpbt(/.*)?    u:object_r:stpbt_device:s0
 /dev/fw_log_bt      u:object_r:fw_log_bt_device:s0
