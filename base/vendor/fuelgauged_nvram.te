@@ -54,3 +54,6 @@ allow fuelgauged_nvram sysfs_boot_mode:file r_file_perms;
 
 # Allow ReadDefaultFstab().
 read_fstab(fuelgauged_nvram)
+
+# Purpose: Allow to read /sys/firmware/devicetree/base/firmware/android
+r_dir_file(fuelgauged_nvram, sysfs_dt_firmware_android)
