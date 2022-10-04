@@ -25,7 +25,7 @@ genfscon proc /partitions u:object_r:proc_partition:s0
 genfscon sysfs /class/android_usb/android0 u:object_r:sysfs_android0_usb:s0
 
 genfscon sysfs /devices/platform/mt_usb/cmode u:object_r:sysfs_usb_plat:s0
-genfscon sysfs /class/udc/musb-hdrc/device/comde                u:object_r:sysfs_usb_plat:s0
+genfscon sysfs /class/udc/musb-hdrc/device/cmode                u:object_r:sysfs_usb_plat:s0
 
 # Date : 2020/03/25
 # Operation: R migration
