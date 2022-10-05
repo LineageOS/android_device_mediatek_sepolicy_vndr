@@ -162,3 +162,6 @@ set_prop(vendor_init, vendor_mtk_neuropilot_flag_prop)
 # Purpose: for non-5G GKI platform
 set_prop(vendor_init, vendor_mtk_mdrsra_v2_support_prop)
 set_prop(vendor_init, vendor_mtk_xfrm_support_prop)
+
+# Power
+set_prop(vendor_init, vendor_power_prop)
