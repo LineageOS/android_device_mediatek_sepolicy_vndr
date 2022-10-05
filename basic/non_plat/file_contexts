@@ -984,3 +984,6 @@
 # Date: 2021/09/26
 # Purpose: Add permission for vilte
 /dev/ccci_vts u:object_r:ccci_vts_device:s0
+
+# Power
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkpower@1\.2-service\.stub    u:object_r:mtk_hal_power_exec:s0
