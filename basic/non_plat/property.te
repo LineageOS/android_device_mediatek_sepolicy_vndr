@@ -34,6 +34,7 @@ vendor_restricted_prop(vendor_mtk_appresolutiontuner_prop)
 vendor_restricted_prop(vendor_mtk_atci_prop)
 vendor_restricted_prop(vendor_mtk_atm_ipaddr_prop)
 vendor_restricted_prop(vendor_mtk_atm_mdmode_prop)
+vendor_restricted_prop(vendor_mtk_audio_prop)
 vendor_restricted_prop(vendor_mtk_audiohal_prop)
 vendor_restricted_prop(vendor_mtk_bt_sap_enable_prop)
 vendor_restricted_prop(vendor_mtk_coredump_prop)
@@ -135,6 +136,7 @@ typeattribute vendor_mtk_anr_support_prop            mtk_core_property_type;
 typeattribute vendor_mtk_app_prop                    mtk_core_property_type;
 typeattribute vendor_mtk_appresolutiontuner_prop     mtk_core_property_type;
 typeattribute vendor_mtk_atci_prop                   mtk_core_property_type;
+typeattribute vendor_mtk_audio_prop                  mtk_core_property_type;
 typeattribute vendor_mtk_audiohal_prop               mtk_core_property_type;
 typeattribute vendor_mtk_bt_sap_enable_prop          mtk_core_property_type;
 typeattribute vendor_mtk_coredump_prop               mtk_core_property_type;
