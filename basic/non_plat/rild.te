@@ -185,3 +185,7 @@ allow rild ccci_wifi_proxy_device:chr_file rw_file_perms;
 # Date: 2021/09/26
 # Purpose: Add permission for vilte
 allow rild ccci_vts_device:chr_file rw_file_perms_no_map;
+
+# Date: 2022/11/30
+# Purpose: Allow access to nvram hal
+hal_client_domain(rild, hal_mtk_nvramagent)
