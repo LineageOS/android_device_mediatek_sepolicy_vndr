@@ -727,6 +727,9 @@
 # Trustonic TEE
 /(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.trustonic u:object_r:hal_keymint_default_exec:s0
 
+# Microtrust SE
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.se@1\.0-service   u:object_r:hal_secure_element_default_exec:s0
+
 # PQ hal
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.pq@2\.2-service u:object_r:mtk_hal_pq_exec:s0
 
