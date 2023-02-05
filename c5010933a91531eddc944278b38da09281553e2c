@@ -34,6 +34,23 @@
       "parentUuid": "35343f33_ad4fa038",
       "revId": "c5010933a91531eddc944278b38da09281553e2c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f4a7299_46722d05",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17793
+      },
+      "writtenOn": "2023-02-05T18:10:40Z",
+      "side": 1,
+      "message": "alright use vendor_mtk_audiohal_pro. instead, so it\u0027s gonna get addressed in many other places too",
+      "revId": "c5010933a91531eddc944278b38da09281553e2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
