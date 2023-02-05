@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d2c23043_5a7b3900",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2023-02-05T15:52:58Z",
+      "side": 1,
+      "message": "if changing vendor_audio_prop -\u003e vendor_mtk_audiohal_prop, do it here too",
+      "revId": "3cd986e083ca568f2bfabc411797e36845ffeac3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
