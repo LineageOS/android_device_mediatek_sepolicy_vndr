@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "35343f33_ad4fa038",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17793
+      },
+      "writtenOn": "2023-02-05T16:17:08Z",
+      "side": 1,
+      "message": "no vendor_audio_prop was fine, just like qcom: https://github.com/LineageOS/android_device_qcom_sepolicy_vndr/blob/lineage-20.0/generic/vendor/common/property_contexts#L81-L84",
+      "revId": "c5010933a91531eddc944278b38da09281553e2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
