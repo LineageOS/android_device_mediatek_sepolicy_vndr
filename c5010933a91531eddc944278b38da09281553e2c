@@ -51,6 +51,23 @@
       "message": "alright use vendor_mtk_audiohal_pro. instead, so it\u0027s gonna get addressed in many other places too",
       "revId": "c5010933a91531eddc944278b38da09281553e2c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "17dca04b_8e4a2e17",
+        "filename": "basic/non_plat/property.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 214,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2023-02-11T12:10:31Z",
+      "side": 1,
+      "message": "missing typeattribute for vendor_mtk_audio_prop?",
+      "revId": "c5010933a91531eddc944278b38da09281553e2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
