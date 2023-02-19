@@ -68,6 +68,24 @@
       "message": "missing typeattribute for vendor_mtk_audio_prop?",
       "revId": "c5010933a91531eddc944278b38da09281553e2c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91fbff15_6945b16f",
+        "filename": "basic/non_plat/property.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 214,
+      "author": {
+        "id": 32355
+      },
+      "writtenOn": "2023-02-19T10:27:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "17dca04b_8e4a2e17",
+      "revId": "c5010933a91531eddc944278b38da09281553e2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
