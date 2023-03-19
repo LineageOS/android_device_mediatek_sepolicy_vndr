@@ -128,7 +128,6 @@ vendor_restricted_prop(vendor_debug_logger_prop)
 vendor_restricted_prop(vendor_mtk_crossmount_prop)
 vendor_restricted_prop(vendor_mtk_deinterlace_prop)
 vendor_restricted_prop(vendor_mtk_omx_core_prop)
-vendor_restricted_prop(vendor_mtk_hdr_video_prop)
 
 # Properties with can be read by all domains
 typeattribute vendor_mtk_aal_ro_prop                 mtk_core_property_type;
@@ -211,4 +210,3 @@ typeattribute vendor_debug_logger_prop               mtk_core_property_type;
 typeattribute vendor_mtk_crossmount_prop             mtk_core_property_type;
 typeattribute vendor_mtk_deinterlace_prop            mtk_core_property_type;
 typeattribute vendor_mtk_omx_core_prop               mtk_core_property_type;
-typeattribute vendor_mtk_hdr_video_prop              mtk_core_property_type;
