@@ -149,7 +149,6 @@ set_prop(mediacodec, vendor_mtk_video_prop)
 get_prop(mediacodec, vendor_mtk_crossmount_prop)
 get_prop(mediacodec, vendor_mtk_deinterlace_prop)
 get_prop(mediacodec, vendor_mtk_omx_core_prop)
-get_prop(mediacodec, vendor_mtk_hdr_video_prop)
 
 hal_client_domain(mediacodec, hal_mtkcodecservice)
 
