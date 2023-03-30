@@ -4,6 +4,7 @@
 
 # Add for update_engine update block device
 allow update_engine preloader_block_device:blk_file rw_file_perms;
+allow update_engine bootdevice_block_device:blk_file rw_file_perms;
 allow update_engine lk_block_device:blk_file rw_file_perms;
 allow update_engine logo_block_device:blk_file rw_file_perms;
 allow update_engine dtbo_block_device:blk_file rw_file_perms;
