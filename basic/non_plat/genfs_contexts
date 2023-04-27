@@ -661,3 +661,6 @@ genfscon sysfs /devices/platform/soc/11201000.usb/11200000.xhci/usb1 u:object_r:
 
 # Purpose: allow mgq access
 genfscon proc /mgq u:object_r:proc_mgq:s0
+
+# Vibrator
+genfscon sysfs /kernel/thunderquake_engine    u:object_r:sysfs_vibrator:s0
