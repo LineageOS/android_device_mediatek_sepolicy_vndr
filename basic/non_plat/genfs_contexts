@@ -664,3 +664,8 @@ genfscon proc /mgq u:object_r:proc_mgq:s0
 
 # Vibrator
 genfscon sysfs /kernel/thunderquake_engine    u:object_r:sysfs_vibrator:s0
+
+# GPU
+genfscon sysfs /devices/platform/13040000.mali/dma_buf_gpu_mem u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/13040000.mali/kprcs u:object_r:sysfs_gpu:s0
+genfscon sysfs /devices/platform/13040000.mali/total_gpu_mem u:object_r:sysfs_gpu:s0
