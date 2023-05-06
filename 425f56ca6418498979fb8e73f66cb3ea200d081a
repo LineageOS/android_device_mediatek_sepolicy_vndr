@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b5162460_c9877e92",
+        "filename": "basic/non_plat/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 994,
+      "author": {
+        "id": 20352
+      },
+      "writtenOn": "2023-05-06T14:59:13Z",
+      "side": 1,
+      "message": "In device tree (mt6768-common) mali nodes are labelled as sysfs_mali, wouldn\u0027t be better to change there label here as well?",
+      "range": {
+        "startLine": 994,
+        "startChar": 101,
+        "endLine": 994,
+        "endChar": 110
+      },
+      "revId": "425f56ca6418498979fb8e73f66cb3ea200d081a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
