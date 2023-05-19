@@ -22,6 +22,30 @@
       },
       "revId": "425f56ca6418498979fb8e73f66cb3ea200d081a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4201c989_62a67bf4",
+        "filename": "basic/non_plat/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 994,
+      "author": {
+        "id": 32222
+      },
+      "writtenOn": "2023-05-19T18:45:53Z",
+      "side": 1,
+      "message": "I labelled those nodes under sysfs_mali without knowing about the sysfs_gpu type, that was my bad. We\u0027re better off using sysfs_gpu, plus, sysfs_mali is defined only in xiaomi mt6768\u0027s device sepolicy, so we\u0027d need to also define it in our common SEPolicy if we wanted to do it this way, I think it\u0027s better to have \u0027em labeled under sysfs_gpu.",
+      "parentUuid": "b5162460_c9877e92",
+      "range": {
+        "startLine": 994,
+        "startChar": 101,
+        "endLine": 994,
+        "endChar": 110
+      },
+      "revId": "425f56ca6418498979fb8e73f66cb3ea200d081a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
