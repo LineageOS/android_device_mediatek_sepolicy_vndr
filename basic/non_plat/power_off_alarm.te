@@ -1,0 +1,9 @@
+type power_off_alarm, domain, mlstrustedsubject;
+app_domain(power_off_alarm)
+allow power_off_alarm app_api_service:service_manager find;
+allow power_off_alarm system_app_data_file:dir create_dir_perms;
+allow power_off_alarm system_app_data_file:{ file lnk_file } create_file_perms;
+
+# Purpose : support power-off alarm
+allow power_off_alarm alarm_device:chr_file rw_file_perms;
+allow power_off_alarm rtc_device:chr_file rw_file_perms;
