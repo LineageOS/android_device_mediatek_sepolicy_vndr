@@ -144,11 +144,6 @@ allowxperm system_server proc_perfmgr:file ioctl {
 # Purpose : MTK wifi hal interface permission
 binder_call(system_server, mtk_hal_wifi)
 
-# Date : W19.15
-# Operation : alarm device permission
-# Purpose : support power-off alarm
-allow system_server alarm_device:chr_file rw_file_perms;
-
 # Date : WK19.7
 # Operation: Q migration
 # Purpose : Allow system_server to use ioctl/ioctlcmd
