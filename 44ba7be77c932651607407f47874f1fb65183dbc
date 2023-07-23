@@ -48,6 +48,30 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f802a1b8_573c124e",
+        "filename": "basic/non_plat/power_off_alarm.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2023-07-23T14:47:15Z",
+      "side": 1,
+      "message": "breaks ioctl() and rtc also needs read(), reverting this change",
+      "parentUuid": "16f0b822_cb1601c3",
+      "range": {
+        "startLine": 8,
+        "startChar": 44,
+        "endLine": 8,
+        "endChar": 57
+      },
+      "revId": "44ba7be77c932651607407f47874f1fb65183dbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b0492330_dfd36678",
