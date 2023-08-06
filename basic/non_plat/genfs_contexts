@@ -243,6 +243,7 @@ genfscon sysfs /devices/virtual/misc/adsp_1 u:object_r:sysfs_adsp:s0
 genfscon sysfs /devices/virtual/misc/vcp    u:object_r:sysfs_vcp:s0
 
 # Date : 2019/09/12
+genfscon sysfs /class/thermal u:object_r:sysfs_therm:s0
 genfscon sysfs /devices/virtual/thermal u:object_r:sysfs_therm:s0
 genfscon sysfs /devices/class/thermal   u:object_r:sysfs_therm:s0
 genfscon sysfs /kernel/thermal u:object_r:sysfs_thermal_sram:s0
