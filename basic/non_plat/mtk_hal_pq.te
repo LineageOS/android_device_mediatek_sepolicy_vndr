@@ -46,3 +46,6 @@ allow mtk_hal_pq dmabuf_system_heap_device:chr_file r_file_perms;
 
 # Purpose : Allow change priority
 allow mtk_hal_pq self:capability sys_nice;
+
+# Allow PQ HAL to use /dev/ion
+allow mtk_hal_pq ion_device:chr_file rw_file_perms;
