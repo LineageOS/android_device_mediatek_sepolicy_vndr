@@ -76,3 +76,7 @@ allow mtk_hal_sensors merged_hal_service:fd use;
 # Date : WK20.25
 # Purpose: Allow to read /bus/platform/drivers/mtk_nanohub/state
 allow mtk_hal_sensors sysfs_mtk_nanohub_state:file r_file_perms;
+
+# Allow mtk_hal_sensors to access sysfs_scp
+allow mtk_hal_sensors sysfs_scp:dir search;
+allow mtk_hal_sensors sysfs_scp:file rw_file_perms;
