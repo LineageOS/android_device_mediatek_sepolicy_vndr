@@ -43,6 +43,7 @@ type proc_gpu_memory, fs_type, proc_type;
 type proc_mtk_es_reg_dump, fs_type, proc_type;
 type proc_ccci_dump, fs_type, proc_type;
 type proc_log_much, fs_type, proc_type;
+type proc_vm_dirty, fs_type, proc_type;
 
 #For icusb
 type proc_icusb, fs_type, proc_type;
