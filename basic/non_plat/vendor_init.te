@@ -166,3 +166,6 @@ set_prop(vendor_init, vendor_mtk_xfrm_support_prop)
 
 # Power
 set_prop(vendor_init, vendor_power_prop)
+
+# Allow vendor_init to write to sysfs_devices_block
+allow vendor_init sysfs_devices_block:file w_file_perms;
