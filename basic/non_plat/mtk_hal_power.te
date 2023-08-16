@@ -120,7 +120,7 @@ allow mtk_hal_power sysfs_devices_block:file rw_file_perms;
 # Date : 2019/05/22
 # Operation: SQC
 # Purpose : Allow powerHAL to access prop
-set_prop(mtk_hal_power, vendor_mtk_powerhal_prop)
+set_prop(mtk_hal_power, vendor_power_prop)
 
 # Date : 2019/05/29
 # Operation: SQC
