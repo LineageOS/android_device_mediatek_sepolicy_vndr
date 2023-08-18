@@ -11,6 +11,9 @@ init_daemon_domain(mtk_hal_power)
 hal_server_domain(mtk_hal_power, hal_power)
 hal_server_domain(mtk_hal_power, hal_wifi)
 
+# Allow mtkpower stub service to call powerhal
+binder_call(mtk_hal_power, hal_power_default)
+
 # sysfs
 allow mtk_hal_power sysfs_devices_system_cpu:file rw_file_perms;
 allow mtk_hal_power sysfs_mtk_core_ctl:dir r_dir_perms;
