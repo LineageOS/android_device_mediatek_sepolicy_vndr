@@ -717,6 +717,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.media\.c2@1\.2-mediatek-64b               u:object_r:mtk_hal_c2_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.memtrack-service\.mediatek                u:object_r:mtk_hal_memtrack_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkcodecservice@1\.1-service     u:object_r:hal_mtkcodecservice_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.mediatek                  u:object_r:hal_health_default_exec:s0
 
 # Google Trusty system files
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service\.trusty u:object_r:hal_keymaster_default_exec:s0
