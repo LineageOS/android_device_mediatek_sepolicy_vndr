@@ -387,9 +387,6 @@ type iso9660, fs_type;
 # rawfs for /protect_f on NAND projects
 type rawfs, fs_type, mlstrustedobject;
 
-#fuse
-type fuseblk, sdcard_type, fs_type, mlstrustedobject;
-
 ##########################
 # File types
 #
