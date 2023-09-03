@@ -4,5 +4,5 @@
 
 # Date : W20.26
 # Operation : Migration
-# Purpose : For apps other than isolated_app call hidl
-binder_call(mtk_safe_halserverdomain_type, { appdomain -isolated_app })
+# Purpose : For apps other than isolated_app_all call hidl
+binder_call(mtk_safe_halserverdomain_type, { appdomain -isolated_app_all })

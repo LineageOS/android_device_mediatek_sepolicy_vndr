@@ -31,7 +31,7 @@ allow netd untrusted_app:fd use;
 # Operation :  SQC
 # Purpose :  CTS for wifi
 allow netd untrusted_app:unix_stream_socket rw_socket_perms_no_ioctl;
-allow netd isolated_app:fd use;
+allow netd isolated_app_all:fd use;
 
 # MTK support app feature
 get_prop(netd, vendor_mtk_app_prop)

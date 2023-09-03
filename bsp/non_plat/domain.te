@@ -5,7 +5,7 @@
 # Date : WK15.29
 # Operation : Migration
 # Purpose : for device bring up, not to block early migration
-allow { domain -isolated_app } storage_file:dir search;
+allow { domain -isolated_app_all } storage_file:dir search;
 
 # Date : W17.47
 # Allow system_server to enable/disable logmuch_prop for Wi-Fi logging purpose

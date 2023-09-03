@@ -19,8 +19,8 @@ allow zygote servicemanager:binder call;
 
 # Date : WK14.49
 # Operation : SQC
-# Purpose : for isolated_app to use fd (ex: share image by gmail)
-allow zygote isolated_app:fd use;
+# Purpose : for isolated_app_all to use fd (ex: share image by gmail)
+allow zygote isolated_app_all:fd use;
 
 # Date : WK15.02
 # Operation : SQC

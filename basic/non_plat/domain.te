@@ -11,7 +11,7 @@ get_prop(domain, mtk_core_property_type)
 # as it is a public interface for all processes to read some OTP data.
 allow {
   domain
-  -isolated_app
+  -isolated_app_all
 } sysfs_devinfo:file r_file_perms;
 
 # Date : W18.45
@@ -19,5 +19,5 @@ allow {
 # Purpose : drvb need dgb2 permission
 allow {
   domain
-  -isolated_app
+  -isolated_app_all
 } sysfs_gpu_mtk:file r_file_perms;

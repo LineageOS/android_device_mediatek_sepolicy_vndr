@@ -10,7 +10,7 @@ init_daemon_domain(hal_drm_widevine)
 hal_server_domain(hal_drm_widevine, hal_drm)
 
 allow hal_drm_widevine mediacodec:fd use;
-allow hal_drm_widevine { appdomain -isolated_app }:fd use;
+allow hal_drm_widevine { appdomain -isolated_app_all }:fd use;
 
 vndbinder_use(hal_drm_widevine)
 

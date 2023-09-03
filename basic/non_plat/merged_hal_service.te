@@ -42,7 +42,7 @@ hal_client_domain(merged_hal_service, hal_allocator)
 #for default drm permissions
 hal_server_domain(merged_hal_service, hal_drm)
 allow merged_hal_service mediacodec:fd use;
-allow merged_hal_service { appdomain -isolated_app }:fd use;
+allow merged_hal_service { appdomain -isolated_app_all }:fd use;
 
 # Date : WK18.23
 # Operation : P Migration

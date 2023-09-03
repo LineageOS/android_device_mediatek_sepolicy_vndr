@@ -34,7 +34,7 @@ allowxperm appdomain proc_perfmgr:file ioctl {
 # Date : W19.23
 # Operation : Migration
 # Purpose : For platform app com.android.gallery3d
-allow { appdomain -isolated_app } radio_data_file:file rw_file_perms;
+allow { appdomain -isolated_app_all } radio_data_file:file rw_file_perms;
 
 # Date : W19.23
 # Operation : Migration
@@ -43,12 +43,12 @@ allowxperm appdomain appdomain:fifo_file ioctl SNDCTL_TMR_START;
 
 # Date : W20.26
 # Operation : Migration
-# Purpose : For apps other than isolated_app call hidl
-hwbinder_use({ appdomain -isolated_app })
-get_prop({ appdomain -isolated_app }, hwservicemanager_prop)
-allow { appdomain -isolated_app } hidl_manager_hwservice:hwservice_manager find;
-binder_call({ appdomain -isolated_app }, mtk_safe_halserverdomain_type)
-allow { appdomain -isolated_app } mtk_safe_hwservice_manager_type:hwservice_manager find;
+# Purpose : For apps other than isolated_app_all call hidl
+hwbinder_use({ appdomain -isolated_app_all })
+get_prop({ appdomain -isolated_app_all }, hwservicemanager_prop)
+allow { appdomain -isolated_app_all } hidl_manager_hwservice:hwservice_manager find;
+binder_call({ appdomain -isolated_app_all }, mtk_safe_halserverdomain_type)
+allow { appdomain -isolated_app_all } mtk_safe_hwservice_manager_type:hwservice_manager find;
 
 # Date : 2021/04/24
 # Operation: addwindow
