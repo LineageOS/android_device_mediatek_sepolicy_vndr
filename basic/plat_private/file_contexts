@@ -33,11 +33,7 @@
 /system/bin/mtk_plpath_utils u:object_r:mtk_plpath_utils_exec:s0
 
 # mediaserver 64 bit support
-/system/bin/mediaserver64  u:object_r:mediaserver_exec:s0
 /system/bin/mediahelper    u:object_r:mediahelper_exec:s0
-
-# drmserver 64 bit support
-/system/bin/drmserver64  u:object_r:drmserver_exec:s0
 
 ##########################
 # SystemExt files
