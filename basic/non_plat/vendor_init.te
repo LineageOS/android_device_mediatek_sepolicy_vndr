@@ -169,3 +169,8 @@ set_prop(vendor_init, vendor_power_prop)
 
 # Allow vendor_init to write to sysfs_devices_block
 allow vendor_init sysfs_devices_block:file w_file_perms;
+
+# Thermal
+allow vendor_init thermal_link_device:dir r_dir_perms;
+allow vendor_init thermal_link_device:lnk_file r_file_perms;
+set_prop(vendor_init, vendor_thermal_prop)

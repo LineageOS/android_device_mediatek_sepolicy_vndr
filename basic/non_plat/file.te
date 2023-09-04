@@ -482,6 +482,9 @@ type thermal_manager_data_file, file_type, data_file_type;
 # thermal core config file
 type thermal_core_data_file, file_type, data_file_type;
 
+# Thermal link device
+type thermal_link_device, dev_type;
+
 #autokd data file
 type autokd_data_file, file_type, data_file_type;
 

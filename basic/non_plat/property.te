@@ -25,6 +25,7 @@ vendor_internal_prop(vendor_mtk_factory_prop)
 vendor_internal_prop(vendor_mtk_factory_start_prop)
 vendor_internal_prop(vendor_mtk_eara_io_prop)
 vendor_internal_prop(vendor_power_prop)
+vendor_internal_prop(vendor_thermal_prop)
 
 # Properties which can't be written outside vendor
 vendor_restricted_prop(vendor_mtk_aal_ro_prop)

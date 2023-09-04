@@ -406,3 +406,6 @@ persist.vendor.xfrm_support u:object_r:vendor_mtk_xfrm_support_prop:s0
 mtk.vendor.omx.core.log         u:object_r:vendor_mtk_omx_core_prop:s0
 ro.mtk_crossmount_support       u:object_r:vendor_mtk_crossmount_prop:s0
 ro.mtk_deinterlace_support      u:object_r:vendor_mtk_deinterlace_prop:s0
+
+# Thermal
+vendor.thermal. u:object_r:vendor_thermal_prop:s0
