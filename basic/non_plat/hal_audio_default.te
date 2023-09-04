@@ -1,0 +1,228 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+wakelock_use(hal_audio_default)
+
+add_hwservice(hal_audio_default, mtk_hal_bluetooth_audio_hwservice)
+allow hal_audio_default ion_device:chr_file r_file_perms;
+
+allow hal_audio_default system_file:dir r_dir_perms;
+
+r_dir_file(hal_audio_default, proc)
+allow hal_audio_default audio_device:dir r_dir_perms;
+allow hal_audio_default audio_device:chr_file rw_file_perms;
+
+# Date : WK14.32
+# Operation : Migration
+# Purpose : Set audio driver permission to access SD card for debug purpose and accss NVRam.
+allow hal_audio_default sdcard_type:dir create_dir_perms;
+allow hal_audio_default sdcard_type:file create_file_perms;
+allow hal_audio_default nvram_data_file:dir w_dir_perms;
+allow hal_audio_default nvram_data_file:file create_file_perms;
+allow hal_audio_default nvram_data_file:lnk_file r_file_perms;
+allow hal_audio_default nvdata_file:lnk_file r_file_perms;
+allow hal_audio_default nvdata_file:dir create_dir_perms;
+allow hal_audio_default nvdata_file:file create_file_perms;
+
+# Date : WK14.34
+# Operation : Migration
+# Purpose : nvram access (dumchar case for nand and legacy chip)
+allow hal_audio_default nvram_device:chr_file rw_file_perms;
+allow hal_audio_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+
+# Date : WK14.36
+# Operation : Migration
+# Purpose : media server and bt process communication for A2DP data.and other control flow
+allow hal_audio_default bt_a2dp_stream_socket:sock_file w_file_perms;
+allow hal_audio_default bt_int_adp_socket:sock_file w_file_perms;
+
+# Date : WK14.36
+# Operation : Migration
+# Purpose :  access nvram, otp, ccci cdoec devices.
+allow hal_audio_default ccci_device:chr_file rw_file_perms;
+allow hal_audio_default eemcs_device:chr_file rw_file_perms;
+allow hal_audio_default devmap_device:chr_file r_file_perms;
+allow hal_audio_default ebc_device:chr_file rw_file_perms;
+allow hal_audio_default nvram_device:blk_file rw_file_perms;
+
+# Date : WK14.38
+# Operation : Migration
+# Purpose : FM driver access
+allow hal_audio_default fm_device:chr_file rw_file_perms;
+
+# Data : WK14.39
+# Operation : Migration
+# Purpose : dump for debug
+set_prop(hal_audio_default, vendor_mtk_audiohal_prop)
+
+# Date : WK14.40
+# Operation : Migration
+# Purpose : HDMI driver access
+allow hal_audio_default graphics_device:chr_file rw_file_perms;
+
+# Date : WK14.40
+# Operation : Migration
+# Purpose : Smartpa
+allow hal_audio_default smartpa_device:chr_file rw_file_perms;
+allow hal_audio_default sysfs_rt_param:file rw_file_perms;
+allow hal_audio_default sysfs_rt_param:dir r_dir_perms;
+allow hal_audio_default sysfs_rt_calib:file rw_file_perms;
+allow hal_audio_default sysfs_rt_calib:dir r_dir_perms;
+
+# Date : WK14.41
+# Operation : Migration
+# Purpose : WFD HID Driver
+allow hal_audio_default uhid_device:chr_file rw_file_perms;
+
+# Date : WK14.43
+# Operation : Migration
+# Purpose : VOW
+allow hal_audio_default vow_device:chr_file rw_file_perms;
+
+# Date: WK14.44
+# Operation : Migration
+# Purpose : EVDO
+allow hal_audio_default rpc_socket:sock_file w_file_perms;
+allow hal_audio_default ttySDIO_device:chr_file rw_file_perms;
+
+# Data: WK14.44
+# Operation : Migration
+# Purpose : for low SD card latency issue
+allow hal_audio_default sysfs_lowmemorykiller:file r_file_perms;
+
+# Data: WK14.45
+# Operation : Migration
+# Purpose : for change thermal policy when needed
+allow hal_audio_default proc_mtkcooler:dir search;
+allow hal_audio_default proc_mtktz:dir search;
+allow hal_audio_default proc_thermal:dir search;
+allow hal_audio_default thermal_manager_data_file:file create_file_perms;
+allow hal_audio_default thermal_manager_data_file:dir { rw_dir_perms setattr };
+
+# for as33970
+allow hal_audio_default sysfs_reset_dsp:file rw_file_perms;
+allow hal_audio_default tahiti_device:chr_file rw_file_perms_no_map;
+# for smartpa
+allow hal_audio_default sysfs_chip_vendor:file r_file_perms;
+allow hal_audio_default sysfs_pa_num:file rw_file_perms;
+
+# Data : WK14.47
+# Operation : Audio playback
+# Purpose : Music as ringtone
+allow hal_audio_default radio:dir r_dir_perms;
+allow hal_audio_default radio:file r_file_perms;
+
+# Data : WK14.47
+# Operation : CTS
+# Purpose : cts search strange app
+allow hal_audio_default untrusted_app:dir search;
+
+# Date : WK15.03
+# Operation : Migration
+# Purpose : offloadservice
+allow hal_audio_default offloadservice_device:chr_file rw_file_perms;
+
+# Date : WK15.34
+# Operation : Migration
+# Purpose: for camera middleware dump image buffer to sdcard & audio frameworks dump
+allow hal_audio_default storage_file:dir search;
+allow hal_audio_default storage_file:lnk_file rw_file_perms;
+allow hal_audio_default mnt_user_file:dir rw_dir_perms;
+allow hal_audio_default mnt_user_file:lnk_file rw_file_perms;
+
+# Date : WK16.17
+# Operation : Migration
+# Purpose: read/open sysfs node
+allow hal_audio_default sysfs_ccci:file r_file_perms;
+allow hal_audio_default sysfs_ccci:dir search;
+
+# Date : WK16.18
+# Operation : Migration
+# Purpose: research root dir "/"
+allow hal_audio_default tmpfs:dir search;
+
+# Purpose: Dump debug info
+allow hal_audio_default kmsg_device:chr_file w_file_perms;
+allow hal_audio_default fuse:file rw_file_perms;
+
+# Date : WK16.27
+# Operation : Migration
+# Purpose: tunning tool update parameters
+binder_call(hal_audio_default, radio)
+allow hal_audio_default mtk_audiohal_data_file:dir create_dir_perms;
+allow hal_audio_default mtk_audiohal_data_file:file create_file_perms;
+# Date : WK16.33
+# Purpose: Allow to access ged for gralloc_extra functions
+allow hal_audio_default proc_ged:file rw_file_perms;
+
+# Fix bootup violation
+allow hal_audio_default fuse:dir r_dir_perms;
+
+# for usb phone call, allow sys_nice
+allow hal_audio_default self:capability sys_nice;
+
+# Date : W17.29
+# Boot for opening trace file: Permission denied (13)
+allow hal_audio_default debugfs_tracing:file w_file_perms;
+
+# Audio Tuning Tool Android O porting
+binder_call(hal_audio_default, audiocmdservice_atci)
+
+# Add for control PowerHAL
+hal_client_domain(hal_audio_default, hal_power)
+
+# cm4 smartpa
+allow hal_audio_default audio_ipi_device:chr_file rw_file_perms;
+allow hal_audio_default audio_scp_device:chr_file r_file_perms;
+
+# Date : WK18.21
+# Operation: P migration
+# Purpose: Allow to search /mnt/vendor/nvdata for fstab when using NVM_Init()
+allow hal_audio_default mnt_vendor_file:dir search;
+
+# Date: 2019/06/14
+# Operation : Migration
+allow hal_audio_default audioserver:fifo_file w_file_perms;
+allow hal_audio_default sysfs_boot_mode:file r_file_perms;
+allow hal_audio_default sysfs_dt_firmware_android:dir search;
+
+# Date : WK18.44
+# Operation: adsp
+allow hal_audio_default adsp_device:file rw_file_perms;
+allow hal_audio_default adsp_device:chr_file rw_file_perms;
+
+# Date : 2020/3/21
+# Operation: audio dptx
+allow hal_audio_default dri_device:chr_file rw_file_perms;
+allow hal_audio_default gpu_device:dir search;
+
+# Date : WK20.26
+allow hal_audio_default sysfs_dt_firmware_android:file r_file_perms;
+
+# Date : WK20.36
+# Operation : Migration
+# Purpose : AAudio HAL
+allow hal_audio_default debugfs_ion:dir search;
+
+# Date : 2021/06/15
+# Purpose: Allow to change mtk MMQoS scenario
+allow hal_audio_default sysfs_mtk_mmqos_scen:file w_file_perms;
+allow hal_audio_default sysfs_mtk_mmqos_scen_v2:file w_file_perms;
+
+# Allow ReadDefaultFstab().
+read_fstab(hal_audio_default)
+
+# Date : WK21.23
+# Operation : Migration
+# Purpose : factory mode
+allow hal_audio_default sysfs_boot_info:file r_file_perms;
+
+# Date : WK21.32
+# Operation : Migration
+# Purpose: permission for audioserver to use ccci node
+allow hal_audio_default ccci_aud_device:chr_file rw_file_perms;
+
+# Date: 2022/12/01
+# Purpose: Allow Audio HAL to get and set vendor_mtk_audio_prop
+get_prop(hal_audio_default, vendor_mtk_audio_prop)
+set_prop(hal_audio_default, vendor_mtk_audio_prop)

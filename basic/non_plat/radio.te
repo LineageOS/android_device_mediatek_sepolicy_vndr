@@ -47,7 +47,7 @@ hal_client_domain(radio, hal_mtk_imsa)
 
 #Dat: 2017/06/29
 #Purpose: For audio parameter tuning
-binder_call(radio, mtk_hal_audio)
+binder_call(radio, hal_audio_default)
 
 # Date : WK18.16
 # Operation: P migration

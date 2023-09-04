@@ -160,7 +160,7 @@ allow rild netd_socket:sock_file { write read };
 
 #Date : W17.20
 #Purpose: allow access to audio hal
-binder_call(rild, mtk_hal_audio)
+binder_call(rild, hal_audio_default)
 hal_client_domain(rild, hal_audio)
 
 # Date : W19.16

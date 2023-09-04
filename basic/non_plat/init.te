@@ -52,10 +52,6 @@ allow init tmpfs:lnk_file create_file_perms;
 # Purpose : bt hal interface permission
 allow init mtk_hal_bluetooth_exec:file getattr;
 
-# Date : WK17.02
-# Purpose: Fix audio hal service fail
-allow init mtk_hal_audio_exec:file getattr;
-
 # Date : W17.20
 # Purpose: Enable PRODUCT_FULL_TREBLE
 allow init vendor_block_device:lnk_file relabelto;

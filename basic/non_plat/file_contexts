@@ -695,7 +695,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.[0-9]-service-mediatek       u:object_r:mtk_hal_bluetooth_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gnss@2\.1-service-mediatek                u:object_r:mtk_hal_gnss_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gnss-service\.mediatek                    u:object_r:mtk_hal_gnss_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.audio\.service\.mediatek                  u:object_r:mtk_hal_audio_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkpower@1\.0-service            u:object_r:mtk_hal_power_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@1\.0-service-mediatek             u:object_r:mtk_hal_sensors_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service-mediatek             u:object_r:mtk_hal_sensors_exec:s0

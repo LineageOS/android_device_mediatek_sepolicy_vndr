@@ -266,7 +266,7 @@ allow meta_tst mddb_data_file:dir create_dir_perms;
 
 # Date: W17.43
 # Purpose : Allow meta_tst to call Audio HAL service
-binder_call(meta_tst, mtk_hal_audio)
+binder_call(meta_tst, hal_audio_default)
 allow meta_tst mtk_audiohal_data_file:dir r_dir_perms;
 
 #Data:W1745

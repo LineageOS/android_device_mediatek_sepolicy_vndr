@@ -17,8 +17,8 @@ allow factory protect1_block_device:blk_file getattr;
 allow factory protect2_block_device:blk_file getattr;
 
 # Purpose : Allow factory to call android.hardware.audio@2.0-service-mediatek
-binder_call(factory, mtk_hal_audio)
-allow factory mtk_hal_audio:binder call;
+binder_call(factory, hal_audio_default)
+allow factory hal_audio_default:binder call;
 allow factory mtk_audiohal_data_file:dir r_dir_perms;
 allow factory audio_device:chr_file rw_file_perms;
 allow factory audio_device:dir w_dir_perms;

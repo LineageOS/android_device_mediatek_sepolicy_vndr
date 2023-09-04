@@ -62,7 +62,7 @@ allow system_server proc_mtktz:file r_file_perms;
 # Date:W17.02
 # Operation : audio hal developing
 # Purpose : audio hal interface permission
-allow system_server mtk_hal_audio:process { getsched setsched };
+allow system_server hal_audio_default:process { getsched setsched };
 
 # Dat: 2017/02/14
 # Purpose: allow get telephony Sensitive property
@@ -262,8 +262,8 @@ allow system_server mediaserver_tmpfs:file w_file_perms;
 dontaudit system_server hal_wifi_default:process sigkill;
 dontaudit system_server eara_io:process sigkill;
 
-# Purpose : dontaudit system_server is not allowed to kill mtk_hal_audio
-dontaudit system_server mtk_hal_audio:process sigkill;
+# Purpose : dontaudit system_server is not allowed to kill hal_audio_default
+dontaudit system_server hal_audio_default:process sigkill;
 dontaudit system_server mtk_hal_c2:process sigkill;
 
 # Search /proc/mgq

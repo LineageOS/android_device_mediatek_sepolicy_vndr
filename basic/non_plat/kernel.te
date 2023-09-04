@@ -70,7 +70,7 @@ allow kernel audioserver:fd use;
 # Date : WK18.02
 # Operation: SQC
 # Purpose: Allow SCP SmartPA kthread to write debug dump to sdcard
-allow kernel mtk_hal_audio:fd use;
+allow kernel hal_audio_default:fd use;
 allow kernel factory:fd use;
 
 # Date : WK18.29

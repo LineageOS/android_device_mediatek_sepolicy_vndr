@@ -21,7 +21,7 @@ allow audiocmdservice_atci bootdevice_block_device:blk_file rw_file_perms;
 
 # can route /dev/binder traffic to /dev/vndbinder
 vndbinder_use(audiocmdservice_atci)
-binder_call(audiocmdservice_atci, mtk_hal_audio)
+binder_call(audiocmdservice_atci, hal_audio_default)
 
 hal_client_domain(audiocmdservice_atci, hal_audio)
 
