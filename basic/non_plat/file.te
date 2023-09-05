@@ -44,6 +44,7 @@ type proc_mtk_es_reg_dump, fs_type, proc_type;
 type proc_ccci_dump, fs_type, proc_type;
 type proc_log_much, fs_type, proc_type;
 type proc_vm_dirty, fs_type, proc_type;
+type proc_irq, fs_type, proc_type;
 
 #For icusb
 type proc_icusb, fs_type, proc_type;
@@ -184,6 +185,7 @@ type sysfs_vcore_debug, fs_type, sysfs_type;
 type sysfs_systracker, fs_type, sysfs_type;
 type sysfs_keypad_file, fs_type, sysfs_type;
 type sysfs_vcp, fs_type, sysfs_type;
+type sysfs_irq, fs_type, sysfs_type;
 
 # apusys_queue sysfs file
 type sysfs_apusys_queue, fs_type, sysfs_type;

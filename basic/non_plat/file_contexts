@@ -691,6 +691,8 @@
 
 /(vendor|system/vendor)/bin/xcap     u:object_r:xcap_exec:s0
 
+/(vendor|system/vendor)/bin/rebalance_interrupts-vendor.mediatek u:object_r:rebalance_interrupts_vendor_exec:s0
+
 /(vendor|system/vendor)/bin/biosensord_nvram                                                u:object_r:biosensord_nvram_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.[0-9]-service-mediatek       u:object_r:mtk_hal_bluetooth_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gnss@2\.1-service-mediatek                u:object_r:mtk_hal_gnss_exec:s0
