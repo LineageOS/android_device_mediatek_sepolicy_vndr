@@ -44,3 +44,4 @@ type mtk_appdetection_service, app_api_service, system_server_service, service_m
 type vtservice_hidl_service, service_manager_type;
 type teei_ifaa_service, app_api_service, service_manager_type;
 type mtk_hal_sf_service, service_manager_type;
+type audio_vendor_parameter_parser_service, service_manager_type;

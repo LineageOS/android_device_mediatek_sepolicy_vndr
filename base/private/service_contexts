@@ -134,3 +134,6 @@ android.hardware.radio.sim.IRadioSim/se4         u:object_r:hal_radio_service:s0
 # Data: 2022/05/13
 # add mtk sf aidl
 vendor.mediatek.framework.mtksf_ext.IMtkSF_ext/default     u:object_r:mtk_hal_sf_service:s0
+
+# Audio parameter parser
+android.media.audio.IHalAdapterVendorExtension/default    u:object_r:audio_vendor_parameter_parser_service:s0

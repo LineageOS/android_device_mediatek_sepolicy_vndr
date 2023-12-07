@@ -108,3 +108,6 @@
 
 # support system server domain do ioctl with framework-res
 /system/framework/framework-res.apk u:object_r:system_mtk_pmb_file:s0
+
+# Audio parameter parser
+/(system_ext|system/system_ext)/bin/hw/android\.hardware\.audio\.parameter_parser\.service    u:object_r:audio_vendor_parameter_parser_exec:s0
