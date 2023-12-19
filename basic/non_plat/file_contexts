@@ -672,6 +672,7 @@
 /(vendor|system/vendor)/bin/thermalloadalgod                                       u:object_r:thermalloadalgod_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@2\.0-service\.mtk        u:object_r:hal_thermal_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@2\.0-service\.mediatek   u:object_r:hal_thermal_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal-service\.mediatek        u:object_r:hal_thermal_default_exec:s0
 /(vendor|system/vendor)/bin/lbs_hidl_service                                       u:object_r:lbs_hidl_service_exec:s0
 /(vendor|system/vendor)/bin/meta_tst                                               u:object_r:meta_tst_exec:s0
 /(vendor|system/vendor)/bin/kisd                                                   u:object_r:kisd_exec:s0
