@@ -6,7 +6,7 @@ MTK_SEPOLICY_PATH := device/mediatek/sepolicy_vndr
 # do not pass the VTS test cases.
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
-BOARD_SEPOLICY_DIRS += \
+BOARD_VENDOR_SEPOLICY_DIRS += \
     $(MTK_SEPOLICY_PATH)/basic/non_plat \
     $(MTK_SEPOLICY_PATH)/basic/debug/non_plat \
     $(MTK_SEPOLICY_PATH)/bsp/non_plat \
