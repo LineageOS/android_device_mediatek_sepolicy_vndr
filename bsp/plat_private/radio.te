@@ -181,3 +181,6 @@ get_prop(radio, system_mtk_fd_prop)
 # Date : 2021/12/22
 # Purpose : Allow radio to read ims debug property
 get_prop(radio, system_mtk_dbg_ims_prop)
+
+# Allow radio to get system_mtk_vodata_prop
+get_prop(radio, system_mtk_vodata_prop)
