@@ -1,0 +1,7 @@
+mtk.vendor.omx.core.log         u:object_r:vendor_mtk_omx_core_prop:s0
+ro.mtk_crossmount_support       u:object_r:vendor_mtk_crossmount_prop:s0
+ro.mtk_deinterlace_support      u:object_r:vendor_mtk_deinterlace_prop:s0
+
+debuglog.drv                    u:object_r:vendor_mtk_camera_prop:s0
+debuglog.drv.                   u:object_r:vendor_mtk_camera_prop:s0
+ril.cdma.inecmmode              u:object_r:vendor_mtk_cdma_prop:s0
