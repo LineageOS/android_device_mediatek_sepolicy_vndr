@@ -14,3 +14,5 @@ allow hal_keymint_default persist_data_file:file r_file_perms;
 # Purpose : Open MobiCore access permission for keystore.
 allow hal_keymint_default mobicore:unix_stream_socket { connectto read write };
 allow hal_keymint_default mobicore_user_device:chr_file rw_file_perms;
+
+set_prop(hal_keymint_default, vendor_mtk_soter_teei_prop)
