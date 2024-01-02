@@ -16,3 +16,10 @@ allow netutils_wrapper rild:fifo_file rw_file_perms;
 
 allow netutils_wrapper wo_epdg_client:unix_stream_socket { read write };
 allow netutils_wrapper wo_epdg_client:fd use;
+
+allow netutils_wrapper {
+    gsm0710muxd_device
+    ccci_vts_device
+    ccci_wifi_proxy_device
+    ccci_device
+}:chr_file rw_file_perms;
