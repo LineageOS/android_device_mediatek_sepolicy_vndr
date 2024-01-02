@@ -50,3 +50,7 @@ get_prop(mtk_hal_nvramagent, vendor_mtk_rat_config_prop)
 allow mtk_hal_nvramagent mnt_vendor_file:dir search;
 
 allow mtk_hal_nvramagent sysfs_boot_mode:file r_file_perms;
+
+r_dir_file(mtk_hal_nvramagent, sysfs_dt_firmware_android)
+
+allow mtk_hal_nvramagent sysfs_dt_firmware_android:file r_file_perms;
