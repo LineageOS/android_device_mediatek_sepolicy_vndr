@@ -39,6 +39,9 @@ set_prop(vendor_init, vendor_mtk_bt_sap_enable_prop)
 set_prop(vendor_init, vendor_mtk_factory_prop)
 get_prop(vendor_init, vendor_mtk_soc_prop)
 set_prop(vendor_init, vendor_mtk_prefer64_prop)
+set_prop(vendor_init, vendor_mtk_audio_prop)
+set_prop(vendor_init, vendor_mtk_audiohal_prop)
+set_prop(vendor_init, vendor_mtk_pq_prop)
 
 # allow create symbolic link, /mnt/sdcard, for meta/factory mode
 allow vendor_init tmpfs:lnk_file create_file_perms;
