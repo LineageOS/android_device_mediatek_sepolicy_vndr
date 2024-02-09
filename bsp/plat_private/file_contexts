@@ -8,7 +8,7 @@
 # MTK Adv Camera Server
 /system/bin/mtk_advcamserver u:object_r:mtk_advcamserver_exec:s0
 
-/system/bin/kpoc_charger u:object_r:kpoc_charger_exec:s0
+/(system|system_ext|system/system_ext)/bin/kpoc_charger u:object_r:kpoc_charger_exec:s0
 
 # MTK Thermald
 /system/bin/thermald u:object_r:thermald_exec:s0
