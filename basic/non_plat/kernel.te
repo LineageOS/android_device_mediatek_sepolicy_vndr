@@ -85,3 +85,6 @@ allow kernel mtk_audiohal_data_file:file write;
 
 # Date: WK19.03
 allow kernel expdb_block_device:blk_file rw_file_perms;
+
+# b/220801802
+allow kernel same_process_hal_file:file r_file_perms;
