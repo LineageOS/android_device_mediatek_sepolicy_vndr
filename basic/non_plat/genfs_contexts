@@ -45,6 +45,7 @@ genfscon proc /mtk_cmdq_debug/record         u:object_r:proc_cmdq_debug:s0
 genfscon proc /cpuhvfs/dbg_repo              u:object_r:proc_dbg_repo:s0
 genfscon proc /sys/kernel/panic_on_rcu_stall u:object_r:proc_panic_on_rcu_stall:s0
 genfscon proc /sys/vm/dirty_writeback_centisecs u:object_r:proc_vm_dirty:s0
+genfscon proc /sys/kernel/sched_pelt_multiplier u:object_r:proc_sched:s0
 
 # Purpose dump not exit file
 genfscon proc /isp_p2/isp_p2_dump     u:object_r:proc_isp_p2_dump:s0
