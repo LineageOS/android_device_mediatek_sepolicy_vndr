@@ -31,6 +31,7 @@
 # Operation: R migration
 # Purpose: Add permission for pl path utilities for OTA
 /system/bin/mtk_plpath_utils u:object_r:mtk_plpath_utils_exec:s0
+/system/bin/create_pl_dev u:object_r:mtk_plpath_utils_exec:s0
 
 # mediaserver 64 bit support
 /system/bin/mediaserver64  u:object_r:mediaserver_exec:s0
