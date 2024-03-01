@@ -961,10 +961,6 @@
 /factory_init\..* u:object_r:rootfs:s0
 /meta_init\..*    u:object_r:rootfs:s0
 /multi_init\..*   u:object_r:rootfs:s0
-/dev/block/by-name/preloader_raw_a                                                                          u:object_r:postinstall_block_device:s0
-/dev/block/by-name/preloader_raw_b                                                                          u:object_r:postinstall_block_device:s0
-/dev/block/platform/bootdevice/by-name/preloader_raw_a                                                      u:object_r:postinstall_block_device:s0
-/dev/block/platform/bootdevice/by-name/preloader_raw_b                                                      u:object_r:postinstall_block_device:s0
 
 /postinstall/bin/mtk_plpath_utils_ota                                                                       u:object_r:postinstall_file:s0
 # Custom files
