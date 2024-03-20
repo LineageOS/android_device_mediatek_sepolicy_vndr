@@ -236,7 +236,6 @@ type bootdevice_block_device, dev_type;
 type odm_block_device, dev_type;
 type oem_block_device, dev_type;
 type vendor_block_device, dev_type;
-type dtbo_block_device, dev_type;
 type loader_ext_block_device, dev_type;
 type spm_device, dev_type;
 type persist_block_device, dev_type;
