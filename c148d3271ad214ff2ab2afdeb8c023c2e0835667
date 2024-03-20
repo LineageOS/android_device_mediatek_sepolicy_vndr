@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c8059a6_035337c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28270
+      },
+      "writtenOn": "2024-03-20T17:23:03Z",
+      "side": 1,
+      "message": "Needed with QPR2",
+      "revId": "c148d3271ad214ff2ab2afdeb8c023c2e0835667",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
