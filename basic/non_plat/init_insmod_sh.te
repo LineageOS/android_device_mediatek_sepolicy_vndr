@@ -22,3 +22,7 @@ allow init_insmod_sh kernel:process setsched;
 # Date : WK20.46
 # Purpose : Set the vendor.all.modules.ready property
 set_prop(init_insmod_sh, vendor_mtk_device_prop)
+
+# Allow loading modules from system_dlkm
+r_dir_file(init_insmod_sh, system_dlkm_file)
+allow init_insmod_sh system_dlkm_file:system module_load;
