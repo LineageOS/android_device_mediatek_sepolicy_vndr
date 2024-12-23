@@ -27,3 +27,6 @@ vendor.mediatek.hardware.apuware.apusys.INeuronApusys/default u:object_r:hal_neu
 
 #aovservice aidl
 vendor.mediatek.hardware.camera.aovservice.IAovService/default u:object_r:hal_camera_service:s0
+
+# MMAgent
+vendor.mediatek.hardware.mmagent.IMMAgent/default u:object_r:mtk_hal_mmagent_service:s0
