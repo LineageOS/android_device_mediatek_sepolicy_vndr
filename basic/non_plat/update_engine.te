@@ -32,6 +32,9 @@ allow update_engine gpueb_device:blk_file rw_file_perms_no_map;
 allow update_engine mcf_ota_block_device:blk_file rw_file_perms_no_map;
 allow update_engine vcp_device:blk_file rw_file_perms_no_map;
 allow update_engine mvpu_algo_device:blk_file rw_file_perms_no_map;
+allow update_engine connsys_bt_block_device:blk_file rw_file_perms_no_map;
+allow update_engine connsys_wifi_block_device:blk_file rw_file_perms_no_map;
+allow update_engine connsys_gnss_block_device:blk_file rw_file_perms_no_map;
 
 # Add for update_engine call by system_app
 allow update_engine system_app:binder { call transfer };
