@@ -270,7 +270,6 @@ type mml_pq_device, dev_type;
 type connsys_bt_block_device, dev_type;
 type connsys_wifi_block_device, dev_type;
 type connsys_gnss_block_device, dev_type;
-type init_boot_block_device, dev_type;
 
 ##########################
 # Sensor common Devices Start
