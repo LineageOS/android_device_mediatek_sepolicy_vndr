@@ -78,3 +78,5 @@ get_prop(hal_graphics_composer_default, vendor_mtk_display_ro_prop)
 # Purpose: Add permission for simplehwc reading dmabuf_system_secure_heap_device
 allow hal_graphics_composer_default dmabuf_system_secure_heap_device:chr_file r_file_perms_no_map;
 
+# Purpose: Allow to use HAL MMLPQ
+hal_client_domain(hal_graphics_composer_default, hal_mtk_mmlpq)
