@@ -23,3 +23,4 @@ allow mtk_hal_pq self:capability sys_nice;
 allowxperm mtk_hal_pq proc_ged:file ioctl proc_ged_ioctls;
 
 binder_use(mtk_hal_pq)
+hal_client_domain(mtk_hal_pq, hal_graphics_allocator)
