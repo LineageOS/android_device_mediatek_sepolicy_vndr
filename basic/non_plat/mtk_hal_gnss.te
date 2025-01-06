@@ -20,3 +20,4 @@ allow mtk_hal_gnss mnld:unix_dgram_socket sendto;
 #get waks_alarm timer create prop
 allow mtk_hal_gnss mtk_hal_gnss:capability2 wake_alarm;
 
+allow mtk_hal_gnss aol_geofence_device:chr_file rw_file_perms_no_map;
