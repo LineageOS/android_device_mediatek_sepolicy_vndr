@@ -181,6 +181,7 @@
 /dev/fw_log_wifimcu u:object_r:fw_log_wifimcu_device:s0
 /dev/fw_log_ics     u:object_r:fw_log_ics_device:s0
 
+/dev/aol_geofence   u:object_r:aol_geofence_device:s0
 /dev/geofence(/.*)?     u:object_r:geo_device:s0
 /dev/fw_log_gps         u:object_r:fw_log_gps_device:s0
 /dev/hdmitx(/.*)?       u:object_r:graphics_device:s0
