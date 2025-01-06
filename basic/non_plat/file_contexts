@@ -754,6 +754,7 @@
 
 # PQ hal
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.pq@2\.2-service u:object_r:mtk_hal_pq_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.pq_aidl-service u:object_r:mtk_hal_pq_exec:s0
 
 # MMLPQ hal
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mmlpq@V1-service u:object_r:mtk_hal_mmlpq_exec:s0
