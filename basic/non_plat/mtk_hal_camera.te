@@ -359,6 +359,9 @@ allow mtk_hal_camera sysfs_concurrency_scenario:file rw_file_perms;
 # Purpose : allow media sources to access /sys/bus/platform/drivers/emi_ctrl/*
 allow mtk_hal_camera sysfs_emi_ctrl_concurrency_scenario:file rw_file_perms;
 
+# Operation : To allow acess to aov
+allow mtk_hal_camera mtk_aov_device:chr_file rw_file_perms_no_map;
+
 # Date : 2020/12/21
 # Operation : To access imgsys daemon driver
 allow mtk_hal_camera mtk_hcp_device:chr_file rw_file_perms;
