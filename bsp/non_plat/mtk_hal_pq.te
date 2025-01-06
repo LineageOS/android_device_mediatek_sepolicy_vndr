@@ -20,3 +20,5 @@ allow mtk_hal_pq nvdata_file:lnk_file read;
 allow mtk_hal_pq hal_graphics_allocator_default:fd use;
 allow mtk_hal_pq proc_ged:file r_file_perms;
 allowxperm mtk_hal_pq proc_ged:file ioctl proc_ged_ioctls;
+
+binder_use(mtk_hal_pq)
