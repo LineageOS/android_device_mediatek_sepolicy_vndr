@@ -9,3 +9,4 @@ allow hal_mtk_pq_server mtk_hal_pq_service:service_manager { add find };
 
 binder_call(hal_mtk_pq_client, hal_mtk_pq_server)
 binder_call(hal_mtk_pq_server, hal_mtk_pq_client)
+binder_call(hal_mtk_pq_server, servicemanager)
