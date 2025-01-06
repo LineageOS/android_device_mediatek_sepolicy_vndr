@@ -634,6 +634,10 @@
 /dev/block/by-name/gpueb(_[ab])?                    u:object_r:gpueb_device:s0
 /dev/block/by-name/vcp(_[ab])?                      u:object_r:vcp_device:s0
 /dev/block/by-name/mvpu_algo(_[ab])?                      u:object_r:mvpu_algo_device:s0
+/dev/block/by-name/connsys_bt(_[ab])?               u:object_r:connsys_bt_block_device:s0
+/dev/block/by-name/connsys_wifi(_[ab])?             u:object_r:connsys_wifi_block_device:s0
+/dev/block/by-name/connsys_gnss(_[ab])?             u:object_r:connsys_gnss_block_device:s0
+
 # W19.23 Q new feature - Userdata Checkpoint
 /dev/block/by-name/md_udc u:object_r:metadata_block_device:s0
 
