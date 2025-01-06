@@ -22,3 +22,4 @@ allow mtk_hal_pq proc_ged:file r_file_perms;
 allowxperm mtk_hal_pq proc_ged:file ioctl proc_ged_ioctls;
 
 binder_use(mtk_hal_pq)
+hal_client_domain(mtk_hal_pq, hal_graphics_allocator)
