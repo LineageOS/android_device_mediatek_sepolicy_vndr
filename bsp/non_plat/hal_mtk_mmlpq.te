@@ -1,0 +1,4 @@
+add_service(hal_mtk_mmlpq, mtk_hal_mmlpq_service)
+
+binder_call(hal_mtk_mmlpq_client, hal_mtk_mmlpq_server)
+binder_call(hal_mtk_mmlpq_server, hal_mtk_mmlpq_client)
