@@ -85,6 +85,7 @@ type mtk_hcp_device, dev_type;
 type mtk_ccd_device, dev_type;
 type mtk_v4l2_media_device, dev_type;
 type ccu_device, dev_type;
+type mtk_aov_device, dev_type;
 type gpueb_device, dev_type;
 type vcp_device, dev_type;
 type mvpu_algo_device, dev_type;
