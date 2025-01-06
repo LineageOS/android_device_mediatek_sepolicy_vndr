@@ -20,6 +20,7 @@ type fm_device, dev_type, mlstrustedobject;
 type gps_emi_device, dev_type;
 type stpgps_device, dev_type;
 type gps2scp_device, dev_type;
+type aol_geofence_device, dev_type;
 type gps_pwr_device, dev_type;
 type gpsdl_device, dev_type;
 type connfem_device, dev_type;
