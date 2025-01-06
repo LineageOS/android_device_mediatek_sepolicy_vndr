@@ -4,5 +4,8 @@
 
 hal_attribute_hwservice(hal_mtk_pq, mtk_hal_pq_hwservice)
 
+allow hal_mtk_pq_client mtk_hal_pq_service:service_manager find;
+allow hal_mtk_pq_server mtk_hal_pq_service:service_manager { add find };
+
 binder_call(hal_mtk_pq_client, hal_mtk_pq_server)
 binder_call(hal_mtk_pq_server, hal_mtk_pq_client)
