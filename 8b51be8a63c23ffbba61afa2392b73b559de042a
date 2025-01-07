@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a0daf069_1c2ea313",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2025-01-07T08:57:27Z",
+      "side": 1,
+      "message": "Already labelled on `basic/non_plat/mtk_hal_pq.te`.",
+      "revId": "8b51be8a63c23ffbba61afa2392b73b559de042a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
