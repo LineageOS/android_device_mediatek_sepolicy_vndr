@@ -16,6 +16,24 @@
       "message": "Squash with 414451 ?",
       "revId": "b9c3cb8c4cdf8f1735d31135e3dcbec4afafcca4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6b5e826f_0ed2f5ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 30766
+      },
+      "writtenOn": "2025-01-07T09:21:49Z",
+      "side": 1,
+      "message": "i just followed old commits where bsp and basoc commits were split",
+      "parentUuid": "fde541dd_1e93966e",
+      "revId": "b9c3cb8c4cdf8f1735d31135e3dcbec4afafcca4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
