@@ -796,6 +796,7 @@
 # Widevine drm hal(include lazy hal)
 /vendor/bin/hw/android\.hardware\.drm@[0-9]+\.[0-9]+-service\.widevine      u:object_r:hal_drm_widevine_exec:s0
 /vendor/bin/hw/android\.hardware\.drm@[0-9]+\.[0-9]+-service-lazy\.widevine u:object_r:hal_drm_widevine_exec:s0
+/vendor/bin/hw/android\.hardware\.drm-service(-lazy)?\.widevine  u:object_r:hal_drm_widevine_exec:s0
 
 # Cleaarkey hal(include lazy hal)
 /vendor/bin/hw/android\.hardware\.drm@[0-9]+\.[0-9]+-service\.clearkey      u:object_r:hal_drm_clearkey_exec:s0
