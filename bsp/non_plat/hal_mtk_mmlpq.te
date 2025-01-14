@@ -1,0 +1,5 @@
+allow hal_mtk_mmlpq_client mtk_hal_mmlpq_service:service_manager find;
+allow hal_mtk_mmlpq_server mtk_hal_mmlpq_service:service_manager { add find };
+
+binder_call(hal_mtk_mmlpq_client, hal_mtk_mmlpq_server)
+binder_call(hal_mtk_mmlpq_server, hal_mtk_mmlpq_client)
