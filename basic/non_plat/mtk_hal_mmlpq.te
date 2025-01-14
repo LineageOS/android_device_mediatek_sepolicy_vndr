@@ -1,0 +1,23 @@
+type mtk_hal_mmlpq, domain;
+type mtk_hal_mmlpq_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(mtk_hal_mmlpq)
+
+binder_call(mtk_hal_mmlpq, system_server)
+binder_use(mtk_hal_mmlpq)
+
+hal_client_domain(mtk_hal_mmlpq, hal_mtk_mmagent)
+hal_client_domain(mtk_hal_mmlpq, hal_mtk_pq)
+hal_client_domain(mtk_hal_mmlpq, hal_allocator)
+hal_server_domain(mtk_hal_mmlpq, hal_mtk_mmlpq)
+
+set_prop(mtk_hal_mmlpq, vendor_mtk_pq_prop)
+
+allow mtk_hal_mmlpq fwk_sensor_hwservice:hwservice_manager find;
+allow mtk_hal_mmlpq gpu_device:dir search;
+allow mtk_hal_mmlpq dri_device:chr_file rw_file_perms;
+allow mtk_hal_mmlpq mml_pq_device:chr_file rw_file_perms;
+allow mtk_hal_mmlpq graphics_device:chr_file rw_file_perms;
+allow mtk_hal_mmlpq self:capability sys_nice;
+allow mtk_hal_mmlpq dmabuf_system_heap_device:chr_file rw_file_perms;
+allow mtk_hal_mmlpq hal_graphics_allocator_default:fd use;
