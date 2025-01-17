@@ -479,6 +479,7 @@
 /dev/ttyCMIPC0         u:object_r:gsm0710muxd_device:s0
 /dev/ttyCMIPC1         u:object_r:gsm0710muxd_device:s0
 /dev/ttyCMIPC2         u:object_r:gsm0710muxd_device:s0
+/dev/ttyCMIPC5         u:object_r:gsm0710muxd_device:s0
 /dev/ttyCMIPC9         u:object_r:gsm0710muxd_device:s0
 /dev/ttyC1     u:object_r:mdlog_device:s0
 /dev/ttyC2     u:object_r:agps_device:s0

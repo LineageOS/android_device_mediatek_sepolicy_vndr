@@ -122,3 +122,7 @@ allow mnld nvcfg_file:file create_file_perms;
 
 # For mnld to read /proc/bootconfig
 allow mnld proc_bootconfig:file r_file_perms;
+
+# Allow to read /sys/kernel/ccci/*
+allow mnld sysfs_ccci:dir search;
+allow mnld sysfs_ccci:file r_file_perms;
