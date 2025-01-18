@@ -15,3 +15,6 @@ vendor.mediatek.hardware.pq_aidl.IPictureQuality_AIDL/default u:object_r:mtk_hal
 
 #widevine aidl
 android.hardware.drm.IDrmFactory/widevine    u:object_r:hal_drm_service:s0
+
+#apusys aidl
+vendor.mediatek.hardware.apuware.apusys.INeuronApusys/default u:object_r:hal_neuralnetworks_service:s0
