@@ -56,10 +56,6 @@ allow init mtk_hal_bluetooth_exec:file getattr;
 # Purpose: Enable PRODUCT_FULL_TREBLE
 allow init vendor_block_device:lnk_file relabelto;
 
-# Date : WK17.21
-# Purpose: Fix gnss hal service fail
-allow init mtk_hal_gnss_exec:file getattr;
-
 # Fix boot up violation
 allow init debugfs_tracing_instances:file relabelfrom;
 

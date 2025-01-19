@@ -29,7 +29,7 @@ allow fpsgo_native mediaextractor:process setsched;
 allow fpsgo_native hal_audio_default:process setsched;
 allow fpsgo_native hal_sensors_default:process setsched;
 allow fpsgo_native mtk_hal_c2:process setsched;
-allow fpsgo_native mtk_hal_gnss:process setsched;
+allow fpsgo_native hal_gnss_default:process setsched;
 allow fpsgo_native mtk_hal_power:process setsched;
 allow fpsgo_native netd:process setsched;
 allow fpsgo_native platform_app:process setsched;

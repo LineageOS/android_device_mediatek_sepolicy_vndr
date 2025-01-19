@@ -6,3 +6,8 @@
 allow hal_gnss_default mnld_data_file:sock_file create_file_perms;
 allow hal_gnss_default mnld_data_file:dir create_dir_perms;
 allow hal_gnss_default mnld:unix_dgram_socket sendto;
+
+#get waks_alarm timer create prop
+allow hal_gnss_default hal_gnss_default:capability2 wake_alarm;
+
+allow hal_gnss_default aol_geofence_device:chr_file rw_file_perms_no_map;

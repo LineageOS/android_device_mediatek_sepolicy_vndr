@@ -84,8 +84,8 @@ allow mnld storage_file:lnk_file r_file_perms;
 # Purpose : for device bring up, not to block early migration/sanity
 allow mnld proc_lk_env:file rw_file_perms;
 
-# For HIDL, communicate mtk_hal_gnss instead of system_server
-allow mnld mtk_hal_gnss:unix_dgram_socket sendto;
+# For HIDL, communicate hal_gnss_default instead of system_server
+allow mnld hal_gnss_default:unix_dgram_socket sendto;
 
 # Purpose : MPE sensor HIDL policy
 hwbinder_use(mnld)
