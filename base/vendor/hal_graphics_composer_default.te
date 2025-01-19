@@ -120,3 +120,6 @@ get_prop(hal_graphics_composer_default, vendor_mtk_svp_on_mtee_support_prop)
 # Data: WK21.35
 # Purpose: Call NpAgent
 hal_client_domain(hal_graphics_composer_default,hal_neuralnetworks)
+
+# Allow access to read /sys/devices/virtual/switch/hdmi/
+r_dir_file(hal_graphics_composer_default, sysfs_switch)
