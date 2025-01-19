@@ -22,8 +22,9 @@ vendor.mediatek.hardware.mtkpower_applist.IMtkpower_applist/default u:object_r:m
 #widevine aidl
 android.hardware.drm.IDrmFactory/widevine    u:object_r:hal_drm_service:s0
 
-#apusys aidl
+#apuware aidl
 vendor.mediatek.hardware.apuware.apusys.INeuronApusys/default u:object_r:hal_neuralnetworks_service:s0
+vendor.mediatek.hardware.apuware.utils.IApuwareUtils/default u:object_r:hal_neuralnetworks_service:s0
 
 #aovservice aidl
 vendor.mediatek.hardware.camera.aovservice.IAovService/default u:object_r:hal_camera_service:s0
