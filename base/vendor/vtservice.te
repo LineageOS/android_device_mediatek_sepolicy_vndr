@@ -179,3 +179,5 @@ hal_client_domain(vtservice, hal_codec2)
 # Operation: VT c2 for dmabuf heap
 allow vtservice dmabuf_system_heap_device:chr_file r_file_perms;
 
+# Allow calls between vtservice and videotelephony AIDL
+hal_client_domain(vtservice, hal_mtk_videotelephony)

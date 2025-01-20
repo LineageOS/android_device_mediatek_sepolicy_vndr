@@ -1,0 +1,5 @@
+binder_call(hal_mtk_videotelephony_client, hal_mtk_videotelephony_server)
+binder_call(hal_mtk_videotelephony_server, hal_mtk_videotelephony_client)
+binder_call(hal_mtk_videotelephony, servicemanager)
+
+hal_attribute_service(hal_mtk_videotelephony, mtk_hal_videotelephony_service)

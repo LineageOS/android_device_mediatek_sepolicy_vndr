@@ -1003,6 +1003,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.wfo@1\.0-service       u:object_r:mtk_hal_wfo_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.clientapi@1\.0-service u:object_r:volte_clientapi_ua_exec:s0
 /(vendor|system/vendor)/bin/hw/vtservice_hidl                                     u:object_r:vtservice_hidl_exec:s0
+/(vendor|system/vendor)/bin/hw/vtservice_aidl                                     u:object_r:mtk_hal_videotelephony_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.rcs@1\.0-service       u:object_r:volte_rcs_ua_exec:s0
 /(vendor|system/vendor)/bin/STFlashTool                                           u:object_r:stflashtool_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.dfps@1\.0-service      u:object_r:mtk_hal_dfps_exec:s0

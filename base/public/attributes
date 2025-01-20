@@ -250,3 +250,8 @@ attribute hal_teei_wechat_server;
 attribute hal_mtk_composer_ext;
 attribute hal_mtk_composer_ext_client;
 attribute hal_mtk_composer_ext_server;
+
+# Video Telephony AIDL
+attribute hal_mtk_videotelephony;
+attribute hal_mtk_videotelephony_client;
+attribute hal_mtk_videotelephony_server;

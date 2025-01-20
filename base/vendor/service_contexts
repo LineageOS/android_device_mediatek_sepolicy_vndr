@@ -37,3 +37,6 @@ vendor.mediatek.hardware.gnss.IMtkGnss/default u:object_r:hal_gnss_service:s0
 
 # Composer Extension
 vendor.mediatek.hardware.composer_ext.IComposerExt/default u:object_r:mtk_hal_composer_ext_service:s0
+
+# Video Telephony AIDL
+vendor.mediatek.hardware.videotelephony.IVideoTelephony/default u:object_r:mtk_hal_videotelephony_service:s0
