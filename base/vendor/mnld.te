@@ -126,3 +126,6 @@ allow mnld proc_bootconfig:file r_file_perms;
 # Allow to read /sys/kernel/ccci/*
 allow mnld sysfs_ccci:dir search;
 allow mnld sysfs_ccci:file r_file_perms;
+
+# Allow to rw /dev/ttyCMIPC5
+allow mnld gsm0710muxd_device:chr_file rw_file_perms;
