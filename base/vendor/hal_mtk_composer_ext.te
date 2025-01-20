@@ -1,0 +1,9 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+binder_call(hal_mtk_composer_ext_client, hal_mtk_composer_ext_server)
+binder_call(hal_mtk_composer_ext_server, hal_mtk_composer_ext_client)
+binder_call(hal_mtk_composer_ext_server, servicemanager)
+
+hal_attribute_service(hal_mtk_composer_ext, mtk_hal_composer_ext_service)

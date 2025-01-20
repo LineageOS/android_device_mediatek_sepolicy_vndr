@@ -245,3 +245,8 @@ attribute hal_teei_capi_server;
 attribute hal_teei_wechat;
 attribute hal_teei_wechat_client;
 attribute hal_teei_wechat_server;
+
+# Composer Extension AIDL
+attribute hal_mtk_composer_ext;
+attribute hal_mtk_composer_ext_client;
+attribute hal_mtk_composer_ext_server;
