@@ -4,3 +4,4 @@ type mtk_hal_applist_service, protected_service, hal_service_type, service_manag
 type mtk_hal_mmagent_service, protected_service, hal_service_type, service_manager_type;
 type mtk_hal_composer_ext_service, protected_service, hal_service_type, service_manager_type;
 type mtk_hal_videotelephony_service, protected_service, hal_service_type, service_manager_type;
+type mtk_hal_netdagent_service, protected_service, hal_service_type, service_manager_type;

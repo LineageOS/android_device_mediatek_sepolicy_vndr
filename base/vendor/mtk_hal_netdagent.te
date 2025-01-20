@@ -4,3 +4,4 @@ binder_call(mtk_hal_netdagent_server, mtk_hal_netdagent_client)
 
 add_hwservice(mtk_hal_netdagent_server, mtk_hal_netdagent_hwservice)
 allow mtk_hal_netdagent_client mtk_hal_netdagent_hwservice:hwservice_manager find;
+hal_attribute_service(mtk_hal_netdagent, mtk_hal_netdagent_service)

@@ -10,6 +10,7 @@ type netdagent_exec, exec_type, file_type, vendor_file_type;
 
 init_daemon_domain(netdagent)
 domain_auto_trans(netdagent, netutils_wrapper_exec, netutils_wrapper)
+binder_use(netdagent)
 
 allow netdagent devpts:chr_file rw_file_perms;
 allow netdagent usermodehelper:file r_file_perms;
