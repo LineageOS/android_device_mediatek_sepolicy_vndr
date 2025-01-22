@@ -14,6 +14,7 @@ hal_server_domain(mtk_hal_mmlpq, hal_mtk_mmlpq)
 set_prop(mtk_hal_mmlpq, vendor_mtk_pq_prop)
 
 allow mtk_hal_mmlpq fwk_sensor_hwservice:hwservice_manager find;
+allow mtk_hal_mmlpq fwk_sensor_service:service_manager find;
 allow mtk_hal_mmlpq gpu_device:dir search;
 allow mtk_hal_mmlpq dri_device:chr_file rw_file_perms;
 allow mtk_hal_mmlpq mml_pq_device:chr_file rw_file_perms;
