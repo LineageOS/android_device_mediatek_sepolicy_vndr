@@ -54,3 +54,6 @@ allow mtk_hal_nvramagent sysfs_boot_mode:file r_file_perms;
 r_dir_file(mtk_hal_nvramagent, sysfs_dt_firmware_android)
 
 allow mtk_hal_nvramagent sysfs_dt_firmware_android:file r_file_perms;
+
+# Allow nvramagent to use Binder IPC.
+binder_use(mtk_hal_nvramagent)

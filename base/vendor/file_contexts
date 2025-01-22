@@ -791,6 +791,7 @@
 /(vendor|system/vendor)/bin/mtkrild                                                u:object_r:mtkrild_exec:s0
 /(vendor|system/vendor)/bin/muxreport                                              u:object_r:muxreport_exec:s0
 /(vendor|system/vendor)/bin/nvram_agent_binder                                     u:object_r:mtk_hal_nvramagent_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.nvram(.*)-service       u:object_r:mtk_hal_nvramagent_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.nvram@(.*)-service      u:object_r:mtk_hal_nvramagent_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.nvram@(.*)-service-lazy u:object_r:mtk_hal_nvramagent_exec:s0
 /(vendor|system/vendor)/bin/nvram_daemon                                           u:object_r:nvram_daemon_exec:s0

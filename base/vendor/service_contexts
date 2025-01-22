@@ -43,3 +43,6 @@ vendor.mediatek.hardware.videotelephony.IVideoTelephony/default u:object_r:mtk_h
 
 # Netdagents AIDL
 vendor.mediatek.hardware.netdagent.INetdagents/default   u:object_r:mtk_hal_netdagent_service:s0
+
+# Nvram
+vendor.mediatek.hardware.nvram.INvram/default u:object_r:mtk_hal_nvramagent_service:s0
