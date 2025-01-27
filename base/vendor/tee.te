@@ -103,3 +103,6 @@ get_prop(tee, vendor_mtk_ise_prop)
 
 # tee-supplicant tries to rmdir its non-empty storage directory
 dontaudit tee vendor_data_file:dir { write remove_name };
+
+# Handle wake locks
+wakelock_use(tee)
