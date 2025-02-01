@@ -524,6 +524,8 @@ allowxperm mtk_hal_camera proc_c2ps:file ioctl {
 allow mtk_hal_camera proc_ppb:dir search;
 allow mtk_hal_camera proc_ppb:file rw_file_perms;
 allow mtk_hal_camera proc_curr_cpu_loading:file r_file_perms;
+allow mtk_hal_camera proc_pressure_cpu:file rw_file_perms;
+allow mtk_hal_camera proc_pressure_io:file rw_file_perms;
 
 # Date : WK23.35
 # Operation : 3rd party camera policy
