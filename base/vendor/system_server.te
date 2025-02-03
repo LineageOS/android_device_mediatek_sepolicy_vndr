@@ -426,3 +426,6 @@ allow system_server proc_stat:dir search;
 # Purpose: InputReader read files under power_supply to detect battery device
 allow system_server sysfs_power_supply:dir {r_dir_perms};
 allow system_server sysfs_power_supply:file r_file_perms;
+
+# Allow to perform binder IPC to mtk_hal_mmlpq.
+binder_call(system_server, mtk_hal_mmlpq)
