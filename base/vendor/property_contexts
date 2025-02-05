@@ -439,6 +439,8 @@ persist.vendor.vonr_setting_support u:object_r:vendor_mtk_vonr_support_prop:s0
 
 persist.vendor.mtk_wfc_support u:object_r:vendor_mtk_wfc_support_prop:s0
 
+persist.vendor.mtk.vodata.enable u:object_r:vendor_mtk_wfc_prop:s0
+
 persist.vendor.vilte_support u:object_r:vendor_mtk_vilte_support_prop:s0
 
 persist.vendor.viwifi_support u:object_r:vendor_mtk_viwifi_support_prop:s0
