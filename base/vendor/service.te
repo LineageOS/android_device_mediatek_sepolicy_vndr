@@ -7,3 +7,4 @@ type mtk_hal_videotelephony_service, protected_service, hal_service_type, servic
 type mtk_hal_netdagent_service, protected_service, hal_service_type, service_manager_type;
 type mtk_hal_nvramagent_service, protected_service, hal_service_type, service_manager_type;
 type mtk_hal_mali_platform_default_service, hal_service_type, service_manager_type;
+type mtk_hal_em_service, protected_service, hal_service_type, service_manager_type;

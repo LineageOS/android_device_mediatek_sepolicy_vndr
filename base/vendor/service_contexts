@@ -52,3 +52,6 @@ vendor.mediatek.hardware.nvram.INvram/default u:object_r:mtk_hal_nvramagent_serv
 
 # Arm Mali
 arm.mali.platform.ICompression/default u:object_r:mtk_hal_mali_platform_default_service:s0
+
+# Engineering Mode
+vendor.mediatek.hardware.engineermode.IEmds/default   u:object_r:mtk_hal_em_service:s0

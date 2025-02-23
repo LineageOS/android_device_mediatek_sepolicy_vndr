@@ -3,6 +3,7 @@
 # ==============================================
 
 hal_attribute_hwservice(hal_mtk_em, mtk_hal_em_hwservice)
+hal_attribute_service(hal_mtk_em, mtk_hal_em_service)
 
 binder_call(hal_mtk_em_client, hal_mtk_em_server)
 binder_call(hal_mtk_em_server, hal_mtk_em_client)
