@@ -237,6 +237,7 @@ vendor_restricted_prop(vendor_mtk_subsidy_lock_support_prop)
 vendor_restricted_prop(vendor_mtk_magt_support_prop)
 vendor_restricted_prop(vendor_mtk_magt_version_prop)
 vendor_restricted_prop(vendor_mtk_magt_app_support_prop)
+vendor_restricted_prop(vendor_mtk_cnop_vowifi_prop)
 #=============allow wifi offload deamon  ==============
 vendor_restricted_prop(vendor_mtk_wod_prop)
 vendor_restricted_prop(vendor_mtk_persist_wod_prop)

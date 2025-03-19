@@ -246,3 +246,6 @@ set_prop(rild, vendor_mtk_vinr_prop)
 # Operation: IMS Config NR force value
 # Purpose: Allow rild to force set IMS NR feature
 set_prop(rild, vendor_mtk_vonr_force_prop)
+
+# CNOP VOWIFI support
+get_prop(rild, vendor_mtk_cnop_vowifi_prop)
