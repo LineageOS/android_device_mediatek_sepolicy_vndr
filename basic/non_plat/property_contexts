@@ -70,8 +70,10 @@ vendor.sms.md.ready	    u:object_r:vendor_mtk_md_prop:s0
 # factory idle current prop
 vendor.debug.factory.idle_state u:object_r:vendor_mtk_factory_idle_state_prop:s0
 
+# nvram daemon
 vendor.service.nvram_init u:object_r:vendor_mtk_service_nvram_init_prop:s0
 vendor.service.nvram_restore u:object_r:vendor_mtk_service_nvram_restore_prop:s0
+vendor.service.wifi_nvram u:object_r:vendor_mtk_service_wifi_nvram_prop:s0
 
 # Camera APP Mode
 vendor.client. u:object_r:vendor_mtk_em_prop:s0
