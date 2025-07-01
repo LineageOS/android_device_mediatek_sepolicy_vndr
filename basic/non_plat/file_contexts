@@ -892,6 +892,7 @@
 /vendor/lib(64)?/libgralloc_extra\.so              u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgpu_aux\.so                    u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgpud\.so                       u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libaedv\.so                       u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgralloc_metadata\.so           u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgralloctypes_mtk\.so           u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libged\.so                        u:object_r:same_process_hal_file:s0
