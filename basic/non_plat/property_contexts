@@ -315,9 +315,11 @@ ro.vendor.bluetooth.noconsyschip u:object_r:vendor_mtk_default_prop:s0
 # mtk gpu property
 vendor.debug.gpu.  u:object_r:vendor_mtk_gpu_prop:s0
 vendor.debug.gpud. u:object_r:vendor_mtk_gpu_prop:s0
-vendor.mali.config u:object_r:vendor_mtk_gpu_prop:s0
+vendor.mali. u:object_r:vendor_mtk_gpu_prop:s0
+persist.vendor.debug.gpud. u:object_r:vendor_mtk_gpu_prop:s0
 ro.vendor.game_aisr_enable u:object_r:vendor_mtk_gpu_prop:s0
 ro.vendor.mtk.gpu. u:object_r:vendor_mtk_gpu_prop:s0
+ro.vendor.arm. u:object_r:vendor_mtk_gpu_prop:s0
 
 # mtk aod property
 ro.vendor.mtk_aod_support u:object_r:vendor_mtk_aod_support_prop:s0
