@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "853d2765_abe8e462",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34203
+      },
+      "writtenOn": "2025-08-02T20:10:40Z",
+      "side": 1,
+      "message": "For lineage-23.0",
+      "revId": "838790b45a1289ff0929b83a10ad6ab6d05d2f7d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
