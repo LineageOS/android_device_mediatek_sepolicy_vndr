@@ -857,6 +857,7 @@
 /(vendor|system/vendor)/bin/hw/mt[0-9]+[a-z]*/android\.hardware\.graphics\.allocator-V[0-9]+-service-mediatek\.mt[0-9]+[a-z]* u:object_r:hal_graphics_allocator_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.media\.c2@1\.2-mediatek                   u:object_r:mtk_hal_c2_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.media\.c2@1\.2-mediatek-64b               u:object_r:mtk_hal_c2_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.media\.c2-mediatek-64b                    u:object_r:mtk_hal_c2_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.memtrack-service\.mediatek                u:object_r:mtk_hal_memtrack_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkcodecservice@1\.1-service     u:object_r:hal_mtkcodecservice_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.mediatek                  u:object_r:hal_health_default_exec:s0
