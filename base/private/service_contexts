@@ -64,6 +64,10 @@ ifaa_service     u:object_r:teei_ifaa_service:s0
 
 # Data: 2022/01/04
 # add telephony aidl
+vendor.mediatek.hardware.mtkradioex.dch.IMtkRadioExDc/slot1              u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.dch.IMtkRadioExDc/slot2              u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.dch.IMtkRadioExDc/slot3              u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.dch.IMtkRadioExDc/slot4              u:object_r:hal_radio_service:s0
 vendor.mediatek.hardware.mtkradioex.data.IMtkRadioExData/slot1           u:object_r:hal_radio_service:s0
 vendor.mediatek.hardware.mtkradioex.data.IMtkRadioExData/slot2           u:object_r:hal_radio_service:s0
 vendor.mediatek.hardware.mtkradioex.data.IMtkRadioExData/slot3           u:object_r:hal_radio_service:s0
