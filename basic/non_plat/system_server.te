@@ -179,10 +179,6 @@ allow system_server sysfs_boot_mode:file r_file_perms;
 
 # Date : 2019/10/22
 # Operation : Q Migration
-allow system_server self:capability sys_module;
-
-# Date : 2019/10/22
-# Operation : Q Migration
 dontaudit system_server sdcardfs:file r_file_perms;
 
 # Date : 2019/10/26
