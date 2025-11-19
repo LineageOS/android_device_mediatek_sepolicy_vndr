@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "791f4bbf_ccd82c62",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28270
+      },
+      "writtenOn": "2025-11-19T16:00:51Z",
+      "side": 1,
+      "message": "Need for Android 16 QPR1",
+      "revId": "51080cea12dea2c29a4630263e2091e2b776e6a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
