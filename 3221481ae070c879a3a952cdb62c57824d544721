@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e6d1c1c5_a23a3eff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28270
+      },
+      "writtenOn": "2025-12-04T16:35:41Z",
+      "side": 1,
+      "message": "Needed for Android 16 QPR2\nBump to whatever branch it will be",
+      "revId": "3221481ae070c879a3a952cdb62c57824d544721",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
