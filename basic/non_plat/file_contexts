@@ -952,6 +952,9 @@
 /vendor/lib(64)?/libnir_neon_driver_ndk.mtk.vndk\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libcmdl_ndk.mtk.vndk\.so       u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libarmnn_ndk.mtk.vndk\.so      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libflatbuffers-cpp.so          u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libruy.so                      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libtextclassifier_hash.so      u:object_r:same_process_hal_file:s0
 
 # Date: 2018/07/06
 # Purpose for same-process HAL files and their dependencies: libGLES_mali.so need libm4u.so on mali GPU.
