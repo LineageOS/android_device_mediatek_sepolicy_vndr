@@ -55,3 +55,6 @@ arm.mali.platform.ICompression/default u:object_r:mtk_hal_mali_platform_default_
 
 # Engineering Mode
 vendor.mediatek.hardware.engineermode.IEmds/default   u:object_r:mtk_hal_em_service:s0
+
+# Audio
+vendor.mediatek.hardware.audio.IMtkAudio/default u:object_r:mtk_hal_audio_service:s0

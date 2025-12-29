@@ -4,6 +4,7 @@
 wakelock_use(hal_audio_default)
 
 add_hwservice(hal_audio_default, mtk_hal_bluetooth_audio_hwservice)
+add_service(hal_audio_default, mtk_hal_audio_service)
 allow hal_audio_default ion_device:chr_file r_file_perms;
 
 allow hal_audio_default system_file:dir r_dir_perms;
