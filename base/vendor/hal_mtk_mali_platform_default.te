@@ -1,0 +1,9 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+add_service(hal_mtk_mali_platform_default_server, mtk_hal_mali_platform_default_service)
+allow hal_mtk_mali_platform_default_client mtk_hal_mali_platform_default_service:service_manager find;
+
+binder_call(hal_mtk_mali_platform_default_client, hal_mtk_mali_platform_default_server)
+binder_call(hal_mtk_mali_platform_default_server, hal_mtk_mali_platform_default_client)

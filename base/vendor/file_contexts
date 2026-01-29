@@ -1363,3 +1363,8 @@
 /(system\/vendor|vendor)/bin/volte_imsm_93 u:object_r:volte_imsm_93_exec:s0
 
 /(system\/vendor|vendor)/bin/volte_md_status u:object_r:volte_md_status_exec:s0
+
+# Mali GPU AIDL
+/vendor/bin/hw/arm\.mali\.platform-service\.mediatek u:object_r:mtk_hal_mali_platform_default_exec:s0
+/vendor/bin/hw/mt[0-9]+[a-z]*/arm\.mali\.platform-service\.mediatek\.mt[0-9]+[a-z]* u:object_r:mtk_hal_mali_platform_default_exec:s0
+/vendor/bin/hw/mt[0-9]+[a-z]*/arm\.mali\.platform-service\.mediatek\.mt[0-9]+[a-z]*_r[0-9]+p[0-9]+ u:object_r:mtk_hal_mali_platform_default_exec:s0

@@ -1,0 +1,11 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+type mtk_hal_mali_platform_default, domain, mtk_safe_halserverdomain_type;
+type mtk_hal_mali_platform_default_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(mtk_hal_mali_platform_default)
+hal_server_domain(mtk_hal_mali_platform_default, hal_mtk_mali_platform_default)
+
+binder_use(mtk_hal_mali_platform_default)
