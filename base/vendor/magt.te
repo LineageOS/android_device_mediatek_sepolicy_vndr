@@ -1,0 +1,37 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+allow magt gpu_device:chr_file rw_file_perms;
+allow magt proc_meminfo:file r_file_perms;
+allow magt cgroup:file r_file_perms;
+allow magt proc_ged:file r_file_perms;
+allowxperm magt proc_ged:file ioctl {
+    GED_BRIDGE_IO_QUERY_INFO
+    GED_BRIDGE_IO_QUERY_GPU_DVFS_INFO
+};
+allow magt proc_perfmgr:dir search;
+allow magt proc_perfmgr:file r_file_perms;
+# Note: The two first ioctl are for compatibility with older powerhal.
+allowxperm magt proc_perfmgr:file ioctl {
+    PERFMGR_GET_CPU_LOADING
+    PERFMGR_GET_PERF_INDEX
+    PERFMGR_MAGT_GET_CPU_LOADING
+    PERFMGR_MAGT_GET_PERF_INDEX
+    PERFMGR_MAGT_SET_TARGET_FPS
+    PERFMGR_MAGT_SET_DEP_LIST
+};
+allow magt sysfs_perfmgr:dir search;
+allow magt sysfs_perfmgr:file r_file_perms;
+allow magt sysfs_fpsgo:dir search;
+allow magt sysfs_fpsgo:file r_file_perms;
+allow magt sysfs_mtk_fpsgo:dir search;
+allow magt sysfs_mtk_fpsgo:file { w_file_perms getattr };
+allow magt sysfs_ged:dir search;
+allow magt sysfs_ged:file r_file_perms;
+
+get_prop(magt, vendor_mtk_magt_support_prop)
+get_prop(magt, vendor_mtk_magt_version_prop)
+get_prop(magt, vendor_mtk_magt_app_support_prop)
+
+hal_client_domain(magt, hal_power)

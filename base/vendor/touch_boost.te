@@ -1,0 +1,17 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+type touch_boost_exec, exec_type, file_type, vendor_file_type;
+type touch_boost, domain;
+
+init_daemon_domain(touch_boost)
+
+allow touch_boost self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+allow touch_boost sysfs_boot_mode:file r_file_perms;
+hal_client_domain(touch_boost, hal_power)
+allow touch_boost proc_perfmgr:dir r_dir_perms;
+allow touch_boost proc_perfmgr:file rw_file_perms;
+allowxperm touch_boost proc_perfmgr:file ioctl {
+    PERFMGR_TOUCH_BOOST_GET_CMD
+};

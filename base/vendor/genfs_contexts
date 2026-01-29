@@ -24,6 +24,11 @@ genfscon proc /mtd                           u:object_r:proc_mtd:s0
 genfscon proc /ged                           u:object_r:proc_ged:s0
 genfscon proc /mtk_jpeg                      u:object_r:proc_mtk_jpeg:s0
 genfscon proc /perfmgr                       u:object_r:proc_perfmgr:s0
+genfscon proc /cpuqosmgr                     u:object_r:proc_cpuqosmgr:s0
+genfscon proc /cpumgr                        u:object_r:proc_cpumgr:s0
+genfscon proc /easmgr                        u:object_r:proc_easmgr:s0
+genfscon proc /powerhal_cpu_ctrl             u:object_r:proc_powerhal_cpu_ctrl:s0
+genfscon proc /touch_boost                   u:object_r:proc_touch_boost:s0
 genfscon proc /driver/wmt_dbg                u:object_r:proc_wmtdbg:s0
 genfscon proc /zraminfo                      u:object_r:proc_zraminfo:s0
 genfscon proc /gpulog                        u:object_r:proc_gpulog:s0
@@ -45,6 +50,7 @@ genfscon proc /mtk_cmdq_debug/record         u:object_r:proc_cmdq_debug:s0
 genfscon proc /cpuhvfs/dbg_repo              u:object_r:proc_dbg_repo:s0
 genfscon proc /sys/kernel/panic_on_rcu_stall u:object_r:proc_panic_on_rcu_stall:s0
 genfscon proc /sys/kernel/sched_pelt_multiplier u:object_r:proc_sched:s0
+genfscon proc /c2ps                          u:object_r:proc_c2ps:s0
 
 # Purpose dump not exit file
 genfscon proc /isp_p2/isp_p2_dump     u:object_r:proc_isp_p2_dump:s0
@@ -167,6 +173,12 @@ genfscon proc /cpu_loading/specify_overThrhld           u:object_r:proc_cpu_load
 # For CachedAppOptimizer
 genfscon proc /freqhopping u:object_r:proc_freqhopping:s0
 
+#For powerhal w/ peak power node.
+genfscon proc /ppb                           u:object_r:proc_ppb:s0
+
+# For camera read current cpu loading
+genfscon proc /cpu_loading/curr_cpu_loading             u:object_r:proc_curr_cpu_loading:s0
+
 ##########################
 # sysfs files
 #
@@ -268,6 +280,7 @@ genfscon sysfs /class/powercap u:object_r:sysfs_therm:s0
 genfscon sysfs /devices/virtual/powercap u:object_r:sysfs_therm:s0
 genfscon sysfs /kernel/thermal u:object_r:sysfs_thermal_sram:s0
 genfscon sysfs /kernel/charger_cooler u:object_r:sysfs_charger_cooler:s0
+genfscon sysfs /devices/platform/efuse@11e80000/mtk-devinfo0/nvmem  u:object_r:sysfs_thermal_efuse:s0
 
 genfscon sysfs /devices/virtual/switch/fps u:object_r:sysfs_fps:s0
 
@@ -685,6 +698,14 @@ genfscon sysfs /devices/platform/charger/fast_chg_indicator   u:object_r:sysfs_f
 # Operation: S migration
 # Purpose: Add permission for inputReader search every input device path including "power_supply"
 genfscon sysfs /devices/virtual/power_supply u:object_r:sysfs_power_supply:s0
+
+# 2022/08/16
+# Purpose: Allow powerhal to control kernel resources
+genfscon sysfs /module/mtk_perf_ioctl_magt     u:object_r:sysfs_perfmgr:s0
+
+# Date: 2023/05/19
+# Purpose: Add permission for PowerHAL to access C2PS
+genfscon sysfs /module/mtk_c2ps     u:object_r:sysfs_mtk_c2ps:s0
 
 ##########################
 # debugfs files

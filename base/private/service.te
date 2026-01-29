@@ -27,6 +27,7 @@ type gas_srv_service, service_manager_type;
 type fpspolicy-server_service, service_manager_type;
 type mtk_carrierexpress_service, app_api_service, service_manager_type;
 type vtservice_service, service_manager_type;
+type magt_service, app_api_service, service_manager_type;
 type ppl_agent_service, service_manager_type;
 type mtk_gwsd_service, service_manager_type;
 type tee_service, service_manager_type;

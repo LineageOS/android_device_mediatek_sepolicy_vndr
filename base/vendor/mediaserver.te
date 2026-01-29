@@ -289,6 +289,8 @@ allowxperm mediaserver proc_perfmgr:file ioctl {
  PERFMGR_FPSGO_QUEUE_CONNECT
  PERFMGR_FPSGO_QUEUE
  PERFMGR_FPSGO_BQID
+ PERFMGR_FPSGO_ACQUIRE
+ PERFMGR_FPSGO_BUFFER_QUOTA
 };
 
 # Date : WK18.18
@@ -394,14 +396,6 @@ allow mediaserver system_app:file open;
 # Purpose: Allow read and getattr path="/data/data/com.mediatek.voicecommand/training
 # /anyone/passwordfile/0.dat"
 allow mediaserver system_app_data_file:file { read getattr };
-
-# Date : WK19.16
-# Operation : WFD
-# Purpose: Allow ioctl
-allowxperm mediaserver proc_perfmgr:file ioctl {
-  PERFMGR_FPSGO_QUEUE
-  PERFMGR_FPSGO_DEQUEUE
-};
 
 # Date : WK19.43
 # Operation : HDCP

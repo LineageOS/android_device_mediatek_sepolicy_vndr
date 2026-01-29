@@ -98,6 +98,11 @@ set_prop(system_server, wifi_prop)
 set_prop(system_server, system_mtk_logmuch_prop)
 binder_call(system_server, hal_mtk_fm)
 
+# Date : 2022/06/08
+# Purpose : allow system server to mtkpower applist
+hal_client_domain(system_server, hal_mtk_applist)
+get_prop(system_server, system_mtk_powerhal_prop)
+
 # Date: 2018/07/04
 # Operation: P migration
 # Purpose : allow radio get vzw device type property
@@ -212,3 +217,8 @@ dontaudit system_server vfat:dir r_dir_perms;
 # Date:2021/11/13
 # Operation: Add for DSDA in Telecom, add permission for accessing vendor.radio.dsda.state
 get_prop(system_server, system_mtk_common_data_prop)
+
+# Date:2023/06/16
+# Support system server binder call MAGT service
+binder_call(system_server, magt)
+allow system_server magt_service:service_manager find;

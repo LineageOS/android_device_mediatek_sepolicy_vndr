@@ -132,6 +132,8 @@ allowxperm system_server proc_perfmgr:file ioctl {
   PERFMGR_FPSGO_QUEUE_CONNECT
   PERFMGR_FPSGO_BQID
   PERFMGR_FPSGO_SWAP_BUFFER
+  PERFMGR_FPSGO_ACQUIRE
+  PERFMGR_FPSGO_BUFFER_QUOTA
 };
 
 # Date : W18.22
@@ -257,8 +259,16 @@ dontaudit system_server eara_io:process sigkill;
 dontaudit system_server hal_audio_default:process sigkill;
 dontaudit system_server mtk_hal_c2:process sigkill;
 
-# Search /proc/mgq
+# Date:2023/04/06
+# allow system server Search powerHal point
 allow system_server proc_mgq:dir search;
+allow system_server proc_easmgr:dir search;
+allow system_server proc_cpumgr:dir search;
+allow system_server proc_cpuqosmgr:dir search;
+allow system_server proc_powerhal_cpu_ctrl:dir search;
+allow system_server proc_touch_boost:dir search;
+dontaudit system_server proc_c2ps:dir search;
+dontaudit system_server proc_ppb:dir search;
 
 # when anr dump process, SystemServer need send sigal
 allow system_server mtk_hal_pq:process signal;
@@ -276,6 +286,11 @@ allow system_server sf_rtt_file:dir { relabelto r_dir_perms };
 # Operation : MTBF
 # Purpose : for debug
 allow system_server sf_rtt_file:file r_file_perms;
+
+# Dat: 2023/07/24
+# Purpose: allow to get magt enable property
+get_prop(system_server, vendor_mtk_magt_support_prop)
+get_prop(system_server, vendor_mtk_magt_version_prop)
 
 # Date: WK14.47
 # Operation : Sanity

@@ -92,6 +92,7 @@ system_restricted_prop(system_mtk_amslog_prop)
 
 # Properties which can be written only by vendor_init
 system_vendor_config_prop(system_mtk_graphics_sf_gll_ro_prop)
+system_vendor_config_prop(system_mtk_powerhal_prop)
 system_vendor_config_prop(system_mtk_update_support_prop)
 
 # Properties which can't be written outside vendor

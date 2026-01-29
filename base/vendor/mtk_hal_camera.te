@@ -486,3 +486,46 @@ allow mtk_hal_camera remosaic_daemon_service:service_manager find;
 # Stage: R Migration
 # Purpose: Allow memfd access by MPEG4Writer
 allow mtk_hal_camera tmpfs:file rw_file_perms;
+
+# Date : WK22.14
+# Stage: T Migration
+# Purpose: Allow mtk_hal_camera use HWC fd
+allow mtk_hal_camera hal_graphics_composer_default:fd use;
+
+# Date : WK22.27
+# Operation : T Migration
+# Purpose: Allow perfmgr access
+allow mtk_hal_camera proc_perfmgr:dir r_dir_perms;
+allow mtk_hal_camera proc_perfmgr:file r_file_perms;
+allowxperm mtk_hal_camera proc_perfmgr:file ioctl {
+  PERFMGR_XGFFRAME_BOOST_START
+  PERFMGR_XGFFRAME_BOOST_END
+  PERFMGR_FPSGO_GET_CAM_APK_PID
+  PERFMGR_FPSGO_GET_CAM_SERVER_PID
+};
+
+# Date : WK23.19
+# Operation : For C2PS
+# Purpose: Allow c2ps access
+allow mtk_hal_camera proc_c2ps:dir r_dir_perms;
+allow mtk_hal_camera proc_c2ps:file r_file_perms;
+allowxperm mtk_hal_camera proc_c2ps:file ioctl {
+  C2PS_ACTIVATE
+  C2PS_ADD_TASK
+  C2PS_TASK_START
+  C2PS_TASK_END
+  C2PS_TASK_CHANGE
+  C2PS_DESTROY
+  C2PS_NOTIFY_VSYNC
+  C2PS_NOTIFY_CAMFPS
+  C2PS_TASK_SINGLE_SHOT
+};
+
+allow mtk_hal_camera proc_ppb:dir search;
+allow mtk_hal_camera proc_ppb:file rw_file_perms;
+allow mtk_hal_camera proc_curr_cpu_loading:file r_file_perms;
+
+# Date : WK23.35
+# Operation : 3rd party camera policy
+# Purpose: 3rd party camera use audio mode hint to differentiate Video Call
+hal_client_domain(mtk_hal_camera, hal_audio)

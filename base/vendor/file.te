@@ -17,6 +17,11 @@ type proc_lk_env, fs_type, proc_type;
 type proc_ged, fs_type, proc_type;
 type proc_mtk_jpeg, fs_type, proc_type, mlstrustedobject;
 type proc_perfmgr, fs_type, proc_type;
+type proc_cpuqosmgr, fs_type, proc_type;
+type proc_easmgr, fs_type, proc_type;
+type proc_cpumgr, fs_type, proc_type;
+type proc_powerhal_cpu_ctrl, fs_type, proc_type;
+type proc_touch_boost, fs_type, proc_type;
 type proc_wmtdbg, fs_type, proc_type;
 type proc_zraminfo, fs_type, proc_type;
 type proc_gpulog, fs_type, proc_type;
@@ -44,6 +49,8 @@ type proc_mtk_es_reg_dump, fs_type, proc_type;
 type proc_ccci_dump, fs_type, proc_type;
 type proc_log_much, fs_type, proc_type;
 type proc_irq, fs_type, proc_type;
+type proc_c2ps, fs_type, proc_type;
+type proc_curr_cpu_loading, fs_type, proc_type;
 
 #For icusb
 type proc_icusb, fs_type, proc_type;
@@ -164,12 +171,25 @@ type proc_tkcore, fs_type, proc_type;
 # For CachedAppOptimizer
 type proc_freqhopping, fs_type, proc_type;
 
+# Data : 2021/08/24
+# Operaton: S development
+# Purpose: Add permission for node /proc/dma_heap
+type proc_dmaheap, fs_type, proc_type;
+
+# Date: 2021/12/24
+# Purpose: add new label for /proc/mgq
+type proc_mgq, fs_type, proc_type;
+
+#For powerhal w/ peak power node.
+type proc_ppb, fs_type, proc_type;
+
 ##########################
 # Sys Filesystem types
 #
 type sysfs_execstate, fs_type, sysfs_type;
 type sysfs_therm, fs_type, sysfs_type;
 type sysfs_thermal_sram, fs_type, sysfs_type;
+type sysfs_thermal_efuse, fs_type, sysfs_type;
 type sysfs_charger_cooler, fs_type, sysfs_type;
 type sysfs_fps, fs_type, sysfs_type;
 type sysfs_ccci, fs_type, sysfs_type;
@@ -195,6 +215,7 @@ type sysfs_systracker, fs_type, sysfs_type;
 type sysfs_keypad_file, fs_type, sysfs_type;
 type sysfs_vcp, fs_type, sysfs_type;
 type sysfs_irq, fs_type, sysfs_type;
+type sysfs_mtk_c2ps, fs_type, sysfs_type;
 
 # apusys_queue sysfs file
 type sysfs_apusys_queue, fs_type, sysfs_type;
@@ -251,6 +272,7 @@ type sysfs_xgf, fs_type, sysfs_type;
 type sysfs_gbe, fs_type, sysfs_type;
 type sysfs_mtk_fpsgo, fs_type, sysfs_type;
 type sysfs_mtk_core_ctl, fs_type, sysfs_type;
+type sysfs_perfmgr, fs_type, sysfs_type;
 
 # Date : 2019/09/17
 # Purpose: Allow powerhal to control cache audit
@@ -714,15 +736,6 @@ type thermal_hal_socket, file_type;
 type thermal_socket, file_type;
 
 type xcap_socket, file_type;
-
-# Data : 2021/08/24
-# Operaton: S development
-# Purpose: Add permission for node /proc/dma_heap
-type proc_dmaheap, fs_type, proc_type;
-
-# Date: 2021/12/24
-# Purpose: add new label for /proc/mgq
-type proc_mgq, fs_type, proc_type;
 
 type statusd_socket, file_type;
 

@@ -31,6 +31,8 @@ GpuAppSpectatorService                                  u:object_r:gas_srv_servi
 FpsPolicyService                                        u:object_r:fpspolicy-server_service:s0
 isubstub                                                u:object_r:radio_service:s0
 wfo                                                     u:object_r:radio_service:s0
+magt                                                    u:object_r:magt_service:s0
+magt_sync                                               u:object_r:magt_service:s0
 imtksms                                                 u:object_r:radio_service:s0
 carrierexpress                                          u:object_r:mtk_carrierexpress_service:s0
 media.VTS                                               u:object_r:vtservice_service:s0

@@ -121,6 +121,9 @@ allow dumpstate proc_mtkfb:file r_file_perms;
 
 allow dumpstate proc_ccci_dump:file r_file_perms;
 
+# Purpose : do not dump message of mtk_hal_applist:binder call
+dontaudit dumpstate hal_mtk_applist:binder call;
+
 # Date : WK19.22
 # Operation : let dumpstate can read sysfs_mmcblk
 # Purpose : fix Test error

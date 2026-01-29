@@ -400,6 +400,11 @@ persist.vendor.dp.met.check   u:object_r:vendor_mtk_mdp_prop:s0
 # neuropilot flag
 ro.vendor.neuropilot.flag u:object_r:vendor_mtk_neuropilot_flag_prop:s0
 
+# MAGT support property
+ro.vendor.magt.mtk_magt_support u:object_r:vendor_mtk_magt_support_prop:s0
+ro.vendor.magt.mtk_magt_version u:object_r:vendor_mtk_magt_version_prop:s0
+ro.vendor.magt.mtk_magt_app_support u:object_r:vendor_mtk_magt_app_support_prop:s0
+
 #=============mtk eara_io property====================
 persist.vendor.eara_io.          u:object_r:vendor_mtk_eara_io_prop:s0
 

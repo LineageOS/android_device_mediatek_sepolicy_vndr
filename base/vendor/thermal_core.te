@@ -44,7 +44,7 @@ set_prop(thermal_core, vendor_mtk_thermal_config_prop)
 #for thermal sysfs
 allow thermal_core sysfs_therm:file rw_file_perms;
 allow thermal_core sysfs_therm:dir search;
-
+allow thermal_core sysfs_thermal_efuse:file create_file_perms;
 
 #for md_on/md_off control
 allow thermal_core rild:unix_stream_socket connectto;

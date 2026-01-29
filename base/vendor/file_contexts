@@ -812,10 +812,12 @@
 /(vendor|system/vendor)/bin/ccci_mdinit      u:object_r:ccci_mdinit_exec:s0
 /(vendor|system/vendor)/bin/factory          u:object_r:factory_exec:s0
 /(vendor|system/vendor)/bin/conninfra_loader u:object_r:conninfra_loader_exec:s0
+/(vendor|system/vendor)/bin/touch_boost      u:object_r:touch_boost_exec:s0
 
 /(vendor|system/vendor)/bin/mnld u:object_r:mnld_exec:s0
 /(vendor|system/vendor)/bin/gbe  u:object_r:gbe_native_exec:s0
 /(vendor|system/vendor)/bin/fpsgo  u:object_r:fpsgo_native_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor.mediatek.hardware.mtkpower_applist-service.mediatek u:object_r:mtkpower_applist_exec:s0
 /(vendor|system/vendor)/bin/xgff_test  u:object_r:xgff_test_native_exec:s0
 
 /(vendor|system/vendor)/bin/xcap     u:object_r:xcap_exec:s0
@@ -829,6 +831,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gnss@2\.1-service-mediatek                u:object_r:mtk_hal_gnss_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gnss-service\.mediatek                    u:object_r:mtk_hal_gnss_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkpower@1\.0-service            u:object_r:mtk_hal_power_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkpower-service\.mediatek           u:object_r:mtk_hal_power_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@1\.0-service-mediatek             u:object_r:hal_sensors_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service-mediatek             u:object_r:hal_sensors_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service\.multihal-mediatek   u:object_r:hal_sensors_default_exec:s0

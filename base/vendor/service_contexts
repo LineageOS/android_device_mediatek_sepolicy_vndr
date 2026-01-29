@@ -12,6 +12,13 @@ vendor.mediatek.hardware.mmlpq.IMmlpq/default u:object_r:mtk_hal_mmlpq_service:s
 #PQ AIDL
 vendor.mediatek.hardware.pq_aidl.IPictureQuality_AIDL/default u:object_r:mtk_hal_pq_service:s0
 
+#MTKPOWER AIDL
+vendor.mediatek.hardware.mtkpower.IMtkPowerService/default u:object_r:hal_power_service:s0
+
+#Data: 2022/6/7
+#MTKPOWER APPLIST AIDL
+vendor.mediatek.hardware.mtkpower_applist.IMtkpower_applist/default u:object_r:mtk_hal_applist_service:s0
+
 #widevine aidl
 android.hardware.drm.IDrmFactory/widevine    u:object_r:hal_drm_service:s0
 

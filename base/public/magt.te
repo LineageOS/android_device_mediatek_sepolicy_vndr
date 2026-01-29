@@ -1,0 +1,6 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+# Policy File of /system/bin/magt Executable File
+
+type magt, domain;

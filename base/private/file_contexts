@@ -80,6 +80,9 @@
 # VSIM 3.0
 /system/bin/osi u:object_r:osi_exec:s0
 
+# MAGT Service
+/(system|system/system_ext|system_ext)/bin/magt u:object_r:magt_exec:s0
+
 ##########################
 # Devices
 #

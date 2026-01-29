@@ -240,6 +240,8 @@ ro.vendor.mtk_gwsd_support u:object_r:system_mtk_gwsd_prop:s0
 
 ro.vendor.vodata_support u:object_r:system_mtk_vodata_prop:s0
 
+persist.system.powerhal. u:object_r:system_mtk_powerhal_prop:s0
+
 # fastdormancy property
 persist.vendor.fd.on.charge         u:object_r:system_mtk_fd_prop:s0
 persist.vendor.fd.screen.off.only   u:object_r:system_mtk_fd_prop:s0

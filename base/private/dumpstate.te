@@ -29,6 +29,9 @@ hal_client_domain(dumpstate, hal_camera)
 #Purpose: Allow dumpstate to read/write /sys/kernel/debug/tracing/buffer_total_size_kb
 userdebug_or_eng(`allow dumpstate debugfs_tracing_debug:file rw_file_perms;')
 
+# Purpose : Don't allow dumpstate to call magt binder
+dontaudit dumpstate magt:binder call;
+
 # Purpose: Allow dumpstate to write /sys/devices/virtual/timed_output/vibrator/enable
 allow dumpstate sysfs_vibrator:file w_file_perms;
 

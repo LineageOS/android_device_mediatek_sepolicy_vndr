@@ -1,0 +1,9 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+hal_attribute_service(hal_mtk_applist, mtk_hal_applist_service)
+
+binder_call(hal_mtk_applist_client, hal_mtk_applist_server)
+binder_call(hal_mtk_applist_server, hal_mtk_applist_client)
+binder_call(hal_mtk_applist_server, servicemanager)

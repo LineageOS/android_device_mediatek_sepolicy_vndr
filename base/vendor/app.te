@@ -29,6 +29,10 @@ allowxperm appdomain proc_perfmgr:file ioctl {
   PERFMGR_FPSGO_BQID
   PERFMGR_FPSGO_SWAP_BUFFER
   PERFMGR_FPSGO_SBE_RESCUE
+  PERFMGR_FPSGO_BUFFER_QUOTA
+  PERFMGR_FPSGO_ACQUIRE
+  PERFMGR_FPSGO_SBE_SET_POLICY
+  PERFMGR_FPSGO_HINT_FRAME
 };
 
 # Date : W19.23
@@ -65,3 +69,8 @@ get_prop(appdomain, vendor_mtk_sec_video_path_support_prop)
 
 #allow mtk_mtee_on_svp_support
 get_prop(appdomain, vendor_mtk_svp_on_mtee_support_prop)
+
+# Date: 2022/06/17
+# Purpose :allow appdomain to get vendor_mtk_magt_support_prop
+get_prop(appdomain, vendor_mtk_magt_support_prop)
+get_prop(appdomain, vendor_mtk_magt_app_support_prop)

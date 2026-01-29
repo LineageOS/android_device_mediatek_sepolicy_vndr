@@ -1,0 +1,17 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+typeattribute magt coredomain;
+type magt_exec, system_file_type, exec_type, file_type;
+init_daemon_domain(magt)
+
+# Perform Binder IPC.
+add_service(magt, magt_service)
+binder_use(magt)
+binder_call(magt, appdomain)
+
+#============= ThermalHAl ==============
+hal_client_domain(magt, hal_thermal)
+#============= HealthHAl ==============
+hal_client_domain(magt, hal_health)

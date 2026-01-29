@@ -166,6 +166,12 @@ set_prop(vendor_init, vendor_mtk_neuropilot_flag_prop)
 set_prop(vendor_init, vendor_mtk_mdrsra_v2_support_prop)
 set_prop(vendor_init, vendor_mtk_xfrm_support_prop)
 
+# Date 2022/05/31
+# Purpose: Set the ro.vendor.magt.mtk_magt_support property
+set_prop(vendor_init, vendor_mtk_magt_support_prop)
+set_prop(vendor_init, vendor_mtk_magt_version_prop)
+set_prop(vendor_init, vendor_mtk_magt_app_support_prop)
+
 # Allow vendor_init to write to sysfs_devices_block
 allow vendor_init sysfs_devices_block:file w_file_perms;
 

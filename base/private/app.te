@@ -6,3 +6,8 @@
 # Operation : Migration
 # Purpose : appdomain need get system_mtk_amslog_prop
 get_prop(appdomain, system_mtk_amslog_prop)
+
+# Date: 2022/05/31
+# Operation : SQC
+# Purpose : appdomain need get magt
+binder_call(appdomain, magt)
