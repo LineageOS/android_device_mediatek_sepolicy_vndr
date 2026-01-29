@@ -1,9 +1,0 @@
-# Date:2020/09/01
-# Operation:R Migration
-allow system_server proc_aed:dir search;
-
-# Search /proc/iommu/debug
-allow system_server proc_iommu_debug:dir search;
-
-# Search /proc/dmaheap
-allow system_server proc_dmaheap:dir search;

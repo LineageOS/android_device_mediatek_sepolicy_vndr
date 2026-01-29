@@ -1,5 +1,0 @@
-# Date: 2021/07/16
-# Purpose : DebugLoggerUI support for telephony log settings
-# Package: com.debug.loggerui
-set_prop(platform_app, system_mtk_logmuch_prop)
-set_prop(platform_app, system_mtk_em_tel_log_prop)

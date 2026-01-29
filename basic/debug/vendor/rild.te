@@ -1,3 +1,0 @@
-# Date : 2019/08/29
-# Purpose: Allow rild to access proc/aed/reboot-reason
-allow rild proc_aed_reboot_reason:file rw_file_perms;

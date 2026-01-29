@@ -1,9 +1,0 @@
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-
-# purpose: allow mobile_log_d to read persist.vendor.log.tel_dbg
-get_prop(mobile_log_d, system_mtk_em_tel_log_prop)
-
-# purpose: allow mobile_log_d to read persist.vendor.logmuch
-get_prop(mobile_log_d, system_mtk_logmuch_prop)

@@ -1,6 +1,0 @@
-# Date : 2021/05/19
-# Purpose :[CdsInfo] read/ write WI-FI MAC address by NVRAM API
-# Package Name: com.mediatek.connectivity
-hal_client_domain(platform_app, hal_mtk_nvramagent)
-hal_client_domain(platform_app, hal_telephony)
-binder_call(platform_app, rild)

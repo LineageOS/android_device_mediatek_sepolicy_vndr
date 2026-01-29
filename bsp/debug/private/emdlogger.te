@@ -1,7 +1,0 @@
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-
-# get & set persist.vendor.radio.port_index proeprty
-set_prop(emdlogger, system_mtk_atci_sys_prop)
-

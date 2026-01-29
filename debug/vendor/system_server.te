@@ -10,3 +10,13 @@ allow system_server crash_dump:unix_stream_socket connectto;
 
 # Search /proc/proc_mtmon
 allow system_server proc_mtmon:dir search;
+
+# Date:2020/09/01
+# Operation:R Migration
+allow system_server proc_aed:dir search;
+
+# Search /proc/iommu/debug
+allow system_server proc_iommu_debug:dir search;
+
+# Search /proc/dmaheap
+allow system_server proc_dmaheap:dir search;

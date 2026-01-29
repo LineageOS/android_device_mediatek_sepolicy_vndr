@@ -1,4 +1,0 @@
-# Date : WK17.29
-# Operation : Migration
-# Purpose : for aee dump systemAPI db, get backtrace
-allow domain aee_aedv:process sigchld;

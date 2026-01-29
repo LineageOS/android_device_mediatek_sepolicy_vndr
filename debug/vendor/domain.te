@@ -3,3 +3,8 @@
 allow { domain -coredomain -hal_configstore_server -vendor_init } aee_aedv:unix_stream_socket connectto;
 allow { domain -coredomain -hal_configstore_server -vendor_init } aee_exp_vendor_file:file w_file_perms;
 allow { domain -coredomain -hal_configstore_server -vendor_init } aee_aedv:fd use;
+
+# Date : WK17.29
+# Operation : Migration
+# Purpose : for aee dump systemAPI db, get backtrace
+allow domain aee_aedv:process sigchld;

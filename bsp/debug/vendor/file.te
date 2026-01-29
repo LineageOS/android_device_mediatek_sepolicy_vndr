@@ -1,9 +1,0 @@
-# Date : WK16.35
-# Operation : untrusted_app support direct-coredump abort message
-# Purpose :
-# avc: denied { write } for name="aee_interim" dev="dm-0" ino=8236
-# scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:coredump_file:s0
-# tclass=dir permissive=0
-userdebug_or_eng(`
-  typeattribute coredump_file mlstrustedobject;
-')

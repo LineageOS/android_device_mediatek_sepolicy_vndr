@@ -1,3 +1,7 @@
+# Date : 2016/11/11
+# Purpose : Add permission for aee socket access to report Java Layer Exception
+allow system_server crash_dump:unix_stream_socket connectto;
+
 # Date : WK18.33
 # Purpose : type=1400 audit(0.0:1592): avc: denied { read }
 #           for comm=4572726F722064756D703A20646174 name=
@@ -7,3 +11,7 @@
 get_prop(system_server, system_mtk_persist_mtk_aee_prop)
 
 get_prop(system_server, system_mtk_debug_mtk_aee_prop)
+
+# Date:2020/12/23
+# Operation:R Migration, add permission for AMS read mtk_AEE_prop
+get_prop(system_server, system_mtk_persist_aee_prop)

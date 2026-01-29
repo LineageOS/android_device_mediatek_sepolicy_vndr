@@ -1,7 +1,0 @@
-# Date : 2016/11/11
-# Purpose : Add permission for aee socket access to report Java Layer Exception
-allow system_server crash_dump:unix_stream_socket connectto;
-
-# Date:2020/12/23
-# Operation:R Migration, add permission for AMS read mtk_AEE_prop
-get_prop(system_server, system_mtk_persist_aee_prop)

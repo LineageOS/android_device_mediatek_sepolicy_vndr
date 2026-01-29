@@ -98,6 +98,14 @@ allow aee_aedv sysfs_vibrator:file w_file_perms;
 # /proc/lk_env
 allow aee_aedv proc_lk_env:file rw_file_perms;
 
+# Date : WK16.21
+# Operation : direct coredump enhancement
+# Purpose : support abort message dumping
+userdebug_or_eng(`
+  allow aee_aedv coredump_file:dir { remove_name };
+  allow aee_aedv coredump_file:file { unlink };
+')
+
 # Data : 2017/03/22
 # Operation : add NE flow rule for Android O
 # Purpose : make aee_aedv can get specific process NE info

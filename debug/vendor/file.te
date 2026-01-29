@@ -2,6 +2,16 @@
 type aee_exp_data_file, file_type, data_file_type, core_data_file_type, mlstrustedobject;
 type aee_exp_vendor_file, file_type, data_file_type;
 
+# Date : WK16.35
+# Operation : untrusted_app support direct-coredump abort message
+# Purpose :
+# avc: denied { write } for name="aee_interim" dev="dm-0" ino=8236
+# scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:coredump_file:s0
+# tclass=dir permissive=0
+userdebug_or_eng(`
+  typeattribute coredump_file mlstrustedobject;
+')
+
 # Date : 2019/08/29
 # Purpose: Allow rild access proc/aed/reboot-reason
 type proc_aed_reboot_reason, fs_type, proc_type;

@@ -85,3 +85,6 @@ allow emdlogger debuglog_data_file:file create_file_perms;
 
 # get persist.sys. proeprty
 get_prop(emdlogger, system_prop)
+
+# get & set persist.vendor.radio.port_index proeprty
+set_prop(emdlogger, system_mtk_atci_sys_prop)

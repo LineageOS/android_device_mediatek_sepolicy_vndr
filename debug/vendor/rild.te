@@ -1,0 +1,8 @@
+# Date : 2019/08/29
+# Purpose: Allow rild to access proc/aed/reboot-reason
+allow rild proc_aed_reboot_reason:file rw_file_perms;
+
+# Date: 2021/05/25
+# Operation: Engineer mode send AT command
+# Purpose: allow rild callback to CDS_INFO app
+binder_call(rild, platform_app)
