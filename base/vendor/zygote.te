@@ -1,0 +1,61 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+# Date : WK16.33
+# Purpose: Allow to access ged for gralloc_extra functions
+allow zygote proc_ged:file rw_file_perms;
+
+# Date : WK17.02
+# Purpose: Allow to access gpu for memtrack functions
+allow zygote gpu_device:dir search;
+allow zygote gpu_device:chr_file rw_file_perms;
+
+allow zygote proc_bootprof:file rw_file_perms;
+allow zygote proc_uptime:file rw_file_perms;
+
+# Date : WK21.29
+# Purpose: Allow Zygote to unmount labeledfs
+allow zygote labeledfs:filesystem { unmount };
+
+# Date : WK21.41
+# Purpose: Allow Zygote to access cgroup for statsd functions
+allow zygote cgroup:file setattr;
+
+# Date : WK21.47
+# Purpose: dontaudit Zygote set its the nice value
+dontaudit zygote self:capability sys_nice;
+
+# Date : WK22.04
+# Purpose: dontaudit Zygote write system_file when restarting Android
+dontaudit zygote system_file:dir write;
+
+# Date : WK19.43
+# Operation : SQC
+# Purpose : for untrusted app to use ptrace (e.g. 360Mobile, taobao, com.duowan.kiwi)
+dontaudit zygote untrusted_app_all:process ptrace;
+
+# Date : WK14.43
+# Operation : SQC2
+# Purpose : found in FST Auto Test (ALPS01774709)
+allow zygote platform_app:fd use;
+
+# Date : WK14.46
+# Operation : SQC
+# Purpose : found in sanity test (ALPS01825280)
+allow zygote servicemanager:binder call;
+
+# Date : WK14.49
+# Operation : SQC
+# Purpose : for isolated_app_all to use fd (ex: share image by gmail)
+allow zygote isolated_app_all:fd use;
+
+# Date : WK15.02
+# Operation : SQC
+# Purpose : for "theScore Sports & Scores" app to play video(ALPS01897019)
+allow zygote untrusted_app:fd use;
+
+# Date : WK15.08
+# Operation : SQC
+# Purpose : for TTLIA
+allow zygote radio:fd use;

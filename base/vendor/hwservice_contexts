@@ -1,0 +1,207 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+vendor.mediatek.hardware.bluetooth::IMtkBluetoothHci u:object_r:mtk_hal_bluetooth_hwservice:s0
+
+# Date: 2017/05/9
+vendor.mediatek.hardware.mtkradioex::IMtkRadioEx                    u:object_r:mtk_hal_rild_hwservice:s0
+vendor.mediatek.hardware.radio::ISap                                u:object_r:mtk_hal_rild_hwservice:s0
+vendor.mediatek.hardware.interfaces_tc1.mtkradioex_tc1::IMtkRadioEx u:object_r:mtk_hal_rild_hwservice:s0
+vendor.mediatek.hardware.radio_op::IRadioOp                         u:object_r:mtk_hal_rild_hwservice:s0
+
+# GPU HIDL
+vendor.mediatek.hardware.gpu::IGraphicExt u:object_r:mtk_hal_gpu_hwservice:s0
+
+# Date: 2017/06/07
+# power hidl
+vendor.mediatek.hardware.mtkpower::IMtkPerf  u:object_r:hal_power_hwservice:s0
+vendor.mediatek.hardware.mtkpower::IMtkPower u:object_r:hal_power_hwservice:s0
+
+# Date: 2017/06/12
+# LBS HIDL
+vendor.mediatek.hardware.lbs::ILbs u:object_r:mtk_hal_lbs_hwservice:s0
+
+# Date : 2017/06/27
+# IMSA HIDL
+vendor.mediatek.hardware.imsa::IImsa u:object_r:mtk_hal_imsa_hwservice:s0
+
+# Date : 2017/07/12
+# nvram hidl
+vendor.mediatek.hardware.nvram::INvram u:object_r:mtk_hal_nvramagent_hwservice:s0
+
+# Date : 2017/07/19
+# PQ HIDL
+vendor.mediatek.hardware.pq::IPictureQuality u:object_r:mtk_hal_pq_hwservice:s0
+
+# Date: 2017/07/20
+# keymaster attestation hidl
+vendor.mediatek.hardware.keymaster_attestation::IKeymasterDevice u:object_r:mtk_hal_keyattestation_hwservice:s0
+
+# Date: 2018/05/25
+# FM HIDL
+vendor.mediatek.hardware.fm::IFmRadio u:object_r:mtk_hal_fm_hwservice:s0
+
+# Date: 2018/03/23
+# log hidl
+vendor.mediatek.hardware.log::ILog u:object_r:mtk_hal_log_hwservice:s0
+
+# Date: 2018/05/23
+# ATCI
+vendor.mediatek.hardware.atci::IAtcid u:object_r:mtk_hal_atci_hwservice:s0
+
+# Date: 2018/06/26
+# em hidl
+vendor.mediatek.hardware.engineermode::IEmd u:object_r:mtk_hal_em_hwservice:s0
+
+# Date : 2018/07/02
+# MMS HIDL
+vendor.mediatek.hardware.mms::IMms u:object_r:mtk_hal_mms_hwservice:s0
+
+# Date : 2020/12/02
+# MMAgent HIDL
+vendor.mediatek.hardware.mmagent::IMMAgent u:object_r:mtk_hal_mmagent_hwservice:s0
+
+# Date: 2019/06/12
+# modem db filter hidl
+vendor.mediatek.hardware.modemdbfilter::ICopyDBFilter u:object_r:mtk_hal_md_dbfilter_hwservice:s0
+
+# Date: 2019/07/04
+vendor.mediatek.hardware.camera.lomoeffect::ILomoEffect u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.ccap::ICCAPControl      u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.bgservice::IBGService   u:object_r:mtk_hal_bgs_hwservice:s0
+vendor.mediatek.hardware.camera.isphal::IISPModule      u:object_r:mtk_hal_bgs_hwservice:s0
+
+# Date : 2019/07/31
+vendor.mediatek.hardware.camera.postproc::IPostDevice u:object_r:mtk_hal_bgs_hwservice:s0
+
+# Date : 2019/07/16
+# HDMI HIDL
+vendor.mediatek.hardware.hdmi::IMtkHdmiService u:object_r:mtk_hal_hdmi_hwservice:s0
+
+# Date: 2019/09/02
+# ATMs hidl
+vendor.mediatek.hardware.camera.atms::IATMs u:object_r:hal_camera_hwservice:s0
+
+# Date: 2019/09/04
+# bluetooth audio hidl
+vendor.mediatek.hardware.bluetooth.audio::IBluetoothAudioProvidersFactory u:object_r:mtk_hal_bluetooth_audio_hwservice:s0
+
+# Date: 2021/06/30
+# composer extension HIDL
+vendor.mediatek.hardware.composer_ext::IComposerExt u:object_r:mtk_hal_composer_ext_hwservice:s0
+
+vendor.mediatek.hardware.mtkcodecservice::IMtkCodecService u:object_r:hal_mtkcodecservice_hwservice:s0
+
+# Date : 2017/06/1
+vendor.mediatek.hardware.camera.advcam::IAdvCamControl u:object_r:hal_camera_hwservice:s0
+
+# Date : 2017/06/15
+vendor.mediatek.hardware.wfo::IWifiOffload u:object_r:mtk_hal_wfo_hwservice:s0
+
+# Date : 2017/07/11
+vendor.mediatek.hardware.videotelephony::IVideoTelephony u:object_r:mtk_hal_videotelephony_hwservice:s0
+
+# Date : 2017/07/20
+vendor.mediatek.hardware.presence::IPresence u:object_r:volte_uce_ua_hwservice:s0
+
+# Date: 2017/09/06
+vendor.mediatek.hardware.netdagent::INetdagent u:object_r:mtk_hal_netdagent_hwservice:s0
+
+# Date : 2017/08/4
+vendor.mediatek.hardware.rcs::IRcs u:object_r:volte_rcs_ua_hwservice:s0
+
+# Date : 2017/10/22
+vendor.mediatek.hardware.dfps::IFpsPolicyService u:object_r:mtk_hal_dfps_hwservice:s0
+
+# Date : 2018/11/13
+vendor.mediatek.hardware.dplanner::IDPlanner u:object_r:mtk_hal_dplanner_hwservice:s0
+
+# Date : 2018/01/04
+# tablet DRM Key Manage HIDL
+vendor.mediatek.hardware.keymanage::IKeymanage u:object_r:mtk_hal_keymanage_hwservice:s0
+
+# DRM Key Installation HIDL
+vendor.mediatek.hardware.keyinstall::IKeyinstall u:object_r:mtk_hal_keyinstall_hwservice:s0
+
+# Date: 2018/05/07
+vendor.mediatek.hardware.pplagent::IPplAgent u:object_r:mtk_hal_pplagent_hwservice:s0
+
+# Date : 2019/05/14
+# Android Q diagnostic framework migration
+vendor.mediatek.hardware.dmc::IDmcService u:object_r:mtk_hal_dmc_hwservice:s0
+
+# Date : 2019/05/14
+# Android Q diagnostic framework migration
+vendor.mediatek.hardware.apmonitor::IApmService u:object_r:mtk_hal_apm_hwservice:s0
+
+# MICROTRUST SEPolicy Rule
+# microtrust THH hidl
+vendor.microtrust.hardware.thh::IThhDevice u:object_r:teei_hal_thh_hwservice:s0
+
+# microtrust TUI hidl
+vendor.microtrust.hardware.tui::ITuiDevice u:object_r:teei_hal_tui_hwservice:s0
+
+# microtrust IFAA hidl
+vendor.microtrust.hardware.ifaa::IIFAADevice u:object_r:teei_hal_ifaa_hwservice:s0
+
+# microtrust Client Api hidl
+vendor.microtrust.hardware.capi::IClientApiDevice u:object_r:teei_hal_capi_hwservice:s0
+
+# microtrust wechat hidl
+vendor.microtrust.hardware.soter::ISoter u:object_r:teei_hal_wechat_hwservice:s0
+
+# Date : 2018/05/14
+# IMtkSupplicant hidl, to export Mediatek supplicant hidl interface to framework
+vendor.mediatek.hardware.wifi.supplicant::ISupplicant u:object_r:hal_wifi_supplicant_hwservice:s0
+
+# Date : 2018/07/16
+vendor.mediatek.hardware.camera.security::ISecureCamera u:object_r:hal_camera_hwservice:s0
+
+# Date : 2018/08/27
+vendor.mediatek.hardware.camera.frhandler::IFRHandler u:object_r:hal_camera_hwservice:s0
+
+# Date : 2019/05/16
+# Operation : IT
+# Purpose : Add for HIDL service
+vendor.mediatek.hardware.mdmonitor::IMDMonitorService u:object_r:mtk_mdm_hidl_server:s0
+
+# omadm hidl
+vendor.mediatek.hardware.omadm::IOmadm u:object_r:mtk_hal_omadm_hwservice:s0
+
+# nwk opt HIDL
+vendor.mediatek.hardware.nwk_opt::INwkOpt u:object_r:mtk_hal_nwk_opt_hwservice:s0
+
+# Date : 2018/10/25
+vendor.mediatek.hardware.clientapi::IClientapi u:object_r:volte_clientapi_ua_hwservice:s0
+
+# Date: 2019/09/25
+vendor.mediatek.hardware.touchll::ITouchll u:object_r:mtk_hal_touchll_hwservice:s0
+
+# Date: 2019/11/07
+vendor.mediatek.hardware.thp::ITHP u:object_r:mtk_hal_thp_hwservice:s0
+
+# Trustonic SEPolicy Rule
+vendor.trustonic.tee::ITee                 u:object_r:hal_tee_hwservice:s0
+vendor.trustonic.tee.tui::ITui             u:object_r:hal_tee_hwservice:s0
+vendor.trustonic.teeregistry::ITeeRegistry u:object_r:hal_teeregistry_hwservice:s0
+
+# HDCP SEPolicy Rule
+vendor.tesiai.hardware.hdcpconnection::IHDCPConnection u:object_r:tesiai_hal_hdcp_hwservice:s0
+
+# Date : 2020/06/10
+# Define apuware context
+vendor.mediatek.hardware.apuware.apusys::INeuronApusys u:object_r:hal_neuralnetworks_hwservice:s0
+vendor.mediatek.hardware.apuware.xrp::INeuronXrp       u:object_r:hal_neuralnetworks_hwservice:s0
+
+# Date : 2020/07/03
+# Define uitls hidl context for ann
+vendor.mediatek.hardware.apuware.utils::IApuwareUtils u:object_r:hal_neuralnetworks_hwservice:s0
+
+# Date : 2021/04/23
+# Define hml hidl context
+vendor.mediatek.hardware.apuware.hmp::IApuwareHmp u:object_r:hal_neuralnetworks_hwservice:s0
+
+# Date : 2021/06/28
+# Define NpAgent hidl context for ann
+vendor.mediatek.hardware.neuropilot.agent::IAgent u:object_r:hal_neuralnetworks_hwservice:s0

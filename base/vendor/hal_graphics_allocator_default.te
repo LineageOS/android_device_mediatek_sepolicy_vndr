@@ -1,0 +1,22 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+allow hal_graphics_allocator_default gpu_device:dir search;
+allow hal_graphics_allocator_default sw_sync_device:chr_file rw_file_perms;
+allow hal_graphics_allocator_default debugfs_ion:dir search;
+allow hal_graphics_allocator_default debugfs_tracing:file w_file_perms;
+allow hal_graphics_allocator_default proc_ged:file r_file_perms;
+allow hal_graphics_allocator_default dmabuf_system_heap_device:chr_file r_file_perms;
+allow hal_graphics_allocator_default dmabuf_system_secure_heap_device:chr_file r_file_perms;
+allowxperm hal_graphics_allocator_default proc_ged:file ioctl proc_ged_ioctls;
+
+allow {
+    appdomain -isolated_app_all
+    hal_graphics_allocator_client
+} hal_graphics_allocator_default_tmpfs:file { read write map };
+
+typeattribute hal_graphics_allocator_default_tmpfs mlstrustedobject;
+
+allow hal_graphics_allocator_default teei_client_device:chr_file rw_file_perms;
+allow hal_graphics_allocator_default mobicore_user_device:chr_file rw_file_perms;

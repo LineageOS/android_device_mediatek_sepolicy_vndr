@@ -1,5 +1,0 @@
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-
-allow drmserver access_sys_file:file r_file_perms;

@@ -1,0 +1,34 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+# Date : 2017/08/01
+# Operation: SQC
+# Purpose : Allow Whatstemp, a MTK thermal logging tool, to log thermal related information
+# properly for thermal tests at OEM/ODM.
+allow untrusted_app_25 proc_mtktz:dir search;
+allow untrusted_app_25 proc_mtktz:file r_file_perms;
+allow untrusted_app_25 proc_thermal:dir search;
+allow untrusted_app_25 proc_thermal:file r_file_perms;
+
+allow untrusted_app_25 sysfs_fps:dir search;
+allow untrusted_app_25 sysfs_fps:file r_file_perms;
+allow untrusted_app_25 sysfs_batteryinfo:dir search;
+allow untrusted_app_25 sysfs_therm:dir r_dir_perms;
+allow untrusted_app_25 sysfs_therm:file r_file_perms;
+
+# untrusted_app_25 for TUI
+allow untrusted_app_25 mobicore_vendor_file:dir search;
+
+# Date: 2019/06/17
+# Operation : Migration
+# Purpose :allow untrusted_app_25 to access procs
+allow untrusted_app_25 proc_uptime:file getattr;
+allow untrusted_app_25 proc_version:file getattr;
+allow untrusted_app_25 sysfs_net:dir search;
+allow untrusted_app_25 proc_net:file r_file_perms;
+
+# Date: 2020/06/29
+# Operation : eMBMS Migration
+# Purpose :allow EXPWAY middleware to access the socket
+allow untrusted_app_25 radio:unix_stream_socket connectto;

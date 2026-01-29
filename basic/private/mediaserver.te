@@ -1,8 +1,0 @@
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-
-# Date : WK21.31
-# Operation : 64-bit support
-# Purpose : Allow mediahelper exec mediaserver
-allow mediaserver mediahelper:fd use;

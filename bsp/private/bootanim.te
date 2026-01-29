@@ -1,6 +1,0 @@
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-
-#Date : W1728
-allow bootanim resourcecache_data_file:file r_file_perms;

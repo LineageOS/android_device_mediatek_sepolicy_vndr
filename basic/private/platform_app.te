@@ -1,9 +1,0 @@
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-
-# Date: 2021/06/02
-# Operation : S Migration
-# Purpose : access soundtrigger_middleware_service
-# Package : com.mediatek.voicecommand
-allow platform_app soundtrigger_middleware_service:service_manager find;

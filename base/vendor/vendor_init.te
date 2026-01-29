@@ -1,0 +1,248 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+set_prop(vendor_init, vendor_mtk_mediatek_prop)
+set_prop(vendor_init, vendor_mtk_md_version_prop)
+set_prop(vendor_init, vendor_mtk_volte_prop)
+set_prop(vendor_init, vendor_mtk_radio_prop)
+set_prop(vendor_init, vendor_mtk_ril_mode_prop)
+set_prop(vendor_init, vendor_mtk_wmt_prop)
+set_prop(vendor_init, vendor_mtk_coredump_prop)
+set_prop(vendor_init, vendor_mtk_atm_mdmode_prop)
+allow vendor_init proc_wmtdbg:file w_file_perms;
+allow vendor_init proc_cpufreq:file w_file_perms;
+allow vendor_init proc_bootprof:file w_file_perms;
+allow vendor_init proc_pl_lk:file w_file_perms;
+allow vendor_init proc_mtprintk:file w_file_perms;
+allow vendor_init proc_dirty:file w_file_perms;
+allow vendor_init rootfs:dir create_dir_perms;
+allow vendor_init self:capability sys_module;
+allow vendor_init tmpfs:dir create_dir_perms;
+allow vendor_init unlabeled:dir { relabelfrom getattr setattr search };
+allow vendor_init vendor_file:system module_load;
+allow vendor_init kmsg_device:chr_file unlink;
+set_prop(vendor_init, vendor_mtk_sensor_prop)
+set_prop(vendor_init, vendor_mtk_usb_prop)
+set_prop(vendor_init, vendor_mtk_ct_volte_prop)
+set_prop(vendor_init, vendor_mtk_gps_support_prop)
+set_prop(vendor_init, vendor_mtk_rat_config_prop)
+set_prop(vendor_init, vendor_mtk_tel_switch_prop)
+set_prop(vendor_init, vendor_mtk_aal_ro_prop)
+set_prop(vendor_init, vendor_mtk_pq_ro_prop)
+set_prop(vendor_init, vendor_mtk_default_prop)
+set_prop(vendor_init, vendor_mtk_nn_option_prop)
+set_prop(vendor_init, vendor_mtk_emmc_support_prop)
+set_prop(vendor_init, vendor_mtk_anr_support_prop)
+set_prop(vendor_init, vendor_mtk_app_prop)
+set_prop(vendor_init, vendor_mtk_bt_sap_enable_prop)
+set_prop(vendor_init, vendor_mtk_factory_prop)
+get_prop(vendor_init, vendor_mtk_soc_prop)
+set_prop(vendor_init, vendor_mtk_prefer64_prop)
+set_prop(vendor_init, vendor_mtk_audio_prop)
+set_prop(vendor_init, vendor_mtk_audiohal_prop)
+set_prop(vendor_init, vendor_mtk_pq_prop)
+
+# allow create symbolic link, /mnt/sdcard, for meta/factory mode
+allow vendor_init tmpfs:lnk_file create_file_perms;
+
+set_prop(vendor_init, vendor_mtk_cxp_vendor_prop)
+
+# Run "ifup lo" to bring up the localhost interface
+allow vendor_init proc_hostname:file w_file_perms;
+allow vendor_init self:udp_socket create_socket_perms;
+
+# in addition to unpriv ioctls granted to all domains, init also needs:
+allowxperm vendor_init self:udp_socket ioctl { SIOCSIFFLAGS };
+allow vendor_init self:global_capability_class_set net_raw;
+
+# enhance boot time
+allow vendor_init proc_perfmgr:file w_file_perms;
+
+set_prop(vendor_init, vendor_mtk_appresolutiontuner_prop)
+
+# fullscreen switch
+set_prop(vendor_init, vendor_mtk_fullscreenswitch_prop)
+
+# for kernel module verification support, allow vendor domain to search kernel keyring
+allow vendor_init kernel:key search;
+
+# Purpose: /dev/block/mmcblk0p10
+allow vendor_init expdb_block_device:blk_file rw_file_perms;
+
+set_prop(vendor_init, vendor_mtk_wifi_hotspot_prop)
+set_prop(vendor_init, vendor_mtk_wifi_hal_prop)
+
+# mmstat tracer
+allow vendor_init debugfs_tracing_instances:dir create_dir_perms;
+allow vendor_init debugfs_tracing_instances:file w_file_perms;
+
+#boot tracer
+allow vendor_init debugfs_tracing_debug:file w_file_perms;
+
+# Set surfaceflinger cpu policy property
+set_prop(vendor_init, vendor_mtk_debug_sf_cpupolicy_prop)
+
+# Date : 2019/11/21
+# Operation: SQC
+# Purpose : Allow vendor_init to control MCDI
+allow vendor_init proc_cpuidle:file rw_file_perms;
+
+# Date : 2020/07/08
+# Purpose: add permission for /proc/sys/vm/swappiness
+allow vendor_init proc_swappiness:file w_file_perms;
+
+# Date : 2020/08/05
+# Purpose: add permission for /proc/driver/wmt_user_proc
+allow vendor_init proc_wmtuserproc:file w_file_perms;
+
+# Date : 2020/08/20
+# Operation: touchboost
+# Purpose: Allow vendor_init to set the default value of touch resample latency
+set_prop(vendor_init, vendor_mtk_input_resample_latency_prop)
+
+# Date : 2021/04/24
+# Operation: addwindow
+# Purpose: Get the variable value of touch report rate
+set_prop(vendor_init, vendor_mtk_input_report_rate_prop)
+
+# Date : 2020/09/07
+# Purpose: add permission for /proc/sys/kernel/panic_on_rcu_stall
+allow vendor_init proc_panic_on_rcu_stall:file rw_file_perms;
+
+# Date : 2020/12/23
+# Purpose: Allow vendor_init to write /proc/driver/conninfra_dbg
+allow vendor_init proc_conninfradbg:file w_file_perms;
+
+# Date: 2020/11/18
+# Purpose: Set the vendor.all.modules.ready property
+set_prop(vendor_init, vendor_mtk_device_prop)
+
+# Date: 2021/04/15
+# Purpose: Allow init to write /proc/blocktag/blockio
+allow vendor_init procfs_blockio:file w_file_perms;
+
+# Date : 2021/04/20
+# Purpose: Allow vendor_init to write /proc/driver/drop_caches , extra_free_kbytes , watermark_scale_factor
+allow vendor_init proc_extra_free_kbytes:file w_file_perms;
+allow vendor_init proc_drop_caches:file w_file_perms;
+allow vendor_init proc_watermark_scale_factor:file w_file_perms;
+set_prop(vendor_init, vendor_mtk_vm_prop)
+
+# Date 2021/05/10
+# Purpose : init the default value before bootup
+allow vendor_init proc_sched_migration_cost_ns:file rw_file_perms;
+
+# Date 2021/05/15
+# Purpose allow vendor_init to write proc/sys/kernel/sched_*
+allow vendor_init proc_sched:file w_file_perms;
+
+# Date 2021/07/21
+# Purpose: Set the ro.vendor.mtk_aod_support property
+set_prop(vendor_init, vendor_mtk_aod_support_prop)
+
+# Data 2021/08/06
+# Purpose: Set the ro.vendor.bluetooth.a2dp_aac_vbr.is_disabled property
+set_prop(vendor_init, vendor_mtk_bt_aac_vbr_prop)
+
+# Data 2021/09/23
+# Purpose: Set the ro.vendor.game_aisr_enable property
+set_prop(vendor_init, vendor_mtk_gpu_prop)
+
+# Data 2021/09/28
+# Purpose: Set the ro.vendor.mtk_ovl_bringup property
+set_prop(vendor_init, vendor_mtk_display_ro_prop)
+
+# Date : 2021/11/12
+# Purpose: add permission for /proc/sys/vm/watermark_boost_factor
+allow vendor_init proc_watermark_boost_factor:file w_file_perms;
+
+# Date: 2022/1/4
+# Purpose: add Neuropilot flag
+set_prop(vendor_init, vendor_mtk_neuropilot_flag_prop)
+
+# Date: 2022/2/16
+# Purpose: for non-5G GKI platform
+set_prop(vendor_init, vendor_mtk_mdrsra_v2_support_prop)
+set_prop(vendor_init, vendor_mtk_xfrm_support_prop)
+
+# Allow vendor_init to write to sysfs_devices_block
+allow vendor_init sysfs_devices_block:file w_file_perms;
+
+# Thermal
+allow vendor_init thermal_link_device:dir r_dir_perms;
+allow vendor_init thermal_link_device:lnk_file r_file_perms;
+set_prop(vendor_init, vendor_thermal_prop)
+
+set_prop(vendor_init, vendor_mtk_radio_prop)
+set_prop(vendor_init, vendor_mtk_ims_prop)
+set_prop(vendor_init, vendor_mtk_wfd_support_prop)
+set_prop(vendor_init, vendor_mtk_atci_prop)
+set_prop(vendor_init, vendor_mtk_mobile_management_prop)
+
+allow vendor_init proc_hps:file w_file_perms;
+allow vendor_init proc_cpufreq:file w_file_perms;
+
+allow vendor_init proc_usb_plat:dir search;
+allow vendor_init proc_usb_plat:file rw_file_perms;
+
+set_prop(vendor_init, vendor_mtk_soter_teei_prop)
+set_prop(vendor_init, vendor_mtk_trustkernel_tee_prop)
+set_prop(vendor_init, vendor_mtk_dx_hdcp_support_prop)
+set_prop(vendor_init, vendor_mtk_duraspeed_prop)
+set_prop(vendor_init, vendor_mtk_dynims_prop)
+set_prop(vendor_init, vendor_mtk_mims_prop)
+set_prop(vendor_init, vendor_mtk_extsim_prop)
+set_prop(vendor_init, vendor_mtk_volte_support_prop)
+set_prop(vendor_init, vendor_mtk_vonr_support_prop)
+set_prop(vendor_init, vendor_mtk_wfc_support_prop)
+set_prop(vendor_init, vendor_mtk_vilte_support_prop)
+set_prop(vendor_init, vendor_mtk_viwifi_support_prop)
+set_prop(vendor_init, vendor_mtk_rcs_ua_support_prop)
+set_prop(vendor_init, vendor_mtk_mdm_prop)
+set_prop(vendor_init, vendor_mtk_mcf_prop)
+set_prop(vendor_init, vendor_mtk_mdworldmode_prop)
+set_prop(vendor_init, vendor_mtk_oma_drm_support_prop)
+set_prop(vendor_init, vendor_mtk_miravision_support_prop)
+set_prop(vendor_init, vendor_mtk_default_write_disk_prop)
+set_prop(vendor_init, vendor_mtk_bg_power_saving_support_prop)
+set_prop(vendor_init, vendor_mtk_bg_power_saving_ui_prop)
+set_prop(vendor_init, vendor_mtk_besloudness_support_prop)
+set_prop(vendor_init, vendor_mtk_hifiaudio_support_prop)
+set_prop(vendor_init, vendor_mtk_active_noise_cancel_prop)
+set_prop(vendor_init, vendor_mtk_wapi_support_prop)
+set_prop(vendor_init, vendor_mtk_fd_support_prop)
+set_prop(vendor_init, vendor_mtk_st_nfc_gsma_support_prop)
+set_prop(vendor_init, vendor_mtk_st_nfc_ignore_modem_prop)
+set_prop(vendor_init, vendor_mtk_nfc_addon_support_prop)
+set_prop(vendor_init, vendor_mtk_nfc_uicc_clf_prop)
+set_prop(vendor_init, vendor_mtk_radio_seapi_off_prop)
+set_prop(vendor_init, vendor_mtk_nxp_nfc_gsma_support_prop)
+set_prop(vendor_init, vendor_mtk_num_md_protocol_prop)
+set_prop(vendor_init, vendor_mtk_wappush_prop)
+set_prop(vendor_init, vendor_mtk_operator_prop)
+set_prop(vendor_init, vendor_mtk_omacp_support_prop)
+set_prop(vendor_init, vendor_mtk_log_tel_dbg_prop)
+set_prop(vendor_init, vendor_mtk_camera_prop)
+set_prop(vendor_init, vendor_mtk_gallery_prop)
+set_prop(vendor_init, vendor_mtk_media_prop)
+set_prop(vendor_init, vendor_mtk_rsc_prop)
+set_prop(vendor_init, vendor_mtk_pms_prop)
+set_prop(vendor_init, vendor_mtk_logmuch_prop)
+set_prop(vendor_init, vendor_mtk_dsbp_support_prop)
+set_prop(vendor_init, vendor_mtk_datashaping_prop)
+set_prop(vendor_init, vendor_mtk_nn_quant_preferred_prop)
+set_prop(vendor_init, vendor_mtk_cam_security_prop)
+set_prop(vendor_init, vendor_mtk_dmc_prop)
+set_prop(vendor_init, vendor_mtk_cta_support_prop)
+set_prop(vendor_init, system_mtk_heavy_loading_prop)
+set_prop(vendor_init, vendor_mtk_jpeg_opt_prop)
+set_prop(vendor_init, vendor_mtk_trustonic_tee_prop)
+set_prop(vendor_init, vendor_mtk_microtrust_tee_prop)
+set_prop(vendor_init, vendor_mtk_md_c2k_cap_dep_check_prop)
+set_prop(vendor_init, vendor_mtk_gwsd_capability_prop)
+set_prop(vendor_init, vendor_mtk_fast_charging_support_prop)
+set_prop(vendor_init, vendor_mtk_call_drop_prop)
+set_prop(vendor_init, vendor_mtk_sec_video_path_support_prop)
+set_prop(vendor_init, vendor_mtk_svp_on_mtee_support_prop)
+set_prop(vendor_init, vendor_mtk_subsidy_lock_support_prop)

@@ -1,8 +1,0 @@
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-type mtk_hal_touchll_exec, exec_type, file_type, vendor_file_type;
-
-init_daemon_domain(mtk_hal_touchll)
-
-hal_server_domain(mtk_hal_touchll, hal_mtk_touchll)

@@ -1,8 +1,0 @@
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-
-# Date : 2018/5/4
-# Operation : Migration
-# Purpose: Allow bluetooth to get/set system_mtk_bluetooth_prop
-set_prop(bluetooth, system_mtk_bluetooth_prop)

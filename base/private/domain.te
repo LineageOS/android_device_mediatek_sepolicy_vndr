@@ -1,0 +1,15 @@
+allow domain system_mtk_pmb_file:dir r_dir_perms;
+allow domain system_mtk_pmb_file:lnk_file { getattr read };
+allow { appdomain coredomain } system_mtk_pmb_file:file { execute read open getattr map };
+
+# Date : W17.47
+# Allow system_server to enable/disable logmuch_prop for Wi-Fi logging purpose
+neverallow {
+  coredomain
+  -init
+  -logd
+  -cameraserver
+  -system_server
+  -em_app
+  -platform_app
+  } system_mtk_logmuch_prop:property_service set;

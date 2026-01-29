@@ -1,5 +1,0 @@
-type mtk_hal_neuralnetworks, domain;
-
-# Date : 2021/09/10
-# Purpose: Allow Neuron Hidl read data
-allow mtk_hal_neuralnetworks media_rw_data_file:file {read map};

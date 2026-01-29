@@ -1,0 +1,1352 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+##########################
+# Data files
+#
+/data/vendor/.tp(/.*)?              u:object_r:thermal_manager_data_file:s0
+/data/vendor/thermal(/.*)?          u:object_r:thermal_core_data_file:s0
+/data/vendor_de/meta(/.*)?          u:object_r:mddb_data_file:s0
+/data/vendor/agps_supl(/.*)?        u:object_r:agpsd_data_file:s0
+/data/vendor/gps(/.*)?              u:object_r:gps_data_file:s0
+/data/vendor/log/gps(/.*)?          u:object_r:gps_data_file:s0
+/data/anr/SF_RTT(/.*)?              u:object_r:sf_rtt_file:s0
+/data/vendor/ccci_cfg(/.*)?         u:object_r:ccci_cfg_file:s0
+/data/vendor/mdlpm(/.*)?            u:object_r:ccci_data_md1_file:s0
+/data/vendor/flashless(/.*)?        u:object_r:c2k_file:s0
+/data/core(/.*)?                    u:object_r:aee_core_data_file:s0
+/data/vendor/core(/.*)?             u:object_r:aee_core_vendor_file:s0
+/data/dumpsys(/.*)?                 u:object_r:aee_dumpsys_data_file:s0
+/data/vendor/dumpsys(/.*)?          u:object_r:aee_dumpsys_vendor_file:s0
+/data/extmdl(/.*)?                  u:object_r:mdlog_data_file:s0
+/data/log_temp(/.*)?                u:object_r:logtemp_data_file:s0
+/data/mdlog(/.*)?                   u:object_r:mdlog_data_file:s0
+/data/mdl(/.*)?                     u:object_r:mdlog_data_file:s0
+/data/mdl3(/.*)?                    u:object_r:mdlog_data_file:s0
+/data/nfc(/.*)?                     u:object_r:nfc_data_file:s0
+/data/vendor/nfc(/.*)?              u:object_r:nfc_data_vendor_file:s0
+/data/nfc_socket(/.*)?              u:object_r:nfc_socket_file:s0
+/data/vendor/nfc_socket(/.*)?       u:object_r:vendor_nfc_socket_file:s0
+/data/vendor/md3(/.*)?              u:object_r:c2k_file:s0
+/data/SF_dump(./*)?                 u:object_r:sf_bqdump_data_file:s0
+/data/data_tmpfs_log(/.*)?          u:object_r:data_tmpfs_log_file:s0
+/data/vendor/data_tmpfs_log(/.*)?   u:object_r:vendor_tmpfs_log_file:s0
+/data/vendor/audiohal(/.*)?         u:object_r:mtk_audiohal_data_file:s0
+/data/vendor/powerhal(/.*)?         u:object_r:mtk_powerhal_data_file:s0
+/data/vendor/stp_dump(/.*)?         u:object_r:stp_dump_data_file:s0
+/data/vendor/mediadrm(/.*)?         u:object_r:mediadrm_vendor_data_file:s0
+/data/vendor/dipdebug(/.*)?         u:object_r:aee_dipdebug_vendor_file:s0
+/data/vendor/key_provisioning(/.*)? u:object_r:key_install_data_file:s0
+/data/vendor/vcodec(/.*)?           u:object_r:vcodec_file:s0
+
+# Misc data
+/data/misc/mblog(/.*)?    u:object_r:logmisc_data_file:s0
+/data/vendor/sensor(/.*)? u:object_r:sensor_data_file:s0
+
+# Wallpaper file for smartbook
+/data/system/users/[0-9]+/smartbook_wallpaper  u:object_r:wallpaper_file:s0
+
+/data/vendor/connsyslog(/.*)? u:object_r:connsyslog_data_vendor_file:s0
+
+# AAO
+/data/vendor/aao(/.*)?        u:object_r:data_vendor_aao_file:s0
+/data/vendor/aaoHwBuf(/.*)?   u:object_r:data_vendor_aaoHwBuf_file:s0
+/data/vendor/AAObitTrue(/.*)? u:object_r:data_vendor_AAObitTrue_file:s0
+
+# Flash
+/data/vendor/flash(/.*)? u:object_r:data_vendor_flash_file:s0
+
+# Flicker
+/data/vendor/flicker(/.*)? u:object_r:data_vendor_flicker_file:s0
+
+# AFO
+/data/vendor/AFObitTrue(/.*)? u:object_r:data_vendor_afo_file:s0
+
+# PDO
+/data/vendor/pdo(/.*)? u:object_r:data_vendor_pdo_file:s0
+
+# ccci_mdinit access /data/vendor_de/md file
+/data/vendor_de/md(/.*)? u:object_r:data_vendor_de_md_file:s0
+
+# Date : 2019/04/23
+# Operation: R migration
+# Purpose : Add permission for acess vendor_de.
+/data/vendor_de/factory(/.*)? u:object_r:factory_vendor_file:s0
+
+# Date: 2020/09/24
+# Purpose: mtk camsys raw dump file
+/data/vendor/raw(/.*)? u:object_r:data_vendor_raw_file:s0
+
+# Date: 2020/02/22
+# Purpose: add permission for /data/vendor/gpu_dump
+/data/vendor/gpu_dump(/.*)? u:object_r:gpu_dump_vendor_file:s0
+
+# EARA-IO
+/data/vendor/eara_io(/.*)? u:object_r:eara_io_data_file:s0
+
+# Trustonic data files
+/data/vendor/mcRegistry(/.*)? u:object_r:mobicore_data_file:s0
+
+# Microtrust data files
+/data/vendor/thh(/.*)? u:object_r:teei_data_file:s0
+
+/data/vendor/radio(/.*)?       u:object_r:mtk_radio_data_file:s0
+/data/vendor/verizon(/.*)?     u:object_r:omadm_data_file:s0
+/data/vendor/misc/msdata(/.*)? u:object_r:omadm_misc_file:s0
+
+# TrustKernel add
+/data/vendor/t6(/.*)?      u:object_r:tkcore_data_file:s0
+/data/vendor/t6/app(/.*)?  u:object_r:tkcore_spta_file:s0
+/data/vendor/t6/tkcore.log u:object_r:tkcore_log_file:s0
+
+# For Google Trusty Secure Storage Proxy
+/data/vendor/trusty(/.*)? u:object_r:tee_data_file:s0
+
+# DOE
+/data/vendor/doe(/.*)? u:object_r:doe_vendor_data_file:s0
+
+# MTK thp hal
+/data/vendor/thp(/.*)? u:object_r:mtk_thp_data_file:s0
+
+# MTK MDM
+/data/vendor/md_mon(/.*)? u:object_r:md_monitor_vendor_file:s0
+
+# EmCamera
+/data/vendor/camera_dump(/.*)? u:object_r:vendor_camera_dump_file:s0
+
+/data/vendor/.img(/.*)? u:object_r:gpunn_data_file:s0
+
+# DuraSpeed
+/data/duraspeed(/.*)? u:object_r:duraspeed_data_file:s0
+
+/data/misc/log(/.*)? u:object_r:logmuch_data_file:s0
+
+# Date: 2021/06/30
+# Purpose: mtk nn info file
+/data/vendor/nn(/.*)?        u:object_r:data_vendor_nn_file:s0
+
+# Date: 2021/07/01
+# Purpose: mtk hmp info file
+/data/vendor/hmp(/.*)?        u:object_r:data_vendor_hmp_file:s0
+
+##########################
+# Devices
+#
+/dev/aal_als(/.*)?  u:object_r:aal_als_device:s0
+/dev/accdet(/.*)?   u:object_r:accdet_device:s0
+/dev/AD5820AF(/.*)? u:object_r:AD5820AF_device:s0
+/dev/ampc0(/.*)?    u:object_r:ampc0_device:s0
+/dev/android(/.*)?  u:object_r:android_device:s0
+
+/dev/block/zram0       u:object_r:swap_block_device:s0
+/dev/block/by-name/otp u:object_r:otp_part_block_device:s0
+
+/dev/bmtpool(/.*)? u:object_r:bmtpool_device:s0
+/dev/bootimg(/.*)? u:object_r:bootimg_device:s0
+/dev/BOOT(/.*)?    u:object_r:BOOT_device:s0
+/dev/btif(/.*)?    u:object_r:btif_device:s0
+/dev/btn(/.*)?     u:object_r:btn_device:s0
+
+/dev/BU6429AF(/.*)?     u:object_r:BU6429AF_device:s0
+/dev/BU64745GWZAF(/.*)? u:object_r:BU64745GWZAF_device:s0
+
+/dev/MAINAF(/.*)?  u:object_r:MAINAF_device:s0
+/dev/MAIN2AF(/.*)? u:object_r:MAIN2AF_device:s0
+/dev/MAIN3AF(/.*)? u:object_r:MAIN3AF_device:s0
+/dev/MAIN4AF(/.*)? u:object_r:MAIN4AF_device:s0
+
+/dev/SUBAF(/.*)?  u:object_r:SUBAF_device:s0
+/dev/SUB2AF(/.*)? u:object_r:SUB2AF_device:s0
+/dev/cache(/.*)?  u:object_r:cache_device:s0
+
+/dev/CAM_CAL_DRV(/.*)?   u:object_r:CAM_CAL_DRV_device:s0
+/dev/CAM_CAL_DRV1(/.*)?  u:object_r:CAM_CAL_DRV1_device:s0
+/dev/CAM_CAL_DRV2(/.*)?  u:object_r:CAM_CAL_DRV2_device:s0
+/dev/camera_eeprom[0-9]+ u:object_r:camera_eeprom_device:s0
+/dev/seninf_n3d u:object_r:seninf_n3d_device:s0
+
+/dev/gz_kree(/.*)?        u:object_r:gz_device:s0
+/dev/camera-fdvt(/.*)?    u:object_r:camera_fdvt_device:s0
+/dev/camera-mem(/.*)?     u:object_r:camera_mem_device:s0
+/dev/camera-isp(/.*)?     u:object_r:camera_isp_device:s0
+/dev/camera-dip(/.*)?     u:object_r:camera_dip_device:s0
+/dev/camera-dpe(/.*)?     u:object_r:camera_dpe_device:s0
+/dev/camera-tsf(/.*)?     u:object_r:camera_tsf_device:s0
+/dev/camera-rsc(/.*)?     u:object_r:camera_rsc_device:s0
+/dev/camera-gepf(/.*)?    u:object_r:camera_gepf_device:s0
+/dev/camera-wpe(/.*)?     u:object_r:camera_wpe_device:s0
+/dev/camera-owe(/.*)?     u:object_r:camera_owe_device:s0
+/dev/camera-mfb(/.*)?     u:object_r:camera_mfb_device:s0
+/dev/camera-pda(/.*)?     u:object_r:camera_pda_device:s0
+/dev/camera-pipemgr(/.*)? u:object_r:camera_pipemgr_device:s0
+/dev/camera-sysram(/.*)?  u:object_r:camera_sysram_device:s0
+/dev/mtk_ccd(/.*)?        u:object_r:mtk_ccd_device:s0
+
+/dev/mtk_hcp(/.*)? u:object_r:mtk_hcp_device:s0
+/dev/media[0-9]+   u:object_r:mtk_v4l2_media_device:s0
+/dev/v4l-subdev.*  u:object_r:mtk_v4l2_media_device:s0
+/dev/ccu(/.*)?     u:object_r:ccu_device:s0
+/dev/ccu_rproc(/.*)? u:object_r:ccu_device:s0
+/dev/vpu(/.*)?     u:object_r:vpu_device:s0
+/dev/mdlactl(/.*)? u:object_r:mdla_device:s0
+/dev/apusys(/.*)?  u:object_r:apusys_device:s0
+/dev/ccci_monitor  u:object_r:ccci_monitor_device:s0
+/dev/ccci_c2k_agps u:object_r:agps_device:s0
+/dev/ccci.*        u:object_r:ccci_device:s0
+
+/dev/mtk_aov(/.*)?   u:object_r:mtk_aov_device:s0
+
+/dev/cpu_dma_latency(/.*)? u:object_r:cpu_dma_latency_device:s0
+/dev/devmap(/.*)?          u:object_r:devmap_device:s0
+/dev/dri(/.*)?             u:object_r:gpu_device:s0
+/dev/dummy_cam_cal(/.*)?   u:object_r:dummy_cam_cal_device:s0
+
+/dev/DW9714AF(/.*)? u:object_r:DW9714AF_device:s0
+/dev/DW9814AF(/.*)? u:object_r:DW9814AF_device:s0
+/dev/AK7345AF(/.*)? u:object_r:AK7345AF_device:s0
+/dev/DW9714A(/.*)?  u:object_r:DW9714A_device:s0
+/dev/DW9718AF(/.*)? u:object_r:DW9718AF_device:s0
+/dev/WV511AAF(/.*)? u:object_r:lens_device:s0
+
+/dev/ebc(/.*)?  u:object_r:ebc_device:s0
+/dev/usip(/.*)? u:object_r:ebc_device:s0
+/dev/ebr[0-9]+  u:object_r:ebr_device:s0
+/dev/eemcs.*    u:object_r:eemcs_device:s0
+/dev/emd.*      u:object_r:emd_device:s0
+
+/dev/etb         u:object_r:etb_device:s0
+/dev/expdb(/.*)? u:object_r:expdb_device:s0
+
+/dev/fat(/.*)?      u:object_r:fat_device:s0
+/dev/FM50AF(/.*)?   u:object_r:FM50AF_device:s0
+/dev/fm(/.*)?       u:object_r:fm_device:s0
+/dev/fw_log_wmt     u:object_r:fw_log_wmt_device:s0
+/dev/fw_log_wifi    u:object_r:fw_log_wifi_device:s0
+/dev/fw_log_wifimcu u:object_r:fw_log_wifimcu_device:s0
+/dev/fw_log_ics     u:object_r:fw_log_ics_device:s0
+
+/dev/aol_geofence   u:object_r:aol_geofence_device:s0
+/dev/geofence(/.*)?     u:object_r:geo_device:s0
+/dev/fw_log_gps         u:object_r:fw_log_gps_device:s0
+/dev/hdmitx(/.*)?       u:object_r:graphics_device:s0
+/dev/gps2scp            u:object_r:gps2scp_device:s0
+/dev/gps_pwr            u:object_r:gps_pwr_device:s0
+/dev/hid-keyboard(/.*)? u:object_r:hid_keyboard_device:s0
+/dev/ion(/.*)?          u:object_r:ion_device:s0
+
+/dev/kd_camera_flashlight(/.*)? u:object_r:kd_camera_flashlight_device:s0
+/dev/flashlight(/.*)?           u:object_r:flashlight_device:s0
+/dev/kd_camera_hw_bus2(/.*)?    u:object_r:kd_camera_hw_bus2_device:s0
+/dev/kd_camera_hw(/.*)?         u:object_r:kd_camera_hw_device:s0
+/dev/seninf(/.*)?               u:object_r:seninf_device:s0
+
+/dev/LC898122AF(/.*)? u:object_r:LC898122AF_device:s0
+/dev/LC898212AF(/.*)? u:object_r:LC898212AF_device:s0
+
+/dev/logo(/.*)?         u:object_r:logo_device:s0
+/dev/loop-control(/.*)? u:object_r:loop-control_device:s0
+
+/dev/dma_heap/mtk_mm                      u:object_r:dmabuf_system_heap_device:s0
+/dev/dma_heap/mtk_mm-uncached             u:object_r:dmabuf_system_heap_device:s0
+/dev/dma_heap/mtk_svp_page-uncached                 u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_prot_page-uncached                u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_svp_region                        u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_svp_region-aligned                u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_prot_region                       u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_prot_region-aligned               u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_2d_fr_region                      u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_2d_fr_region-aligned              u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_wfd_region                        u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_wfd_region-aligned                u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_wfd_page-uncached                 u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_sapu_data_shm_region              u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_sapu_data_shm_region-aligned      u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_sapu_engine_shm_region            u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_sapu_engine_shm_region-aligned    u:object_r:dmabuf_system_secure_heap_device:s0
+
+/dev/M4U_device(/.*)? u:object_r:M4U_device_device:s0
+/dev/mali.*           u:object_r:gpu_device:s0
+/dev/MATV(/.*)?       u:object_r:MATV_device:s0
+/dev/mbr(/.*)?        u:object_r:mbr_device:s0
+/dev/md32(/.*)?       u:object_r:md32_device:s0
+
+/dev/scp(/.*)?   u:object_r:scp_device:s0
+/dev/scp_B(/.*)? u:object_r:scp_device:s0
+/dev/sspm(/.*)?  u:object_r:sspm_device:s0
+/dev/vcp(/.*)?   u:object_r:vcp_device:s0
+
+/dev/misc-sd(/.*)? u:object_r:misc_sd_device:s0
+/dev/misc(/.*)?    u:object_r:misc_device:s0
+/dev/misc2(/.*)?   u:object_r:misc2_device:s0
+/dev/MJC(/.*)?     u:object_r:MJC_device:s0
+/dev/mmp(/.*)?     u:object_r:mmp_device:s0
+
+/dev/MT6516_H264_DEC(/.*)? u:object_r:MT6516_H264_DEC_device:s0
+/dev/mt6516-IDP(/.*)?      u:object_r:mt6516_IDP_device:s0
+/dev/MT6516_Int_SRAM(/.*)? u:object_r:MT6516_Int_SRAM_device:s0
+/dev/mt6516-isp(/.*)?      u:object_r:mt6516_isp_device:s0
+/dev/mt6516_jpeg(/.*)?     u:object_r:mt6516_jpeg_device:s0
+/dev/MT6516_MM_QUEUE(/.*)? u:object_r:MT6516_MM_QUEUE_device:s0
+/dev/MT6516_MP4_DEC(/.*)?  u:object_r:MT6516_MP4_DEC_device:s0
+/dev/MT6516_MP4_ENC(/.*)?  u:object_r:MT6516_MP4_ENC_device:s0
+
+/dev/st21nfc u:object_r:st21nfc_device:s0
+/dev/st54spi u:object_r:st54spi_device:s0
+
+/dev/mt9p012(/.*)?       u:object_r:mt9p012_device:s0
+/dev/mtfreqhopping(/.*)? u:object_r:mtfreqhopping_device:s0
+/dev/mtgpio(/.*)?        u:object_r:mtgpio_device:s0
+
+/dev/mtk-adc-cali(/.*)? u:object_r:mtk-adc-cali_device:s0
+/dev/mtk_disp.*         u:object_r:graphics_device:s0
+/dev/mtkfb_vsync(/.*)?  u:object_r:graphics_device:s0
+/dev/mtkg2d(/.*)?       u:object_r:mtkg2d_device:s0
+/dev/mtk_jpeg(/.*)?     u:object_r:mtk_jpeg_device:s0
+/dev/mtk-kpd(/.*)?      u:object_r:mtk_kpd_device:s0
+/dev/mtk_sched(/.*)?    u:object_r:mtk_sched_device:s0
+/dev/MTK_SMI(/.*)?      u:object_r:MTK_SMI_device:s0
+/dev/mtk_cmdq(/.*)?     u:object_r:mtk_cmdq_device:s0
+/dev/mtk_mdp(/.*)?      u:object_r:mtk_mdp_device:s0
+/dev/mdp_device(/.*)?   u:object_r:mdp_device:s0
+/dev/mdp_sync(/.*)?     u:object_r:mtk_mdp_sync_device:s0
+/dev/fmt_sync(/.*)?     u:object_r:mtk_fmt_sync_device:s0
+/dev/vdec-fmt(/.*)?     u:object_r:mtk_fmt_device:s0
+/dev/mtk_rrc(/.*)?      u:object_r:mtk_rrc_device:s0
+/dev/mtk_dfrc(/.*)?     u:object_r:mtk_dfrc_device:s0
+
+/dev/mt-mdp(/.*)?           u:object_r:mt_mdp_device:s0
+/dev/mt_otg_test(/.*)?      u:object_r:mt_otg_test_device:s0
+/dev/MT_pmic_adc_cali       u:object_r:MT_pmic_adc_cali_device:s0
+/dev/MT_pmic_adc_cali(/.*)? u:object_r:MT_pmic_cali_device:s0
+/dev/MT_pmic(/.*)?          u:object_r:MT_pmic_device:s0
+
+/dev/network.*    u:object_r:network_device:s0
+/dev/nvram(/.*)?  u:object_r:nvram_device:s0
+/dev/nxpspk(/.*)? u:object_r:smartpa_device:s0
+
+/dev/otp                   u:object_r:otp_device:s0
+/dev/pmem_multimedia(/.*)? u:object_r:pmem_multimedia_device:s0
+/dev/pmt(/.*)?             u:object_r:pmt_device:s0
+
+/dev/preloader(/.*)? u:object_r:preloader_device:s0
+/dev/pro_info(/.*)?  u:object_r:pro_info_device:s0
+/dev/protect_f(/.*)? u:object_r:protect_f_device:s0
+/dev/protect_s(/.*)? u:object_r:protect_s_device:s0
+
+/dev/psaux(/.*)?    u:object_r:psaux_device:s0
+/dev/ptmx(/.*)?     u:object_r:ptmx_device:s0
+/dev/ptyp.*         u:object_r:ptyp_device:s0
+/dev/pvr_sync(/.*)? u:object_r:gpu_device:s0
+
+/dev/qemu_pipe(/.*)?     u:object_r:qemu_pipe_device:s0
+/dev/recovery(/.*)?      u:object_r:recovery_device:s0
+/dev/rfkill(/.*)?        u:object_r:rfkill_device:s0
+/dev/rtc[0-9]+           u:object_r:rtc_device:s0
+/dev/RT_Monitor(/.*)?    u:object_r:RT_Monitor_device:s0
+/dev/kick_powerkey(/.*)? u:object_r:kick_powerkey_device:s0
+
+/dev/seccfg(/.*)? u:object_r:seccfg_device:s0
+/dev/sec_ro(/.*)? u:object_r:sec_ro_device:s0
+/dev/sec(/.*)?    u:object_r:sec_device:s0
+
+/dev/tee1 u:object_r:tee_part_device:s0
+/dev/tee2 u:object_r:tee_part_device:s0
+
+/dev/sensor(/.*)?      u:object_r:sensor_device:s0
+/dev/smartpa_i2c(/.*)? u:object_r:smartpa1_device:s0
+/dev/snapshot(/.*)?    u:object_r:snapshot_device:s0
+/dev/i2c-9(/.*)?       u:object_r:tahiti_device:s0
+
+/dev/socket/adbd(/.*)?       u:object_r:adbd_socket:s0
+/dev/socket/agpsd2(/.*)?     u:object_r:agpsd_socket:s0
+/dev/socket/agpsd3(/.*)?     u:object_r:agpsd_socket:s0
+/dev/socket/agpsd(/.*)?      u:object_r:agpsd_socket:s0
+/dev/socket/atci-audio(/.*)? u:object_r:atci-audio_socket:s0
+
+/dev/socket/meta-atci(/.*)?     u:object_r:meta_atci_socket:s0
+/dev/socket/factory-atci(/.*)? u:object_r:factory_atci_socket:s0
+/dev/socket/backuprestore(/.*)? u:object_r:backuprestore_socket:s0
+
+/dev/socket/dfo(/.*)?       u:object_r:dfo_socket:s0
+/dev/socket/dnsproxyd(/.*)? u:object_r:dnsproxyd_socket:s0
+/dev/socket/dumpstate(/.*)? u:object_r:dumpstate_socket:s0
+
+/dev/socket/mdnsd(/.*)? u:object_r:mdnsd_socket:s0
+/dev/socket/mdns(/.*)?  u:object_r:mdns_socket:s0
+/dev/socket/mnld(/.*)?  u:object_r:mnld_socket:s0
+
+/dev/socket/netd(/.*)?    u:object_r:netd_socket:s0
+
+/dev/socket/mrild(/.*)?  u:object_r:gsmrild_socket:s0
+/dev/socket/mrild2(/.*)? u:object_r:gsmrild_socket:s0
+/dev/socket/mrild3(/.*)? u:object_r:gsmrild_socket:s0
+
+/dev/socket/rild-atci       u:object_r:gsmrild_socket:s0
+/dev/socket/rild-mbim(/.*)? u:object_r:gsmrild_socket:s0
+
+/dev/socket/msap_uim_socket1(/.*)? u:object_r:gsmrild_socket:s0
+/dev/socket/msap_uim_socket2(/.*)? u:object_r:gsmrild_socket:s0
+/dev/socket/msap_c2k_socket1(/.*)? u:object_r:gsmrild_socket:s0
+/dev/socket/msap_c2k_socket2(/.*)? u:object_r:gsmrild_socket:s0
+/dev/socket/msap_c2k_socket3(/.*)? u:object_r:gsmrild_socket:s0
+/dev/socket/msap_c2k_socket4(/.*)? u:object_r:gsmrild_socket:s0
+
+/dev/socket/sap_uim_socket(/.*)?  u:object_r:gsmrild_socket:s0
+/dev/socket/sap_uim_socket1(/.*)? u:object_r:gsmrild_socket:s0
+/dev/socket/sap_uim_socket2(/.*)? u:object_r:gsmrild_socket:s0
+/dev/socket/sap_uim_socket3(/.*)? u:object_r:gsmrild_socket:s0
+/dev/socket/sap_uim_socket4(/.*)? u:object_r:gsmrild_socket:s0
+
+/dev/socket/rild2-md2(/.*)? u:object_r:rild2_md2_socket:s0
+/dev/socket/rild2(/.*)?     u:object_r:rild2_socket:s0
+/dev/socket/rild3(/.*)?     u:object_r:rild3_socket:s0
+/dev/socket/rild4(/.*)?     u:object_r:rild4_socket:s0
+
+/dev/socket/rild-mal(/.*)?          u:object_r:rild_mal_socket:s0
+/dev/socket/rild-mal-at(/.*)?       u:object_r:rild_mal_at_socket:s0
+/dev/socket/rild-mal-md2(/.*)?      u:object_r:rild_mal_md2_socket:s0
+/dev/socket/rild-mal-at-md2(/.*)?   u:object_r:rild_mal_at_md2_socket:s0
+/dev/socket/rild-ims(/.*)?          u:object_r:rild_ims_socket:s0
+/dev/socket/volte_imsm_dongle(/.*)? u:object_r:rild_imsm_socket:s0
+
+/dev/socket/rild-vsim(/.*)?     u:object_r:rild_vsim_socket:s0
+/dev/socket/rild-vsim2(/.*)?    u:object_r:rild_vsim_socket:s0
+/dev/socket/rild-vsim3(/.*)?    u:object_r:rild_vsim_socket:s0
+/dev/socket/rild-vsim-md2(/.*)? u:object_r:rild_vsim_md2_socket:s0
+
+/dev/socket/rild-ctclient        u:object_r:rild_ctclient_socket:s0
+/dev/socket/rild-debug-md2(/.*)? u:object_r:rild_debug_md2_socket:s0
+/dev/socket/rild-debug(/.*)?     u:object_r:rild_debug_socket:s0
+/dev/socket/rild-dongle(/.*)?    u:object_r:rild-dongle_socket:s0
+
+/dev/socket/rild-md2(/.*)?           u:object_r:rild_md2_socket:s0
+/dev/socket/rild-mtk-modem-md2(/.*)? u:object_r:rild_mtk_modem_md2_socket:s0
+/dev/socket/rild-mtk-modem(/.*)?     u:object_r:rild_mtk_modem_socket:s0
+/dev/socket/rild-mtk-ut-2-md2(/.*)?  u:object_r:rild_mtk_ut_2_md2_socket:s0
+/dev/socket/rild-mtk-ut-2(/.*)?      u:object_r:rild_mtk_ut_2_socket:s0
+/dev/socket/rild-mtk-ut-md2(/.*)?    u:object_r:rild_mtk_ut_md2_socket:s0
+/dev/socket/rild-mtk-ut(/.*)?        u:object_r:rild_mtk_ut_socket:s0
+
+/dev/socket/rild-oem-md2(/.*)? u:object_r:rild_oem_md2_socket:s0
+/dev/socket/rild-oem(/.*)?     u:object_r:rild_oem_socket:s0
+/dev/socket/rild(/.*)?         u:object_r:rild_socket:s0
+/dev/socket/rild-via           u:object_r:rild_via_socket:s0
+/dev/socket/rildc-debug        u:object_r:rild_via_socket:s0
+/dev/socket/rild-atci-c2k      u:object_r:rild_via_socket:s0
+
+/dev/socket/mal-mfi(/.*)?        u:object_r:mal_mfi_socket:s0
+/dev/socket/mal-mfi-dongle(/.*)? u:object_r:mal_mfi_socket:s0
+/dev/socket/rpc                  u:object_r:rpc_socket:s0
+
+/dev/socket/soc_vt_stk(/.*)? u:object_r:soc_vt_stk_socket:s0
+/dev/socket/soc_vt_svc(/.*)? u:object_r:soc_vt_svc_socket:s0
+/dev/socket/soc_vt_tcv(/.*)? u:object_r:soc_vt_tcv_socket:s0
+
+/dev/socket/sysctl(/.*)?    u:object_r:sysctl_socket:s0
+/dev/socket/volte_vt(/.*)?  u:object_r:volte_vt_socket:s0
+/dev/socket/wpa_wlan0(/.*)? u:object_r:wpa_wlan0_socket:s0
+
+/dev/socket/thermal_socket(/.*)? u:object_r:thermal_socket:s0
+/dev/socket/thermal_hal_socket(/.*)? u:object_r:thermal_hal_socket:s0
+
+/dev/socket/vendor.xcap(/.*)?         u:object_r:xcap_socket:s0
+
+/dev/stpant(/.*)?   u:object_r:stpant_device:s0
+/dev/stpbt(/.*)?    u:object_r:stpbt_device:s0
+/dev/fw_log_bt      u:object_r:fw_log_bt_device:s0
+/dev/fw_log_btmcu   u:object_r:fw_log_btmcu_device:s0
+
+/dev/stpgps        u:object_r:mnld_device:s0
+/dev/stpgps(/.*)?  u:object_r:stpgps_device:s0
+/dev/stpgps2(/.*)? u:object_r:stpgps_device:s0
+/dev/gpsdl0        u:object_r:mnld_device:s0
+/dev/gpsdl0(/.*)?  u:object_r:gpsdl_device:s0
+/dev/gpsdl1        u:object_r:mnld_device:s0
+/dev/gpsdl1(/.*)?  u:object_r:gpsdl_device:s0
+/dev/gps_emi(/.*)? u:object_r:gps_emi_device:s0
+
+/dev/stpwmt(/.*)?        u:object_r:stpwmt_device:s0
+/dev/conninfra_dev(/.*)? u:object_r:conninfra_device:s0
+/dev/sw_sync(/.*)?       u:object_r:sw_sync_device:s0
+/dev/tgt(/.*)?           u:object_r:tgt_device:s0
+/dev/touch(/.*)?         u:object_r:touch_device:s0
+/dev/tpd_em_log(/.*)?    u:object_r:tpd_em_log_device:s0
+
+/dev/connfem(/.*)? u:object_r:connfem_device:s0
+
+/dev/ttyC0     u:object_r:gsm0710muxd_device:s0
+/dev/ttyCMIPC0         u:object_r:gsm0710muxd_device:s0
+/dev/ttyCMIPC1         u:object_r:gsm0710muxd_device:s0
+/dev/ttyCMIPC2         u:object_r:gsm0710muxd_device:s0
+/dev/ttyCMIPC9         u:object_r:gsm0710muxd_device:s0
+/dev/ttyC1     u:object_r:mdlog_device:s0
+/dev/ttyC2     u:object_r:agps_device:s0
+/dev/ttyC3     u:object_r:icusb_device:s0
+/dev/ttyC6     u:object_r:nlop_device:s0
+/dev/ttyGS.*   u:object_r:ttyGS_device:s0
+/dev/ttyMT.*   u:object_r:ttyMT_device:s0
+/dev/ttyS.*    u:object_r:ttyS_device:s0
+/dev/ttyp.*    u:object_r:ttyp_device:s0
+/dev/ttySDIO.* u:object_r:ttySDIO_device:s0
+/dev/ttyUSB0   u:object_r:tty_device:s0
+/dev/ttyUSB1   u:object_r:tty_device:s0
+/dev/ttyUSB2   u:object_r:tty_device:s0
+/dev/ttyUSB3   u:object_r:tty_device:s0
+/dev/ttyUSB4   u:object_r:tty_device:s0
+
+/dev/TV-out(/.*)?  u:object_r:TV_out_device:s0
+/dev/uboot(/.*)?   u:object_r:uboot_device:s0
+/dev/uibc(/.*)?    u:object_r:uibc_device:s0
+/dev/uinput(/.*)?  u:object_r:uinput_device:s0
+/dev/uio0(/.*)?    u:object_r:uio0_device:s0
+/dev/usrdata(/.*)? u:object_r:usrdata_device:s0
+
+/dev/Vcodec(/.*)? u:object_r:Vcodec_device:s0
+/dev/vmodem       u:object_r:vmodem_device:s0
+/dev/vow(/.*)?    u:object_r:vow_device:s0
+
+/dev/wmtdetect(/.*)?      u:object_r:wmtdetect_device:s0
+/dev/conn_pwr_dev(/.*)?      u:object_r:conn_pwr_device:s0
+/dev/conn_scp(/.*)?       u:object_r:conn_scp_device:s0
+/dev/wmtWifi(/.*)?        u:object_r:wmtWifi_device:s0
+/dev/ancservice(/.*)?     u:object_r:ancservice_device:s0
+/dev/offloadservice(/.*)? u:object_r:offloadservice_device:s0
+/dev/audio_ipi(/.*)?      u:object_r:audio_ipi_device:s0
+
+/dev/adsp(/.*)?      u:object_r:adsp_device:s0
+/dev/adsp_0(/.*)?    u:object_r:adsp_device:s0
+/dev/adsp_1(/.*)?    u:object_r:adsp_device:s0
+/dev/audio_scp(/.*)? u:object_r:audio_scp_device:s0
+
+/dev/irtx              u:object_r:irtx_device:s0
+/dev/lirc[0-9]+        u:object_r:irtx_device:s0
+/dev/spm(/.*)?         u:object_r:spm_device:s0
+/dev/xt_qtaguid(/.*)?  u:object_r:xt_qtaguid_device:s0
+/dev/pmic_ftm(/.*)?    u:object_r:pmic_ftm_device:s0
+/dev/charger_ftm(/.*)? u:object_r:charger_ftm_device:s0
+/dev/shf               u:object_r:shf_device:s0
+/dev/ttyACM0           u:object_r:ttyACM_device:s0
+/dev/hrm               u:object_r:hrm_device:s0
+/dev/trusty-ipc-dev0   u:object_r:tee_device:s0
+/dev/nebula-ipc-dev0   u:object_r:tee_device:s0
+/dev/trustzone         u:object_r:tee_device:s0
+/dev/mbim              u:object_r:mbim_device:s0
+/dev/alarm(/.*)?       u:object_r:alarm_device:s0
+/dev/radio(/.*)?       u:object_r:mtk_radio_device:s0
+/dev/mml_pq     u:object_r:mml_pq_device:s0
+
+# Sensor common Devices Start
+/dev/als_ps(/.*)?     u:object_r:als_ps_device:s0
+/dev/barometer(/.*)?  u:object_r:barometer_device:s0
+/dev/humidity(/.*)?   u:object_r:humidity_device:s0
+/dev/gsensor(/.*)?    u:object_r:gsensor_device:s0
+/dev/gyroscope(/.*)?  u:object_r:gyroscope_device:s0
+/dev/hwmsensor(/.*)?  u:object_r:hwmsensor_device:s0
+/dev/msensor(/.*)?    u:object_r:msensor_device:s0
+/dev/biometric(/.*)?  u:object_r:biometric_device:s0
+/dev/sensorlist(/.*)? u:object_r:sensorlist_device:s0
+/dev/hf_manager(/.*)? u:object_r:hf_manager_device:s0
+
+# Sensor Devices Start
+/dev/m_batch_misc(/.*)? u:object_r:m_batch_misc_device:s0
+
+# Sensor bio Devices Start
+/dev/m_als_misc(/.*)?    u:object_r:m_als_misc_device:s0
+/dev/m_ps_misc(/.*)?     u:object_r:m_ps_misc_device:s0
+/dev/m_baro_misc(/.*)?   u:object_r:m_baro_misc_device:s0
+/dev/m_hmdy_misc(/.*)?   u:object_r:m_hmdy_misc_device:s0
+/dev/m_acc_misc(/.*)?    u:object_r:m_acc_misc_device:s0
+/dev/m_mag_misc(/.*)?    u:object_r:m_mag_misc_device:s0
+/dev/m_gyro_misc(/.*)?   u:object_r:m_gyro_misc_device:s0
+/dev/m_act_misc(/.*)?    u:object_r:m_act_misc_device:s0
+/dev/m_pedo_misc(/.*)?   u:object_r:m_pedo_misc_device:s0
+/dev/m_situ_misc(/.*)?   u:object_r:m_situ_misc_device:s0
+/dev/m_step_c_misc(/.*)? u:object_r:m_step_c_misc_device:s0
+/dev/m_fusion_misc(/.*)? u:object_r:m_fusion_misc_device:s0
+/dev/m_bio_misc(/.*)?    u:object_r:m_bio_misc_device:s0
+
+# block partition definitions
+/dev/block/mmcblk0boot0                                                                                     u:object_r:preloader_block_device:s0
+/dev/block/mmcblk0boot1                                                                                     u:object_r:preloader_block_device:s0
+/dev/block/sda                                                                                              u:object_r:preloader_block_device:s0
+/dev/block/sdb                                                                                              u:object_r:preloader_block_device:s0
+/dev/block/mmcblk0                                                                                          u:object_r:bootdevice_block_device:s0
+/dev/block/sdc                                                                                              u:object_r:bootdevice_block_device:s0
+/dev/block/mmcblk1                                                                                          u:object_r:mmcblk1_block_device:s0
+/dev/block/mmcblk1p1                                                                                        u:object_r:mmcblk1p1_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/proinfo                          u:object_r:nvram_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/nvram                            u:object_r:nvram_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/nvdata                           u:object_r:nvdata_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/frp                              u:object_r:frp_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/expdb                            u:object_r:expdb_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/misc2                            u:object_r:misc2_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/para                             u:object_r:para_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/misc                             u:object_r:misc_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/seccfg                           u:object_r:seccfg_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/secro                            u:object_r:secro_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/system                           u:object_r:system_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/userdata                         u:object_r:userdata_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/cache                            u:object_r:cache_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/recovery                         u:object_r:recovery_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/protect1                         u:object_r:protect1_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/protect2                         u:object_r:protect2_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/keystore                         u:object_r:keystore_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/oemkeystore                      u:object_r:oemkeystore_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/boot                             u:object_r:boot_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/persist                          u:object_r:persist_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/metadata                         u:object_r:metadata_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/nvcfg                            u:object_r:nvcfg_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/ppl                              u:object_r:ppl_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/sec1                             u:object_r:sec1_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/boot_para                        u:object_r:boot_para_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/super                            u:object_r:super_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/boot(_[ab])?                     u:object_r:boot_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/system(_[ab])?                   u:object_r:system_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/odm(_[ab])?                      u:object_r:odm_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/oem(_[ab])?                      u:object_r:oem_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/vendor(_[ab])?                   u:object_r:vendor_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/lk(_[ab])?                       u:object_r:lk_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/logo(_[ab])?                     u:object_r:logo_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/odmdtbo(_[ab])?                  u:object_r:dtbo_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/dtbo(_[ab])?                     u:object_r:dtbo_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/tee([12]|_[ab])                  u:object_r:tee_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/md1img(_[ab])?                   u:object_r:md_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/md1dsp(_[ab])?                   u:object_r:dsp_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/md1arm7(_[ab])?                  u:object_r:md_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/md3img(_[ab])?                   u:object_r:md_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/scp(_[ab])?                      u:object_r:scp_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/sspm(_[ab])?                     u:object_r:sspm_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/spmfw(_[ab])?                    u:object_r:spmfw_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/vbmeta(_system|_vendor)?(_[ab])? u:object_r:vbmeta_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/dpm.*                            u:object_r:dpm_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/mcf_ota(_[ab])?                  u:object_r:mcf_ota_block_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/vcp(_[ab])?                      u:object_r:vcp_device:s0
+# Key manager
+/dev/block/platform/soc/[0-9]+\.mmc/by-name/kb  u:object_r:kb_block_device:s0
+/dev/block/platform/soc/[0-9]+\.mmc/by-name/dkb u:object_r:dkb_block_device:s0
+
+/dev/block/by-name/proinfo                          u:object_r:nvram_device:s0
+/dev/block/by-name/nvram                            u:object_r:nvram_device:s0
+/dev/block/by-name/nvdata                           u:object_r:nvdata_device:s0
+/dev/block/by-name/frp                              u:object_r:frp_block_device:s0
+/dev/block/by-name/expdb                            u:object_r:expdb_block_device:s0
+/dev/block/by-name/misc2                            u:object_r:misc2_block_device:s0
+/dev/block/by-name/para                             u:object_r:para_block_device:s0
+/dev/block/by-name/misc                             u:object_r:misc_block_device:s0
+/dev/block/by-name/seccfg                           u:object_r:seccfg_block_device:s0
+/dev/block/by-name/secro                            u:object_r:secro_block_device:s0
+/dev/block/by-name/userdata                         u:object_r:userdata_block_device:s0
+/dev/block/by-name/cache                            u:object_r:cache_block_device:s0
+/dev/block/by-name/recovery                         u:object_r:recovery_block_device:s0
+/dev/block/by-name/protect1                         u:object_r:protect1_block_device:s0
+/dev/block/by-name/protect2                         u:object_r:protect2_block_device:s0
+/dev/block/by-name/keystore                         u:object_r:keystore_block_device:s0
+/dev/block/by-name/persist                          u:object_r:persist_block_device:s0
+/dev/block/by-name/metadata                         u:object_r:metadata_block_device:s0
+/dev/block/by-name/nvcfg                            u:object_r:nvcfg_block_device:s0
+/dev/block/by-name/sec1                             u:object_r:sec1_block_device:s0
+/dev/block/by-name/boot_para                        u:object_r:boot_para_block_device:s0
+/dev/block/by-name/mcf_ota(_[ab])?                  u:object_r:mcf_ota_block_device:s0
+/dev/block/by-name/super                            u:object_r:super_block_device:s0
+/dev/block/by-name/cam_vpu[1-3](_[ab])?             u:object_r:cam_vpu_block_device:s0
+/dev/block/by-name/system(_[ab])?                   u:object_r:system_block_device:s0
+/dev/block/by-name/boot(_[ab])?                     u:object_r:boot_block_device:s0
+/dev/block/by-name/odm(_[ab])?                      u:object_r:odm_block_device:s0
+/dev/block/by-name/oem(_[ab])?                      u:object_r:oem_block_device:s0
+/dev/block/by-name/vendor(_[ab])?                   u:object_r:vendor_block_device:s0
+/dev/block/by-name/lk(_[ab])?                       u:object_r:lk_block_device:s0
+/dev/block/by-name/logo(_[ab])?                     u:object_r:logo_block_device:s0
+/dev/block/by-name/odmdtbo(_[ab])?                  u:object_r:dtbo_block_device:s0
+/dev/block/by-name/dtbo(_[ab])?                     u:object_r:dtbo_block_device:s0
+/dev/block/by-name/tee([12]|_[ab])                  u:object_r:tee_block_device:s0
+/dev/block/by-name/md1img(_[ab])?                   u:object_r:md_block_device:s0
+/dev/block/by-name/md1dsp(_[ab])?                   u:object_r:dsp_block_device:s0
+/dev/block/by-name/md1arm7(_[ab])?                  u:object_r:md_block_device:s0
+/dev/block/by-name/md3img(_[ab])?                   u:object_r:md_block_device:s0
+/dev/block/by-name/scp(_[ab])?                      u:object_r:scp_block_device:s0
+/dev/block/by-name/sspm(_[ab])?                     u:object_r:sspm_block_device:s0
+/dev/block/by-name/spmfw(_[ab])?                    u:object_r:spmfw_block_device:s0
+/dev/block/by-name/mcupmfw(_[ab])?                  u:object_r:mcupmfw_block_device:s0
+/dev/block/by-name/mcupm(_[ab])?                    u:object_r:mcupmfw_block_device:s0
+/dev/block/by-name/loader_ext(_[ab])?               u:object_r:loader_ext_block_device:s0
+/dev/block/by-name/vbmeta(_system|_vendor)?(_[ab])? u:object_r:vbmeta_block_device:s0
+/dev/block/by-name/dpm.*                            u:object_r:dpm_block_device:s0
+/dev/block/by-name/dpm(_[ab])?                      u:object_r:dpm_block_device:s0
+/dev/block/by-name/audio_dsp(_[ab])?                u:object_r:audio_dsp_block_device:s0
+/dev/block/by-name/gz([12]|_[ab])                   u:object_r:gz_block_device:s0
+/dev/block/by-name/vendor_boot(_[ab])?              u:object_r:boot_block_device:s0
+/dev/block/by-name/pi_img(_[ab])?                   u:object_r:pi_img_device:s0
+/dev/block/by-name/apusys(_[ab])?                   u:object_r:apusys_device:s0
+/dev/block/by-name/ccu(_[ab])?                      u:object_r:ccu_device:s0
+/dev/block/by-name/gpueb(_[ab])?                    u:object_r:gpueb_device:s0
+/dev/block/by-name/vcp(_[ab])?                      u:object_r:vcp_device:s0
+/dev/block/by-name/mvpu_algo(_[ab])?                      u:object_r:mvpu_algo_device:s0
+/dev/block/by-name/connsys_bt(_[ab])?               u:object_r:connsys_bt_block_device:s0
+/dev/block/by-name/connsys_wifi(_[ab])?             u:object_r:connsys_wifi_block_device:s0
+/dev/block/by-name/connsys_gnss(_[ab])?             u:object_r:connsys_gnss_block_device:s0
+/dev/block/by-name/init_boot(_[ab])?                u:object_r:boot_block_device:s0
+
+# W19.23 Q new feature - Userdata Checkpoint
+/dev/block/by-name/md_udc u:object_r:metadata_block_device:s0
+
+# MRDUMP
+/dev/block/by-name/mrdump(/.*)? u:object_r:mrdump_device:s0
+
+/dev/vcu  u:object_r:vcu_device:s0
+/dev/vpud u:object_r:vpud_device:s0
+
+# TrustKernel add
+/dev/tkcoredrv u:object_r:tkcore_admin_device:s0
+/dev/tkcore_admin u:object_r:tkcore_admin_device:s0
+/dev/tkcore_client u:object_r:tkcore_client_device:s0
+
+# For Google Trusty Secure Storage Proxy
+/dev/block/mmcblk0rpmb u:object_r:rpmb_block_device:s0
+
+# Trustonic TEE devices
+/dev/mobicore      u:object_r:mobicore_admin_device:s0
+/dev/mobicore-user u:object_r:mobicore_user_device:s0
+/dev/t-base-tui    u:object_r:mobicore_tui_device:s0
+
+# teeperf devices
+/dev/teeperf u:object_r:teeperf_device:s0
+
+# Microtrust TEEI devices
+/dev/teei_config u:object_r:teei_config_device:s0
+/dev/teei_client u:object_r:teei_client_device:s0
+/dev/isee_tee0   u:object_r:teei_client_device:s0
+/dev/tz_vfs      u:object_r:teei_vfs_device:s0
+
+# rpmb char device
+/dev/rpmb0       u:object_r:teei_rpmb_device:s0
+/dev/mmcblk0rpmb u:object_r:rpmb_device:s0
+
+# legacy char device for cross-platform compatibility
+/dev/emmcrpmb0    u:object_r:teei_rpmb_device:s0
+/dev/teei_fp      u:object_r:teei_fp_device:s0
+/dev/ut_keymaster u:object_r:ut_keymaster_device:s0
+/dev/utr_tui      u:object_r:utr_tui_device:s0
+
+# microtrust lite version use start
+/dev/teei_loader u:object_r:tee_device:s0
+
+# microtrust lite version use end
+/dev/dri/card0 u:object_r:dri_device:s0
+
+/dev/ttyC5     u:object_r:nwkopt_device:s0
+/dev/mix_event u:object_r:tx_device:s0
+
+# MTK thp hal
+/dev/thp              u:object_r:gdix_thp_device:s0
+/dev/input_mt_wrapper u:object_r:gdix_mt_wrapper_device:s0
+
+# tetheroffload
+/dev/mddp u:object_r:mddp_device:s0
+
+/dev/socket/rcs_ua_proxy(/.*)?    u:object_r:rcs_ua_proxy_socket:s0
+/dev/socket/rcs_volte_stack(/.*)? u:object_r:rcs_volte_stack_socket:s0
+/dev/socket/rcs_rild(/.*)?        u:object_r:rcs_rild_socket:s0
+/dev/socket/statusd               u:object_r:statusd_socket:s0
+/dev/socket/rilproxy-mal(/.*)?    u:object_r:rild_mal_socket:s0
+/dev/socket/wo_epdg_ipsec(/.*)?   u:object_r:wo_epdg_ipsec_socket:s0
+
+# MTK ATCI
+/dev/socket/rild-atci(/.*)?       u:object_r:rild_atci_socket:s0
+/dev/socket/rilproxy-atci(/.*)?   u:object_r:rilproxy_atci_socket:s0
+/dev/socket/atci-service(/.*)?    u:object_r:atci_service_socket:s0
+/dev/socket/adb_atci_socket(/.*)? u:object_r:adb_atci_socket:s0
+
+# MTK VTService
+/dev/socket/volte_imsvt1(/.*)? u:object_r:volte_imsvt1_socket:s0
+
+/dev/goodix_fp     u:object_r:fingerprint_device:s0
+
+#MTK widevine kernel driver
+/dev/drm_wv u:object_r:widevine_drv_device:s0
+
+# Preloader
+/dev/block/by-name/preloader_raw_a                     u:object_r:postinstall_block_device:s0
+/dev/block/by-name/preloader_raw_b                     u:object_r:postinstall_block_device:s0
+/dev/block/platform/bootdevice/by-name/preloader_raw_a u:object_r:postinstall_block_device:s0
+/dev/block/platform/bootdevice/by-name/preloader_raw_b u:object_r:postinstall_block_device:s0
+
+##########################
+# Vendor files
+#
+/(vendor|system/vendor)/bin/audiocmdservice_atci                                   u:object_r:audiocmdservice_atci_exec:s0
+/(vendor|system/vendor)/bin/stp_dump3                                              u:object_r:stp_dump3_exec:s0
+/(vendor|system/vendor)/bin/wifi_dump                                              u:object_r:wifi_dump_exec:s0
+/(vendor|system/vendor)/bin/bt_dump                                                u:object_r:bt_dump_exec:s0
+/(vendor|system/vendor)/bin/wmt_launcher                                           u:object_r:mtk_wmt_launcher_exec:s0
+/(vendor|system/vendor)/bin/fuelgauged                                             u:object_r:fuelgauged_exec:s0
+/(vendor|system/vendor)/bin/smartcharging                                          u:object_r:smartcharging_exec:s0
+/(vendor|system/vendor)/bin/fuelgauged_nvram                                       u:object_r:fuelgauged_nvram_exec:s0
+/(vendor|system/vendor)/bin/gsm0710muxd                                            u:object_r:gsm0710muxd_exec:s0
+/(vendor|system/vendor)/bin/mmc_ffu                                                u:object_r:mmc_ffu_exec:s0
+/(vendor|system/vendor)/bin/mtk_agpsd                                              u:object_r:mtk_agpsd_exec:s0
+/(vendor|system/vendor)/bin/mtkrild                                                u:object_r:mtkrild_exec:s0
+/(vendor|system/vendor)/bin/muxreport                                              u:object_r:muxreport_exec:s0
+/(vendor|system/vendor)/bin/nvram_agent_binder                                     u:object_r:mtk_hal_nvramagent_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.nvram@(.*)-service      u:object_r:mtk_hal_nvramagent_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.nvram@(.*)-service-lazy u:object_r:mtk_hal_nvramagent_exec:s0
+/(vendor|system/vendor)/bin/nvram_daemon                                           u:object_r:nvram_daemon_exec:s0
+/(vendor|system/vendor)/bin/slpd                                                   u:object_r:slpd_exec:s0
+/(vendor|system/vendor)/bin/thermal_manager                                        u:object_r:thermal_manager_exec:s0
+/(vendor|system/vendor)/bin/thermal_core u:object_r:thermal_core_exec:s0
+/(vendor|system/vendor)/bin/thermal_core64 u:object_r:thermal_core_exec:s0
+/(vendor|system/vendor)/bin/frs   u:object_r:thermal_core_exec:s0
+/(vendor|system/vendor)/bin/frs64 u:object_r:thermal_core_exec:s0
+/(vendor|system/vendor)/bin/thermalloadalgod                                       u:object_r:thermalloadalgod_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@2\.0-service\.mtk        u:object_r:hal_thermal_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@2\.0-service\.mediatek   u:object_r:hal_thermal_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal-service\.mediatek        u:object_r:hal_thermal_default_exec:s0
+/(vendor|system/vendor)/bin/lbs_hidl_service                                       u:object_r:lbs_hidl_service_exec:s0
+/(vendor|system/vendor)/bin/meta_tst                                               u:object_r:meta_tst_exec:s0
+/(vendor|system/vendor)/bin/kisd                                                   u:object_r:kisd_exec:s0
+
+/(vendor|system/vendor)/bin/fm_hidl_service  u:object_r:fm_hidl_service_exec:s0
+/(vendor|system/vendor)/bin/wlan_assistant   u:object_r:wlan_assistant_exec:s0
+/(vendor|system/vendor)/bin/wmt_loader       u:object_r:wmt_loader_exec:s0
+/(vendor|system/vendor)/bin/spm_loader       u:object_r:spm_loader_exec:s0
+/(vendor|system/vendor)/bin/ccci_mdinit      u:object_r:ccci_mdinit_exec:s0
+/(vendor|system/vendor)/bin/factory          u:object_r:factory_exec:s0
+/(vendor|system/vendor)/bin/conninfra_loader u:object_r:conninfra_loader_exec:s0
+
+/(vendor|system/vendor)/bin/mnld u:object_r:mnld_exec:s0
+/(vendor|system/vendor)/bin/gbe  u:object_r:gbe_native_exec:s0
+/(vendor|system/vendor)/bin/fpsgo  u:object_r:fpsgo_native_exec:s0
+/(vendor|system/vendor)/bin/xgff_test  u:object_r:xgff_test_native_exec:s0
+
+/(vendor|system/vendor)/bin/xcap     u:object_r:xcap_exec:s0
+
+/(vendor|system/vendor)/bin/rebalance_interrupts-vendor.mediatek u:object_r:rebalance_interrupts_vendor_exec:s0
+
+/(vendor|system/vendor)/bin/biosensord_nvram                                                u:object_r:biosensord_nvram_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.audio\.service\.mediatek                  u:object_r:hal_audio_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.[0-9]-service-mediatek       u:object_r:mtk_hal_bluetooth_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth-service\.mediatek               u:object_r:mtk_hal_bluetooth_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gnss@2\.1-service-mediatek                u:object_r:mtk_hal_gnss_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gnss-service\.mediatek                    u:object_r:mtk_hal_gnss_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkpower@1\.0-service            u:object_r:mtk_hal_power_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@1\.0-service-mediatek             u:object_r:hal_sensors_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service-mediatek             u:object_r:hal_sensors_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service\.multihal-mediatek   u:object_r:hal_sensors_default_exec:s0
+/(vendor|system/vendor)/bin/hw/rilproxy                                                     u:object_r:rild_exec:s0
+/(vendor|system/vendor)/bin/hw/mtkfusionrild                                                u:object_r:rild_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service-mediatek               u:object_r:mtk_hal_light_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service-mediatek-lazy          u:object_r:mtk_hal_light_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.mediatek                  u:object_r:mtk_hal_light_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator@1\.0-service-mediatek            u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator@1\.0-service-mediatek-lazy       u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.example                 u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.mediatek                u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/bin/hw/camerahalserver                                              u:object_r:mtk_hal_camera_exec:s0
+/(vendor|system/vendor)/bin/hw/mt[0-9]+[a-z]*/camerahalserver                               u:object_r:mtk_hal_camera_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.imsa@1\.0-service                u:object_r:mtk_hal_imsa_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.graphics\.allocator@4\.0-service-mediatek u:object_r:hal_graphics_allocator_default_exec:s0
+/(vendor|system/vendor)/bin/hw/mt[0-9]+[a-z]*/android\.hardware\.graphics\.allocator@4\.0-service-mediatek\.mt[0-9]+[a-z]* u:object_r:hal_graphics_allocator_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.media\.c2@1\.2-mediatek                   u:object_r:mtk_hal_c2_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.media\.c2@1\.2-mediatek-64b               u:object_r:mtk_hal_c2_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.memtrack-service\.mediatek                u:object_r:mtk_hal_memtrack_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkcodecservice@1\.1-service     u:object_r:hal_mtkcodecservice_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.mediatek                  u:object_r:hal_health_default_exec:s0
+
+# Google Trusty system files
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service\.trusty u:object_r:hal_keymaster_default_exec:s0
+
+# gpu hal
+/(system\/vendor|vendor)/bin/hw/vendor\.mediatek\.hardware\.gpu@1\.0-service u:object_r:mtk_hal_gpu_exec:s0
+
+# MTEE keymaster4.0/4.1 system files
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.mtee u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.1-service\.mtee u:object_r:hal_keymaster_default_exec:s0
+
+# Trustonic TEE
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.trustonic u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint@2.0-service\.trustonic u:object_r:hal_keymint_default_exec:s0
+
+# Trustkernel
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.trustkernel u:object_r:hal_keymint_default_exec:s0
+
+# Thermal
+/vendor/bin/thermal_logd_mediatek     u:object_r:init-thermal-logging-sh_exec:s0
+/vendor/bin/thermal_symlinks_mediatek u:object_r:init-thermal-symlinks-sh_exec:s0
+/dev/thermal(/.*)?                    u:object_r:thermal_link_device:s0
+
+# Microtrust SE
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.se@1\.0-service   u:object_r:hal_secure_element_default_exec:s0
+
+# PQ hal
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.pq@2\.2-service u:object_r:mtk_hal_pq_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.pq_aidl-service u:object_r:mtk_hal_pq_exec:s0
+
+# MMLPQ hal
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mmlpq@V1-service u:object_r:mtk_hal_mmlpq_exec:s0
+
+# MMS hal
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mms@1\.[0-9]-service u:object_r:mtk_hal_mms_exec:s0
+
+#MMAgent hal
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mmagent@[0-9]+\.[0-9]+-service u:object_r:mtk_hal_mmagent_exec:s0
+# Keymaster Attestation Hal
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.keymaster_attestation@1\.1-service u:object_r:hal_keymaster_attestation_exec:s0
+
+# NXP NFC AIDL service
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc-service\.nxp u:object_r:hal_nfc_default_exec:s0
+
+# ST NFC 1.2 hidl service
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc-service.st                 u:object_r:hal_nfc_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service-st                 u:object_r:hal_nfc_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.secure_element@1\.2-service-st54spi u:object_r:st54spi_hal_secure_element_exec:s0
+
+# MTK Wifi Hal
+/(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-mediatek      u:object_r:mtk_hal_wifi_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-lazy-mediatek u:object_r:mtk_hal_wifi_exec:s0
+
+# MTK USB hal
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.[0-9]+-service-mediatek   u:object_r:mtk_hal_usb_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb-service.mediatek             u:object_r:mtk_hal_usb_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb-service.mediatek-legacy      u:object_r:mtk_hal_usb_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb@1\.[0-9]+-service-mediatekv2 u:object_r:mtk_hal_usb_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.usb\.gadget-service\.mediatek    u:object_r:mtk_hal_usb_exec:s0
+
+# MTK OMAPI for UICC
+/(vendor|system/vendor)/bin/hw/android\.hardware\.secure_element@1\.[0-9]+-service-mediatek u:object_r:mtk_hal_secure_element_exec:s0
+
+# hidl process merging
+/(vendor|system/vendor)/bin/hw/merged_hal_service u:object_r:merged_hal_service_exec:s0
+
+# Date: 2019/07/16
+# hdmi hal
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.hdmi@1\.0-service u:object_r:mtk_hal_hdmi_exec:s0
+
+# BIP AP
+/(vendor|system/vendor)/bin/bip_ap u:object_r:bip_ap_exec:s0
+
+# Date : 2019/10/28
+# Purpose : move these contexts from plat_private/file_contexts
+/vendor/bin/em_hidl                                         u:object_r:em_hidl_exec:s0
+
+# Widevine drm hal(include lazy hal)
+/vendor/bin/hw/android\.hardware\.drm@[0-9]+\.[0-9]+-service\.widevine      u:object_r:hal_drm_widevine_exec:s0
+/vendor/bin/hw/android\.hardware\.drm@[0-9]+\.[0-9]+-service-lazy\.widevine u:object_r:hal_drm_widevine_exec:s0
+/vendor/bin/hw/android\.hardware\.drm-service(-lazy)?\.widevine  u:object_r:hal_drm_widevine_exec:s0
+
+# Cleaarkey hal(include lazy hal)
+/vendor/bin/hw/android\.hardware\.drm@[0-9]+\.[0-9]+-service\.clearkey      u:object_r:hal_drm_clearkey_exec:s0
+/vendor/bin/hw/android\.hardware\.drm@[0-9]+\.[0-9]+-service-lazy\.clearkey u:object_r:hal_drm_clearkey_exec:s0
+
+# Date: 2020/06/16
+# Operation: R migration
+# Purpose: Add permission for boot control lazy HAL
+/vendor/bin/hw/android\.hardware\.boot@[0-9]+\.[0-9]+-service-lazy u:object_r:hal_bootctl_default_exec:s0
+
+# Date: 2020/09/25
+# Purpose: kernel modules
+/vendor/bin/init\.insmod\.sh u:object_r:init_insmod_sh_exec:s0
+
+# GMS requirement
+/vendor/bin/chipinfo u:object_r:chipinfo_exec:s0
+
+/vendor/bin/vpud             u:object_r:vpud_native_exec:s0
+/vendor/bin(/mt[0-9]+)?/v3avpud(\.mt[0-9]+)? u:object_r:vpud_native_exec:s0
+
+# EARA-IO
+/vendor/bin/eara_io_service u:object_r:eara_io_exec:s0
+
+# ccci_mdinit access vendor/etc/md file
+/vendor/etc/md(/.*)? u:object_r:vendor_etc_md_file:s0
+
+# AI feature access vendor/etc/nn file
+/vendor/etc/nn(/.*)? u:object_r:vendor_etc_nn_file:s0
+
+# Data : 2020/12/30
+# Purpose : DBReleasePlan
+/vendor/bin/crossbuild(/.*)? u:object_r:vendor_bin_crossbuild_file:s0
+
+# TrustKernel add
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.trustkernel u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.1-service\.trustkernel u:object_r:hal_keymaster_default_exec:s0
+
+# Trustonic TEE
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service\.trustonic u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.trustonic u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.1-service\.trustonic u:object_r:hal_keymaster_default_exec:s0
+
+# Trustonic TEE system files
+/(vendor|system/vendor)/app/mcRegistry(/.*)?                       u:object_r:mobicore_vendor_file:s0
+/(vendor|system/vendor)/bin/mcDriverDaemon                         u:object_r:mobicore_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.trustonic\.tee@1\.1-service u:object_r:hal_tee_default_exec:s0
+
+/(vendor|system/vendor)/bin/thermal                                               u:object_r:thermal_exec:s0
+/(vendor|system/vendor)/bin/volte_rcs_ua                                          u:object_r:volte_rcs_ua_exec:s0
+/(vendor|system/vendor)/bin/volte_rcs_ua64                                        u:object_r:volte_rcs_ua_exec:s0
+/(vendor|system/vendor)/bin/rcs_volte_stack                                       u:object_r:rcs_volte_stack_exec:s0
+/(vendor|system/vendor)/bin/rcs_volte_stack64                                     u:object_r:rcs_volte_stack_exec:s0
+/(vendor|system/vendor)/bin/volte_clientapi_ua                                    u:object_r:volte_clientapi_ua_exec:s0
+/(vendor|system/vendor)/bin/viarild                                               u:object_r:viarild_exec:s0
+/(vendor|system/vendor)/bin/statusd                                               u:object_r:statusd_exec:s0
+/(vendor|system/vendor)/bin/flashlessd                                            u:object_r:flashlessd_exec:s0
+/(vendor|system/vendor)/bin/ccci_fsd                                              u:object_r:ccci_fsd_exec:s0
+/(vendor|system/vendor)/bin/ccci_rpcd                                             u:object_r:ccci_rpcd_exec:s0
+/(vendor|system/vendor)/bin/ipsec_mon                                             u:object_r:ipsec_mon_exec:s0
+/(vendor|system/vendor)/bin/getgameserver                                         u:object_r:getgameserver_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.wfo@1\.0-service       u:object_r:mtk_hal_wfo_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.clientapi@1\.0-service u:object_r:volte_clientapi_ua_exec:s0
+/(vendor|system/vendor)/bin/hw/vtservice_hidl                                     u:object_r:vtservice_hidl_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.rcs@1\.0-service       u:object_r:volte_rcs_ua_exec:s0
+/(vendor|system/vendor)/bin/STFlashTool                                           u:object_r:stflashtool_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.dfps@1\.0-service      u:object_r:mtk_hal_dfps_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.omadm@1\.0-service     u:object_r:mtk_hal_omadm_exec:s0
+
+# DOE
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.dplanner@1\.0-service u:object_r:mtk_hal_dplanner_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.dplanner@2\.0-service u:object_r:mtk_hal_dplanner_exec:s0
+/(vendor|system/vendor)/bin/dconfig                                              u:object_r:mtk_dconfig_exec:s0
+/(vendor|system/vendor)/bin/dtc_vendor                                           u:object_r:mtk_dconfig_exec:s0
+
+# DRM Key Installation HIDL
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.keyinstall@1\.0-service u:object_r:mtk_hal_keyinstall_exec:s0
+
+# DRM Key Manage HIDL
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.keymanage@1\.0-service u:object_r:mtk_hal_keymanage_exec:s0
+
+/(vendor|system/vendor)/bin/wo_ipsec                                                    u:object_r:wo_ipsec_exec:s0
+/(vendor|system/vendor)/bin/wo_charon                                                   u:object_r:wo_charon_exec:s0
+/(vendor|system/vendor)/bin/wo_starter                                                  u:object_r:wo_starter_exec:s0
+/(vendor|system/vendor)/bin/wo_stroke                                                   u:object_r:wo_stroke_exec:s0
+/(vendor|system/vendor)/bin/wo_epdg_client                                              u:object_r:wo_epdg_client_exec:s0
+
+# netdagent
+/(vendor|system/vendor)/bin/netdagent u:object_r:netdagent_exec:s0
+
+# MTK PPL
+/(vendor|system/vendor)/bin/ppl_agent u:object_r:ppl_agent_exec:s0
+
+# Microtrust TEEI system files
+/(vendor|system/vendor)/bin/init_thh    u:object_r:init_thh_service_exec:s0
+/(vendor|system/vendor)/bin/teei_daemon u:object_r:tee_exec:s0
+
+# microtrust THH daemon
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.thh@2\.0-service u:object_r:teei_hal_thh_exec:s0
+
+# microtrust TUI daemon
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.tui@2\.0-service u:object_r:teei_hal_tui_exec:s0
+
+# microtrust IFAA hidl service
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.ifaa@1\.0-service u:object_r:teei_hal_ifaa_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.ifaa@2\.0-service u:object_r:teei_hal_ifaa_exec:s0
+
+# microtrust WECHAT hidl service
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.soter@1\.0-service          u:object_r:teei_hal_wechat_exec:s0
+/(vendor|system/vendor)/bin/teei_loader                                                  u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/istorageproxyd                                               u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.capi@2\.0-service           u:object_r:teei_hal_capi_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.beanpod        u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.beanpod\.lite  u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.1-service\.beanpod        u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.1-service\.beanpod\.lite  u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint@1\.0-service\.beanpod u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.beanpod\.lite u:object_r:hal_gatekeeper_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.itrusty u:object_r:hal_gatekeeper_default_exec:s0
+/(vendor|system/vendor)/bin/bp_kmsetkey_ca u:object_r:bp_kmsetkey_ca_exec:s0
+
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerrpint@1\.1-service              u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.3-service-gpunn                 u:object_r:mtk_hal_neuralnetworks_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.3-service-mtk-neuron            u:object_r:mtk_hal_neuralnetworks_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.3-service-mtk-neuron-lazy       u:object_r:mtk_hal_neuralnetworks_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.3-service-mtk-neuron-debug      u:object_r:mtk_hal_neuralnetworks_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.3-service-mtk-neuron-debug-lazy u:object_r:mtk_hal_neuralnetworks_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks-shim-service-mtk                   u:object_r:mtk_hal_neuralnetworks_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks-shell-service-mtk                  u:object_r:mtk_hal_neuralnetworks_exec:s0
+
+# MTK nwk opt hal
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.nwk_opt@1\.0-service u:object_r:mtk_hal_nwk_opt_exec:s0
+
+# MTK touchll hal
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.touchll@1\.0-service u:object_r:mtk_hal_touchll_exec:s0
+
+# MTK thp hal
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.thp@1\.0-service u:object_r:mtk_hal_thp_exec:s0
+
+# tetheroffload
+/(vendor|system/vendor)/bin/hw/tetheroffloadservice u:object_r:hal_tetheroffload_default_exec:s0
+
+# MTK ATCI
+/(vendor|system/vendor)/bin/atcid        u:object_r:atcid_exec:s0
+/(vendor|system/vendor)/bin/atci_service u:object_r:atci_service_exec:s0
+
+# MTK PMS ext
+/(vendor|system/vendor)/operator/app(/.*)?            u:object_r:vendor_app_file:s0
+/(vendor|system/vendor)/etc/rsc/[^/]+/app(/.*)?       u:object_r:vendor_app_file:s0
+/(vendor|system/vendor)/etc/rsc/[^/]+/priv-app(/.*)?  u:object_r:vendor_app_file:s0
+/(vendor|system/vendor)/etc/rsc/[^/]+/plugin(/.*)?    u:object_r:vendor_app_file:s0
+/(vendor|system/vendor)/etc/rsc/[^/]+/overlay(/.*)?   u:object_r:vendor_overlay_file:s0
+/(vendor|system/vendor)/etc/rsc/[^/]+/framework(/.*)? u:object_r:vendor_framework_file:s0
+
+/(vendor|system/vendor)/bin/remosaic_daemon u:object_r:remosaic_daemon_exec:s0
+
+# HDCP
+/(vendor|system/vendor)/bin/hw/vendor\.tesiai\.hardware\.hdcpconnection@1\.0-service u:object_r:tesiai_hal_hdcp_exec:s0
+
+# ST nfcstackp service
+/vendor/bin/nfcstackp-vendor u:object_r:nfcstackp_vendor_exec:s0
+
+# DMC (Diagnostic Monitoring Collector)
+/vendor/bin/dmc_core u:object_r:dmc_core_exec:s0
+
+# DMC Packet Monitor (PKM)
+/vendor/bin/mtk_pkm_service u:object_r:mtk_pkm_service_exec:s0
+
+# TrustKernel add
+/vendor/bin/teed u:object_r:tee_exec:s0
+
+# For Google Trusty Secure Storage Proxy
+/vendor/bin/storageproxyd u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/rpmb_svc u:object_r:tee_exec:s0
+
+# MTK MDM
+/vendor/bin/md_monitor u:object_r:md_monitor_exec:s0
+
+/vendor/app/t6(/.*)? u:object_r:tkcore_systa_file:s0
+
+##########################
+# same-process HAL files and their dependencies
+#
+/vendor/etc/mali_platform.config u:object_r:same_process_hal_file:s0
+
+/vendor/lib(64)?/hw/gralloc\.mt[0-9]+[a-z]*\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/gralloc\.rogue\.so          u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/mt[0-9]+[a-z]*/gralloc\.rogue\.so          u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/vulkan\.mt[0-9]+\.so        u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/vulkan\.mtk\.so             u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/vulkan\.mali\.so            u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/vulkan\.mali\.mt[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/mt[0-9]+/vulkan\.mali\.so   u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/mt[0-9]+/vulkan\.mtk\.so    u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libgpudataproducer\.so         u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libgpudataproducer\.mt[0-9]+\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+\/libgpudataproducer\.so u:object_r:same_process_hal_file:s0
+
+
+/vendor/lib(64)?/libIMGegl\.so           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libglslcompiler\.so     u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libPVRScopeServices\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libsrv_um\.so           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmpvr\.so             u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libPVRMtkutils\.so      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libusc\.so              u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libtqvalidate\.so       u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libPVROCL\.so           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libufwriter\.so         u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmemtrack_GL\.so      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libPVRTrace\.so         u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libIMGegl\.so           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libglslcompiler\.so     u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libPVRScopeServices\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libsrv_um\.so           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libmpvr\.so             u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libPVRMtkutils\.so      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libusc\.so              u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libtqvalidate\.so       u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libPVROCL\.so           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libufwriter\.so         u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libmemtrack_GL\.so      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libPVRTrace\.so         u:object_r:same_process_hal_file:s0
+
+/vendor/lib(64)?/libGLES_mali\.so u:object_r:same_process_hal_file:s0
+
+/vendor/firmware/valhall-1691526.wa u:object_r:same_process_hal_file:s0
+/vendor/firmware/mali_csffw.bin u:object_r:same_process_hal_file:s0
+
+/vendor/lib(64)?/libgralloc_extra\.so              u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libgpu_aux\.so                    u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libgpud\.so                       u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libaedv\.so                       u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libgralloc_metadata\.so           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libgralloctypes_mtk\.so           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libged\.so                        u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/arm\.graphics-V1-ndk_platform\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/arm\.graphics-V[0-9]+-ndk\.so     u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/arm\.graphics-V[0-9]+-ndk_platform\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/arm\.graphics-V[0-9]+-ndk\.so          u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/arm\.mali\.platform-V[0-9]+-ndk\.so    u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/arm\.mali\.platform-V[0-9]+-ndk\.so              u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libdrm\.so                        u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libion_mtk\.so                    u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libion_ulit\.so                   u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mtk_cache\.so                     u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/arm\.graphics-ndk_platform\.so    u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/arm\.graphics-ndk_platform\.so    u:object_r:same_process_hal_file:s0
+
+/vendor/lib(64)?/hw/android\.hardware\.graphics\.allocator@4\.0-impl-mediatek\.so             u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/mt[0-9]+[a-z]*/android\.hardware\.graphics\.allocator@4\.0-impl-mediatek\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/android\.hardware\.graphics\.mapper@2\.0-impl-2\.1\.so     u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/android\.hardware\.graphics\.mapper@4\.0-impl-mediatek\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/hw/mt[0-9]+[a-z]*/android\.hardware\.graphics\.mapper@4\.0-impl-mediatek\.so u:object_r:same_process_hal_file:s0
+
+/vendor/lib(64)?/vendor\.mediatek\.hardware\.mms@[0-9]\.[0-9]\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/vendor\.mediatek\.hardware\.mmlpq@V[0-9]\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libdpframework\.so                               u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libdpframework\.so                u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libpq_cust\.so                                   u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libpq_cust_base\.so                              u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libpq_cust_base\.so               u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/vendor\.mediatek\.hardware\.pq@[0-9]+\.[0-9]+\.so  u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/vendor\.mediatek\.hardware\.pq_aidl-V[0-9]+-ndk\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libpq_prot\.so                                   u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libpq_prot\.so                    u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libhdrvideo\.so                                  u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libscltm\.so                                     u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libaal_mtk\.so                                   u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libmmlpqImpl\.so                                  u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libpqhdrmetaparser\.so                           u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libpqsharememory\.so                             u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libpqtuning\.so                                  u:object_r:same_process_hal_file:s0
+
+/vendor/lib(64)?/vendor\.mediatek\.hardware\.mmagent@[0-9]\.[0-9]\.so                 u:object_r:same_process_hal_file:s0
+
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libaiselector\.so              u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libaiselector\.so                             u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libaispq\.so                                  u:object_r:same_process_hal_file:s0
+
+/vendor/lib(64)?/vendor\.mediatek\.hardware\.gpu@1\.0.so u:object_r:same_process_hal_file:s0
+
+/vendor/lib(64)?/libladder\.so u:object_r:same_process_hal_file:s0
+
+/vendor/lib(64)?/libtflite_mtk.so               u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libnir_neon_driver_ndk.mtk.vndk\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libcmdl_ndk.mtk.vndk\.so       u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libarmnn_ndk.mtk.vndk\.so      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libflatbuffers-cpp.so          u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libruy.so                      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libtextclassifier_hash.so      u:object_r:same_process_hal_file:s0
+
+# Date: 2018/07/06
+# Purpose for same-process HAL files and their dependencies: libGLES_mali.so need libm4u.so on mali GPU.
+/vendor/lib(64)?/libm4u\.so u:object_r:same_process_hal_file:s0
+
+# Date: 2018/12/04
+# Purpose: Neuron runtime API and the dependencies
+/vendor/lib(64)?/libneuron_platform.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libion_mtk.so         u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mtk_cache.so          u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libvpu.so             u:object_r:same_process_hal_file:s0
+
+# Date: 2019/01/21
+# Purpose: OpenCL feature requirments
+/vendor/lib(64)?/libOpenCL\.so u:object_r:same_process_hal_file:s0
+
+# Date: 2019/09/05
+# Purpose: GiFT related libraries
+/vendor/lib(64)?/libDefaultFpsActor.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libNoFpsActor.so      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libFrameRecord.so     u:object_r:same_process_hal_file:s0
+
+# Date: 2021/07/26
+# Purpose: RayTracing related libraries
+/vendor/lib(64)?/libVkLayer_mtk_rt_sdk.so u:object_r:same_process_hal_file:s0
+
+##########################
+# Others
+#
+# nvdata
+/mnt/vendor/nvdata(/.*)? u:object_r:nvdata_file:s0
+/mnt/vendor/nvcfg(/.*)?  u:object_r:nvcfg_file:s0
+
+# protected data file
+/mnt/vendor/protect_f(/.*)? u:object_r:protect_f_data_file:s0
+/mnt/vendor/protect_s(/.*)? u:object_r:protect_s_data_file:s0
+/mnt/vendor/persist(/.*)?   u:object_r:persist_data_file:s0
+
+# fat on nand image
+/fat(/.*)? u:object_r:fon_image_data_file:s0
+
+# A/B system
+/enableswap.sh    u:object_r:rootfs:s0
+/factory_init\..* u:object_r:rootfs:s0
+/meta_init\..*    u:object_r:rootfs:s0
+/multi_init\..*   u:object_r:rootfs:s0
+
+/postinstall/bin/mtk_plpath_utils_ota                                                                       u:object_r:postinstall_file:s0
+# Custom files
+(/vendor)?/custom(/.*)? u:object_r:custom_file:s0
+
+# mdota
+/mnt/vendor/mdota(/.*)? u:object_r:mcf_ota_file:s0
+
+# Date: 2021/07/23
+# Purpose: Add permission for dcxo calibration daemon to set cap id
+/vendor/bin/dcxosetcap u:object_r:DcxoSetCap_exec:s0
+
+# Date:2021/08/05
+# Purpose: permission for audioserver to access ccci node
+/dev/ccci_aud            u:object_r:ccci_aud_device:s0
+/dev/ccci_raw_audio      u:object_r:ccci_aud_device:s0
+
+# Date : 2021/08/27
+# Purpose : Add permission for wifi proxy
+/dev/ccci_wifi_proxy  u:object_r:ccci_wifi_proxy_device:s0
+
+# Date:2021/07/27
+# Purpose: permission for CCB user
+/dev/ccci_ccb_ctrl  u:object_r:ccci_ccb_device:s0
+# Purpose: permission for md_monitor
+/dev/ccci_ccb_md_monitor  u:object_r:ccci_mdmonitor_device:s0
+/dev/ccci_mdl_monitor  u:object_r:ccci_mdmonitor_device:s0
+/dev/ccci_raw_mdm  u:object_r:ccci_mdmonitor_device:s0
+
+# Date: 2021/09/26
+# Purpose: Add permission for vilte
+/dev/ccci_vts u:object_r:ccci_vts_device:s0
+
+# ConsumerIr
+/(vendor|system/vendor)/bin/hw/android\.hardware\.ir-service\.mediatek                    u:object_r:hal_ir_default_exec:s0
+
+# Power
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.mediatek-libperfmgr      u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkpower@1\.2-service\.stub    u:object_r:mtk_hal_power_exec:s0
+
+# Memtrack
+/(vendor|system/vendor)/bin/hw/android\.hardware\.memtrack-service\.mediatek-mali         u:object_r:hal_memtrack_default_exec:s0
+
+/mnt/vendor/persist/t6(/.*)?    u:object_r:tkcore_protect_data_file:s0
+/mnt/vendor/protect_f/tee(/.*)? u:object_r:tkcore_protect_data_file:s0
+
+# Logo Updater
+/vendor/bin/logo_updater u:object_r:logo_updater_exec:s0
+
+# Modem
+/(system\/vendor|vendor)/bin/epdg_wod u:object_r:epdg_wod_exec:s0
+/(system\/vendor|vendor)/bin/wfca u:object_r:wfca_exec:s0
+/(system\/vendor|vendor)/bin/ipsec u:object_r:ipsec_exec:s0
+/(system\/vendor|vendor)/bin/charon u:object_r:charon_exec:s0
+/(system\/vendor|vendor)/bin/starter u:object_r:starter_exec:s0
+/(system\/vendor|vendor)/bin/stroke u:object_r:stroke_exec:s0
+/(system\/vendor|vendor)/bin/bip u:object_r:bip_exec:s0
+/data/vendor/ipsec(/.*)? u:object_r:wod_ipsec_conf_file:s0
+/data/vendor/ipsec/wo(/.*)? u:object_r:wod_apn_conf_file:s0
+/dev/socket/wod_action(/.*)? u:object_r:wod_action_socket:s0
+/dev/socket/wod_sim(/.*)? u:object_r:wod_sim_socket:s0
+/dev/socket/wod_ipsec(/.*)? u:object_r:wod_ipsec_socket:s0
+/dev/socket/wod_dns(/.*)? u:object_r:wod_dns_socket:s0
+
+/dev/socket/volte_imsm(/.*)? u:object_r:rild_imsm_socket:s0
+/dev/socket/volte_imsa[0-9](/.*)? u:object_r:volte_imsa_socket:s0
+/dev/socket/volte_imsvt[0-9](/.*)? u:object_r:volte_imsvt_socket:s0
+/dev/socket/volte_imcb(/.*)? u:object_r:volte_imcb_socket:s0
+/dev/socket/volte_ut(/.*)? u:object_r:volte_ut_socket:s0
+/dev/socket/volte_ua(/.*)? u:object_r:volte_ua_socket:s0
+/dev/socket/volte_stack(/.*)? u:object_r:volte_stack_socket:s0
+/dev/socket/wfca(/.*)? u:object_r:wfca_socket:s0
+/dev/socket/wfca_rds(/.*)? u:object_r:wfca_socket:s0
+/dev/socket/bip(/.*)? u:object_r:bip_socket:s0
+/dev/socket/vendor\.bip(/.*)? u:object_r:vendor_bip_socket:s0
+
+/(system\/vendor|vendor)/bin/volte_imcb u:object_r:volte_imcb_exec:s0
+/(system\/vendor|vendor)/bin/volte_stack u:object_r:volte_stack_exec:s0
+/(system\/vendor|vendor)/bin/volte_ua u:object_r:volte_ua_exec:s0
+/(system\/vendor|vendor)/bin/volte_imsm_93 u:object_r:volte_imsm_93_exec:s0
+
+/(system\/vendor|vendor)/bin/volte_md_status u:object_r:volte_md_status_exec:s0

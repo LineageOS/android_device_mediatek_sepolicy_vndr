@@ -1,5 +1,0 @@
-# Date : 2021/07/16
-# Operation: TEEI integration
-# Purpose: Microtrust HW-backed Keymint
-allow hal_keymint_default teei_client_device:chr_file rw_file_perms;
-allow hal_keymint_default tkcore_client_device:chr_file rw_file_perms;

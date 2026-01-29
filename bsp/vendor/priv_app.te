@@ -1,8 +1,0 @@
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-
-# Date: 2019/06/17
-# Operation: Migration
-# Purpose: allow priv_app to search debugfs_ion dir
-allow priv_app debugfs_ion:dir search;

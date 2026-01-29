@@ -1,8 +1,0 @@
-#============= fsck ==============
-allow fsck sysfs_fs_ext4_features:dir search;
-
-# Date : WK19.12
-# Operation: Q migration
-# Purpose : Allow resize.f2fs to read in "f2fs" block dev
-allow init fsck_exec: lnk_file r_file_perms;
-allowxperm fsck userdata_block_device:blk_file ioctl BLKSECDISCARD;

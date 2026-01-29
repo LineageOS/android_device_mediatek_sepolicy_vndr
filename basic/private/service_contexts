@@ -1,9 +1,0 @@
-# ==============================================
-# Common SEPolicy Rule
-# ==============================================
-
-memory_dumper u:object_r:mediaserver_service:s0
-imsa          u:object_r:radio_service:s0
-mtkIms        u:object_r:radio_service:s0
-GbaService    u:object_r:radio_service:s0
-

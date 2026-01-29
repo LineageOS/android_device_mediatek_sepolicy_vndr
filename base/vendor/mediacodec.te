@@ -1,0 +1,231 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+# Date : WK14.36
+# Operation : Migration
+# Purpose : VDEC/VENC device node
+allow mediacodec Vcodec_device:chr_file rw_file_perms;
+
+# Date : WK16.21
+# Operation : Migration
+# Purpose : VP & VR dump and debug
+allow mediacodec M4U_device_device:chr_file rw_file_perms;
+allow mediacodec MTK_SMI_device:chr_file r_file_perms;
+allow mediacodec storage_file:lnk_file rw_file_perms;
+allow mediacodec tmpfs:dir search;
+allow mediacodec mnt_user_file:dir rw_dir_perms;
+allow mediacodec mnt_user_file:lnk_file rw_file_perms;
+allow mediacodec sdcard_type:dir rw_dir_perms;
+allow mediacodec sdcard_type:file create_file_perms;
+allow mediacodec nvram_data_file:dir w_dir_perms;
+allow mediacodec nvram_data_file:file create_file_perms;
+allow mediacodec nvram_data_file:lnk_file r_file_perms;
+allow mediacodec nvdata_file:lnk_file r_file_perms;
+allow mediacodec nvdata_file:dir w_dir_perms;
+allow mediacodec nvdata_file:file create_file_perms;
+allow mediacodec devmap_device:chr_file r_file_perms;
+allow mediacodec proc_meminfo:file r_file_perms;
+
+# Date : WK14.36
+# Operation : Migration
+# Purpose : for SW codec VP/VR
+allow mediacodec mtk_sched_device:chr_file rw_file_perms;
+
+# Data : WK14.39
+# Operation : Migration
+# Purpose : HW encrypt SW codec
+allow mediacodec mediacodec_data_file:file create_file_perms;
+allow mediacodec mediacodec_data_file:dir create_dir_perms;
+allow mediacodec sec_device:chr_file r_file_perms;
+
+# Data: WK14.44
+# Operation : Migration
+# Purpose : VP
+allow mediacodec surfaceflinger:file getattr;
+
+# Data: WK14.44
+# Operation : Migration
+# Purpose : for low SD card latency issue
+allow mediacodec sysfs_lowmemorykiller:file r_file_perms;
+
+# Data: WK14.45
+# Operation : Migration
+# Purpose : for change thermal policy when needed
+allow mediacodec proc_mtkcooler:dir search;
+allow mediacodec proc_mtkcooler:file rw_file_perms;
+allow mediacodec proc_mtktz:dir search;
+allow mediacodec proc_mtktz:file rw_file_perms;
+allow mediacodec proc_thermal:dir search;
+allow mediacodec proc_thermal:file rw_file_perms;
+allow mediacodec thermal_manager_data_file:file create_file_perms;
+allow mediacodec thermal_manager_data_file:dir { rw_dir_perms setattr };
+
+# Data : WK14.47
+# Operation : CTS
+# Purpose : cts search strange app
+allow mediacodec untrusted_app:dir search;
+
+# Date : WK14.39
+# Operation : Migration
+# Purpose : MJC Driver
+allow mediacodec MJC_device:chr_file rw_file_perms;
+
+# Date : WK16.33
+# Purpose: Allow to access ged for gralloc_extra functions
+allow mediacodec proc_ged:file rw_file_perms;
+allowxperm mediacodec proc_ged:file ioctl { proc_ged_ioctls };
+
+# Data : WK16.42
+# Operator: Whitney bring up
+# Purpose: call surfaceflinger due to powervr
+allow mediacodec surfaceflinger:fifo_file rw_file_perms;
+
+# Date: WK16.43
+# Operator: Whitney SQC
+# Purpose: mediacodec use gpu
+allow mediacodec gpu_device:dir search;
+
+# Date : W18.01
+# Add for turn on SElinux in enforcing mode
+allow mediacodec vndbinder_device:chr_file rw_file_perms;
+
+vndbinder_use(mediacodec)
+
+# Date : WK1721
+# Purpose: For FULL TREBLE
+allow mediacodec system_file:dir r_dir_perms;
+allow mediacodec debugfs_ion:dir search;
+
+
+# Date : WK17.30
+# Operation : O Migration
+# Purpose: Allow mediacodec to access cmdq driver
+allow mediacodec mtk_cmdq_device:chr_file r_file_perms;
+allow mediacodec mtk_mdp_device:chr_file r_file_perms;
+allow mediacodec mtk_mdp_sync_device:chr_file r_file_perms;
+allow mediacodec sw_sync_device:chr_file r_file_perms;
+
+# Date : WK17.30
+# Purpose : For Power Hal
+hal_client_domain(mediacodec, hal_power)
+
+# Date : WK17.12
+# Operation : MT6799 SQC
+# Purpose : Change thermal config
+set_prop(mediacodec, vendor_mtk_thermal_config_prop)
+
+# Date : WK17.43
+# Operation : Migration
+# Purpose : DISP access
+allow mediacodec graphics_device:chr_file r_file_perms;
+allow mediacodec graphics_device:dir search;
+
+# Date : WK19.27
+# Purpose: Android Migration for SVP
+allow mediacodec proc_m4u:file r_file_perms;
+allowxperm mediacodec proc_m4u:file ioctl {
+ MTK_M4U_T_SEC_INIT
+ MTK_M4U_T_CONFIG_PORT
+ MTK_M4U_T_CACHE_SYNC
+ MTK_M4U_T_CONFIG_PORT_ARRAY
+};
+
+# Date : 2019/12/12
+# Purpose : allow media sources to access /sys/bus/platform/drivers/mem_bw_ctrl/*
+allow mediacodec sysfs_concurrency_scenario:file rw_file_perms;
+allow mediacodec sysfs_concurrency_scenario:dir search;
+
+# Date : 2020/07/10
+# Purpose : allow media sources to access /sys/bus/platform/drivers/emi_ctrl/*
+allow mediacodec sysfs_emi_ctrl_concurrency_scenario:file rw_file_perms;
+allow mediacodec sysfs_emi_ctrl_concurrency_scenario:dir search;
+
+# Date : WK20.16
+# # Operation: SQC
+# # Purpose : Allow medicodec to control video mode property
+set_prop(mediacodec, vendor_mtk_video_prop)
+
+get_prop(mediacodec, vendor_mtk_crossmount_prop)
+get_prop(mediacodec, vendor_mtk_deinterlace_prop)
+get_prop(mediacodec, vendor_mtk_omx_core_prop)
+
+hal_client_domain(mediacodec, hal_mtkcodecservice)
+
+allow mediacodec sysfs_boot_mode:file r_file_perms;
+
+# Data : WK16.25
+# Operation : Camera display client
+# Purpose : for SVP secure memory allocation
+allow mediacodec proc_secmem:file rw_file_perms;
+
+# Date : WK16.25
+# Operation : WVL1 IT
+# Purpose : SVP module operates secmem driver
+allow mediacodec mobicore_data_file:file { read open getattr};
+allow mediacodec mobicore_user_device:chr_file rw_file_perms;
+allow mediacodec mobicore:unix_stream_socket connectto;
+allow mediacodec mobicore_data_file:dir search;
+allow mediacodec persist_data_file:file { read getattr open };
+allow mediacodec persist_data_file:dir search;
+
+# Date : WK16.28
+# Operation : video codec driver
+# Purpose : for performance profiling and timing issue tracking during video playback
+allow mediacodec debugfs_fb:dir search;
+
+# Date : WK16.29
+# Operation : Migration
+# Purpose : Add permission for gpu access
+allow mediacodec dri_device:chr_file rw_file_perms;
+
+# Date : WK16.50
+# Operation : video codec driver
+# Purpose : Add permission for thermal function access
+allow mediacodec proc_mtktz:dir search;
+allow mediacodec proc_mtktz:file r_file_perms;
+
+# Date : WK17.23
+# Stage: O Migration, SQC
+# Purpose: Allow to use HAL PQ
+hal_client_domain(mediacodec, hal_mtk_pq)
+
+# Date : WK17.23
+# Stage: O Migration, SQC
+# Purpose: Allow to use shared memory for HAL PQ
+hal_client_domain(mediacodec, hal_allocator)
+
+# Date : WK17.31
+# Stage: O Migration, SQC
+# Purpose: Allow to use ape decoder
+hal_client_domain(mediacodec, hal_mtk_codecservice)
+
+# Date : WK18.46
+# Operation : WVL1 IT for TEEI
+# Purpose : SVP module operates TEEI
+hal_client_domain(mediacodec, hal_teei_capi)
+allow mediacodec teei_client_device:chr_file rw_file_perms;
+
+# Date : WK19.44
+# Purpose: Android Migration for D2+ Encoder
+allow mediacodec proc_chip:dir r_dir_perms;
+allow mediacodec proc_chip:file r_file_perms;
+
+# Date : WK19.45
+# Operation : WFD
+# Purpose : Allow set property to notify HWC secure venc enabled
+set_prop(mediacodec, vendor_mtk_secure_venc_prop)
+
+# Date : WK20.22
+# Operation : VDEC debug
+# Purpose : allow vdec can dump file to storage
+allow mediacodec vcodec_file:dir create_dir_perms;
+allow mediacodec vcodec_file:file create_file_perms;
+
+# Date : WK20.40
+# Operation : WFD
+# Purpose : Allow set property to notify HWC wfd enabled
+set_prop(mediacodec, vendor_mtk_wfd_enable_prop)
+
+#allow get mtk_sec_video_path_support
+get_prop(mediacodec, vendor_mtk_sec_video_path_support_prop)
