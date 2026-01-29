@@ -136,9 +136,6 @@ vendor_restricted_prop(vendor_mtk_mdrsra_v2_support_prop)
 vendor_restricted_prop(vendor_mtk_xfrm_support_prop)
 vendor_restricted_prop(vendor_mtk_mdp_prop)
 vendor_restricted_prop(vendor_debug_logger_prop)
-vendor_restricted_prop(vendor_mtk_crossmount_prop)
-vendor_restricted_prop(vendor_mtk_deinterlace_prop)
-vendor_restricted_prop(vendor_mtk_omx_core_prop)
 vendor_restricted_prop(vendor_mtk_active_noise_cancel_prop)
 vendor_restricted_prop(vendor_mtk_atci_sys_prop)
 vendor_restricted_prop(vendor_mtk_besloudness_support_prop)
@@ -327,9 +324,6 @@ typeattribute vendor_mtk_mdrsra_v2_support_prop      mtk_core_property_type;
 typeattribute vendor_mtk_xfrm_support_prop           mtk_core_property_type;
 typeattribute vendor_mtk_mdp_prop                    mtk_core_property_type;
 typeattribute vendor_debug_logger_prop               mtk_core_property_type;
-typeattribute vendor_mtk_crossmount_prop             mtk_core_property_type;
-typeattribute vendor_mtk_deinterlace_prop            mtk_core_property_type;
-typeattribute vendor_mtk_omx_core_prop               mtk_core_property_type;
 typeattribute vendor_mtk_active_noise_cancel_prop     mtk_core_property_type;
 typeattribute vendor_mtk_besloudness_support_prop     mtk_core_property_type;
 typeattribute vendor_mtk_bg_power_saving_support_prop mtk_core_property_type;

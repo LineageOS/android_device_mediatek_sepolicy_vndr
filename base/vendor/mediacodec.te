@@ -146,10 +146,6 @@ allow mediacodec sysfs_emi_ctrl_concurrency_scenario:dir search;
 # # Purpose : Allow medicodec to control video mode property
 set_prop(mediacodec, vendor_mtk_video_prop)
 
-get_prop(mediacodec, vendor_mtk_crossmount_prop)
-get_prop(mediacodec, vendor_mtk_deinterlace_prop)
-get_prop(mediacodec, vendor_mtk_omx_core_prop)
-
 hal_client_domain(mediacodec, hal_mtkcodecservice)
 
 allow mediacodec sysfs_boot_mode:file r_file_perms;
