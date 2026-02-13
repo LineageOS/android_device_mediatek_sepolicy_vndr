@@ -1,2 +1,2 @@
-type mtk_hal_mmlpq_service, protected_service, service_manager_type;
-type mtk_hal_pq_service, protected_service, service_manager_type;
+type mtk_hal_mmlpq_service, protected_service, hal_service_type, service_manager_type;
+type mtk_hal_pq_service, protected_service, hal_service_type, service_manager_type;
