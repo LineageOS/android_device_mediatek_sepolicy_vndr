@@ -248,3 +248,7 @@ persist.vendor.fd.screen.off.only   u:object_r:system_mtk_fd_prop:s0
 
 #allow entitlement to set vonr debug
 persist.vendor.dbg.vonr_ui_ovr u:object_r:system_mtk_dbg_ims_prop:s0
+
+# Bluetooth A2DP HW Offloading
+persist.bluetooth.a2dp_offload.mtk_coex                     u:object_r:bluetooth_a2dp_offload_prop:s0 exact bool
+persist.bluetooth.a2dp_offload.coex_buf_count               u:object_r:bluetooth_a2dp_offload_prop:s0 exact int
