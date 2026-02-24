@@ -345,6 +345,7 @@ type gdix_thp_device, dev_type, fs_type;
 type mddp_device, dev_type;
 
 type tkcore_admin_device, dev_type, mlstrustedobject;
+type tkcore_client_device, dev_type, mlstrustedobject;
 type tkcore_block_device, dev_type;
 
 # mobicore device type

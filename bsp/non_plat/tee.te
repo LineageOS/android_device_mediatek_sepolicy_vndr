@@ -40,6 +40,7 @@ allow tee nvram_device:blk_file rw_file_perms;
 
 # kernel device
 allow tee tkcore_admin_device:chr_file rw_file_perms;
+allow tee tkcore_client_device:chr_file rw_file_perms;
 
 # sfs
 allow tee tkcore_data_file:dir create_dir_perms;

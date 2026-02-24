@@ -22,6 +22,7 @@ allow hal_gatekeeper_default teei_client_device:chr_file rw_file_perms;
 
 # Purpose: TrustKernel HW-backed Gatekeeper
 allow hal_gatekeeper_default tkcore_admin_device:chr_file { read write open ioctl };
+allow hal_gatekeeper_default tkcore_client_device:chr_file { read write open ioctl };
 
 # Allow hal_gatekeeper_default to access /data/key_provisioning
 allow hal_gatekeeper_default key_install_data_file:dir w_dir_perms;

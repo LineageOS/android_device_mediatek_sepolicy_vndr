@@ -737,6 +737,9 @@
 # Trustonic TEE
 /(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.trustonic u:object_r:hal_keymint_default_exec:s0
 
+# Trustkernel
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.trustkernel u:object_r:hal_keymint_default_exec:s0
+
 # Thermal
 /vendor/bin/thermal_logd_mediatek     u:object_r:init-thermal-logging-sh_exec:s0
 /vendor/bin/thermal_symlinks_mediatek u:object_r:init-thermal-symlinks-sh_exec:s0

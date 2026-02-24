@@ -55,6 +55,8 @@
 #
 # TrustKernel add
 /dev/tkcoredrv u:object_r:tkcore_admin_device:s0
+/dev/tkcore_admin u:object_r:tkcore_admin_device:s0
+/dev/tkcore_client u:object_r:tkcore_client_device:s0
 
 # For Google Trusty Secure Storage Proxy
 /dev/block/mmcblk0rpmb u:object_r:rpmb_block_device:s0
