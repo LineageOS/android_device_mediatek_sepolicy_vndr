@@ -38,6 +38,7 @@ ro.vendor.mtk_md1_support  u:object_r:vendor_mtk_tel_switch_prop:s0
 ro.vendor.mtk_md3_support  u:object_r:vendor_mtk_tel_switch_prop:s0
 ro.vendor.mtk_ps1_rat      u:object_r:vendor_mtk_tel_switch_prop:s0
 
+ro.logsystem.usertype   u:object_r:vendor_mtk_mnld_prop:s0
 vendor.gps.clock.type   u:object_r:vendor_mtk_mnld_prop:s0
 vendor.gps.gps.version  u:object_r:vendor_mtk_mnld_prop:s0
 vendor.gpsdbglog.enable u:object_r:vendor_mtk_mnld_prop:s0
