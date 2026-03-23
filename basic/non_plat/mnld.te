@@ -119,3 +119,6 @@ allow mnld sysfs_leds:file r_file_perms;
 #Add for /nvcfg/almanac.dat
 allow mnld nvcfg_file:dir w_dir_perms;
 allow mnld nvcfg_file:file create_file_perms;
+
+# For mnld to read /proc/bootconfig
+allow mnld proc_bootconfig:file r_file_perms;
