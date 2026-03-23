@@ -34,6 +34,24 @@
       "parentUuid": "d70b70ff_26ae5925",
       "revId": "f4564fb6ca9305afb746256d2f35fac5d7ab6757",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "342d4256_10049bac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-03-23T18:19:15Z",
+      "side": 1,
+      "message": "It\u0027s only labelled for Android 15+ projects (k66, k612), bootconfig wasn\u0027t really properly working on anything that wasn\u0027t an Android 14+ project (k61+), hence why I think you don\u0027t need this on Android 12 MT6789. But you do have a point after all",
+      "parentUuid": "db7ddaf0_e56356a3",
+      "revId": "f4564fb6ca9305afb746256d2f35fac5d7ab6757",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
