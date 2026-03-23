@@ -263,4 +263,6 @@ allow system_server proc_mgq:dir search;
 # when anr dump process, SystemServer need send sigal
 allow system_server mtk_hal_pq:process signal;
 
+allow system_server tkcore_systa_file:dir r_dir_perms;
+
 hal_client_domain(system_server, hal_mtkcodecservice)
