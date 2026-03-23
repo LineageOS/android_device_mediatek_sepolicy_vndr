@@ -16,6 +16,24 @@
       "message": "This isn\u0027t required for mnld to work, and this isn\u0027t adressed on BSP sepolicy anyway",
       "revId": "f4564fb6ca9305afb746256d2f35fac5d7ab6757",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "db7ddaf0_e56356a3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-03-23T17:01:02Z",
+      "side": 1,
+      "message": "I mean, the BSP is for a far older android version... New sepolicy is often needed when things get relabeled or restricted - this being a case of that.",
+      "parentUuid": "d70b70ff_26ae5925",
+      "revId": "f4564fb6ca9305afb746256d2f35fac5d7ab6757",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
