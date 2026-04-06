@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74e9dfab_c386c992",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-04-06T00:48:02Z",
+      "side": 1,
+      "message": "mtk-k66 is on hold until I receive and boot lineage on my goya",
+      "revId": "5f1bbc35dd5008839d22636cd2f068eff66033e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
