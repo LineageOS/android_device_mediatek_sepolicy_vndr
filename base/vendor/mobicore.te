@@ -32,3 +32,6 @@ allow mobicore unlabeled:dir search;
 allow mobicore mnt_vendor_file:dir search;
 allow mobicore persist_data_file:dir { ra_dir_perms };
 allow mobicore persist_data_file:file { read write create open getattr };
+
+# system property ro.vendor.trustonic.ready set by Daemon
+set_prop(mobicore, vendor_trustonic_prop)
