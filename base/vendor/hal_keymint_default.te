@@ -41,3 +41,7 @@ allow hal_keymint_default secure_element_service:service_manager find;
 
 allow hal_keymint_default self:capability2 wake_alarm;
 wakelock_use(hal_keymint_default)
+
+# Purpose: TrustKernel and Trustonic keybox attestation reading
+allow hal_keymint_default tkcore_protect_data_file:dir search;
+allow hal_keymint_default tkcore_protect_data_file:file r_file_perms;
