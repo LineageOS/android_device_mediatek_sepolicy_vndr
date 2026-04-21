@@ -809,3 +809,6 @@ vendor.md_apps.                u:object_r:vendor_mtk_default_prop:s0
 
 #=============allow MD status==============
 vendor.volte_md_status         u:object_r:vendor_mtk_md_status_prop:s0
+
+# Property set by Trustonic Daemon to indicate TEE is ready
+ro.vendor.trustonic.ready u:object_r:vendor_trustonic_prop:s0 exact bool

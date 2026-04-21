@@ -886,11 +886,12 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.1-service\.mtee u:object_r:hal_keymaster_default_exec:s0
 
 # Trustonic TEE
-/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.trustonic u:object_r:hal_keymint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint@2.0-service\.trustonic u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint(@[0-9]+\.0+)?-service\.trustonic(_norkp)? u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper-service\.trustonic u:object_r:hal_gatekeeper_default_exec:s0
 
 # Trustkernel
-/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.trustkernel u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint(@[0-9]+\.0+)?-service\.trustkernel u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android.hardware.gatekeeper-service.trustkernel u:object_r:hal_gatekeeper_default_exec:s0
 
 # MiTEE
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper-service\.mitee               u:object_r:hal_gatekeeper_default_exec:s0
