@@ -11,6 +11,8 @@ hal_server_domain(mtk_hal_usb, hal_usb_gadget)
 
 r_dir_file(mtk_hal_usb, sysfs_usb_nonplat)
 allow mtk_hal_usb sysfs_usb_nonplat:file w_file_perms;
+allow mtk_hal_usb sysfs_extcon:dir search;
+allow mtk_hal_usb sysfs_extcon:file rw_file_perms;
 
 allow mtk_hal_usb configfs:file create_file_perms;
 allow mtk_hal_usb configfs:dir create_dir_perms;
