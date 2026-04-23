@@ -54,6 +54,7 @@ allow nvram_daemon proc_lk_env:file rw_file_perms;
 
 # Purpose: property set
 set_prop(nvram_daemon, vendor_mtk_service_nvram_init_prop)
+set_prop(nvram_daemon, vendor_mtk_service_connxo_nvram_prop)
 
 # Purpose: copy /fstab*
 allow nvram_daemon rootfs:dir r_dir_perms;

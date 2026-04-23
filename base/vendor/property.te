@@ -96,6 +96,7 @@ vendor_restricted_prop(vendor_mtk_ril_mux_report_case_prop)
 vendor_restricted_prop(vendor_mtk_service_nvram_init_prop)
 vendor_restricted_prop(vendor_mtk_service_nvram_restore_prop)
 vendor_restricted_prop(vendor_mtk_service_wifi_nvram_prop)
+vendor_restricted_prop(vendor_mtk_service_connxo_nvram_prop)
 vendor_restricted_prop(vendor_mtk_simswitch_emmode_prop)
 vendor_restricted_prop(vendor_mtk_smsformat_prop)
 vendor_restricted_prop(vendor_mtk_ss_vendor_prop)
@@ -386,6 +387,7 @@ typeattribute vendor_mtk_radio_seapi_off_prop         mtk_core_property_type;
 typeattribute vendor_mtk_rcs_ua_support_prop          mtk_core_property_type;
 typeattribute vendor_mtk_rsc_prop                     mtk_core_property_type;
 typeattribute vendor_mtk_secure_venc_prop             mtk_core_property_type;
+typeattribute vendor_mtk_service_connxo_nvram_prop    mtk_core_property_type;
 typeattribute vendor_mtk_service_rcs_prop             mtk_core_property_type;
 typeattribute vendor_mtk_soter_teei_prop              mtk_core_property_type;
 typeattribute vendor_mtk_st_nfc_gsma_support_prop     mtk_core_property_type;
