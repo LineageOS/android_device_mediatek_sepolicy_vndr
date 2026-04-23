@@ -164,7 +164,7 @@ allow ccci_mdinit mcf_ota_block_device:dir search;
 # Purpose : change sepolicy for MCF3.0
 allow ccci_mdinit sysfs_dt_firmware_android:file r_file_perms;
 allow ccci_mdinit proc_version:file r_file_perms;
-allow ccci_mdinit mcf_ota_file:dir { getattr search };
+allow ccci_mdinit mcf_ota_file:dir r_dir_perms;
 allow ccci_mdinit mcf_ota_file:file rw_file_perms;
 
 #=============allow ccci_mdinit to start/stop fsd==============
