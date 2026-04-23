@@ -519,6 +519,7 @@
 /dev/adsp_0(/.*)?    u:object_r:adsp_device:s0
 /dev/adsp_1(/.*)?    u:object_r:adsp_device:s0
 /dev/audio_scp(/.*)? u:object_r:audio_scp_device:s0
+/dev/adsp_in_scp(/.*)?     u:object_r:adsp_device:s0
 
 /dev/irtx              u:object_r:irtx_device:s0
 /dev/lirc[0-9]+        u:object_r:irtx_device:s0
