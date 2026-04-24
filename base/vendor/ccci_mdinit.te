@@ -49,6 +49,9 @@ allow ccci_mdinit nvram_data_file:file create_file_perms;
 allow ccci_mdinit nvram_data_file:lnk_file r_file_perms;
 allow ccci_mdinit nvdata_file:lnk_file r_file_perms;
 allow ccci_mdinit nvdata_file:file create_file_perms;
+allow ccci_mdinit md_sec_file:lnk_file r_file_perms;
+allow ccci_mdinit md_sec_file:file create_file_perms;
+allow ccci_mdinit md_sec_file:dir create_dir_perms;
 allow ccci_mdinit nvram_device:chr_file rw_file_perms;
 read_fstab(ccci_mdinit)
 get_prop(ccci_mdinit, vendor_mtk_rat_config_prop)
@@ -60,6 +63,7 @@ allow ccci_mdinit protect_f_data_file:file create_file_perms;
 allow ccci_mdinit protect_s_data_file:file create_file_perms;
 allow ccci_mdinit nvram_device:blk_file rw_file_perms;
 allow ccci_mdinit nvdata_device:blk_file rw_file_perms;
+allow ccci_mdinit md_sec_device:blk_file rw_file_perms;
 
 set_prop(ccci_mdinit, vendor_mtk_ril_mux_report_case_prop)
 

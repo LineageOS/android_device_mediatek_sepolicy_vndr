@@ -584,6 +584,7 @@
 /dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/proinfo                          u:object_r:nvram_device:s0
 /dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/nvram                            u:object_r:nvram_device:s0
 /dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/nvdata                           u:object_r:nvdata_device:s0
+/dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/md_sec                           u:object_r:md_sec_device:s0
 /dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/frp                              u:object_r:frp_block_device:s0
 /dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/expdb                            u:object_r:expdb_block_device:s0
 /dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/misc2                            u:object_r:misc2_block_device:s0
@@ -636,6 +637,7 @@
 /dev/block/by-name/proinfo                          u:object_r:nvram_device:s0
 /dev/block/by-name/nvram                            u:object_r:nvram_device:s0
 /dev/block/by-name/nvdata                           u:object_r:nvdata_device:s0
+/dev/block/by-name/md_sec                           u:object_r:md_sec_device:s0
 /dev/block/by-name/frp                              u:object_r:frp_block_device:s0
 /dev/block/by-name/expdb                            u:object_r:expdb_block_device:s0
 /dev/block/by-name/misc2                            u:object_r:misc2_block_device:s0
@@ -1316,6 +1318,9 @@
 /mnt/vendor/protect_f(/.*)? u:object_r:protect_f_data_file:s0
 /mnt/vendor/protect_s(/.*)? u:object_r:protect_s_data_file:s0
 /mnt/vendor/persist(/.*)?   u:object_r:persist_data_file:s0
+
+# mdsec
+/mnt/vendor/md_sec(/.*)?   u:object_r:md_sec_file:s0
 
 # fat on nand image
 /fat(/.*)? u:object_r:fon_image_data_file:s0

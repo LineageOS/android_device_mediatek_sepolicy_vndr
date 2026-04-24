@@ -9,6 +9,7 @@ allow e2fs protect1_block_device:blk_file rw_file_perms;
 allow e2fs protect2_block_device:blk_file rw_file_perms;
 allow e2fs persist_block_device:blk_file rw_file_perms;
 allow e2fs nvdata_device:blk_file rw_file_perms;
+allow e2fs md_sec_device:blk_file rw_file_perms;
 allow e2fs nvcfg_block_device:blk_file rw_file_perms;
 
 allow e2fs devpts:chr_file rw_file_perms;
@@ -30,6 +31,7 @@ allow e2fs metadata_block_device:blk_file rw_file_perms;
 allowxperm e2fs protect1_block_device:blk_file ioctl { BLKPBSZGET BLKROGET BLKDISCARD BLKDISCARDZEROES BLKSECDISCARD };
 allowxperm e2fs protect2_block_device:blk_file ioctl { BLKPBSZGET BLKROGET BLKDISCARD BLKDISCARDZEROES BLKSECDISCARD };
 allowxperm e2fs nvdata_device:blk_file ioctl { BLKPBSZGET BLKROGET BLKDISCARD BLKDISCARDZEROES BLKSECDISCARD };
+allowxperm e2fs md_sec_device:blk_file ioctl { BLKPBSZGET BLKROGET BLKDISCARD BLKDISCARDZEROES BLKSECDISCARD };
 allowxperm e2fs nvcfg_block_device:blk_file ioctl { BLKPBSZGET BLKROGET BLKDISCARD BLKDISCARDZEROES BLKSECDISCARD };
 allowxperm e2fs persist_block_device:blk_file ioctl { BLKPBSZGET BLKROGET BLKDISCARD BLKDISCARDZEROES BLKSECDISCARD };
 

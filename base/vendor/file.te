@@ -469,6 +469,7 @@ type persist_data_file, file_type, data_file_type;
 type nvram_data_file, file_type, data_file_type;
 type nvdata_file, file_type, data_file_type;
 type nvcfg_file, file_type, data_file_type;
+type md_sec_file, file_type, data_file_type;
 type mcf_ota_file, file_type, data_file_type;
 type cct_data_file, file_type, data_file_type;
 type mediaserver_data_file, file_type, data_file_type;

@@ -212,6 +212,7 @@ type ttyACM_device, dev_type;
 type hrm_device, dev_type;
 type lens_device, dev_type;
 type nvdata_device, dev_type;
+type md_sec_device, dev_type;
 type mcf_ota_block_device,dev_type;
 type nvcfg_device, dev_type;
 type expdb_block_device, dev_type;
