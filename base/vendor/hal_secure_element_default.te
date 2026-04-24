@@ -3,6 +3,7 @@ hal_client_domain(hal_secure_element_default, hal_nfc)
 rw_dir_file(hal_secure_element_default, nfc_data_vendor_file)
 
 allow hal_secure_element_default nfc_device:chr_file rw_file_perms;
+allow hal_secure_element_default st54spi_device:chr_file rw_file_perms;
 
 # Purpose: MiTEE HW-backed SecureElement
 allow hal_secure_element_default mitee_sfs_file:dir create_dir_perms;
