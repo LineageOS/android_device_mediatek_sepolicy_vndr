@@ -1330,6 +1330,7 @@
 
 # mdota
 /mnt/vendor/mdota(/.*)? u:object_r:mcf_ota_file:s0
+/(vendor|system/vendor)/bin/mcfota_service    u:object_r:mcfota_service_exec:s0
 
 # Date: 2021/07/23
 # Purpose: Add permission for dcxo calibration daemon to set cap id

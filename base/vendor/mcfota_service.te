@@ -1,0 +1,13 @@
+type mcfota_service, domain;
+type mcfota_service_exec, exec_type, file_type, vendor_file_type;
+init_daemon_domain(mcfota_service)
+
+allow mcfota_service mnt_vendor_file:dir create_dir_perms;
+allow mcfota_service mnt_vendor_file:file create_file_perms;
+allow mcfota_service nvcfg_file:dir create_dir_perms;
+allow mcfota_service nvcfg_file:file create_file_perms;
+r_dir_file(mcfota_service, mcf_ota_file)
+r_dir_file(mcfota_service, unlabeled)
+
+get_prop(mcfota_service, vendor_mtk_md_prop)
+set_prop(mcfota_service, vendor_mtk_radio_prop)
