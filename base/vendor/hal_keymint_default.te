@@ -31,3 +31,13 @@ allow hal_keymint_default mitee_data_file:file create_file_perms;
 allow hal_keymint_default mitee_sfs_file:dir create_dir_perms;
 allow hal_keymint_default mitee_sfs_file:file create_file_perms;
 set_prop(hal_keymint_default, vendor_mtk_mitee_prop)
+
+# Purpose: OMAPI
+hal_server_domain(hal_keymint_default, hal_secure_element)
+
+binder_call(hal_keymint_default, secure_element)
+
+allow hal_keymint_default secure_element_service:service_manager find;
+
+allow hal_keymint_default self:capability2 wake_alarm;
+wakelock_use(hal_keymint_default)

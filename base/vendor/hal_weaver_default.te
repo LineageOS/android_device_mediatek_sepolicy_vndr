@@ -1,0 +1,10 @@
+# Purpose: OMAPI
+hal_client_domain(hal_weaver_default, hal_secure_element)
+hal_server_domain(hal_weaver_default, hal_secure_element)
+
+binder_call(hal_weaver_default, secure_element)
+
+allow hal_weaver_default secure_element_service:service_manager find;
+
+allow hal_weaver_default self:capability2 wake_alarm;
+wakelock_use(hal_weaver_default)
