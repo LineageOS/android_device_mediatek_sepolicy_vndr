@@ -33,6 +33,24 @@
       "message": "Not sure we want camera to access that, have you checked if it was present in your stock sepolicy ?",
       "revId": "f36fa7e7a5cfbd6df7b4e2148522d1656eff453d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1f633066_3ba45941",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18586
+      },
+      "writtenOn": "2026-04-24T11:48:56Z",
+      "side": 1,
+      "message": "Indeed. \n\nSpotted the same on https://dumps.tadiphone.dev/dumps/nothing/galaga/-/blob/sys_mssi_64_64only_ww_armv82-user-15-AP3A.240905.015.A2-2505071139-release-keys/vendor/etc/selinux/vendor_sepolicy.cil?ref_type\u003dheads#L513 as well.\n\nIt\u0027s specific to the mt6878 camera HAL by the least.",
+      "parentUuid": "bed18d97_47f67197",
+      "revId": "f36fa7e7a5cfbd6df7b4e2148522d1656eff453d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
