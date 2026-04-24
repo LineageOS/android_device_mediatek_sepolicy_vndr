@@ -91,3 +91,6 @@ allow tee proc_tkcore:dir search;
 allow tee bootdevice_block_device:blk_file rw_file_perms;
 allowxperm tee bootdevice_block_device:blk_file ioctl { MMC_IOC_MULTI_CMD UFS_IOCTL_RPMB};
 allow tee tee_data_file:dir create_dir_perms;
+
+# Allow TEE to manage eSE
+allow tee nfc_device:chr_file rw_file_perms;
