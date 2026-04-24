@@ -63,3 +63,7 @@ vendor.mediatek.hardware.audio.IMtkAudio/default u:object_r:mtk_hal_audio_servic
 android.hardware.security.keymint.IKeyMintDevice/strongbox                   u:object_r:hal_keymint_service:s0
 android.hardware.security.keymint.IRemotelyProvisionedComponent/strongbox    u:object_r:hal_keymint_service:s0
 android.hardware.security.sharedsecret.ISharedSecret/strongbox               u:object_r:hal_sharedsecret_service:s0
+
+# Mapper AIDL
+mapper/mediatek    u:object_r:hal_graphics_allocator_service:s0
+mapper/powervr     u:object_r:hal_graphics_mapper_service:s0
