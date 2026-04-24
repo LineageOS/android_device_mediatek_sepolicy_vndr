@@ -107,6 +107,9 @@ persist.vendor.radio.disable_c2k_cap u:object_r:vendor_mtk_disable_c2k_cap_prop:
 # CNOP VOWIFI support
 persist.vendor.wfc.cnop_vowifi u:object_r:vendor_mtk_cnop_vowifi_prop:s0
 
+# MTK LBS property
+vendor.agps.submarine.mode        u:object_r:vendor_mtk_lbs_prop:s0
+
 # modem reset delay property
 vendor.mediatek.debug.md.reset.wait u:object_r:vendor_mtk_debug_md_reset_prop:s0
 

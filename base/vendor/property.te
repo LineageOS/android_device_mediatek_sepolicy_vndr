@@ -245,6 +245,7 @@ vendor_restricted_prop(vendor_mtk_wod_prop)
 vendor_restricted_prop(vendor_mtk_persist_wod_prop)
 #=============allow mtkmal to start volte==============
 vendor_restricted_prop(vendor_mtk_md_volte_prop)
+vendor_restricted_prop(vendor_mtk_lbs_prop)
 
 # Properties with no restriction
 vendor_public_prop(vendor_mtk_sec_video_path_support_prop)
@@ -430,3 +431,4 @@ typeattribute vendor_mtk_subsidy_lock_support_prop    mtk_core_property_type;
 typeattribute vendor_mtk_md_volte_prop mtk_core_property_type;
 typeattribute vendor_mtk_wod_prop mtk_core_property_type;
 typeattribute vendor_mtk_persist_wod_prop mtk_core_property_type;
+typeattribute vendor_mtk_lbs_prop mtk_core_property_type;

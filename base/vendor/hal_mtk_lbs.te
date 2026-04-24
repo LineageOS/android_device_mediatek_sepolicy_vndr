@@ -3,8 +3,11 @@
 # ==============================================
 
 hal_attribute_hwservice(hal_mtk_lbs, mtk_hal_lbs_hwservice)
+vndbinder_use(hal_mtk_lbs)
+
+hal_attribute_service(hal_mtk_lbs, mtk_hal_lbs_service)
+binder_use(hal_mtk_lbs_client)
+binder_use(hal_mtk_lbs_server)
 
 binder_call(hal_mtk_lbs_client, hal_mtk_lbs_server)
 binder_call(hal_mtk_lbs_server, hal_mtk_lbs_client)
-
-vndbinder_use(hal_mtk_lbs)

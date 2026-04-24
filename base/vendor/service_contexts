@@ -67,3 +67,29 @@ android.hardware.security.sharedsecret.ISharedSecret/strongbox               u:o
 # Mapper AIDL
 mapper/mediatek    u:object_r:hal_graphics_allocator_service:s0
 mapper/powervr     u:object_r:hal_graphics_mapper_service:s0
+
+# LBS AIDL
+vendor.mediatek.hardware.lbs.ILbs/AgpsDebugInterface       u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/AgpsInterface            u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_agps2framework       u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_agpsd2debugService   u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_debugService2agpsd   u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_debugService2mnld    u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_framework2agps       u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_lbs_log_v2s          u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_lppe_socket_agps     u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_lppe_socket_bt       u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_lppe_socket_ipaddr   u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_lppe_socket_lbs      u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_lppe_socket_network  u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_lppe_socket_sensor   u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_lppe_socket_wlan     u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_meta2mnld            u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_mnld2debugService    u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_mnld2mtklogger       u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_mnld2nlputils        u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_mtklogger2mnld       u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_jam2mnl              u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_mnl2jam              u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_gnssAidl2agps        u:object_r:mtk_hal_lbs_service:s0
+vendor.mediatek.hardware.lbs.ILbs/mtk_agps2gnssAidl        u:object_r:mtk_hal_lbs_service:s0

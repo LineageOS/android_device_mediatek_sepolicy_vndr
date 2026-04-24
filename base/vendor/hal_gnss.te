@@ -4,3 +4,6 @@
 
 #TODO:: work around solution, wait for correct solution from google
 vndbinder_use(hal_gnss)
+
+# Allow GNSS to get LBS AIDL property
+get_prop(hal_gnss, vendor_mtk_lbs_prop)

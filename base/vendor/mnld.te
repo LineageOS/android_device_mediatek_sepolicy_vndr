@@ -54,6 +54,9 @@ allow mnld gps_data_file:sock_file create_file_perms;
 # Send the message to the LBS HIDL Service to forward to applications
 allow mnld lbs_hidl_service:unix_dgram_socket sendto;
 
+# Send the message to the LBS AIDL Service to forward to applications
+allow mnld mtk_lbs_service:unix_dgram_socket sendto;
+
 # Send the message to the merged hal Service to forward to applications
 allow mnld merged_hal_service:unix_dgram_socket sendto;
 

@@ -1,0 +1,15 @@
+type mtk_lbs_service, domain;
+type mtk_lbs_service_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(mtk_lbs_service)
+hal_server_domain(mtk_lbs_service, hal_mtk_lbs)
+
+unix_socket_connect(mtk_lbs_service, agpsd, mtk_agpsd)
+allow mtk_lbs_service mtk_agpsd:unix_dgram_socket sendto;
+allow mtk_lbs_service mnld:unix_dgram_socket sendto;
+
+r_dir_file(mtk_lbs_service, sysfs_ccci)
+allow mtk_lbs_service gsm0710muxd_device:chr_file rw_file_perms;
+
+# Allow LBS AIDL to get/set LBS AIDL property
+set_prop(mtk_lbs_service, vendor_mtk_lbs_prop)

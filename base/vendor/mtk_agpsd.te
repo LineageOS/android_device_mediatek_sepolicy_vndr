@@ -55,6 +55,9 @@ allow mtk_agpsd mnld:unix_dgram_socket sendto;
 # Send the message to the LBS HIDL Service to forward to system partitions
 allow mtk_agpsd lbs_hidl_service:unix_dgram_socket sendto;
 
+# Send the message to the LBS AIDL Service to forward to system partitions
+allow mtk_agpsd mtk_lbs_service:unix_dgram_socket sendto;
+
 # Send the message to the merged hal Service to forward to system partitions
 allow mtk_agpsd merged_hal_service:unix_dgram_socket sendto;
 
@@ -76,3 +79,6 @@ allow mtk_agpsd sysfs_ccci:file { read open };
 # Allow to connect APM HIDL server
 hal_client_domain(mtk_agpsd, hal_mtk_apm)
 get_prop(mtk_agpsd, vendor_mtk_dmc_prop)
+
+# Allow AGPSD to get LBS AIDL property
+get_prop(mtk_agpsd, vendor_mtk_lbs_prop)
