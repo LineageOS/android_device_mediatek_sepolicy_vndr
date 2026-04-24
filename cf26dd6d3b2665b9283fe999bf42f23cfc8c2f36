@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "89908e3b_1de576a4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-04-24T09:26:47Z",
+      "side": 1,
+      "message": "Why would you want to opt out of the one in hardware/mediatek ?",
+      "revId": "cf26dd6d3b2665b9283fe999bf42f23cfc8c2f36",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
