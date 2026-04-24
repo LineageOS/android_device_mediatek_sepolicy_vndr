@@ -16,6 +16,23 @@
       "message": "Validated whole chain on Gigaset GS6 (mt6878)",
       "revId": "f36fa7e7a5cfbd6df7b4e2148522d1656eff453d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bed18d97_47f67197",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-04-24T09:31:04Z",
+      "side": 1,
+      "message": "Not sure we want camera to access that, have you checked if it was present in your stock sepolicy ?",
+      "revId": "f36fa7e7a5cfbd6df7b4e2148522d1656eff453d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
