@@ -531,3 +531,6 @@ allow mtk_hal_camera proc_pressure_io:file rw_file_perms;
 # Operation : 3rd party camera policy
 # Purpose: 3rd party camera use audio mode hint to differentiate Video Call
 hal_client_domain(mtk_hal_camera, hal_audio)
+
+# /sys/bus/nvmem/devices/mtk-devinfo0/nvmem access
+allow mtk_hal_camera sysfs_nvmem:file r_file_perms;

@@ -282,6 +282,7 @@ genfscon sysfs /devices/virtual/powercap u:object_r:sysfs_therm:s0
 genfscon sysfs /kernel/thermal u:object_r:sysfs_thermal_sram:s0
 genfscon sysfs /kernel/charger_cooler u:object_r:sysfs_charger_cooler:s0
 genfscon sysfs /devices/platform/efuse@11e80000/mtk-devinfo0/nvmem  u:object_r:sysfs_thermal_efuse:s0
+genfscon sysfs /devices/platform/efuse@11f10000/mtk-devinfo0/nvmem u:object_r:sysfs_nvmem:s0
 
 genfscon sysfs /devices/virtual/switch/fps u:object_r:sysfs_fps:s0
 
