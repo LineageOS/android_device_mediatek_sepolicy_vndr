@@ -58,3 +58,8 @@ vendor.mediatek.hardware.engineermode.IEmds/default   u:object_r:mtk_hal_em_serv
 
 # Audio
 vendor.mediatek.hardware.audio.IMtkAudio/default u:object_r:mtk_hal_audio_service:s0
+
+# NXP StrongBox
+android.hardware.security.keymint.IKeyMintDevice/strongbox                   u:object_r:hal_keymint_service:s0
+android.hardware.security.keymint.IRemotelyProvisionedComponent/strongbox    u:object_r:hal_keymint_service:s0
+android.hardware.security.sharedsecret.ISharedSecret/strongbox               u:object_r:hal_sharedsecret_service:s0
