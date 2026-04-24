@@ -744,6 +744,7 @@ genfscon proc /mtk_mdp_debug u:object_r:proc_mtk_mdp_debug:s0
 # AudioManager/WiredAccessoryManager, extcon uevents
 genfscon sysfs /devices/platform/14800000.dp_tx/extcon u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/extcon-usb                u:object_r:sysfs_extcon:s0
+genfscon sysfs /devices/platform/soc/11c50000.dp-tx/extcon u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/soc/soc:extcon_usb/extcon u:object_r:sysfs_extcon:s0
 
 # dumpstate mmcblk access
