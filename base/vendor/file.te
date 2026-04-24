@@ -762,6 +762,9 @@ type sysfs_fs_chg_file, fs_type, sysfs_type;
 # For InputReader scan and search power_supply path
 type sysfs_power_supply, fs_type, sysfs_type;
 
+# For CameraHAL to access /sys/bus/nvmem/devices/mtk-devinfo0/nvmem
+type sysfs_nvmem, fs_type, sysfs_type;
+
 # Modem
 type volte_imcb_socket, file_type;
 type volte_ut_socket, file_type;
