@@ -126,6 +126,7 @@ set_prop(rild, powerctl_prop)
 # Date: 2019/06/14
 # Operation : Migration
 allow rild proc_cmdline:file r_file_perms;
+allow rild proc_bootconfig:file r_file_perms;
 
 # Date: 2019/07/18
 # Operation: AP wifi path
