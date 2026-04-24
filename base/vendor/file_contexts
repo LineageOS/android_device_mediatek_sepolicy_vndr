@@ -911,7 +911,8 @@
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.keymaster_attestation@1\.1-service u:object_r:hal_keymaster_attestation_exec:s0
 
 # NXP NFC AIDL service
-/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc-service\.nxp u:object_r:hal_nfc_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc-service\.nxp     u:object_r:hal_nfc_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc2-service\.nxp    u:object_r:hal_nfc_default_exec:s0
 
 # ST NFC 1.2 hidl service
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc-service.st                 u:object_r:hal_nfc_default_exec:s0
