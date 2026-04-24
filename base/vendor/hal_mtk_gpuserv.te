@@ -1,0 +1,9 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+add_service(hal_mtk_gpuserv_server, mtk_hal_gpuserv_service)
+allow hal_mtk_gpuserv_client mtk_hal_gpuserv_service:service_manager find;
+# Binder IPC from clients into server, and callbacks
+binder_call(hal_mtk_gpuserv_client, hal_mtk_gpuserv_server)
+binder_call(hal_mtk_gpuserv_server, hal_mtk_gpuserv_client)
+binder_call(hal_mtk_gpuserv_server, servicemanager)

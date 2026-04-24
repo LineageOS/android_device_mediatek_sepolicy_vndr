@@ -1,0 +1,16 @@
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+type mtk_hal_gpuserv, domain, mtk_safe_halserverdomain_type;
+type mtk_hal_gpuserv_exec, exec_type, file_type, vendor_file_type;
+
+init_daemon_domain(mtk_hal_gpuserv)
+
+hal_server_domain(mtk_hal_gpuserv, hal_mtk_gpuserv)
+
+# add control to powerhal
+hal_client_domain(mtk_hal_gpuserv, hal_power)
+
+# add binder usage
+binder_use(mtk_hal_gpuserv)

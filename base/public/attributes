@@ -260,3 +260,9 @@ attribute hal_mtk_videotelephony_server;
 attribute hal_mtk_mali_platform_default;
 attribute hal_mtk_mali_platform_default_client;
 attribute hal_mtk_mali_platform_default_server;
+
+# Data: 2023/03/22
+# MTK GPU Extra AIDL
+attribute hal_mtk_gpuserv;
+attribute hal_mtk_gpuserv_client;
+attribute hal_mtk_gpuserv_server;

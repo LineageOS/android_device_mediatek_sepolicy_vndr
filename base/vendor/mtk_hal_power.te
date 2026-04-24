@@ -452,3 +452,8 @@ allow mtk_hal_power mtk_hal_neuralnetworks:file r_file_perms;
 
 # Allow Power to alter DT2W node
 allow mtk_hal_power sysfs_keypad_file:file rw_file_perms;
+
+# Data : 2023/05/05
+# allow powerhal to access hal_mtk_gpuserv
+allow mtk_hal_power mtk_hal_gpuserv:dir { getattr search };
+allow mtk_hal_power mtk_hal_gpuserv:file r_file_perms;

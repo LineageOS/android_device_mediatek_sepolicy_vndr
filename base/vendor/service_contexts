@@ -93,3 +93,7 @@ vendor.mediatek.hardware.lbs.ILbs/mtk_jam2mnl              u:object_r:mtk_hal_lb
 vendor.mediatek.hardware.lbs.ILbs/mtk_mnl2jam              u:object_r:mtk_hal_lbs_service:s0
 vendor.mediatek.hardware.lbs.ILbs/mtk_gnssAidl2agps        u:object_r:mtk_hal_lbs_service:s0
 vendor.mediatek.hardware.lbs.ILbs/mtk_agps2gnssAidl        u:object_r:mtk_hal_lbs_service:s0
+
+#Data: 2023/03/22
+#add MTK GPU Extra AIDL
+vendor.mediatek.hardware.gpuserv.IGpuService/default u:object_r:mtk_hal_gpuserv_service:s0
