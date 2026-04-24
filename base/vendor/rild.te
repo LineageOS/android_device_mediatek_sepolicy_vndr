@@ -249,3 +249,7 @@ set_prop(rild, vendor_mtk_vonr_force_prop)
 
 # CNOP VOWIFI support
 get_prop(rild, vendor_mtk_cnop_vowifi_prop)
+
+# Purpose: Allow rild to write NVRAM
+allow rild nvram_device:blk_file rw_file_perms;
+allow rild nvram_device:chr_file rw_file_perms;
