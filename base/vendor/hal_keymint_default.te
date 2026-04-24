@@ -22,3 +22,12 @@ set_prop(hal_keymint_default, vendor_mtk_soter_teei_prop)
 # Purpose: Microtrust HW-backed Keymint
 allow hal_keymint_default teei_client_device:chr_file rw_file_perms;
 allow hal_keymint_default tkcore_client_device:chr_file rw_file_perms;
+
+# Purpose: MiTEE HW-backed Keymint
+allow hal_keymint_default mitee_client_device:chr_file rw_file_perms;
+allow hal_keymint_default kmsg_device:chr_file rw_file_perms;
+allow hal_keymint_default mitee_data_file:dir create_dir_perms;
+allow hal_keymint_default mitee_data_file:file create_file_perms;
+allow hal_keymint_default mitee_sfs_file:dir create_dir_perms;
+allow hal_keymint_default mitee_sfs_file:file create_file_perms;
+set_prop(hal_keymint_default, vendor_mtk_mitee_prop)

@@ -358,6 +358,9 @@ type mobicore_admin_device, dev_type;
 type mobicore_user_device, dev_type, mlstrustedobject;
 type mobicore_tui_device, dev_type;
 
+# MiTEE device type
+type mitee_client_device, dev_type, mlstrustedobject;
+
 # teeperf device type
 type teeperf_device, dev_type, mlstrustedobject;
 

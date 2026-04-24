@@ -1,0 +1,6 @@
+# Purpose: MiTEE HW-backed Identity
+allow hal_identity_default mitee_client_device:chr_file rw_file_perms;
+allow hal_identity_default kmsg_device:chr_file rw_file_perms;
+allow hal_identity_default mitee_sfs_file:dir create_dir_perms;
+allow hal_identity_default mitee_sfs_file:file create_file_perms;
+set_prop(hal_identity_default, vendor_mtk_mitee_prop)

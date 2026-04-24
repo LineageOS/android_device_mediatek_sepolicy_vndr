@@ -50,6 +50,9 @@ allow hal_drm_widevine kisd:unix_stream_socket connectto;
 allow hal_drm_widevine sysfs_mmcblk:dir search;
 allow hal_drm_widevine sysfs_mmcblk:file { read open getattr};
 
+# Add sepolicy for MiTEE
+allow hal_drm_widevine mitee_client_device:chr_file rw_file_perms;
+
 # Allow widevine hidl process access widevine kernel driver
 allow hal_drm_widevine widevine_drv_device:chr_file { getattr open read ioctl write };
 

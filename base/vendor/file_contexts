@@ -881,6 +881,27 @@
 # Trustkernel
 /(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.trustkernel u:object_r:hal_keymint_default_exec:s0
 
+# MiTEE
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper-service\.mitee               u:object_r:hal_gatekeeper_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.identity-service\.mitee@5.0             u:object_r:hal_identity_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint@3.0-service\.mitee    u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.secure_element-service           u:object_r:hal_secure_element_default_exec:s0
+
+# MiTEE system files
+/(vendor|system/vendor)/bin/tee-supplicant     u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/miteelog           u:object_r:tee_exec:s0
+
+# MiTEE data files
+/data/vendor/mitee(/.*)?          u:object_r:mitee_data_file:s0
+/mnt/vendor/persist/data(/.*)?    u:object_r:mitee_sfs_file:s0
+
+# MiTEE devices
+/dev/0:0:0:49476    u:object_r:teei_rpmb_device:s0
+/dev/metis          u:object_r:mitee_client_device:s0
+/dev/tee0           u:object_r:mitee_client_device:s0
+/dev/teepriv0       u:object_r:mitee_client_device:s0
+/dev/ufs-bsg0       u:object_r:mitee_client_device:s0
+
 # NXP StrongBox
 /(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.strongbox\.nxp     u:object_r:hal_keymint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint3-service\.strongbox\.nxp    u:object_r:hal_keymint_default_exec:s0

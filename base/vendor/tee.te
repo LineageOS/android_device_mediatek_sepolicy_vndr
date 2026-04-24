@@ -51,6 +51,15 @@ allow tee protect_f_data_file:dir search;
 allow tee tkcore_protect_data_file:dir create_dir_perms;
 allow tee tkcore_protect_data_file:file { create_file_perms link };
 
+# MiTee
+allow tee proc_mitee_log:file r_file_perms;
+allow tee mitee_client_device:chr_file rw_file_perms;
+allow tee mitee_data_file:dir create_dir_perms;
+allow tee mitee_data_file:file create_file_perms;
+allow tee mitee_sfs_file:dir create_dir_perms;
+allow tee mitee_sfs_file:file create_file_perms;
+set_prop(tee, vendor_mtk_mitee_prop)
+
 #rpmb
 allow tee self:capability sys_rawio;
 allow tee block_device:dir search;

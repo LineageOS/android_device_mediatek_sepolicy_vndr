@@ -168,6 +168,9 @@ type proc_low_memory_hit, fs_type, proc_type;
 # TKCore proc file
 type proc_tkcore, fs_type, proc_type;
 
+# MiTEE proc file
+type proc_mitee_log, fs_type, proc_type;
+
 # For CachedAppOptimizer
 type proc_freqhopping, fs_type, proc_type;
 
@@ -582,6 +585,10 @@ type mtk_radio_data_file, file_type, data_file_type;
 
 # mobicore file type
 type mobicore_data_file, file_type, data_file_type;
+
+# MiTEE file type
+type mitee_data_file, data_file_type, file_type;
+type mitee_sfs_file, file_type;
 
 # DOE
 type doe_vendor_data_file, file_type, data_file_type;

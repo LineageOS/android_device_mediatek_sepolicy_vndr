@@ -205,6 +205,7 @@ vendor_restricted_prop(vendor_mtk_st_nfc_ignore_modem_prop)
 vendor_restricted_prop(vendor_mtk_telephony_addon_prop)
 vendor_restricted_prop(vendor_mtk_trustkernel_tee_prop)
 vendor_restricted_prop(vendor_mtk_trustonic_tee_prop)
+vendor_restricted_prop(vendor_mtk_mitee_prop)
 vendor_restricted_prop(vendor_mtk_vendor_vt_prop)
 vendor_restricted_prop(vendor_mtk_vilte_prop)
 vendor_restricted_prop(vendor_mtk_vilte_support_prop)
@@ -395,6 +396,7 @@ typeattribute vendor_mtk_st_nfc_ignore_modem_prop     mtk_core_property_type;
 typeattribute vendor_mtk_telephony_addon_prop         mtk_core_property_type;
 typeattribute vendor_mtk_trustkernel_tee_prop         mtk_core_property_type;
 typeattribute vendor_mtk_trustonic_tee_prop           mtk_core_property_type;
+typeattribute vendor_mtk_mitee_prop                   mtk_core_property_type;
 typeattribute vendor_mtk_vendor_vt_prop               mtk_core_property_type;
 typeattribute vendor_mtk_vilte_prop                   mtk_core_property_type;
 typeattribute vendor_mtk_vilte_support_prop           mtk_core_property_type;

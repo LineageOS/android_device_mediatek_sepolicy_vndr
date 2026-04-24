@@ -161,6 +161,9 @@ genfscon proc /secmem0 u:object_r:proc_secmem:s0
 # TrustKernel TEE proc
 genfscon proc /tkcore u:object_r:proc_tkcore:s0
 
+# MiTEE proc
+genfscon proc /mitee_log    u:object_r:proc_mitee_log:s0
+
 # For DuraSpeed
 genfscon proc /cpu_loading/onoff                        u:object_r:proc_cpu_loading:s0
 genfscon proc /cpu_loading/uevent_enable                u:object_r:proc_cpu_loading:s0
