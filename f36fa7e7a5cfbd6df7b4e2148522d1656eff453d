@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "67e7d989_962fbbfb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 18586
+      },
+      "writtenOn": "2026-04-24T09:06:39Z",
+      "side": 1,
+      "message": "Validated whole chain on Gigaset GS6 (mt6878)",
+      "revId": "f36fa7e7a5cfbd6df7b4e2148522d1656eff453d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
