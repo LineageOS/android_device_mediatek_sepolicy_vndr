@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ed52b7b7_d844d0c9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-04-24T09:28:52Z",
+      "side": 1,
+      "message": "Same question as bluetooth, why would you want to use the proprietary one ? The one in hardware/mediatek works fine on newer mtk platforms",
+      "revId": "00f0cd54ed262f6637648ea42e3c89bac6947e75",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
