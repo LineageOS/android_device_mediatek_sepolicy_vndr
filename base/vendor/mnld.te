@@ -132,3 +132,6 @@ allow mnld sysfs_ccci:file r_file_perms;
 
 # Allow to rw /dev/ttyCMIPC5
 allow mnld gsm0710muxd_device:chr_file rw_file_perms;
+
+# Allow to rw /dev/ccci_md1_sta
+allow mnld ccci_device:chr_file rw_file_perms;
