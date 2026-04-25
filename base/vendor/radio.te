@@ -153,3 +153,6 @@ get_prop(radio, vendor_mtk_call_drop_prop)
 # Date : 2021/08/17
 # Purpose : Allow radio to read ro.vendor.mtk_mcf_support
 get_prop(radio, vendor_mtk_mcf_prop)
+
+# Purpose: Allow radio to get vendor_mtk_dc_call_prop
+get_prop(radio, vendor_mtk_dc_call_prop)

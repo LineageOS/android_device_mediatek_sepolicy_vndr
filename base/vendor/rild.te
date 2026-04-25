@@ -257,3 +257,6 @@ allow rild nvram_device:chr_file rw_file_perms;
 
 # Purpose: Allow rild to get/set wwan vote airplane property
 set_prop(rild, vendor_mtk_ril_vote_prop)
+
+# Purpose: Allow rild to get/set vendor_mtk_dc_call_prop
+set_prop(rild, vendor_mtk_dc_call_prop)

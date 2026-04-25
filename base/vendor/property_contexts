@@ -476,6 +476,8 @@ persist.vendor.mtk.vinr.enable u:object_r:vendor_mtk_vinr_prop:s0
 
 persist.vendor.mtk_hvolte_indicator u:object_r:vendor_mtk_hvolte_indicator:s0
 
+persist.vendor.mtk.dch.enable u:object_r:vendor_mtk_dc_call_prop:s0
+
 persist.vendor.service.atci u:object_r:vendor_mtk_persist_service_atci_prop:s0
 vendor.mtk.atci             u:object_r:vendor_mtk_atci_prop:s0
 
