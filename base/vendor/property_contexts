@@ -779,6 +779,9 @@ ro.vendor.mtk_svp_on_mtee_support u:object_r:vendor_mtk_svp_on_mtee_support_prop
 # MTK MCF property
 ro.vendor.mtk_mcf_support u:object_r:vendor_mtk_mcf_prop:s0
 
+# backlight property
+ro.vendor.mtk_backlight_hwc_support u:object_r:vendor_mtk_backlight_ro_prop:s0
+
 #=============allow wifi offload deamon  ==============
 vendor.wo.   u:object_r:vendor_mtk_wod_prop:s0
 persist.vendor.wo.   u:object_r:vendor_mtk_persist_wod_prop:s0
