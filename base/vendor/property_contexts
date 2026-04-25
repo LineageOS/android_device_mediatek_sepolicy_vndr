@@ -494,8 +494,9 @@ ro.vendor.mtk_carrierexpress_pack  u:object_r:vendor_mtk_cxp_vendor_prop:s0
 persist.vendor.mtk_usp_switch_mode u:object_r:vendor_mtk_cxp_vendor_prop:s0
 
 # vt operator property
-persist.vendor.vt. u:object_r:vendor_mtk_vendor_vt_prop:s0
-vendor.vt. u:object_r:vendor_mtk_vendor_vt_prop:s0
+persist.vendor.vt.        u:object_r:vendor_mtk_vendor_vt_prop:s0
+vendor.vt.                u:object_r:vendor_mtk_vendor_vt_prop:s0
+ro.vendor.vt.             u:object_r:vendor_mtk_vendor_vt_prop:s0
 ro.vendor.vt_hevc_support u:object_r:vendor_mtk_default_prop:s0
 
 vendor.gsm.external.sim.enabled   u:object_r:vendor_mtk_vsim_prop:s0
