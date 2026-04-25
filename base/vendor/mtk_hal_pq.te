@@ -26,6 +26,7 @@ allow mtk_hal_pq graphics_device:chr_file rw_file_perms;
 
 # Purpose : Allow permission to get AmbientLux from hwservice_manager
 allow mtk_hal_pq fwk_sensor_hwservice:hwservice_manager find;
+allow mtk_hal_pq fwk_sensor_service:service_manager find;
 
 # Purpose : Allow permission to set pq property
 set_prop(mtk_hal_pq, vendor_mtk_pq_prop)
