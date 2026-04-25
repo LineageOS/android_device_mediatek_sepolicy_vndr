@@ -34,6 +34,24 @@
       "parentUuid": "a2ec9370_f4804e65",
       "revId": "88a1a81fddebd6ecfa6201b6441c7ec515c3c190",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "569ad233_b14222df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-04-25T18:31:48Z",
+      "side": 1,
+      "message": "This one stays on hold due to https://review.lineageos.org/c/LineageOS/android_packages_modules_Bluetooth/+/481965",
+      "parentUuid": "6a0118c6_a746cfbe",
+      "revId": "88a1a81fddebd6ecfa6201b6441c7ec515c3c190",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
