@@ -16,6 +16,24 @@
       "message": "that patch was never uploaded to gerrit (and even if it was, it lacks the ability to configure the command)",
       "revId": "88a1a81fddebd6ecfa6201b6441c7ec515c3c190",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6a0118c6_a746cfbe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-04-25T18:28:08Z",
+      "side": 1,
+      "message": "I am aware of that, I can\u0027t really review 45 commits and push at the same time. But this will need to be eventually be merged after reworking the patch at some point",
+      "parentUuid": "a2ec9370_f4804e65",
+      "revId": "88a1a81fddebd6ecfa6201b6441c7ec515c3c190",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
