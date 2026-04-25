@@ -5,6 +5,7 @@
 ctl.vendor.gsm0710muxd u:object_r:vendor_mtk_ctl_gsm0710muxd_prop:s0
 
 vendor.ril.ipo u:object_r:vendor_mtk_ril_ipo_prop:s0
+vendor.mtk.wwan.vote.airplane u:object_r:vendor_mtk_ril_vote_prop:s0
 
 vendor.usb.         u:object_r:vendor_mtk_usb_prop:s0
 persist.vendor.usb. u:object_r:vendor_mtk_usb_prop:s0
@@ -53,6 +54,7 @@ vendor.a2dp.             u:object_r:vendor_mtk_audiohal_prop:s0
 vendor.audiohal.         u:object_r:vendor_mtk_audiohal_prop:s0
 persist.vendor.audiohal. u:object_r:vendor_mtk_audiohal_prop:s0
 persist.vendor.vow.      u:object_r:vendor_mtk_audiohal_prop:s0
+vendor.mtk.wwan.vote.speech u:object_r:vendor_mtk_audiohal_prop:s0
 
 persist.vendor.connsys.coredump.mode u:object_r:vendor_mtk_coredump_prop:s0
 persist.vendor.connsys.              u:object_r:vendor_mtk_wmt_prop:s0

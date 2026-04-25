@@ -254,3 +254,6 @@ get_prop(rild, vendor_mtk_cnop_vowifi_prop)
 # Purpose: Allow rild to write NVRAM
 allow rild nvram_device:blk_file rw_file_perms;
 allow rild nvram_device:chr_file rw_file_perms;
+
+# Purpose: Allow rild to get/set wwan vote airplane property
+set_prop(rild, vendor_mtk_ril_vote_prop)

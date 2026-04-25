@@ -157,3 +157,6 @@ set_prop(mtkrild, vendor_mtk_vsim_prop)
 # Operation: P migration
 # Purpose: Allow mtkrild to get/set vendor_mtk_ims_prop
 set_prop(mtkrild, vendor_mtk_ims_prop)
+
+# Purpose: Allow mtkrild to get/set wwan vote airplane property
+set_prop(mtkrild, vendor_mtk_ril_vote_prop)

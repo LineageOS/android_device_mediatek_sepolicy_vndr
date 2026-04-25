@@ -80,3 +80,6 @@ allow viarild node:rawip_socket node_bind;
 allowxperm viarild self:udp_socket ioctl {SIOCDELRT SIOCSIFFLAGS SIOCSIFADDR SIOCKILLADDR SIOCDEVPRIVATE SIOCDEVPRIVATE_1};
 allow viarild sysfs_ccci:dir search;
 allow viarild sysfs_ccci:file r_file_perms;
+
+# Purpose: Allow viarild to get/set wwan vote airplane property
+set_prop(viarild, vendor_mtk_ril_vote_prop)
