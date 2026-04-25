@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a2ec9370_f4804e65",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2026-04-25T18:21:47Z",
+      "side": 1,
+      "message": "that patch was never uploaded to gerrit (and even if it was, it lacks the ability to configure the command)",
+      "revId": "88a1a81fddebd6ecfa6201b6441c7ec515c3c190",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
