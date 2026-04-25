@@ -190,6 +190,7 @@ persist.vendor.radio. u:object_r:vendor_mtk_radio_prop:s0
 persist.vendor.mtk_ct_volte_support u:object_r:vendor_mtk_ct_volte_prop:s0
 
 ro.vendor.mtk_ril_mode u:object_r:vendor_mtk_ril_mode_prop:s0
+ro.vendor.mtk_mipc_support u:object_r:vendor_mtk_ril_mode_prop:s0
 
 # GPS support properties
 ro.vendor.mtk_gps_support        u:object_r:vendor_mtk_gps_support_prop:s0
