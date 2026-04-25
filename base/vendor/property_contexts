@@ -638,6 +638,7 @@ vendor.mtk.camera.app.                u:object_r:vendor_mtk_camera_prop:s0
 vendor.multizone.af.window.ratio      u:object_r:vendor_mtk_camera_prop:s0
 persist.vendor.mtkcamapp.loglevel     u:object_r:vendor_mtk_camera_prop:s0
 persist.vendor.mtk_camera_app_version u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.afbc.enable                 u:object_r:vendor_mtk_camera_prop:s0
 ro.vendor.mtk_cam_cfb                 u:object_r:vendor_mtk_camera_prop:s0
 ro.vendor.mtk_cam_dualdenoise_support u:object_r:vendor_mtk_camera_prop:s0
 ro.vendor.mtk_cam_dualzoom_support    u:object_r:vendor_mtk_camera_prop:s0
