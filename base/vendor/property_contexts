@@ -167,6 +167,9 @@ vendor.debug.sf.latch_unsignaled  u:object_r:vendor_mtk_graphics_hwc_latch_unsig
 vendor.debug.sf.cpupolicy  u:object_r:vendor_mtk_debug_sf_cpupolicy_prop:s0
 vendor.debug.sf.cpupolicy. u:object_r:vendor_mtk_debug_sf_cpupolicy_prop:s0
 
+# sf fbt cache hint config. Use same permission rule as sf cpupolicy
+vendor.debug.sf.fbthint u:object_r:vendor_mtk_debug_sf_cpupolicy_prop:s0
+
 # atm modem mode property(ATM)
 persist.vendor.atm.mdmode u:object_r:vendor_mtk_atm_mdmode_prop:s0
 
