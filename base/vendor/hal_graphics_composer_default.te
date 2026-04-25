@@ -134,3 +134,6 @@ hal_server_domain(hal_graphics_composer_default, hal_mtk_composer_ext)
 
 # Allow composer to get HWC backlight support
 get_prop(hal_graphics_composer_default, vendor_mtk_backlight_ro_prop)
+
+# Allow composer to get MML PQ support
+get_prop(hal_graphics_composer_default, vendor_mtk_mml_support_prop)

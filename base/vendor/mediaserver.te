@@ -406,3 +406,6 @@ hal_client_domain(mediaserver, hal_tesiai_hdcp)
 # Operation : HDCP
 # Purpose : Allow HDCP to access wv dev to get handle
 allow mediaserver widevine_drv_device:chr_file rw_file_perms_no_map;
+
+# Purpose: Allow mediaserver to get MML PQ support
+get_prop(mediaserver, vendor_mtk_mml_support_prop)

@@ -248,6 +248,7 @@ vendor_restricted_prop(vendor_mtk_md_volte_prop)
 vendor_restricted_prop(vendor_mtk_lbs_prop)
 vendor_restricted_prop(vendor_mtk_ril_vote_prop)
 vendor_restricted_prop(vendor_mtk_backlight_ro_prop)
+vendor_restricted_prop(vendor_mtk_mml_support_prop)
 
 # Properties with no restriction
 vendor_public_prop(vendor_mtk_sec_video_path_support_prop)
