@@ -31,6 +31,7 @@ vendor.mediatek.hardware.camera.aovservice.IAovService/default u:object_r:hal_ca
 vendor.mediatek.hardware.camera.atms.IATMs/default u:object_r:hal_camera_service:s0
 vendor.mediatek.hardware.camera.bgservice.IBGService/default u:object_r:hal_camera_service:s0
 vendor.mediatek.hardware.camera.isphal.IISPModule/internal/1 u:object_r:hal_camera_service:s0
+vendor.mediatek.hardware.camera.uievent.IUIEvent/default u:object_r:hal_camera_service:s0
 
 # MMAgent
 vendor.mediatek.hardware.mmagent.IMMAgent/default u:object_r:mtk_hal_mmagent_service:s0
