@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b996803a_0b3cf791",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-04-28T12:24:14Z",
+      "side": 1,
+      "message": "There is no other used keymaster version than 4.0 for MiTEE btw",
+      "revId": "9b368489f05fa506313b7e0a4892ba9a3338b247",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
