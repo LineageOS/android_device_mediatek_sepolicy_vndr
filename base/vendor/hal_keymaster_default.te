@@ -36,3 +36,6 @@ allow hal_keymaster_default tkcore_admin_device:chr_file rw_file_perms;
 # Operation: MTEE Keymaster
 # Purpose: Access kisd to get key & certs
 allow hal_keymaster_default kisd:unix_stream_socket connectto;
+
+# Purpose: MiTEE HW-backed Keymaster
+set_prop(hal_keymaster_default, vendor_mtk_mitee_prop)
