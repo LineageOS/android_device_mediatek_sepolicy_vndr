@@ -754,6 +754,7 @@ ro.vendor.mtk_trustkernel_tee_support u:object_r:vendor_mtk_trustkernel_tee_prop
 vendor.teefs_state                    u:object_r:vendor_mtk_mitee_prop:s0
 ro.boot.tee_type                      u:object_r:vendor_mtk_mitee_prop:s0
 ro.vendor.mtk_mitee_support           u:object_r:vendor_mtk_mitee_prop:s0
+vendor.miteekm_status                 u:object_r:vendor_mtk_mitee_prop:s0
 
 # DMC control property
 ro.vendor.mtk_dmc_support  u:object_r:vendor_mtk_dmc_prop:s0
