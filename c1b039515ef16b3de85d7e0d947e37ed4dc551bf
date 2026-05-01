@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3983b04b_ac7f8120",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28270
+      },
+      "writtenOn": "2026-05-01T15:32:38Z",
+      "side": 1,
+      "message": "1st one is OEM HIDL\n2nd one is OSS HIDL\n3rd one is AIDL",
+      "revId": "c1b039515ef16b3de85d7e0d947e37ed4dc551bf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
