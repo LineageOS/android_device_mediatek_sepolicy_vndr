@@ -1386,6 +1386,7 @@
 
 /mnt/vendor/persist/t6(/.*)?    u:object_r:tkcore_protect_data_file:s0
 /mnt/vendor/protect_f/tee(/.*)? u:object_r:tkcore_protect_data_file:s0
+/mnt/vendor/persist/keybox(/.*)? u:object_r:tkcore_protect_data_file:s0
 
 # Logo Updater
 /vendor/bin/logo_updater u:object_r:logo_updater_exec:s0
