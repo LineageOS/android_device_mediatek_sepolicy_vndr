@@ -16,6 +16,24 @@
       "message": "Split it in two, tkcore and trustonic are two different TEE impl",
       "revId": "1f32a52c700c5eb4b91c2799dce87e6038e92a99",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e476fb77_b27b373a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-05-19T14:55:51Z",
+      "side": 1,
+      "message": "Nevermind, Trustonic and TrustKernel had the great idea to use the same folder for keybox after verification",
+      "parentUuid": "8b9a8d67_d19d757b",
+      "revId": "1f32a52c700c5eb4b91c2799dce87e6038e92a99",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
