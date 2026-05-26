@@ -184,3 +184,6 @@ allow init {
     volte_imsvt1_socket
     wfca_socket
 }:sock_file create_file_perms;
+
+# Allow init to signal usb init is done
+allow init sysfs_usb_nonplat:file rw_file_perms;

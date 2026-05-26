@@ -241,6 +241,9 @@ genfscon sysfs /devices/platform/10026000.pwrap/10026000.pwrap:mt6359p/mt6359p-r
 genfscon sysfs /class/typec                                                                                         u:object_r:sysfs_usb_nonplat:s0
 genfscon sysfs /devices/platform/mt_usb/musb-hdrc/dual_role_usb                                                     u:object_r:sysfs_usb_nonplat:s0
 genfscon sysfs /devices/platform/mt_usb/musb-hdrc/cmode                                                             u:object_r:sysfs_usb_nonplat:s0
+genfscon sysfs /devices/platform/soc/mt_usb/musb-hdrc/cmode                                                         u:object_r:sysfs_usb_nonplat:s0
+genfscon sysfs /module/musb_hdrc/parameters/kernel_init_done                                                        u:object_r:sysfs_usb_nonplat:s0
+genfscon sysfs /module/musb_hdrc/parameters/musb_force_on                                                           u:object_r:sysfs_usb_nonplat:s0
 genfscon sysfs /devices/platform/11270000.usb3/musb-hdrc/cmode                                                      u:object_r:sysfs_usb_nonplat:s0
 genfscon sysfs /devices/platform/soc/usb0/cmode                                                                     u:object_r:sysfs_usb_nonplat:s0
 genfscon sysfs /devices/platform/mt_usb/musb-hdrc/usb1                                                              u:object_r:sysfs_usb_nonplat:s0
