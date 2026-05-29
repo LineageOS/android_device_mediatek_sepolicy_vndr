@@ -20,3 +20,5 @@ type sysfs_vbus, fs_type, sysfs_type;
 # Operation: R migration
 # Purpose : mtk EM PMU reading/setting
 type sysfs_pmu, fs_type, sysfs_type;
+
+type sysfs_ccci, fs_type, sysfs_type;

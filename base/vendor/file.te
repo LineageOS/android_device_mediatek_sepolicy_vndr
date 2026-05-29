@@ -195,7 +195,6 @@ type sysfs_thermal_sram, fs_type, sysfs_type;
 type sysfs_thermal_efuse, fs_type, sysfs_type;
 type sysfs_charger_cooler, fs_type, sysfs_type;
 type sysfs_fps, fs_type, sysfs_type;
-type sysfs_ccci, fs_type, sysfs_type;
 type sysfs_mdinfo, fs_type,sysfs_type;
 type sysfs_ssw, fs_type,sysfs_type;
 type sysfs_soc, fs_type, sysfs_type;
