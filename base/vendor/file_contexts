@@ -1166,6 +1166,7 @@
 # For Google Trusty Secure Storage Proxy
 /vendor/bin/storageproxyd u:object_r:tee_exec:s0
 /(vendor|system/vendor)/bin/rpmb_svc u:object_r:tee_exec:s0
+/vendor/bin/mtk_storageproxyd u:object_r:tee_exec:s0
 
 # MTK MDM
 /vendor/bin/md_monitor u:object_r:md_monitor_exec:s0
