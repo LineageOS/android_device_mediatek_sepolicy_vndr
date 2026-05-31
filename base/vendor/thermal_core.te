@@ -46,6 +46,11 @@ allow thermal_core sysfs_therm:file rw_file_perms;
 allow thermal_core sysfs_therm:dir search;
 allow thermal_core sysfs_thermal_efuse:file create_file_perms;
 
+# for leds sysfs
+allow thermal_core sysfs_leds:file rw_file_perms;
+allow thermal_core sysfs_leds:dir search;
+allow thermal_core self:netlink_generic_socket create_socket_perms_no_ioctl;
+
 #for md_on/md_off control
 allow thermal_core rild:unix_stream_socket connectto;
 allow thermal_core rild_oem_socket:sock_file write;
