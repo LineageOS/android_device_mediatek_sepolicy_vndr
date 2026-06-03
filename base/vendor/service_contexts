@@ -98,3 +98,7 @@ vendor.mediatek.hardware.lbs.ILbs/mtk_agps2gnssAidl        u:object_r:mtk_hal_lb
 #Data: 2023/03/22
 #add MTK GPU Extra AIDL
 vendor.mediatek.hardware.gpuserv.IGpuService/default u:object_r:mtk_hal_gpuserv_service:s0
+
+# Trustonic
+vendor.trustonic.tee.ITee/default           u:object_r:hal_tee_service:s0
+vendor.trustonic.tui.ITui/default           u:object_r:hal_tee_service:s0
