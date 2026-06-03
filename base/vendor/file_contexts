@@ -1268,6 +1268,7 @@
 /vendor/lib(64)?/libhdrvideo\.so                                  u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libscltm\.so                                     u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libaal_mtk\.so                                   u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libmml\.so                        u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmmlpqImpl\.so                                  u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libpqhdrmetaparser\.so                           u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libpqsharememory\.so                             u:object_r:same_process_hal_file:s0
