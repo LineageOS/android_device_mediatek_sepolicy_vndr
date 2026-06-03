@@ -8,4 +8,4 @@ allow servicemanager rild:file r_file_perms;
 allow servicemanager rild:process getattr;
 binder_call(servicemanager, mtk_hal_light)
 binder_call(servicemanager, hal_vibrator_default)
-
+binder_call(servicemanager, hal_mtk_mms_server)

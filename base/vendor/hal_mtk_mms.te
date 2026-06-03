@@ -8,6 +8,9 @@ binder_call(hal_mtk_mms_server, hal_mtk_mms_client)
 
 # add/find permission rule to hwservicemanager
 add_hwservice(hal_mtk_mms_server, mtk_hal_mms_hwservice)
+add_service(hal_mtk_mms_server, mtk_hal_mms_service)
 
 # give permission for hal client
 allow hal_mtk_mms_client mtk_hal_mms_hwservice:hwservice_manager find;
+allow hal_mtk_mms_client mtk_hal_mms_service:service_manager find;
+allow hal_mtk_mms_server self:capability sys_nice;

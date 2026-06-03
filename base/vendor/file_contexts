@@ -938,7 +938,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mmlpq@V1-service u:object_r:mtk_hal_mmlpq_exec:s0
 
 # MMS hal
-/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mms@1\.[0-9]-service u:object_r:mtk_hal_mms_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mms(@1\.[0-9])?-service u:object_r:mtk_hal_mms_exec:s0
 
 #MMAgent hal
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mmagent@[0-9]+\.[0-9]+-service u:object_r:mtk_hal_mmagent_exec:s0
@@ -1254,6 +1254,7 @@
 /vendor/lib(64)?/hw/(mt[0-9]+[a-z]*/)?mapper\.mediatek\.so                                       u:object_r:same_process_hal_file:s0
 
 /vendor/lib(64)?/vendor\.mediatek\.hardware\.mms@[0-9]\.[0-9]\.so u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/vendor\.mediatek\.hardware\.mms-V[0-9]+-ndk\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor\.mediatek\.hardware\.mmlpq@V[0-9]\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor\.mediatek\.hardware\.mmlpq-V[0-9]+-ndk\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libdpframework\.so                               u:object_r:same_process_hal_file:s0
