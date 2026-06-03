@@ -6,4 +6,6 @@ binder_call(hal_tee_client, hal_tee_server)
 binder_call(hal_tee_server, hal_tee_client)
 
 add_hwservice(hal_tee_server, hal_tee_hwservice)
+add_service(hal_tee_server, hal_tee_service)
 allow hal_tee_client hal_tee_hwservice:hwservice_manager find;
+allow hal_tee_client hal_tee_service:service_manager find;
