@@ -37,6 +37,9 @@ vendor.mediatek.hardware.camera.uievent.IUIEvent/default u:object_r:hal_camera_s
 # MMAgent
 vendor.mediatek.hardware.mmagent.IMMAgent/default u:object_r:mtk_hal_mmagent_service:s0
 
+# MMS
+vendor.mediatek.hardware.mms.IMms/default u:object_r:mtk_hal_mms_service:s0
+
 # GNSS
 vendor.mediatek.hardware.gnss.IMtkGnss/default u:object_r:hal_gnss_service:s0
 

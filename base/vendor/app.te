@@ -53,6 +53,8 @@ get_prop({ appdomain -isolated_app_all }, hwservicemanager_prop)
 allow { appdomain -isolated_app_all } hidl_manager_hwservice:hwservice_manager find;
 binder_call({ appdomain -isolated_app_all }, mtk_safe_halserverdomain_type)
 allow { appdomain -isolated_app_all } mtk_safe_hwservice_manager_type:hwservice_manager find;
+allow { appdomain -isolated_app_all } mtk_safe_service_manager_type:service_manager find;
+binder_call(appdomain, hal_mtk_mms_server)
 
 # Date : 2021/04/24
 # Operation: addwindow
