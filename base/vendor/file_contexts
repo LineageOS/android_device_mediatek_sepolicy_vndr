@@ -1002,6 +1002,7 @@
 # Operation: R migration
 # Purpose: Add permission for boot control lazy HAL
 /vendor/bin/hw/android\.hardware\.boot@[0-9]+\.[0-9]+-service-lazy u:object_r:hal_bootctl_default_exec:s0
+/vendor/bin/hw/android\.hardware\.boot-service.mediatek            u:object_r:hal_bootctl_default_exec:s0
 
 # Date: 2020/09/25
 # Purpose: kernel modules
