@@ -1264,6 +1264,7 @@
 /vendor/lib(64)?/vendor\.mediatek\.hardware\.pq_aidl-V[0-9]+-ndk\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libpq_prot\.so                                   u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/mt[0-9]+[a-z]*/libpq_prot\.so                    u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/mt[0-9]+[a-z]*/libpq_sec\.so                     u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libhdrvideo\.so                                  u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libscltm\.so                                     u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libaal_mtk\.so                                   u:object_r:same_process_hal_file:s0
