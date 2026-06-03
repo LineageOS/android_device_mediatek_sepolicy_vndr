@@ -9,6 +9,7 @@ init_daemon_domain(mtk_hal_usb)
 hal_server_domain(mtk_hal_usb, hal_usb)
 hal_server_domain(mtk_hal_usb, hal_usb_gadget)
 
+r_dir_file(mtk_hal_usb, sysfs_udc)
 r_dir_file(mtk_hal_usb, sysfs_usb_nonplat)
 allow mtk_hal_usb sysfs_usb_nonplat:file w_file_perms;
 
