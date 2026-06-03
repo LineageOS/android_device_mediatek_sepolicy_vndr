@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "97bdb415_01afb28d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2026-06-03T19:50:40Z",
+      "side": 1,
+      "message": "Fine on Q25, waiting on pacman/vitamin",
+      "revId": "7df9299c00041bce4d0c85db13d592270760813f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
