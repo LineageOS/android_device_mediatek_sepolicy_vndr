@@ -120,6 +120,9 @@ attribute hal_mtk_atci_server;
 # All types used for mtk's safe hwservice
 attribute mtk_safe_hwservice_manager_type;
 
+# All types used for mtk's safe service
+attribute mtk_safe_service_manager_type;
+
 # All types used for mtk's safe halserver
 attribute mtk_safe_halserverdomain_type;
 
