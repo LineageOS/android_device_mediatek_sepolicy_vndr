@@ -296,6 +296,7 @@
 /dev/st54spi u:object_r:st54spi_device:s0
 
 /dev/nq-nci    u:object_r:nfc_device:s0
+/dev/nxp-nci   u:object_r:nfc_device:s0
 /dev/p73       u:object_r:nfc_device:s0
 
 /dev/sec-nfc   u:object_r:nfc_device:s0
