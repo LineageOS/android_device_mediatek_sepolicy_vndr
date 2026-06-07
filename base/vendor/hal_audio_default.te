@@ -228,3 +228,5 @@ allow hal_audio_default ccci_aud_device:chr_file rw_file_perms;
 # Purpose: Allow Audio HAL to get and set vendor_mtk_audio_prop
 get_prop(hal_audio_default, vendor_mtk_audio_prop)
 set_prop(hal_audio_default, vendor_mtk_audio_prop)
+
+allow hal_audio_default sysfs_headset:file r_file_perms;
