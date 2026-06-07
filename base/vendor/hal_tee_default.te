@@ -10,6 +10,8 @@ init_daemon_domain(hal_tee_default)
 hal_server_domain(hal_tee_default, hal_tee)
 hal_client_domain(hal_tee_default, hal_allocator)
 
+binder_use(hal_tee_default)
+
 # Access to TEE driver nodes (user and tui)
 allow hal_tee_default mobicore_user_device:chr_file rw_file_perms;
 allow hal_tee_default mobicore_tui_device:chr_file rw_file_perms;
