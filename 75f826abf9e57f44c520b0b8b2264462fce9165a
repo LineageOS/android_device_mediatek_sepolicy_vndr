@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6dce776d_e7b59d0c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-06-11T12:17:16Z",
+      "side": 1,
+      "message": "AVF backend works in crosvm on MT6899 in LineageOS now after that.\n\nVerified with Kalidroid and with the debian VM that is available from the native Linux terminal app.",
+      "revId": "75f826abf9e57f44c520b0b8b2264462fce9165a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
