@@ -144,6 +144,7 @@ type android_device, dev_type;
 type bmtpool_device, dev_type;
 type bootimg_device, dev_type;
 type btif_device, dev_type;
+type gzvm_device, dev_type, mlstrustedobject, vm_manager_device_type;
 type cache_device, dev_type;
 type cpu_dma_latency_device, dev_type;
 type dummy_cam_cal_device, dev_type;

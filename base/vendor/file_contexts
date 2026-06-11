@@ -146,6 +146,7 @@
 /dev/bootimg(/.*)? u:object_r:bootimg_device:s0
 /dev/BOOT(/.*)?    u:object_r:BOOT_device:s0
 /dev/btif(/.*)?    u:object_r:btif_device:s0
+/dev/gzvm(/.*)?           u:object_r:gzvm_device:s0
 /dev/btn(/.*)?     u:object_r:btn_device:s0
 
 /dev/BU6429AF(/.*)?     u:object_r:BU6429AF_device:s0
