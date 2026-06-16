@@ -108,3 +108,7 @@ vendor.mediatek.hardware.gpuserv.IGpuService/default u:object_r:mtk_hal_gpuserv_
 # Trustonic
 vendor.trustonic.tee.ITee/default           u:object_r:hal_tee_service:s0
 vendor.trustonic.tui.ITui/default           u:object_r:hal_tee_service:s0
+
+# MiTEE AuthSecret
+vendor.xiaomi.hardware.miauthsecretd.ICpaceService/default    u:object_r:hal_authsecret_service:s0
+vendor.xiaomi.hardware.miauthsecretd.IMIAuthSecret/default    u:object_r:hal_authsecret_service:s0
