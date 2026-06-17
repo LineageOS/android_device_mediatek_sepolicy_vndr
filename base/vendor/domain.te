@@ -22,18 +22,6 @@ allow {
   -isolated_app_all
 } sysfs_gpu_mtk:file r_file_perms;
 
-# Date: 2022/07/28
-# Purpose :allow appdomain to use gpu aidl
-allow {
-  domain
-  -isolated_app_all
-  -webview_zygote
-  -app_zygote
-  -vendor_init
-  -init
-  -hal_configstore_server
-} mtk_hal_mali_platform_default_service:service_manager find;
-
 # Date : WK15.29
 # Operation : Migration
 # Purpose : for device bring up, not to block early migration
