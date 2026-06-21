@@ -812,3 +812,6 @@ vendor.volte_md_status         u:object_r:vendor_mtk_md_status_prop:s0
 
 # Property set by Trustonic Daemon to indicate TEE is ready
 ro.vendor.trustonic.ready u:object_r:vendor_trustonic_prop:s0 exact bool
+
+# Dynamic sensors
+vendor.dynamic_sensor. u:object_r:vendor_dynamic_sensor_prop:s0
