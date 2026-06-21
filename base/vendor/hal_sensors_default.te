@@ -58,3 +58,10 @@ allow hal_sensors_default sysfs_scp:file rw_file_perms;
 
 # call into system_server process (callbacks)
 binder_call(hal_sensors_default, system_server)
+
+# Allow access for dynamic sensor properties.
+get_prop(hal_sensors_default, vendor_dynamic_sensor_prop)
+
+# Allow access to raw HID devices for dynamic sensors.
+allow hal_sensors_default device:dir r_dir_perms;
+allow hal_sensors_default hidraw_device:chr_file rw_file_perms;
