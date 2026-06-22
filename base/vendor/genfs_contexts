@@ -238,7 +238,6 @@ genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:main_pmic/mt6397-
 genfscon sysfs /devices/platform/soc/1000d000.pwrap/1000d000.pwrap:main_pmic/mt6397-rtc/rtc                         u:object_r:sysfs_rtc:s0
 genfscon sysfs /devices/platform/10026000.pwrap/10026000.pwrap:mt6359-pmic/mt6359-rtc/rtc                           u:object_r:sysfs_rtc:s0
 genfscon sysfs /devices/platform/10026000.pwrap/10026000.pwrap:mt6359p/mt6359p-rtc/rtc                              u:object_r:sysfs_rtc:s0
-genfscon sysfs /class/typec                                                                                         u:object_r:sysfs_usb_nonplat:s0
 genfscon sysfs /devices/platform/mt_usb/musb-hdrc/dual_role_usb                                                     u:object_r:sysfs_usb_nonplat:s0
 genfscon sysfs /devices/platform/mt_usb/musb-hdrc/cmode                                                             u:object_r:sysfs_usb_nonplat:s0
 genfscon sysfs /devices/platform/soc/mt_usb/musb-hdrc/cmode                                                         u:object_r:sysfs_usb_nonplat:s0
