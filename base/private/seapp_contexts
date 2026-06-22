@@ -2,6 +2,8 @@
 # Common SEPolicy Rule
 # ==============================================
 
+user=system isPrivApp=true seinfo=platform name=com.qualcomm.qti.poweroffalarm type=system_app_data_file domain=power_off_alarm levelFrom=user
+
 # This is for trustonic rootpa apk
 user=system seinfo=platform name=com.gd.mobicore.pa domain=teeregistryd_app
 user=system seinfo=platform name=com.trustonic.teeservice domain=teed_app
