@@ -13,6 +13,10 @@ r_dir_file(mtk_hal_usb, sysfs_udc)
 r_dir_file(mtk_hal_usb, sysfs_usb_nonplat)
 allow mtk_hal_usb sysfs_usb_nonplat:file w_file_perms;
 
+allow mtk_hal_usb sysfs_typec:dir r_dir_perms;
+allow mtk_hal_usb sysfs_typec:lnk_file r_file_perms;
+allow mtk_hal_usb sysfs_typec:file rw_file_perms;
+
 allow mtk_hal_usb configfs:file create_file_perms;
 allow mtk_hal_usb configfs:dir create_dir_perms;
 allow mtk_hal_usb functionfs:dir { watch watch_reads };
