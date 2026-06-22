@@ -187,3 +187,6 @@ allow init {
 
 # Allow init to signal usb init is done
 allow init sysfs_usb_nonplat:file rw_file_perms;
+allow init sysfs_typec:dir search;
+allow init sysfs_typec:lnk_file read;
+allow init sysfs_typec:file setattr;
