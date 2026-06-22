@@ -2,8 +2,6 @@
 # Common SEPolicy Rule
 # ==============================================
 
-user=system isPrivApp=true seinfo=platform name=com.qualcomm.qti.poweroffalarm type=system_app_data_file domain=power_off_alarm levelFrom=user
-
 # This is for trustonic tui-service
 user=_app seinfo=platform name=com.trustonic.tuiservice domain=mobicore_app type=app_data_file levelFrom=user
 
