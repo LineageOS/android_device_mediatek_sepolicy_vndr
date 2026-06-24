@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12e071b2_001ad893",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-06-24T03:29:05Z",
+      "side": 1,
+      "message": "```\nnolenjohnson@ODS-PROD:~/lineage-23/hardware/mediatek$ grep -r /class/typec\naidl/gadget/init.mediatek.usb.rc:    chown root system /sys/class/typec/port0/power_role\naidl/gadget/init.mediatek.usb.rc:    chown root system /sys/class/typec/port0/data_role\naidl/gadget/init.mediatek.usb.rc:    chown root system /sys/class/typec/port0/port_type\naidl/gadget/init.mediatek.usb.rc:    chmod 664 /sys/class/typec/port0/power_role\naidl/gadget/init.mediatek.usb.rc:    chmod 664 /sys/class/typec/port0/data_role\naidl/gadget/init.mediatek.usb.rc:    chmod 664 /sys/class/typec/port0/port_type\naidl/usb/Usb.cpp:constexpr char kTypecPath[] \u003d \"/sys/class/typec/\";\naidl/usb/Usb.cpp:    ALOGE(\"Failed to open /sys/class/typec\");\n```\n\nAnd no hits in prebuilts.",
+      "revId": "80c814a4d3f65378d1673bfc5affc91b7e6c729e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
