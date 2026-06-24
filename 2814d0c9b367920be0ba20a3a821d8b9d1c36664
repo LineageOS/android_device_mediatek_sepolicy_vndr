@@ -16,6 +16,24 @@
       "message": "any idea how this got here? lol",
       "revId": "2814d0c9b367920be0ba20a3a821d8b9d1c36664",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c30ff4ed_2c83ce22",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24262
+      },
+      "writtenOn": "2026-06-24T10:56:34Z",
+      "side": 1,
+      "message": "What\u0027s wrong with it?? The app is named qcom because third party apps hardcode the package name (and DeskClock too), but it\u0027s in hardware/mediatek, for MTK, and it works.",
+      "parentUuid": "2a51766a_f3c32e56",
+      "revId": "2814d0c9b367920be0ba20a3a821d8b9d1c36664",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
