@@ -16,6 +16,24 @@
       "message": "The PowerOffAlarm app we use on mtk listens for the same intents and has the same package name as the QTI one, since the likes of DeskClock are already set up to use those for power off alarm. You can look at hardware/mediatek/packages/PowerOffAlarm yourself to confirm. So no, I don\u0027t think this should not be removed.",
       "revId": "f2d197ba7404f670ee6f7362b16c24c82fb3f196",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c085b12_28a90553",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32222
+      },
+      "writtenOn": "2026-06-24T13:25:41Z",
+      "side": 1,
+      "message": "*I don\u0027t think this should be removed. Unfortunate typo :D",
+      "parentUuid": "3978dcde_1ba5107b",
+      "revId": "f2d197ba7404f670ee6f7362b16c24c82fb3f196",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
