@@ -10,6 +10,8 @@ allowxperm hal_bootctl_default bootdevice_block_device:blk_file ioctl {
  MMC_IOCTLCMD
  UFS_IOCTLCMD
 };
+allow hal_bootctl_default ufs_bsg_device:chr_file rw_file_perms;
+allowxperm hal_bootctl_default ufs_bsg_device:chr_file ioctl SG_IO;
 allow hal_bootctl_default proc_cmdline:file r_file_perms;
 allow hal_bootctl_default sysfs_boot_type:file r_file_perms;
 allow hal_bootctl_default self:capability sys_rawio;
