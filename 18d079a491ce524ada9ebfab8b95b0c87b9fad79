@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e7e99098_7d8f1d62",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36983
+      },
+      "writtenOn": "2026-07-16T18:41:32Z",
+      "side": 1,
+      "message": "tbh I am not sure about the \"TEE interacting with the UFS BSG\" thing if that\u0027s not the case I will remove that part",
+      "revId": "18d079a491ce524ada9ebfab8b95b0c87b9fad79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
