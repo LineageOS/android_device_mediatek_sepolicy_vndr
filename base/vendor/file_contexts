@@ -915,7 +915,9 @@
 /dev/metis          u:object_r:mitee_client_device:s0
 /dev/tee0           u:object_r:mitee_client_device:s0
 /dev/teepriv0       u:object_r:mitee_client_device:s0
-/dev/ufs-bsg0       u:object_r:mitee_client_device:s0
+
+# UFS
+/dev/ufs-bsg0       u:object_r:ufs_bsg_device:s0
 
 # NXP StrongBox
 /(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.strongbox\.nxp     u:object_r:hal_keymint_default_exec:s0
