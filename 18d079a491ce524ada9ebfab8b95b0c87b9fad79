@@ -34,6 +34,24 @@
       "parentUuid": "e7e99098_7d8f1d62",
       "revId": "18d079a491ce524ada9ebfab8b95b0c87b9fad79",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0b590af4_66d6327d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-07-16T22:04:52Z",
+      "side": 1,
+      "message": "Well, you relabelled the dev ufs node that mitee was using for this, tho I\u0027m not sure if the bootctrl need allowxperm for TEE on the ufs dev ? I don\u0027t see why it would even interact with tee directly",
+      "parentUuid": "769eb0a2_f9a950ea",
+      "revId": "18d079a491ce524ada9ebfab8b95b0c87b9fad79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
