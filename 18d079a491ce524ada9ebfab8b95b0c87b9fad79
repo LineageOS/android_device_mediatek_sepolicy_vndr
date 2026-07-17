@@ -52,6 +52,24 @@
       "parentUuid": "769eb0a2_f9a950ea",
       "revId": "18d079a491ce524ada9ebfab8b95b0c87b9fad79",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "99c9071b_e71eeba4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36983
+      },
+      "writtenOn": "2026-07-17T02:06:48Z",
+      "side": 1,
+      "message": "what about ?\nallow hal_bootctl_default mitee_client_device:chr_file rw_file_perms;\n\nits a bit broad but will work",
+      "parentUuid": "0b590af4_66d6327d",
+      "revId": "18d079a491ce524ada9ebfab8b95b0c87b9fad79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
