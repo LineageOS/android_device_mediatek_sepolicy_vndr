@@ -70,6 +70,24 @@
       "parentUuid": "0b590af4_66d6327d",
       "revId": "18d079a491ce524ada9ebfab8b95b0c87b9fad79",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5a8294e_0a6033b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-07-17T02:15:49Z",
+      "side": 1,
+      "message": "Huh ? Why would you want bootctrl to access mitee ?",
+      "parentUuid": "99c9071b_e71eeba4",
+      "revId": "18d079a491ce524ada9ebfab8b95b0c87b9fad79",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
