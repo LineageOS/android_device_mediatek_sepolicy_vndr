@@ -1029,7 +1029,7 @@
 
 # Data : 2020/12/30
 # Purpose : DBReleasePlan
-/vendor/bin/crossbuild(/.*)? u:object_r:vendor_bin_crossbuild_file:s0
+/(odm|vendor/odm|vendor)/bin/crossbuild(/.*)? u:object_r:vendor_bin_crossbuild_file:s0
 
 # TrustKernel add
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.trustkernel u:object_r:hal_keymaster_default_exec:s0
