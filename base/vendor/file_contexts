@@ -863,6 +863,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator@1\.0-service-mediatek-lazy       u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.example                 u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.mediatek                u:object_r:hal_vibrator_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.vibrator\.service                     u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system/vendor)/bin/hw/camerahalserver                                              u:object_r:mtk_hal_camera_exec:s0
 /(vendor|system/vendor)/bin/hw/mt[0-9]+[a-z]*/camerahalserver                               u:object_r:mtk_hal_camera_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.imsa@1\.0-service                u:object_r:mtk_hal_imsa_exec:s0
