@@ -248,22 +248,25 @@
 /dev/logo(/.*)?         u:object_r:logo_device:s0
 /dev/loop-control(/.*)? u:object_r:loop-control_device:s0
 
-/dev/dma_heap/mtk_mm                      u:object_r:dmabuf_system_heap_device:s0
-/dev/dma_heap/mtk_mm-uncached             u:object_r:dmabuf_system_heap_device:s0
-/dev/dma_heap/mtk_svp_page-uncached                 u:object_r:dmabuf_system_secure_heap_device:s0
-/dev/dma_heap/mtk_prot_page-uncached                u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_mm                                u:object_r:dmabuf_system_heap_device:s0
+/dev/dma_heap/mtk_mm-uncached                       u:object_r:dmabuf_system_heap_device:s0
+/dev/dma_heap/mtk_mm-coherent                       u:object_r:dmabuf_system_heap_device:s0
+/dev/dma_heap/mtk_svp                               u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_svp_wfd                           u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/dma_heap/mtk_svp_region                        u:object_r:dmabuf_system_secure_heap_device:s0
-/dev/dma_heap/mtk_svp_region-aligned                u:object_r:dmabuf_system_secure_heap_device:s0
-/dev/dma_heap/mtk_prot_region                       u:object_r:dmabuf_system_secure_heap_device:s0
-/dev/dma_heap/mtk_prot_region-aligned               u:object_r:dmabuf_system_secure_heap_device:s0
-/dev/dma_heap/mtk_2d_fr_region                      u:object_r:dmabuf_system_secure_heap_device:s0
-/dev/dma_heap/mtk_2d_fr_region-aligned              u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/dma_heap/mtk_wfd_region                        u:object_r:dmabuf_system_secure_heap_device:s0
-/dev/dma_heap/mtk_wfd_region-aligned                u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_prot_region                       u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_2d_fr_region                      u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_svp_page-uncached                 u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/dma_heap/mtk_wfd_page-uncached                 u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_prot_page-uncached                u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_svp_region-aligned                u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_wfd_region-aligned                u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_prot_region-aligned               u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_2d_fr_region-aligned              u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/dma_heap/mtk_sapu_data_shm_region              u:object_r:dmabuf_system_secure_heap_device:s0
-/dev/dma_heap/mtk_sapu_data_shm_region-aligned      u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/dma_heap/mtk_sapu_engine_shm_region            u:object_r:dmabuf_system_secure_heap_device:s0
+/dev/dma_heap/mtk_sapu_data_shm_region-aligned      u:object_r:dmabuf_system_secure_heap_device:s0
 /dev/dma_heap/mtk_sapu_engine_shm_region-aligned    u:object_r:dmabuf_system_secure_heap_device:s0
 
 /dev/M4U_device(/.*)? u:object_r:M4U_device_device:s0
