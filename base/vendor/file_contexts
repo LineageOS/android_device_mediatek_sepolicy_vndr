@@ -702,6 +702,9 @@
 /dev/block/by-name/init_boot(_[ab])?                u:object_r:boot_block_device:s0
 /dev/block/by-name/modem(_[ab])?                    u:object_r:md_block_device:s0
 /dev/block/by-name/pvmfw(_[ab])?                    u:object_r:pvmfw_block_device:s0
+/dev/block/by-name/rotfw(_[ab])?                    u:object_r:rotfw_block_device:s0
+/dev/block/by-name/rot_boot_fw(_[ab])?              u:object_r:rotfw_block_device:s0
+/dev/block/by-name/rot_boot_fmc(_[ab])?             u:object_r:rotfw_block_device:s0
 
 # W19.23 Q new feature - Userdata Checkpoint
 /dev/block/by-name/md_udc u:object_r:metadata_block_device:s0
