@@ -890,6 +890,7 @@
 
 # Trustonic TEE
 /(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint(@[0-9]+\.0+)?-service\.trustonic(_norkp)? u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.secretkeeper@1\.0-service\.trustonic              u:object_r:hal_secretkeeper_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper-service\.trustonic u:object_r:hal_gatekeeper_default_exec:s0
 
 # Trustkernel
