@@ -815,3 +815,6 @@ ro.vendor.trustonic.ready u:object_r:vendor_trustonic_prop:s0 exact bool
 
 # Dynamic sensors
 vendor.dynamic_sensor. u:object_r:vendor_dynamic_sensor_prop:s0
+
+# iSE
+vendor.mtk.ise. u:object_r:vendor_mtk_ise_prop:s0
