@@ -1454,3 +1454,6 @@
 # Context Hub Runtime Environment
 /data/vendor/chre(/.*)?                                          u:object_r:chre_data_file:s0
 /vendor/bin/hw/android\.hardware\.contexthub-service\.tinysys    u:object_r:hal_contexthub_default_exec:s0
+
+# iSE app loader
+/(vendor|system/vendor)/bin/ise_apploader   u:object_r:ise_apploader_exec:s0
