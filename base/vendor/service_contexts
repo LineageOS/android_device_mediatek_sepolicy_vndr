@@ -1,10 +1,12 @@
 # NFC
 vendor.nxp.nxpnfc_aidl.INxpNfc/default u:object_r:hal_nfc_service:s0
 
+# Neural Networks
 android.hardware.neuralnetworks.IDevice/mtk-gpu_shim    u:object_r:hal_neuralnetworks_service:s0
 android.hardware.neuralnetworks.IDevice/mtk-dsp_shim    u:object_r:hal_neuralnetworks_service:s0
 android.hardware.neuralnetworks.IDevice/mtk-mdla_shim   u:object_r:hal_neuralnetworks_service:s0
 android.hardware.neuralnetworks.IDevice/mtk-neuron_shim u:object_r:hal_neuralnetworks_service:s0
+vendor.mediatek.hardware.neuropilot.neuronservice.INeuronService/default u:object_r:hal_neuralnetworks_service:s0
 
 #mmlpq aidl
 vendor.mediatek.hardware.mmlpq.IMmlpq/default u:object_r:mtk_hal_mmlpq_service:s0
