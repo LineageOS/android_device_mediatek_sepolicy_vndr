@@ -624,6 +624,9 @@ type data_vendor_nn_file, data_file_type, file_type;
 # Purpose: add permission for /data/vendor/hmp/
 type data_vendor_hmp_file, data_file_type, file_type;
 
+# Purpose: for Context Hub Runtime Environment
+type chre_data_file, data_file_type, file_type;
+
 ##########################
 # File types
 # Core domain data file types

@@ -274,6 +274,7 @@
 
 /dev/scp(/.*)?   u:object_r:scp_device:s0
 /dev/scp_B(/.*)? u:object_r:scp_device:s0
+/dev/scp_chre_manager u:object_r:scp_device:s0
 /dev/sspm(/.*)?  u:object_r:sspm_device:s0
 /dev/vcp(/.*)?   u:object_r:vcp_device:s0
 
@@ -1442,3 +1443,7 @@
 /vendor/bin/hw/arm\.mali\.platform-service\.mediatek u:object_r:mtk_hal_mali_platform_default_exec:s0
 /vendor/bin/hw/mt[0-9]+[a-z]*/arm\.mali\.platform-service\.mediatek\.mt[0-9]+[a-z]* u:object_r:mtk_hal_mali_platform_default_exec:s0
 /vendor/bin/hw/mt[0-9]+[a-z]*/arm\.mali\.platform-service\.mediatek\.mt[0-9]+[a-z]*_r[0-9]+p[0-9]+ u:object_r:mtk_hal_mali_platform_default_exec:s0
+
+# Context Hub Runtime Environment
+/data/vendor/chre(/.*)?                                          u:object_r:chre_data_file:s0
+/vendor/bin/hw/android\.hardware\.contexthub-service\.tinysys    u:object_r:hal_contexthub_default_exec:s0
