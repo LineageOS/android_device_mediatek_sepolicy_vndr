@@ -546,7 +546,6 @@
 /dev/nebula-ipc-dev0   u:object_r:tee_device:s0
 /dev/trustzone         u:object_r:tee_device:s0
 /dev/mbim              u:object_r:mbim_device:s0
-/dev/alarm(/.*)?       u:object_r:alarm_device:s0
 /dev/radio(/.*)?       u:object_r:mtk_radio_device:s0
 /dev/mml_pq     u:object_r:mml_pq_device:s0
 
