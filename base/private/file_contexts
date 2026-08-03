@@ -105,6 +105,7 @@
 /dev/block/mtd(.*)?     u:object_r:mtd_device:s0
 /dev/block/mntlblk(.*)? u:object_r:mtd_device:s0
 /dev/mcupm(/.*)?        u:object_r:mcupm_device:s0
+/dev/alarm(/.*)?        u:object_r:alarm_device:s0
 
 # support system server domain do ioctl with framework-res
 /system/framework/framework-res.apk u:object_r:system_mtk_pmb_file:s0
