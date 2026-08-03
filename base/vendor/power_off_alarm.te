@@ -1,4 +1,4 @@
-type power_off_alarm, domain, mlstrustedsubject;
+type power_off_alarm, domain, coredomain, mlstrustedsubject;
 app_domain(power_off_alarm)
 allow power_off_alarm app_api_service:service_manager find;
 allow power_off_alarm system_app_data_file:dir create_dir_perms;
