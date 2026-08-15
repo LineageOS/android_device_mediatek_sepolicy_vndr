@@ -1,5 +1,13 @@
-type power_off_alarm, domain, mlstrustedsubject;
+# ==============================================
+# Policy File of /system_ext/priv-app/PowerOffAlarm/PowerOffAlarm.apk Executable File
+
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+typeattribute power_off_alarm mlstrustedsubject;
 app_domain(power_off_alarm)
+
 allow power_off_alarm app_api_service:service_manager find;
 allow power_off_alarm system_app_data_file:dir create_dir_perms;
 allow power_off_alarm system_app_data_file:{ file lnk_file } create_file_perms;
