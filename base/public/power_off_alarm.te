@@ -1,0 +1,8 @@
+# ==============================================
+# Policy File of /system_ext/priv-app/PowerOffAlarm/PowerOffAlarm.apk Executable File
+
+# ==============================================
+# Type Declaration
+# ==============================================
+
+type power_off_alarm, domain, coredomain;
