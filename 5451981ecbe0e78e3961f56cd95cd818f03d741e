@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "69acb52d_35b5a08b",
+        "filename": "base/private/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-08-15T19:49:27Z",
+      "side": 1,
+      "message": "Padding",
+      "revId": "5451981ecbe0e78e3961f56cd95cd818f03d741e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
