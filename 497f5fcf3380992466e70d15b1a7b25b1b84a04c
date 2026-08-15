@@ -16,6 +16,24 @@
       "message": "Shouldn\u0027t that be squashed with 496946 then ?",
       "revId": "497f5fcf3380992466e70d15b1a7b25b1b84a04c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "328a061c_f543a947",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37755
+      },
+      "writtenOn": "2026-08-15T19:46:58Z",
+      "side": 1,
+      "message": "yeah it should, squashing and abandoning this.",
+      "parentUuid": "708588e2_54acb68e",
+      "revId": "497f5fcf3380992466e70d15b1a7b25b1b84a04c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
