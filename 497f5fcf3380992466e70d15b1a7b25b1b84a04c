@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "708588e2_54acb68e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-08-15T19:33:16Z",
+      "side": 1,
+      "message": "Shouldn\u0027t that be squashed with 496946 then ?",
+      "revId": "497f5fcf3380992466e70d15b1a7b25b1b84a04c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
