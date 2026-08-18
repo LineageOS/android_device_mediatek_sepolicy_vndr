@@ -697,9 +697,9 @@
 /(vendor|system/vendor)/bin/biosensord_nvram                                                u:object_r:biosensord_nvram_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.audio\.service\.mediatek                  u:object_r:hal_audio_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.[0-9]-service-mediatek       u:object_r:mtk_hal_bluetooth_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.gnss@2\.1-service-mediatek                u:object_r:mtk_hal_gnss_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gnss@2\.[0-9]-service-mediatek                u:object_r:mtk_hal_gnss_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gnss-service\.mediatek                    u:object_r:mtk_hal_gnss_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkpower@1\.0-service            u:object_r:mtk_hal_power_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkpower@1\.[0-9]+-service(\..*)? u:object_r:mtk_hal_power_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@1\.0-service-mediatek             u:object_r:hal_sensors_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service-mediatek             u:object_r:hal_sensors_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.0-service\.multihal-mediatek   u:object_r:hal_sensors_default_exec:s0
@@ -1003,7 +1003,6 @@
 
 # Power
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.mediatek-libperfmgr      u:object_r:hal_power_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.mtkpower@1\.2-service\.stub    u:object_r:mtk_hal_power_exec:s0
 
 # Memtrack
 /(vendor|system/vendor)/bin/hw/android\.hardware\.memtrack-service\.mediatek-mali         u:object_r:hal_memtrack_default_exec:s0
