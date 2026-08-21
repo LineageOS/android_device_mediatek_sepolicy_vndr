@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7af8ee3_745f38c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27502
+      },
+      "writtenOn": "2026-08-21T03:56:41Z",
+      "side": 1,
+      "message": "Valid points. Apologies, should\u0027ve looked further. Abandoning.",
+      "revId": "1b1e0ed5dd77efe2a977d5311a5b93f87da2629c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
