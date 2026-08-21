@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b1ca686b_c7e722d2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-08-21T02:49:24Z",
+      "side": 1,
+      "message": "Unsure if this is really needed ?\n\nMediaTek MTKPower HIDL has always been named 1.0 when it was introduced back then on Android 10, it migrated directly to AIDL since Android 14. The exception being our stub name reflecting the actual version of MTKPower. No reason to label more stuff that never existed to begin with.\n\nFor MediaTek GNSS, there was a HIDL 2.0 service that was only introduced in Android 10 but I don\u0027t recall any device with blobs this old booting any recent LineageOS versions (Beside, you can just kang the stack from a newer device and that would be recommended at this point) but I\u0027m not against it if that\u0027s REALLY needed.",
+      "revId": "d864b485b0a38482928d394eec6e43739f74af24",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
