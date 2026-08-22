@@ -126,17 +126,22 @@ allow platform_app cta_networkdatacontroller_service:service_manager find;
 # Purpose : allow to setprop persist.vendor.radio.bgdata.disable
 set_prop(platform_app, system_mtk_bgdata_disabled_prop)
 
-# Allow platform_app to interact with hal_teei_tui
+# Allow platform_app and platform_app_36 to interact with hal_teei_tui
 hal_client_domain(platform_app, hal_teei_tui)
+hal_client_domain(platform_app_36, hal_teei_tui)
 
-# Allow platform_app to interact with hal_teei_capi
+# Allow platform_app and platform_app_36 to interact with hal_teei_capi
 hal_client_domain(platform_app, hal_teei_capi)
+hal_client_domain(platform_app_36, hal_teei_capi)
 
-# Allow platform_app to interact with hal_teei_thh
+# Allow platform_app and platform_app_36 to interact with hal_teei_thh
 hal_client_domain(platform_app, hal_teei_thh)
+hal_client_domain(platform_app_36, hal_teei_thh)
 
 hal_client_domain(platform_app, hal_teei_ifaa)
+hal_client_domain(platform_app_36, hal_teei_ifaa)
 hal_client_domain(platform_app, hal_teei_wechat)
+hal_client_domain(platform_app_36, hal_teei_wechat)
 
 # Date: 2021/06/02
 # Operation : S Migration
