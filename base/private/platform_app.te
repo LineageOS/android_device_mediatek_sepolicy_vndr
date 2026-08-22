@@ -137,6 +137,7 @@ hal_client_domain(platform_app, hal_teei_thh)
 
 hal_client_domain(platform_app, hal_teei_ifaa)
 hal_client_domain(platform_app, hal_teei_wechat)
+hal_client_domain(platform_app_36, hal_teei_wechat)
 
 # Date: 2021/06/02
 # Operation : S Migration
