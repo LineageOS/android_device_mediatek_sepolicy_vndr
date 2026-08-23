@@ -277,6 +277,7 @@ type connsys_gnss_block_device, dev_type;
 type pvmfw_block_device, dev_type;
 type rotfw_block_device, dev_type;
 type ise_block_device, dev_type;
+type emiupfw_block_device, dev_type;
 
 ##########################
 # Sensor common Devices Start

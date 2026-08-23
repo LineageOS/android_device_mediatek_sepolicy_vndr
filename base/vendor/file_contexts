@@ -709,6 +709,7 @@
 /dev/block/by-name/rot_boot_fw(_[ab])?              u:object_r:rotfw_block_device:s0
 /dev/block/by-name/rot_boot_fmc(_[ab])?             u:object_r:rotfw_block_device:s0
 /dev/block/by-name/ise(_[ab])?                      u:object_r:ise_block_device:s0
+/dev/block/by-name/emiupfw(_[ab])?                  u:object_r:emiupfw_block_device:s0
 
 # W19.23 Q new feature - Userdata Checkpoint
 /dev/block/by-name/md_udc u:object_r:metadata_block_device:s0
