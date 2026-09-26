@@ -76,3 +76,7 @@ allowxperm mtk_hal_c2 proc_m4u:file ioctl {
 
 hal_client_domain(mtk_hal_c2, hal_teei_capi)
 allow mtk_hal_c2 teei_client_device:chr_file rw_file_perms;
+
+# Purpose : allow media sources to access /sys/bus/platform/drivers/emi_ctrl/*
+allow mtk_hal_c2 sysfs_emi_ctrl_concurrency_scenario:file rw_file_perms;
+allow mtk_hal_c2 sysfs_emi_ctrl_concurrency_scenario:dir search;
