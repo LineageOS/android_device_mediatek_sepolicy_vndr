@@ -394,3 +394,6 @@ type ccci_mdmonitor_device, dev_type;
 # Operator: S migration
 # Purpose: Add permission for vilte
 type ccci_vts_device, dev_type;
+
+# Purpose: Add permission for pkvm TZ
+type pkvm_mtk_tz_device, dev_type;

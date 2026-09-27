@@ -1,0 +1,1 @@
+allow hal_vm_capabilities_default pkvm_mtk_tz_device:chr_file rw_file_perms;
