@@ -164,6 +164,7 @@ vendor.debug.sf.hwc_pid           u:object_r:vendor_mtk_graphics_hwc_pid_prop:s0
 vendor.debug.sf.hdr_enable        u:object_r:vendor_mtk_graphics_hwc_hdr_prop:s0
 vendor.debug.sf.validate_separate u:object_r:vendor_mtk_graphics_hwc_validate_separate_prop:s0
 vendor.debug.sf.latch_unsignaled  u:object_r:vendor_mtk_graphics_hwc_latch_unsignaled_prop:s0
+vendor.hwc.video_mode             u:object_r:vendor_mtk_graphics_hwc_video_mode_prop:s0
 
 # sf vendor cpupolicy config
 vendor.debug.sf.cpupolicy  u:object_r:vendor_mtk_debug_sf_cpupolicy_prop:s0
