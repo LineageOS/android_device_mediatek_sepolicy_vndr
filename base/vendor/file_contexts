@@ -1280,6 +1280,8 @@
 /vendor/lib(64)?/vendor\.mediatek\.hardware\.mmlpq-V[0-9]+-ndk\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libdpframework\.so                               u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/mt[0-9]+[a-z]*/libdpframework\.so                u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libteec\.so                                      u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libtz_uree\.so                                   u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libpq_cust\.so                                   u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libpq_cust_base\.so                              u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/mt[0-9]+[a-z]*/libpq_cust_base\.so               u:object_r:same_process_hal_file:s0
