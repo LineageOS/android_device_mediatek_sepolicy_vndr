@@ -465,6 +465,7 @@
 
 /dev/stpant(/.*)?   u:object_r:stpant_device:s0
 /dev/stpbt(/.*)?    u:object_r:stpbt_device:s0
+/dev/connsys_bt     u:object_r:connsys_bt_state_device:s0
 /dev/fw_log_bt      u:object_r:fw_log_bt_device:s0
 /dev/fw_log_btmcu   u:object_r:fw_log_btmcu_device:s0
 
@@ -523,6 +524,7 @@
 /dev/conn_pwr_dev(/.*)?      u:object_r:conn_pwr_device:s0
 /dev/conn_scp(/.*)?       u:object_r:conn_scp_device:s0
 /dev/wmtWifi(/.*)?        u:object_r:wmtWifi_device:s0
+/dev/connsys_wifi        u:object_r:connsys_wifi_device:s0
 /dev/ancservice(/.*)?     u:object_r:ancservice_device:s0
 /dev/offloadservice(/.*)? u:object_r:offloadservice_device:s0
 /dev/audio_ipi(/.*)?      u:object_r:audio_ipi_device:s0
