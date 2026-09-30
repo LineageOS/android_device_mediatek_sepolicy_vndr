@@ -361,6 +361,10 @@ ro.vendor.input.touch_report_rate u:object_r:vendor_mtk_input_report_rate_prop:s
 # video property
 vendor.mtkomx.color.convert u:object_r:vendor_mtk_video_prop:s0
 vendor.mtk.c2.vdec.fmt.disabled.whitelist u:object_r:vendor_mtk_video_prop:s0
+ro.vendor.mtk_crossmount_support u:object_r:vendor_mtk_video_prop:s0
+ro.vendor.mtk_crossmount.maxcount u:object_r:vendor_mtk_video_prop:s0
+ro.vendor.mtk_deinterlace_support u:object_r:vendor_mtk_video_prop:s0
+ro.vendor.mtk_hdr_video_support u:object_r:vendor_mtk_video_prop:s0
 
 # config no bt multidevice performance according to chip
 ro.vendor.bluetooth.bt_multidevice_perform u:object_r:vendor_mtk_default_prop:s0

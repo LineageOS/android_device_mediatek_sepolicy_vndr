@@ -8,6 +8,7 @@ set_prop(vendor_init, vendor_mtk_volte_prop)
 set_prop(vendor_init, vendor_mtk_radio_prop)
 set_prop(vendor_init, vendor_mtk_ril_mode_prop)
 set_prop(vendor_init, vendor_mtk_wmt_prop)
+set_prop(vendor_init, vendor_mtk_video_prop)
 set_prop(vendor_init, vendor_mtk_coredump_prop)
 set_prop(vendor_init, vendor_mtk_atm_mdmode_prop)
 allow vendor_init proc_wmtdbg:file w_file_perms;
