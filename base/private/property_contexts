@@ -248,3 +248,12 @@ persist.vendor.fd.screen.off.only   u:object_r:system_mtk_fd_prop:s0
 
 #allow entitlement to set vonr debug
 persist.vendor.dbg.vonr_ui_ovr u:object_r:system_mtk_dbg_ims_prop:s0
+
+# DrmCommon debug property
+DRM_COMMON_  u:object_r:system_mtk_drm_debug_prop:s0
+DRMCOMMON_   u:object_r:system_mtk_drm_debug_prop:s0
+GATEKEEPER_  u:object_r:system_mtk_drm_debug_prop:s0
+KEYMASTER_   u:object_r:system_mtk_drm_debug_prop:s0
+PLAYREADY_   u:object_r:system_mtk_drm_debug_prop:s0
+WIDEVINE_    u:object_r:system_mtk_drm_debug_prop:s0
+WIDEVINECAS_ u:object_r:system_mtk_drm_debug_prop:s0

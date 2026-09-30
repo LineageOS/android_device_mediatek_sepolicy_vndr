@@ -23,3 +23,6 @@ system_restricted_prop(system_mtk_init_svc_md_monitor_prop)
 # Properties with no restrictions
 system_public_prop(system_mtk_heavy_loading_prop)
 system_public_prop(system_mtk_pkm_init_prop)
+
+# Properties which can't be written outside system
+system_restricted_prop(system_mtk_drm_debug_prop)
