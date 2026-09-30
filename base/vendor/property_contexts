@@ -120,8 +120,10 @@ vendor.mtk.c2   u:object_r:vendor_mtk_c2_log_prop:s0
 
 # video log omx.* property
 vendor.mtk.omx. u:object_r:vendor_mtk_omx_log_prop:s0
+vendor.mtk.omx.x_ray. u:object_r:vendor_mtk_omx_x_ray_prop:s0
 
 vendor.mtk.vdec.log u:object_r:vendor_mtk_vdec_log_prop:s0
+vendor.vdecomx.hdr-type u:object_r:vendor_mtk_vdecomx_hdr_type_prop:s0
 
 vendor.mtk.vdectlc.log u:object_r:vendor_mtk_vdectlc_log_prop:s0
 

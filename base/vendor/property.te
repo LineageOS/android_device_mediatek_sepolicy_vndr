@@ -85,6 +85,7 @@ vendor_restricted_prop(vendor_mtk_nn_option_prop)
 vendor_restricted_prop(vendor_mtk_gbe_prop)
 vendor_restricted_prop(vendor_mtk_nvram_ready_prop)
 vendor_restricted_prop(vendor_mtk_omx_log_prop)
+vendor_restricted_prop(vendor_mtk_omx_x_ray_prop)
 vendor_restricted_prop(vendor_mtk_operator_id_prop)
 vendor_restricted_prop(vendor_mtk_persist_service_atci_prop)
 vendor_restricted_prop(vendor_mtk_pq_prop)
@@ -111,6 +112,7 @@ vendor_restricted_prop(vendor_mtk_usb_otg_switch_prop)
 vendor_restricted_prop(vendor_mtk_usb_prop)
 vendor_restricted_prop(vendor_mtk_c2_log_prop)
 vendor_restricted_prop(vendor_mtk_vdec_log_prop)
+vendor_restricted_prop(vendor_mtk_vdecomx_hdr_type_prop)
 vendor_restricted_prop(vendor_mtk_vdectlc_log_prop)
 vendor_restricted_prop(vendor_mtk_venc_h264_showlog_prop)
 vendor_restricted_prop(vendor_mtk_voicerecgnize_prop)
@@ -296,6 +298,7 @@ typeattribute vendor_mtk_modem_warning_prop          mtk_core_property_type;
 typeattribute vendor_mtk_net_cdma_mdmstat_prop       mtk_core_property_type;
 typeattribute vendor_mtk_nvram_ready_prop            mtk_core_property_type;
 typeattribute vendor_mtk_omx_log_prop                mtk_core_property_type;
+typeattribute vendor_mtk_omx_x_ray_prop              mtk_core_property_type;
 typeattribute vendor_mtk_operator_id_prop            mtk_core_property_type;
 typeattribute vendor_mtk_persist_service_atci_prop   mtk_core_property_type;
 typeattribute vendor_mtk_pq_prop                     mtk_core_property_type;
@@ -317,6 +320,7 @@ typeattribute vendor_mtk_tel_switch_prop             mtk_core_property_type;
 typeattribute vendor_mtk_testsim_cardtype_prop       mtk_core_property_type;
 typeattribute vendor_mtk_usb_otg_switch_prop         mtk_core_property_type;
 typeattribute vendor_mtk_vdec_log_prop               mtk_core_property_type;
+typeattribute vendor_mtk_vdecomx_hdr_type_prop       mtk_core_property_type;
 typeattribute vendor_mtk_vdectlc_log_prop            mtk_core_property_type;
 typeattribute vendor_mtk_venc_h264_showlog_prop      mtk_core_property_type;
 typeattribute vendor_mtk_voicerecgnize_prop          mtk_core_property_type;
