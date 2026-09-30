@@ -177,6 +177,8 @@
 /dev/camera-rsc(/.*)?     u:object_r:camera_rsc_device:s0
 /dev/camera-gepf(/.*)?    u:object_r:camera_gepf_device:s0
 /dev/camera-wpe(/.*)?     u:object_r:camera_wpe_device:s0
+/dev/vpp-wpe-a(/.*)?      u:object_r:camera_wpe_device:s0
+/dev/vpp-wpe-b(/.*)?      u:object_r:camera_wpe_device:s0
 /dev/camera-owe(/.*)?     u:object_r:camera_owe_device:s0
 /dev/camera-mfb(/.*)?     u:object_r:camera_mfb_device:s0
 /dev/camera-pda(/.*)?     u:object_r:camera_pda_device:s0
