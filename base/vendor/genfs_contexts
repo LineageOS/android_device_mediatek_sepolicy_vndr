@@ -239,6 +239,7 @@ genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:main_pmic/mt6397-
 genfscon sysfs /devices/platform/soc/1000d000.pwrap/1000d000.pwrap:main_pmic/mt6397-rtc/rtc                         u:object_r:sysfs_rtc:s0
 genfscon sysfs /devices/platform/10026000.pwrap/10026000.pwrap:mt6359-pmic/mt6359-rtc/rtc                           u:object_r:sysfs_rtc:s0
 genfscon sysfs /devices/platform/10026000.pwrap/10026000.pwrap:mt6359p/mt6359p-rtc/rtc                              u:object_r:sysfs_rtc:s0
+genfscon sysfs /devices/platform/10024000.pwrap/10024000.pwrap:mt6359/mt6359-rtc/rtc                                u:object_r:sysfs_rtc:s0
 genfscon sysfs /devices/platform/mt_usb/musb-hdrc/dual_role_usb                                                     u:object_r:sysfs_usb_nonplat:s0
 genfscon sysfs /devices/platform/mt_usb/musb-hdrc/cmode                                                             u:object_r:sysfs_usb_nonplat:s0
 genfscon sysfs /devices/platform/soc/mt_usb/musb-hdrc/cmode                                                         u:object_r:sysfs_usb_nonplat:s0
@@ -584,6 +585,14 @@ genfscon sysfs /devices/platform/10026000.pwrap/10026000.pwrap:mt6359p/mt6359p-g
 genfscon sysfs /devices/platform/10026000.pwrap/10026000.pwrap:mt6359p/mt6359p-gauge/power_supply/mtk-gauge/wakeup                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10024000.pwrap/10024000.pwrap:mt6359/mt6359p-gauge/power_supply/battery/wakeup                             u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10024000.pwrap/10024000.pwrap:mt6359/mt6359p-gauge/power_supply/mtk-gauge/wakeup                           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/10024000.pwrap/10024000.pwrap:mt6359/mt6359-rtc/rtc/rtc0/alarmtimer.0.auto/wakeup                          u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/10024000.pwrap/10024000.pwrap:mt6359/mt6359-rtc/wakeup/wakeup                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/10024000.pwrap/10024000.pwrap:mt6359/mt635x-auxadc/wakeup/wakeup                                           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/10320000.gce_mbox/wakeup/wakeup                                                                            u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/10330000.gce_mbox_d/wakeup/wakeup                                                                          u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/11201000.usb1/wakeup/wakeup                                                                                u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/112b1000.usb/wakeup/wakeup                                                                                 u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/14001000.mdp_rdma0/wakeup/wakeup                                                                           u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10026000.pwrap/10026000.pwrap:mt6359p/mt6359p-rtc/rtc/rtc0/wakeup                                          u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10026000.pwrap/10026000.pwrap:mt6359p/mt6359p-rtc/wakeup/wakeup                                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/10026000.pwrap/10026000.pwrap:mt6359p/mt635x-auxadc/wakeup/wakeup                                          u:object_r:sysfs_wakeup:s0
