@@ -58,3 +58,5 @@ allow mtk_hal_mms system_app:fd use;
 
 # Purpose : Allow to set property for AIPQ
 allow mtk_hal_mms apusys_device:chr_file rw_file_perms;
+
+allow mtk_hal_mms sysfs_boot_mode:file r_file_perms;
