@@ -9,5 +9,7 @@ r_dir_file(hal_power_default, sysfs_dvfsrc_devfreq)
 r_dir_file(hal_power_default, proc_gpufreqv2)
 
 allow hal_power_default sysfs_dvfsrc_devfreq:file rw_file_perms;
+allow hal_power_default sysfs_dvfsrc_dbg:dir search;
+allow hal_power_default sysfs_dvfsrc_dbg:file rw_file_perms;
 allow hal_power_default proc_gpufreqv2:file rw_file_perms;
 allow hal_power_default cpu_dma_latency_device:chr_file rw_file_perms;
