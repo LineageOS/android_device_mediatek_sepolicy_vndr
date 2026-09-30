@@ -100,3 +100,5 @@ allow tee nfc_device:chr_file rw_file_perms;
 
 # Allow TEE to read iSE properties
 get_prop(tee, vendor_mtk_ise_prop)
+
+dontaudit tee tee_data_file:dir { write remove_name };
