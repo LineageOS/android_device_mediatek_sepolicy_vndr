@@ -10,6 +10,8 @@ type vpud_native, domain;
 
 init_daemon_domain(vpud_native)
 
+allow vpud_native self:capability sys_nice;
+
 allow vpud_native ion_device:chr_file rw_file_perms;
 allow vpud_native vcu_device:chr_file rw_file_perms;
 allow vpud_native MTK_SMI_device:chr_file r_file_perms;
