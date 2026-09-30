@@ -60,3 +60,4 @@ allow hal_drm_widevine widevine_drv_device:chr_file { getattr open read ioctl wr
 get_prop(hal_drm_widevine, vendor_mtk_soc_prop)
 
 allow hal_drm_widevine vcu_device:chr_file rw_file_perms;
+dontaudit hal_drm_widevine default_prop:file r_file_perms;
