@@ -34,6 +34,7 @@ allow mtk_hal_bluetooth self:capability net_admin;
 # Purpose : Set to access stpbt driver & NVRAM
 allow mtk_hal_bluetooth stpbt_device:chr_file rw_file_perms;
 allow mtk_hal_bluetooth connsys_bt_state_device:chr_file rw_file_perms;
+allow mtk_hal_bluetooth self:bluetooth_socket create_socket_perms_no_ioctl;
 
 allow mtk_hal_bluetooth nvdata_file:dir search;
 allow mtk_hal_bluetooth nvdata_file:file rw_file_perms;
