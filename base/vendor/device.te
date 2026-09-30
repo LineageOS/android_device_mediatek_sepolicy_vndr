@@ -14,6 +14,8 @@ type conn_scp_device, dev_type;
 type wmtdetect_device, dev_type;
 type wmtWifi_device, dev_type;
 type stpbt_device, dev_type;
+type connsys_bt_state_device, dev_type;
+type connsys_wifi_device, dev_type;
 type fw_log_bt_device, dev_type;
 type stpant_device, dev_type;
 type fm_device, dev_type, mlstrustedobject;
