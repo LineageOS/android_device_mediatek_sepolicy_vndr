@@ -69,6 +69,24 @@
       "message": "Lebel /data/vendor/tee(/.*)? u:object_r:tee_data_file:s0 instead first\n\nExist in mt6878",
       "revId": "f76744fe871b4eec3baed53bd50ad57551d072a4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "89a61032_ff3d6beb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37952
+      },
+      "writtenOn": "2026-10-04T13:58:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "551b53b3_dd51521a",
+      "revId": "f76744fe871b4eec3baed53bd50ad57551d072a4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
