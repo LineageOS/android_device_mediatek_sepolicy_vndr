@@ -87,6 +87,24 @@
       "parentUuid": "551b53b3_dd51521a",
       "revId": "f76744fe871b4eec3baed53bd50ad57551d072a4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6bd448b_b23edcb5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-10-04T13:58:41Z",
+      "side": 1,
+      "message": "Not directly related to OP-TEE for MediaTek devices. It\u0027s for TEEGRIS use as per ALPS BSP for Android 17",
+      "parentUuid": "551b53b3_dd51521a",
+      "revId": "f76744fe871b4eec3baed53bd50ad57551d072a4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
