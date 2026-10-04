@@ -16,6 +16,24 @@
       "message": "Why would tee-supplicant try to delete folders in the first place ?",
       "revId": "f76744fe871b4eec3baed53bd50ad57551d072a4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8166cff_f0aa5042",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32620
+      },
+      "writtenOn": "2026-10-04T12:21:04Z",
+      "side": 1,
+      "message": "After deleting a file, tee-supplicant also tries to rmdir the folder it was in (this is upstream OP-TEE behavior).\n\nOur files are directly in /data/vendor/tee so it tries to rmdir that, which always fails since dirf.db is there.",
+      "parentUuid": "7ff66083_30ce01ef",
+      "revId": "f76744fe871b4eec3baed53bd50ad57551d072a4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
