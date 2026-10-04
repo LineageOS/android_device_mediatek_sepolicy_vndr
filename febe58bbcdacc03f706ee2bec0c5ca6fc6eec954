@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2280bf99_4a813abc",
+        "filename": "base/vendor/mtk_hal_bluetooth.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-10-04T12:19:58Z",
+      "side": 1,
+      "message": "Use the TE macro instead",
+      "revId": "febe58bbcdacc03f706ee2bec0c5ca6fc6eec954",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
