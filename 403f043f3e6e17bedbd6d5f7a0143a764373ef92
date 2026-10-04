@@ -16,6 +16,24 @@
       "message": "It\u0027s still MT6359P battery gauge, but for MT8188",
       "revId": "403f043f3e6e17bedbd6d5f7a0143a764373ef92",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f15d1cc3_00aaeea8",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 32620
+      },
+      "writtenOn": "2026-10-04T14:23:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f049d224_d90bf9f4",
+      "revId": "403f043f3e6e17bedbd6d5f7a0143a764373ef92",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
