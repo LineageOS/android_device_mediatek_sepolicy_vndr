@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b9ea66d0_127df8b9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-10-04T14:12:04Z",
+      "side": 1,
+      "message": "it tries to rmdir /data/vendor/tee which falls under vendor_data_file, not tee_data_file",
+      "revId": "004d2c5efac928094fb625cbeca9d400d649d13f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
