@@ -108,3 +108,6 @@ vendor.mediatek.hardware.gpuserv.IGpuService/default u:object_r:mtk_hal_gpuserv_
 # Trustonic
 vendor.trustonic.tee.ITee/default           u:object_r:hal_tee_service:s0
 vendor.trustonic.tui.ITui/default           u:object_r:hal_tee_service:s0
+
+# Bluetooth Audio
+vendor.mediatek.hardware.bluetooth.audio.IBluetoothAudioProviderFactory/default    u:object_r:hal_audio_service:s0
