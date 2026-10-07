@@ -1,0 +1,3 @@
+hal_attribute_service(hal_mtk_postproc, mtk_hal_postproc_service)
+binder_call(hal_mtk_postproc_client, hal_mtk_postproc_server)
+binder_call(hal_mtk_postproc_server, hal_mtk_postproc_client)

@@ -117,6 +117,27 @@ attribute hal_mtk_atci;
 attribute hal_mtk_atci_client;
 attribute hal_mtk_atci_server;
 
+# CameraService AIDL
+attribute hal_mtk_uievent;
+attribute hal_mtk_uievent_client;
+attribute hal_mtk_uievent_server;
+
+attribute hal_mtk_postproc;
+attribute hal_mtk_postproc_client;
+attribute hal_mtk_postproc_server;
+
+attribute hal_mtk_atms;
+attribute hal_mtk_atms_client;
+attribute hal_mtk_atms_server;
+
+attribute hal_mtk_aov;
+attribute hal_mtk_aov_client;
+attribute hal_mtk_aov_server;
+
+attribute hal_mtk_isphal;
+attribute hal_mtk_isphal_client;
+attribute hal_mtk_isphal_server;
+
 # All types used for mtk's safe hwservice
 attribute mtk_safe_hwservice_manager_type;
 
