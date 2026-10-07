@@ -1,0 +1,3 @@
+hal_attribute_service(hal_mtk_isphal, mtk_hal_isphal_service)
+binder_call(hal_mtk_isphal_client, hal_mtk_isphal_server)
+binder_call(hal_mtk_isphal_server, hal_mtk_isphal_client)
