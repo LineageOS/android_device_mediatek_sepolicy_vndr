@@ -1,0 +1,3 @@
+hal_attribute_service(hal_mtk_aov, mtk_hal_aov_service)
+binder_call(hal_mtk_aov_client, hal_mtk_aov_server)
+binder_call(hal_mtk_aov_server, hal_mtk_aov_client)

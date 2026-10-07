@@ -1,0 +1,4 @@
+hal_attribute_service(hal_mtk_uievent, mtk_hal_uievent_service)
+binder_call(hal_mtk_uievent_client, hal_mtk_uievent_server)
+binder_call(hal_mtk_uievent_server, hal_mtk_uievent_client)
+binder_call(hal_mtk_uievent_server, servicemanager)
