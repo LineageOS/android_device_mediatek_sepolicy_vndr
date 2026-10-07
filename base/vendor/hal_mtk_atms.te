@@ -1,0 +1,3 @@
+hal_attribute_service(hal_mtk_atms, mtk_hal_atms_service)
+binder_call(hal_mtk_atms_client, hal_mtk_atms_server)
+binder_call(hal_mtk_atms_server, hal_mtk_atms_client)

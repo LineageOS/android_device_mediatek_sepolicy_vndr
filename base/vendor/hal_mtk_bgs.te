@@ -3,6 +3,8 @@
 # ==============================================
 
 hal_attribute_hwservice(hal_mtk_bgs, mtk_hal_bgs_hwservice)
+hal_attribute_service(hal_mtk_bgs, mtk_hal_bgs_service)
 
 binder_call(hal_mtk_bgs_client, hal_mtk_bgs_server)
 binder_call(hal_mtk_bgs_server, hal_mtk_bgs_client)
+binder_call(hal_mtk_bgs_server, servicemanager)

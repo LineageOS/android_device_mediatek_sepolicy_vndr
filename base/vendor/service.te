@@ -13,3 +13,9 @@ type mtk_hal_lbs_service, protected_service, hal_service_type, service_manager_t
 type mtk_hal_gpuserv_service, protected_service, hal_service_type, service_manager_type;
 type hal_tee_service, protected_service, hal_service_type, service_manager_type;
 type mtk_hal_mms_service, hal_service_type, mtk_safe_service_manager_type, service_manager_type;
+type mtk_hal_uievent_service, protected_service, hal_service_type, service_manager_type;
+type mtk_hal_postproc_service, protected_service, hal_service_type, service_manager_type;
+type mtk_hal_bgs_service, protected_service, hal_service_type, service_manager_type;
+type mtk_hal_atms_service, protected_service, hal_service_type, service_manager_type;
+type mtk_hal_aov_service, protected_service, hal_service_type, service_manager_type;
+type mtk_hal_isphal_service, protected_service, hal_service_type, service_manager_type;
