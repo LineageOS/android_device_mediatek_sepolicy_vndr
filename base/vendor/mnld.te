@@ -135,3 +135,6 @@ allow mnld gsm0710muxd_device:chr_file rw_file_perms;
 
 # Allow to rw /dev/ccci_md1_sta
 allow mnld ccci_device:chr_file rw_file_perms;
+
+# Allow to rw /dev/hf_manager
+allow mnld hf_manager_device:chr_file rw_file_perms;
