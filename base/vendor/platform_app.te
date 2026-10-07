@@ -16,6 +16,10 @@ allow platform_app sw_sync_device:chr_file rw_file_perms;
 # Date: 2019/07/04
 # Purpose: Allow platform app to use BGService HIDL and access mtk_hal_camera
 hal_client_domain(platform_app, hal_mtk_bgs)
+hal_client_domain(platform_app, hal_mtk_uievent)
+hal_client_domain(platform_app, hal_mtk_postproc)
+hal_client_domain(platform_app, hal_mtk_aov)
+hal_client_domain(platform_app, hal_mtk_isphal)
 binder_call(platform_app, mtk_hal_camera)
 
 # Date: 2020/06/08

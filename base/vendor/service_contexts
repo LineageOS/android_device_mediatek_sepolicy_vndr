@@ -29,12 +29,12 @@ vendor.mediatek.hardware.apuware.apusys.INeuronApusys/default u:object_r:hal_neu
 vendor.mediatek.hardware.apuware.utils.IApuwareUtils/default u:object_r:hal_neuralnetworks_service:s0
 
 #camera aidl
-vendor.mediatek.hardware.camera.aovservice.IAovService/default u:object_r:hal_camera_service:s0
-vendor.mediatek.hardware.camera.atms.IATMs/default u:object_r:hal_camera_service:s0
-vendor.mediatek.hardware.camera.bgservice.IBGService/default u:object_r:hal_camera_service:s0
-vendor.mediatek.hardware.camera.isphal.IISPModule/internal/1 u:object_r:hal_camera_service:s0
-vendor.mediatek.hardware.camera.postproc.IPostDevice/default u:object_r:hal_camera_service:s0
-vendor.mediatek.hardware.camera.uievent.IUIEvent/default u:object_r:hal_camera_service:s0
+vendor.mediatek.hardware.camera.aovservice.IAovService/default u:object_r:mtk_hal_aov_service:s0
+vendor.mediatek.hardware.camera.atms.IATMs/default u:object_r:mtk_hal_atms_service:s0
+vendor.mediatek.hardware.camera.bgservice.IBGService/default u:object_r:mtk_hal_bgs_service:s0
+vendor.mediatek.hardware.camera.isphal.IISPModule/internal/1 u:object_r:mtk_hal_isphal_service:s0
+vendor.mediatek.hardware.camera.postproc.IPostDevice/default u:object_r:mtk_hal_postproc_service:s0
+vendor.mediatek.hardware.camera.uievent.IUIEvent/default u:object_r:mtk_hal_uievent_service:s0
 
 # MMAgent
 vendor.mediatek.hardware.mmagent.IMMAgent/default u:object_r:mtk_hal_mmagent_service:s0
