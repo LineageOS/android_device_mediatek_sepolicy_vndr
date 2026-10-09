@@ -1,4 +1,5 @@
-# Purpose: MiTEE HW-backed Identity
+# Purpose: TEE HW-backed Identity
+allow hal_identity_default teei_client_device:chr_file rw_file_perms;
 allow hal_identity_default mitee_client_device:chr_file rw_file_perms;
 allow hal_identity_default kmsg_device:chr_file rw_file_perms;
 allow hal_identity_default mitee_sfs_file:dir create_dir_perms;
