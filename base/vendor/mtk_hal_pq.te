@@ -72,3 +72,6 @@ hal_client_domain(mtk_hal_pq, hal_graphics_allocator)
 
 # Allow PQ AIDL to use /sysfs/devices/platform/mtk-leds/
 r_dir_file(mtk_hal_pq, sysfs_leds)
+
+# Allow PQ HAL to get MML PQ support
+get_prop(mtk_hal_pq, vendor_mtk_mml_support_prop)
