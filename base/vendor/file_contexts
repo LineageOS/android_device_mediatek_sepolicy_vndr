@@ -906,6 +906,26 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.mtee u:object_r:hal_keymaster_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.1-service\.mtee u:object_r:hal_keymaster_default_exec:s0
 
+# Microtrust TEE
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.[0-9]+-service\.beanpod       u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint@1\.0-service\.beanpod    u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.capi@2\.0-service               u:object_r:teei_hal_capi_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.ifaa@[0-9]+\.0-service          u:object_r:teei_hal_ifaa_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.se@1\.0-service                 u:object_r:hal_secure_element_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.soter@1\.0-service              u:object_r:teei_hal_wechat_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.thh@2\.0-service                u:object_r:teei_hal_thh_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.tui@2\.0-service                u:object_r:teei_hal_tui_exec:s0
+/(vendor|system/vendor)/bin/bp_kmsetkey_ca                                                   u:object_r:bp_kmsetkey_ca_exec:s0
+/(vendor|system/vendor)/bin/init_thh                                                         u:object_r:init_thh_service_exec:s0
+/(vendor|system/vendor)/bin/teei_daemon                                                      u:object_r:tee_exec:s0
+
+# Microtrust TEE Lite
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.beanpod\.lite        u:object_r:hal_gatekeeper_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.itrusty              u:object_r:hal_gatekeeper_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.[0-9]+-service\.beanpod\.lite    u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/istorageproxyd                                                      u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/teei_loader                                                         u:object_r:tee_exec:s0
+
 # Trustonic TEE
 /(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint(@[0-9]+\.0+)?-service\.trustonic(_norkp)? u:object_r:hal_keymint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.security\.secretkeeper@1\.0-service\.trustonic              u:object_r:hal_secretkeeper_default_exec:s0
@@ -953,9 +973,6 @@
 /vendor/bin/thermal_logd_mediatek     u:object_r:init-thermal-logging-sh_exec:s0
 /vendor/bin/thermal_symlinks_mediatek u:object_r:init-thermal-symlinks-sh_exec:s0
 /dev/thermal(/.*)?                    u:object_r:thermal_link_device:s0
-
-# Microtrust SE
-/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.se@1\.0-service   u:object_r:hal_secure_element_default_exec:s0
 
 # PQ hal
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.pq@2\.2-service u:object_r:mtk_hal_pq_exec:s0
@@ -1115,35 +1132,7 @@
 # MTK PPL
 /(vendor|system/vendor)/bin/ppl_agent u:object_r:ppl_agent_exec:s0
 
-# Microtrust TEEI system files
-/(vendor|system/vendor)/bin/init_thh    u:object_r:init_thh_service_exec:s0
-/(vendor|system/vendor)/bin/teei_daemon u:object_r:tee_exec:s0
-
-# microtrust THH daemon
-/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.thh@2\.0-service u:object_r:teei_hal_thh_exec:s0
-
-# microtrust TUI daemon
-/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.tui@2\.0-service u:object_r:teei_hal_tui_exec:s0
-
-# microtrust IFAA hidl service
-/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.ifaa@1\.0-service u:object_r:teei_hal_ifaa_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.ifaa@2\.0-service u:object_r:teei_hal_ifaa_exec:s0
-
-# microtrust WECHAT hidl service
-/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.soter@1\.0-service          u:object_r:teei_hal_wechat_exec:s0
-/(vendor|system/vendor)/bin/teei_loader                                                  u:object_r:tee_exec:s0
-/(vendor|system/vendor)/bin/istorageproxyd                                               u:object_r:tee_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.microtrust\.hardware\.capi@2\.0-service           u:object_r:teei_hal_capi_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.beanpod        u:object_r:hal_keymaster_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.beanpod\.lite  u:object_r:hal_keymaster_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.1-service\.beanpod        u:object_r:hal_keymaster_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.1-service\.beanpod\.lite  u:object_r:hal_keymaster_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint@1\.0-service\.beanpod u:object_r:hal_keymint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.beanpod\.lite u:object_r:hal_gatekeeper_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.itrusty u:object_r:hal_gatekeeper_default_exec:s0
-/(vendor|system/vendor)/bin/bp_kmsetkey_ca u:object_r:bp_kmsetkey_ca_exec:s0
-
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerrpint@1\.1-service              u:object_r:hal_fingerprint_default_exec:s0
+# MTK neural network HAL
 /(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.3-service-gpunn                 u:object_r:mtk_hal_neuralnetworks_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.3-service-mtk-neuron            u:object_r:mtk_hal_neuralnetworks_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.3-service-mtk-neuron-lazy       u:object_r:mtk_hal_neuralnetworks_exec:s0
