@@ -134,6 +134,9 @@
 /data/vendor/mitee(/.*)?          u:object_r:mitee_data_file:s0
 /mnt/vendor/persist/data(/.*)?    u:object_r:mitee_sfs_file:s0
 
+# OP-TEE
+/data/vendor/tee(/.*)?    u:object_r:tee_data_file:s0
+
 ##########################
 # Devices
 #
@@ -902,19 +905,11 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.mediatek                  u:object_r:hal_health_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.gpuserv-service                  u:object_r:mtk_hal_gpuserv_exec:s0
 
-# Trusty TEE
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service\.trusty             u:object_r:hal_keymaster_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.security\.secretkeeper\.trusty    u:object_r:hal_secretkeeper_default_exec:s0
-/(vendor|system/vendor)/bin/mtk_storageproxyd                                                u:object_r:tee_exec:s0
-/(vendor|system/vendor)/bin/rpmb_svc                                                         u:object_r:tee_exec:s0
-/(vendor|system/vendor)/bin/storageproxyd                                                    u:object_r:tee_exec:s0
-
 # gpu hal
 /(system\/vendor|vendor)/bin/hw/vendor\.mediatek\.hardware\.gpu@1\.0-service u:object_r:mtk_hal_gpu_exec:s0
 
-# MTEE keymaster4.0/4.1 system files
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.mtee u:object_r:hal_keymaster_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.1-service\.mtee u:object_r:hal_keymaster_default_exec:s0
+# MediaTek In-house TEE
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.[0-9]+-service\.mtee    u:object_r:hal_keymaster_default_exec:s0
 
 # Microtrust TEE
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.[0-9]+-service\.beanpod       u:object_r:hal_keymaster_default_exec:s0
@@ -946,6 +941,21 @@
 /(vendor|system/vendor)/bin/miteelog                                                            u:object_r:tee_exec:s0
 /(vendor|system/vendor)/bin/tee-supplicant                                                      u:object_r:tee_exec:s0
 
+# NXP StrongBox
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.strongbox\.nxp     u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint3-service\.strongbox\.nxp    u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.weaver-service\.nxp                           u:object_r:hal_weaver_default_exec:s0
+
+# OP-TEE
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.optee           u:object_r:hal_keymaster_default_exec:s0
+
+# TrustKernel TEE
+/(vendor|system/vendor)/app/t6(/.*)?                                                                      u:object_r:tkcore_systa_file:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper-service\.trustkernel                         u:object_r:hal_gatekeeper_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.[0-9]+-service\.trustkernel                u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint(@[0-9]+\.0+)?-service\.trustkernel    u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/teed                                                                          u:object_r:tee_exec:s0
+
 # Trustonic TEE
 /(vendor|system/vendor)/app/mcRegistry(/.*)?                                                                     u:object_r:mobicore_vendor_file:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper-service\.trustonic                                  u:object_r:hal_gatekeeper_default_exec:s0
@@ -955,24 +965,15 @@
 /(vendor|system/vendor)/bin/hw/vendor\.trustonic\.tee(@1\.1)?-service                                            u:object_r:hal_tee_default_exec:s0
 /(vendor|system/vendor)/bin/mcDriverDaemon                                                                       u:object_r:mobicore_exec:s0
 
-# TrustKernel TEE
-/(vendor|system/vendor)/app/t6(/.*)?                                                                      u:object_r:tkcore_systa_file:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper-service\.trustkernel                         u:object_r:hal_gatekeeper_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.[0-9]+-service\.trustkernel                u:object_r:hal_keymaster_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint(@[0-9]+\.0+)?-service\.trustkernel    u:object_r:hal_keymint_default_exec:s0
-/(vendor|system/vendor)/bin/teed                                                                          u:object_r:tee_exec:s0
-
-# OP-TEE
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.optee           u:object_r:hal_keymaster_default_exec:s0
-/data/vendor/tee(/.*)?                                                                   u:object_r:tee_data_file:s0
+# Trusty TEE
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service\.trusty             u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.security\.secretkeeper\.trusty    u:object_r:hal_secretkeeper_default_exec:s0
+/(vendor|system/vendor)/bin/mtk_storageproxyd                                                u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/rpmb_svc                                                         u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/storageproxyd                                                    u:object_r:tee_exec:s0
 
 # UFS
 /dev/ufs-bsg0       u:object_r:ufs_bsg_device:s0
-
-# NXP StrongBox
-/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint-service\.strongbox\.nxp     u:object_r:hal_keymint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint3-service\.strongbox\.nxp    u:object_r:hal_keymint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.weaver-service\.nxp                           u:object_r:hal_weaver_default_exec:s0
 
 # Thermal
 /vendor/bin/thermal_logd_mediatek     u:object_r:init-thermal-logging-sh_exec:s0
