@@ -893,11 +893,12 @@
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.gpuserv-service                  u:object_r:mtk_hal_gpuserv_exec:s0
 
 # Trusty TEE
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service\.trusty      u:object_r:hal_keymaster_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.itrusty    u:object_r:hal_gatekeeper_default_exec:s0
-/(vendor|system/vendor)/bin/mtk_storageproxyd                                         u:object_r:tee_exec:s0
-/(vendor|system/vendor)/bin/rpmb_svc                                                  u:object_r:tee_exec:s0
-/(vendor|system/vendor)/bin/storageproxyd                                             u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service\.trusty             u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.itrusty           u:object_r:hal_gatekeeper_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.security\.secretkeeper\.trusty    u:object_r:hal_secretkeeper_default_exec:s0
+/(vendor|system/vendor)/bin/mtk_storageproxyd                                                u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/rpmb_svc                                                         u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/storageproxyd                                                    u:object_r:tee_exec:s0
 
 # gpu hal
 /(system\/vendor|vendor)/bin/hw/vendor\.mediatek\.hardware\.gpu@1\.0-service u:object_r:mtk_hal_gpu_exec:s0
