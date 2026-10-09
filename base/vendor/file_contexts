@@ -892,8 +892,11 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.mediatek                  u:object_r:hal_health_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.mediatek\.hardware\.gpuserv-service                  u:object_r:mtk_hal_gpuserv_exec:s0
 
-# Google Trusty system files
-/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service\.trusty u:object_r:hal_keymaster_default_exec:s0
+# Trusty TEE
+/(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@3\.0-service\.trusty    u:object_r:hal_keymaster_default_exec:s0
+/(vendor|system/vendor)/bin/mtk_storageproxyd                                       u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/rpmb_svc                                                u:object_r:tee_exec:s0
+/(vendor|system/vendor)/bin/storageproxyd                                           u:object_r:tee_exec:s0
 
 # gpu hal
 /(system\/vendor|vendor)/bin/hw/vendor\.mediatek\.hardware\.gpu@1\.0-service u:object_r:mtk_hal_gpu_exec:s0
@@ -1189,11 +1192,6 @@
 
 # TrustKernel add
 /vendor/bin/teed u:object_r:tee_exec:s0
-
-# For Google Trusty Secure Storage Proxy
-/vendor/bin/storageproxyd u:object_r:tee_exec:s0
-/(vendor|system/vendor)/bin/rpmb_svc u:object_r:tee_exec:s0
-/vendor/bin/mtk_storageproxyd u:object_r:tee_exec:s0
 
 # MTK MDM
 /vendor/bin/md_monitor u:object_r:md_monitor_exec:s0
