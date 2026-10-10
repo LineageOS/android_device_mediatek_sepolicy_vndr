@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "930041cc_aca57c99",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-10-10T13:59:38Z",
+      "side": 1,
+      "message": "You should rephrase it a bit better. Fyi, even on ALPS sepolicy mtk_hal_pq domain doesn\u0027t have permissions to read vendor_mtk_mml_support_prop and it works fine on modern vendor.\n\nIt\u0027s more likely your blobs fault to expect that.",
+      "revId": "be1146edfe22940943d4b8c10e3ac299b3df53d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "22504fbb_4f03e2ba",
