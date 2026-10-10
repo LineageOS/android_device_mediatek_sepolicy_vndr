@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "d3e36ac9_5703b2be",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 34203
+      },
+      "writtenOn": "2026-10-10T15:26:38Z",
+      "side": 1,
+      "message": "Are you implying that I should do this in my tree instead?",
+      "parentUuid": "930041cc_aca57c99",
+      "revId": "be1146edfe22940943d4b8c10e3ac299b3df53d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "22504fbb_4f03e2ba",
