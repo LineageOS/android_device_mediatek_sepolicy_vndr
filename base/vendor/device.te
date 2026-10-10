@@ -94,7 +94,7 @@ type vcp_device, dev_type;
 type mvpu_algo_device, dev_type;
 type vpu_device, dev_type, mlstrustedobject;
 type mdla_device, dev_type, mlstrustedobject;
-type apusys_device, dev_type;
+type apusys_device, dev_type, mlstrustedobject;
 type mtk_jpeg_device, dev_type;
 type kd_camera_hw_device, dev_type;
 type seninf_device, dev_type;
