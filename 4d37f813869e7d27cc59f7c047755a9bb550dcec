@@ -16,6 +16,24 @@
       "message": "```suggestion\nbase: vendor: Define apusys_device as mlstrustedobject\n```",
       "revId": "4d37f813869e7d27cc59f7c047755a9bb550dcec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e481ac04_0a3e6299",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 37952
+      },
+      "writtenOn": "2026-10-11T16:28:09Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "4b7e4476_66f9de6f",
+      "revId": "4d37f813869e7d27cc59f7c047755a9bb550dcec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
