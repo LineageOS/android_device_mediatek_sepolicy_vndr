@@ -36,6 +36,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "4666b8ce_2592deab",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-10-11T02:09:58Z",
+      "side": 1,
+      "message": "I meant be more clear on the description, as this isn\u0027t a fix for platforms higher than S since PQ does not check for MML support with props",
+      "parentUuid": "d3e36ac9_5703b2be",
+      "revId": "be1146edfe22940943d4b8c10e3ac299b3df53d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "22504fbb_4f03e2ba",
