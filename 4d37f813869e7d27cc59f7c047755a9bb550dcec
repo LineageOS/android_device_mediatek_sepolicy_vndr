@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4b7e4476_66f9de6f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-10-11T16:15:45Z",
+      "side": 1,
+      "message": "```suggestion\nbase: vendor: Define apusys_device as mlstrustedobject\n```",
+      "revId": "4d37f813869e7d27cc59f7c047755a9bb550dcec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
