@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e426df37_4a49820e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-10-11T18:51:53Z",
+      "side": 1,
+      "message": "Typo and lack of description as why",
+      "revId": "1fe1640484863f2b9010db0c890211322e0a710c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
