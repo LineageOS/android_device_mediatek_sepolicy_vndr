@@ -29,7 +29,7 @@
 /data/nfc_socket(/.*)?              u:object_r:nfc_socket_file:s0
 /data/vendor/nfc_socket(/.*)?       u:object_r:vendor_nfc_socket_file:s0
 /data/vendor/md3(/.*)?              u:object_r:c2k_file:s0
-/data/SF_dump(./*)?                 u:object_r:sf_bqdump_data_file:s0
+/data/SF_dump(/.*)?                 u:object_r:sf_bqdump_data_file:s0
 /data/data_tmpfs_log(/.*)?          u:object_r:data_tmpfs_log_file:s0
 /data/vendor/data_tmpfs_log(/.*)?   u:object_r:vendor_tmpfs_log_file:s0
 /data/vendor/audiohal(/.*)?         u:object_r:mtk_audiohal_data_file:s0
