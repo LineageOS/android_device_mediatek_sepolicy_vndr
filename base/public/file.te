@@ -22,3 +22,6 @@ type sysfs_vbus, fs_type, sysfs_type;
 type sysfs_pmu, fs_type, sysfs_type;
 
 type sysfs_ccci, fs_type, sysfs_type;
+
+# Lineage health HAL charging control
+type proc_battery_cmd, fs_type, proc_type;
