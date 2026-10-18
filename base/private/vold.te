@@ -13,7 +13,3 @@ allow vold mtd_device:chr_file rw_file_perms;
 # Date : WK17.28
 # Purpose : encrypt phone
 allow vold kernel:system module_request;
-
-# Date : 2020/03/26
-# Android R migration
-dontaudit vold proc_battery_cmd:dir r_dir_perms;

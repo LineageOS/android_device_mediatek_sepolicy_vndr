@@ -170,10 +170,6 @@ allow system_server tll_device:chr_file r_file_perms;
 # Operation: R migration
 get_prop(system_server, system_mtk_telecom_vibrate_prop)
 
-# Date:2020/03/26
-# Operation:Q Migration
-allow system_server proc_battery_cmd:dir search;
-
 # Date : 2020/04/14
 # Purpose: Allow ConnectivityService to get USB tethering system property for auto test
 get_prop(system_server, system_mtk_usb_tethering_prop)

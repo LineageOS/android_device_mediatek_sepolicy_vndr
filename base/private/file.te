@@ -21,11 +21,6 @@ type proc_cl_cam_status, fs_type, proc_type;
 
 # Date : 2020/03/25
 # Operation: R migration
-# Purpose: mtk EM battery settings
-type proc_battery_cmd, fs_type, proc_type;
-
-# Date : 2020/03/25
-# Operation: R migration
 # Purpose : mtk EM flash reading
 type proc_flash, fs_type, proc_type;
 type proc_partition, fs_type, proc_type;
