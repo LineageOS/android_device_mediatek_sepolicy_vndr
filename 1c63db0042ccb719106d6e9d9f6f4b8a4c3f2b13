@@ -16,6 +16,23 @@
       "message": "Required on sunstone, which uses `/proc/mtk_battery_cmd/current_cmd` to toggle charging.",
       "revId": "1c63db0042ccb719106d6e9d9f6f4b8a4c3f2b13",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "50ca7524_fce39e53",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32222
+      },
+      "writtenOn": "2026-10-19T23:03:36Z",
+      "side": 1,
+      "message": "Why not move this to vendor SEPolicy?",
+      "revId": "1c63db0042ccb719106d6e9d9f6f4b8a4c3f2b13",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
