@@ -16,6 +16,23 @@
       "message": "Done",
       "revId": "bc1396da7b64c5b1183763d039c3743d1f294ec2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bdfd4e49_9cd345f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-10-20T12:19:01Z",
+      "side": 1,
+      "message": "Rebase your changes on top of latest HEAD and add me back when it\u0027s done",
+      "revId": "bc1396da7b64c5b1183763d039c3743d1f294ec2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
