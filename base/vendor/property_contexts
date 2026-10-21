@@ -760,6 +760,8 @@ ro.vendor.mtk_trustonic_tee_support   u:object_r:vendor_mtk_trustonic_tee_prop:s
 ro.vendor.mtk_microtrust_tee_support  u:object_r:vendor_mtk_microtrust_tee_prop:s0
 ro.vendor.mtk_trustkernel_tee_support u:object_r:vendor_mtk_trustkernel_tee_prop:s0
 
+vendor.mtk.ufs.                       u:object_r:vendor_mtk_ufs_prop:s0
+
 vendor.teefs_state                    u:object_r:vendor_mtk_mitee_prop:s0
 ro.boot.tee_type                      u:object_r:vendor_mtk_mitee_prop:s0
 ro.vendor.mtk_mitee_support           u:object_r:vendor_mtk_mitee_prop:s0
