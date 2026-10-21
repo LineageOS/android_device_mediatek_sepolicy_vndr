@@ -171,7 +171,9 @@ allow init RT_Monitor_device:chr_file rw_file_perms;
 # Purpose : For DuraSpeed
 allow init proc_drop_caches:file w_file_perms;
 
+# Purpose: TEE
 allow init teei_client_device:chr_file rw_file_perms;
+allow init mobicore_vendor_file:dir mounton;
 
 # Date : W19.28
 # Purpose: Allow to setattr for duraspeed.rc
