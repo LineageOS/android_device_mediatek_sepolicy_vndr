@@ -88,3 +88,5 @@ allow thermal_core gsm0710muxd_device:chr_file rw_file_perms;
 # To read connsys node
 allow thermal_core conn_pwr_device:chr_file rw_file_perms_no_map;
 
+#for dvfsrc sysfs
+allow thermal_core sysfs_dvfsrc_dbg:dir search;
