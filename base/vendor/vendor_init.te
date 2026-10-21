@@ -83,6 +83,7 @@ allow vendor_init debugfs_tracing_debug:file w_file_perms;
 
 # Set surfaceflinger cpu policy property
 set_prop(vendor_init, vendor_mtk_debug_sf_cpupolicy_prop)
+set_prop(vendor_init, vendor_mtk_debug_sf_kickidle_prop)
 
 # Date : 2019/11/21
 # Operation: SQC
