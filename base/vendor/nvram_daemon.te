@@ -54,6 +54,10 @@ allow nvram_daemon proc_lk_env:file rw_file_perms;
 
 # Purpose: property set
 set_prop(nvram_daemon, vendor_mtk_service_nvram_init_prop)
+set_prop(nvram_daemon, vendor_mtk_service_nvram_first_restore_prop)
+set_prop(nvram_daemon, vendor_mtk_service_nvram_restore_prop)
+set_prop(nvram_daemon, vendor_mtk_service_nvram_load_prop)
+set_prop(nvram_daemon, vendor_mtk_service_wifi_nvram_prop)
 set_prop(nvram_daemon, vendor_mtk_service_connxo_nvram_prop)
 
 # Purpose: copy /fstab*
@@ -92,10 +96,3 @@ allow nvram_daemon metadata_file:dir search;
 
 # Allow nvram_daemon to search gsi_metadata
 allow nvram_daemon gsi_metadata_file:dir search;
-
-# Allow nvram_daemon to get/set vendor_mtk_service_nvram_restore_prop
-set_prop(nvram_daemon, vendor_mtk_service_nvram_restore_prop)
-get_prop(nvram_daemon, vendor_mtk_service_nvram_restore_prop)
-
-# Allow nvraem_daemon to get/set vendor_mtk_service_wifi_nvram_prop
-set_prop(nvram_daemon, vendor_mtk_service_wifi_nvram_prop)
