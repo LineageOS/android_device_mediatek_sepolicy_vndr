@@ -103,6 +103,7 @@ allow surfaceflinger hal_graphics_composer_default:file w_file_perms;
 # Data: 2021/12/07
 # Purpose: adjust the cpu policy config
 get_prop(surfaceflinger, vendor_mtk_debug_sf_cpupolicy_prop)
+get_prop(surfaceflinger, vendor_mtk_debug_sf_kickidle_prop)
 
 # for debug purpose
 allow surfaceflinger self:capability { net_admin sys_nice };
