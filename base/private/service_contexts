@@ -88,6 +88,10 @@ vendor.mediatek.hardware.mtkradioex.network.IMtkRadioExNetwork/slot1     u:objec
 vendor.mediatek.hardware.mtkradioex.network.IMtkRadioExNetwork/slot2     u:object_r:hal_radio_service:s0
 vendor.mediatek.hardware.mtkradioex.network.IMtkRadioExNetwork/slot3     u:object_r:hal_radio_service:s0
 vendor.mediatek.hardware.mtkradioex.network.IMtkRadioExNetwork/slot4     u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.ntn.IMtkRadioExNtn/slot1             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.ntn.IMtkRadioExNtn/slot2             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.ntn.IMtkRadioExNtn/slot3             u:object_r:hal_radio_service:s0
+vendor.mediatek.hardware.mtkradioex.ntn.IMtkRadioExNtn/slot4             u:object_r:hal_radio_service:s0
 vendor.mediatek.hardware.mtkradioex.sim.IMtkRadioExSim/slot1             u:object_r:hal_radio_service:s0
 vendor.mediatek.hardware.mtkradioex.sim.IMtkRadioExSim/slot2             u:object_r:hal_radio_service:s0
 vendor.mediatek.hardware.mtkradioex.sim.IMtkRadioExSim/slot3             u:object_r:hal_radio_service:s0
