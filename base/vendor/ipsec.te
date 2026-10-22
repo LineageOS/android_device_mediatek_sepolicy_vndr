@@ -20,7 +20,7 @@ net_domain(ipsec)
 # Operation : Feature developing for ePDG
 
 # Purpose :  access xfrm 
-allow ipsec proc_net:file write;
+allow ipsec proc_net:file { open write };
 
 # Purpose :  set property for ip address with epdg_wod
 set_prop(ipsec, vendor_mtk_wod_prop)
@@ -65,7 +65,7 @@ allow ipsec custom_file:file { read getattr open };
 # Purpose :  read strongswan config file for IKEv2 Tunnel
 allow ipsec wod_apn_conf_file:dir { write read open search remove_name add_name create};
 allow ipsec wod_apn_conf_file:file { write read ioctl open getattr };
-allow ipsec wod_ipsec_conf_file:file { write read ioctl open getattr create append unlink };
+allow ipsec wod_ipsec_conf_file:file { write read ioctl open getattr setattr create append unlink };
 allow ipsec wod_ipsec_conf_file:dir { write read open search remove_name add_name };
 
 # Purpose : set alarm for DPD
