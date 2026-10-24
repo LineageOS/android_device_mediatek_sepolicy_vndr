@@ -429,3 +429,6 @@ allow system_server sysfs_power_supply:file r_file_perms;
 
 # Allow to perform binder IPC to mtk_hal_mmlpq.
 binder_call(system_server, mtk_hal_mmlpq)
+
+# Allow userspace to read usb state via udc sysfs
+r_dir_file(system_server, sysfs_usb_nonplat)
