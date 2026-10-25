@@ -70,6 +70,24 @@
       "parentUuid": "6d0d88a9_3cc9f702",
       "revId": "952f273e5a3273a28cc466643a4d74cae337e177",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f149a8b_1432a21f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-10-25T13:14:18Z",
+      "side": 1,
+      "message": "Seems to be a Linux 5.10 thing, will add it on the common sysfs wakeup paths list",
+      "parentUuid": "43cf7188_11751694",
+      "revId": "952f273e5a3273a28cc466643a4d74cae337e177",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
