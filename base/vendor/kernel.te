@@ -88,6 +88,7 @@ allow kernel expdb_block_device:blk_file rw_file_perms;
 
 # b/220801802
 allow kernel same_process_hal_file:file r_file_perms;
+allow kernel same_process_hal_file:system firmware_load;
 
 allow kernel teei_client_device:chr_file rw_file_perms;
 

@@ -1225,6 +1225,9 @@
 
 /vendor/lib(64)?/libGLES_mali\.so u:object_r:same_process_hal_file:s0
 
+/vendor/firmware/valhall-1691526.wa u:object_r:same_process_hal_file:s0
+/vendor/firmware/mali_csffw.bin u:object_r:same_process_hal_file:s0
+
 /vendor/lib(64)?/libgralloc_extra\.so              u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgpu_aux\.so                    u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libgpud\.so                       u:object_r:same_process_hal_file:s0
