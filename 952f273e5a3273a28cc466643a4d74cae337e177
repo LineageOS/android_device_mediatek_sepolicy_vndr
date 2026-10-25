@@ -16,6 +16,24 @@
       "message": "Please remove the dupplicated sysfs wakeup paths on your corresponding devices for this to get merged. The following devices needs changes:\n\njagar: Nolen\n\nellis: Ben\nlamu: Roger \u0026 Matsvei\n\nlancelot: Matsvei\nmerlinx: Matsvei\nrosemary: Matsvei\nxaga: Chris \u0026 Matsvei",
       "revId": "952f273e5a3273a28cc466643a4d74cae337e177",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4df9bfc0_69aeb0bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-10-25T01:15:46Z",
+      "side": 1,
+      "message": "Don\u0027t worry about jagar, it\u0027ll catch up - not shipping.",
+      "parentUuid": "45594545_89bd30e3",
+      "revId": "952f273e5a3273a28cc466643a4d74cae337e177",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
