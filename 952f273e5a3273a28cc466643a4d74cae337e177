@@ -52,6 +52,24 @@
       "parentUuid": "4df9bfc0_69aeb0bf",
       "revId": "952f273e5a3273a28cc466643a4d74cae337e177",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "43cf7188_11751694",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 26349
+      },
+      "writtenOn": "2026-10-25T10:28:15Z",
+      "side": 1,
+      "message": "Done, mt6895 on hold for now",
+      "parentUuid": "6d0d88a9_3cc9f702",
+      "revId": "952f273e5a3273a28cc466643a4d74cae337e177",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
