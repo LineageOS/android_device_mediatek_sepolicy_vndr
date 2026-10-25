@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1da41374_c218dca8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-10-25T13:23:25Z",
+      "side": 1,
+      "message": "It seems your devices have also this change in their sepolicy folder, could you please remove it ? MediaTek made this common in newer BSPs",
+      "revId": "3d28206fd3d6181be2257496eeb5ed1031901e9c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
