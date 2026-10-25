@@ -34,6 +34,24 @@
       "parentUuid": "45594545_89bd30e3",
       "revId": "952f273e5a3273a28cc466643a4d74cae337e177",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d0d88a9_3cc9f702",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34203
+      },
+      "writtenOn": "2026-10-25T09:25:52Z",
+      "side": 1,
+      "message": "xaga uses \"1f800000.mmlsys_config\" instead of \"1f800000.mmlsys-config\", do we commonize that one too? \n\nhttps://github.com/LineageOS/android_kernel_xiaomi_mt6895/blob/56de8342020a6ba966427eb9acb8b8ae53644c31/arch/arm64/boot/dts/vendor/mediatek/mt6895.dts#L8884",
+      "parentUuid": "4df9bfc0_69aeb0bf",
+      "revId": "952f273e5a3273a28cc466643a4d74cae337e177",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
