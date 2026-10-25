@@ -200,3 +200,6 @@ hal_client_domain(surfaceflinger, hal_neuralnetworks)
 
 # Purpose: Netflix Widevine
 allow surfaceflinger teei_client_device:chr_file rw_file_perms;
+
+# Purpose: Vendor Firmwares
+allow surfaceflinger vendor_fw_file:dir search;
