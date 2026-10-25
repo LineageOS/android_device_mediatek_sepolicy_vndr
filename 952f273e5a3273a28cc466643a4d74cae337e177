@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "45594545_89bd30e3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-10-25T00:37:45Z",
+      "side": 1,
+      "message": "Please remove the dupplicated sysfs wakeup paths on your corresponding devices for this to get merged. The following devices needs changes:\n\njagar: Nolen\n\nellis: Ben\nlamu: Roger \u0026 Matsvei\n\nlancelot: Matsvei\nmerlinx: Matsvei\nrosemary: Matsvei\nxaga: Chris \u0026 Matsvei",
+      "revId": "952f273e5a3273a28cc466643a4d74cae337e177",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
