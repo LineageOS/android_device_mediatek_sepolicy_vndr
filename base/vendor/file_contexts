@@ -1296,6 +1296,7 @@
 
 /vendor/lib(64)?/libladder\.so u:object_r:same_process_hal_file:s0
 
+/vendor/lib(64)?/libapusys\.so                  u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libtflite_mtk.so               u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libnir_neon_driver_ndk.mtk.vndk\.so u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libcmdl_ndk.mtk.vndk\.so       u:object_r:same_process_hal_file:s0
