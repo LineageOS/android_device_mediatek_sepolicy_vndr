@@ -115,6 +115,7 @@ allow vendor_init proc_panic_on_rcu_stall:file rw_file_perms;
 # Date : 2020/12/23
 # Purpose: Allow vendor_init to write /proc/driver/conninfra_dbg
 allow vendor_init proc_conninfradbg:file w_file_perms;
+allow vendor_init conn_dbg_dev_device:chr_file w_file_perms;
 
 # Date: 2020/11/18
 # Purpose: Set the vendor.all.modules.ready property

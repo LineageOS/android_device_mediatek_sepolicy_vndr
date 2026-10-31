@@ -9,6 +9,7 @@ type ttySDIO_device, dev_type;
 type vmodem_device, dev_type;
 type stpwmt_device, dev_type;
 type conninfra_device, dev_type;
+type conn_dbg_dev_device, dev_type;
 type conn_pwr_device, dev_type;
 type conn_scp_device, dev_type;
 type wmtdetect_device, dev_type;

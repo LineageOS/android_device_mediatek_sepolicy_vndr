@@ -489,6 +489,7 @@
 
 /dev/stpwmt(/.*)?        u:object_r:stpwmt_device:s0
 /dev/conninfra_dev(/.*)? u:object_r:conninfra_device:s0
+/dev/conn_dbg_dev(/.*)?  u:object_r:conn_dbg_dev_device:s0
 /dev/sw_sync(/.*)?       u:object_r:sw_sync_device:s0
 /dev/tgt(/.*)?           u:object_r:tgt_device:s0
 /dev/touch(/.*)?         u:object_r:touch_device:s0
