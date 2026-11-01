@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4f5bf733_614880d5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34203
+      },
+      "writtenOn": "2026-11-01T17:49:07Z",
+      "side": 1,
+      "message": "This fixes WeChat payments after Android 17, but I don\u0027t know if we should change more to platform_app_36 domain in general.",
+      "revId": "d095c22d60c25a3ec9f187777d24595d14f66288",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
