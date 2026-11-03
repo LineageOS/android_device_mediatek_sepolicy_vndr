@@ -16,6 +16,24 @@
       "message": "This fixes WeChat payments after Android 17, but I don\u0027t know if we should change more to platform_app_36 domain in general.",
       "revId": "d095c22d60c25a3ec9f187777d24595d14f66288",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4db3c0bd_60a7e326",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-11-03T18:46:19Z",
+      "side": 1,
+      "message": "Maybe move the existing rule for microtrust teei hals to platform_app_all ?\n\nIt targets both platform_app and platform_app_36 as per https://cs.android.com/android/platform/superproject/+/android-latest-release:system/sepolicy/README.apps.md;l\u003d53",
+      "parentUuid": "4f5bf733_614880d5",
+      "revId": "d095c22d60c25a3ec9f187777d24595d14f66288",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
