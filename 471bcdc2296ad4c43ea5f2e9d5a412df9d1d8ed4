@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1ba450d5_73d4d69b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37952
+      },
+      "writtenOn": "2026-11-06T16:23:10Z",
+      "side": 1,
+      "message": "In case of hal_client_domain it will work?\n\nhttps://source.android.com/docs/security/features/selinux/compatibility#:~:text\u003dThere%20may%20be%20situations%20where%20platform_app_all%20may%20not%20work",
+      "revId": "471bcdc2296ad4c43ea5f2e9d5a412df9d1d8ed4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
