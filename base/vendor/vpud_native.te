@@ -13,6 +13,8 @@ init_daemon_domain(vpud_native)
 allow vpud_native self:capability sys_nice;
 
 allow vpud_native ion_device:chr_file rw_file_perms;
+allow vpud_native dmabuf_system_heap_device:chr_file r_file_perms_no_map;
+allow vpud_native dmabuf_system_secure_heap_device:chr_file r_file_perms_no_map;
 allow vpud_native vcu_device:chr_file rw_file_perms;
 allow vpud_native MTK_SMI_device:chr_file r_file_perms;
 allow vpud_native thermal_manager_data_file:file rw_file_perms;
