@@ -16,6 +16,24 @@
       "message": "Is there any need for that ?",
       "revId": "088cc2689d7a40c083625c99e45c6c8f9dd6aebc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8a351418_c05efdee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34203
+      },
+      "writtenOn": "2026-11-22T09:52:35Z",
+      "side": 1,
+      "message": "It fixed the MiuiCamera crashes I was having in night mode, but I’m not sure if that’s relevant in lineage.",
+      "parentUuid": "a38d92f3_bc4a3875",
+      "revId": "088cc2689d7a40c083625c99e45c6c8f9dd6aebc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
