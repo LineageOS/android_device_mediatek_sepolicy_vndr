@@ -34,6 +34,24 @@
       "parentUuid": "a38d92f3_bc4a3875",
       "revId": "088cc2689d7a40c083625c99e45c6c8f9dd6aebc",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "24d01afb_ad015676",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 37952
+      },
+      "writtenOn": "2026-11-22T11:02:08Z",
+      "side": 1,
+      "message": "It fix nothing camera also.",
+      "parentUuid": "8a351418_c05efdee",
+      "revId": "088cc2689d7a40c083625c99e45c6c8f9dd6aebc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
