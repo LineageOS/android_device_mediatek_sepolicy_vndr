@@ -60,6 +60,7 @@ allow vpud_native thermal_manager_data_file:file create_file_perms;
 
 allow vpud_native teei_client_device:chr_file rw_file_perms;
 allow vpud_native mobicore_user_device:chr_file rw_file_perms;
+allow vpud_native mitee_client_device:chr_file rw_file_perms;
 
 # Date: 2021/04/30
 # Operation : SVP Migration
