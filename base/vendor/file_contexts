@@ -311,8 +311,12 @@
 /dev/nq-nci    u:object_r:nfc_device:s0
 /dev/nxp-nci   u:object_r:nfc_device:s0
 /dev/p73       u:object_r:nfc_device:s0
+/dev/pn557     u:object_r:nfc_device:s0
 
 /dev/sec-nfc   u:object_r:nfc_device:s0
+
+/dev/tms_nfc   u:object_r:nfc_device:s0
+/dev/tms_ese   u:object_r:secure_element_device:s0
 
 /dev/mt9p012(/.*)?       u:object_r:mt9p012_device:s0
 /dev/mtfreqhopping(/.*)? u:object_r:mtfreqhopping_device:s0
@@ -1016,6 +1020,9 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service\.sec         u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service\.samsung     u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc-service\.sec              u:object_r:hal_nfc_default_exec:s0
+
+# TMS NFC service
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc-service-tms               u:object_r:hal_nfc_default_exec:s0
 
 # MTK Wifi Hal
 /(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-mediatek      u:object_r:mtk_hal_wifi_exec:s0
