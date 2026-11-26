@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "be2d9dc3_582d7280",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 24442
+      },
+      "writtenOn": "2026-11-26T04:00:10Z",
+      "side": 1,
+      "message": "Not needed by anything we have in hardware/mediatek",
+      "revId": "1555e0400b5adbe1a96ccb637bfa8f6fb70160a1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
