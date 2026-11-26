@@ -92,3 +92,7 @@ allow epdg_wod stroke_exec:file { read getattr open execute execute_no_trans loc
 allow epdg_wod charon_exec:file { read getattr open execute execute_no_trans lock};
 
 
+
+allowxperm epdg_wod self:udp_socket ioctl SIOCSIFADDR;
+allow epdg_wod self:netlink_route_socket nlmsg;
+allowxperm epdg_wod self:netlink_route_socket nlmsg { RTM_NEWLINK RTM_DELLINK };
