@@ -457,3 +457,6 @@ allow mtk_hal_power sysfs_keypad_file:file rw_file_perms;
 # allow powerhal to access hal_mtk_gpuserv
 allow mtk_hal_power mtk_hal_gpuserv:dir { getattr search };
 allow mtk_hal_power mtk_hal_gpuserv:file r_file_perms;
+
+binder_use(mtk_hal_power)
+allow mtk_hal_power hal_power_service:service_manager find;
