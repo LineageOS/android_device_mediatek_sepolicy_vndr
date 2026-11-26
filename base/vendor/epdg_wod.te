@@ -91,4 +91,4 @@ allow epdg_wod stroke_exec:file { read getattr open execute execute_no_trans loc
 # Purpose :  starter invoke charon
 allow epdg_wod charon_exec:file { read getattr open execute execute_no_trans lock};
 
-
+allowxperm epdg_wod self:udp_socket ioctl { SIOCSIFFLAGS SIOCSIFADDR SIOCSIFMTU };
