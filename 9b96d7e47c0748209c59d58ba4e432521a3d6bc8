@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "038e1959_74dc8df8",
+        "filename": "base/vendor/epdg_wod.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 38848
+      },
+      "writtenOn": "2026-11-27T02:44:03Z",
+      "side": 1,
+      "message": "Done in Patch Set 2 — applied your exact single-line suggestion.",
+      "parentUuid": "936ac699_81ac12d1",
+      "revId": "9b96d7e47c0748209c59d58ba4e432521a3d6bc8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fbd09e51_0ea801ad",
@@ -31,6 +49,24 @@
       "writtenOn": "2026-11-26T04:35:27Z",
       "side": 1,
       "message": "Don\u0027t see these two netlink_route_socket rules anywhere on the latest epdg_wod BSP sepolicy available for Android 16.",
+      "revId": "9b96d7e47c0748209c59d58ba4e432521a3d6bc8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "615b902e_fc45dd37",
+        "filename": "base/vendor/epdg_wod.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 38848
+      },
+      "writtenOn": "2026-11-27T02:44:03Z",
+      "side": 1,
+      "message": "Done in Patch Set 2 — dropped both netlink_route_socket rules to match the latest Android 16 BSP sepolicy.",
+      "parentUuid": "fbd09e51_0ea801ad",
       "revId": "9b96d7e47c0748209c59d58ba4e432521a3d6bc8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
